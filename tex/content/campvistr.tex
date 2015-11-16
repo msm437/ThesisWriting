@@ -1,0 +1,414 @@
+% !TEX root = ../thesis-example.tex
+%
+
+\chapter{CAMPVis - A Game Engine-inspired Research Framework for Medical Imaging and Visualization}
+
+\section{Introduction}
+The recent advances in the field of medical image computing provides today's clinicians with an astonishing collection of imaging modalities and algorith ms for automatic image analysis.
+Thus, intra-operative visualization has become an essential part of medical interventions and provides the surgeon with powerful support for his work. 
+Since every imaging modality has its individual strengths and weaknesses the key to a successful visualization is the fusion of all available data so that clinicians get exactly the information they need.
+However, bringing innovations from research into the daily workflow of clinicians is a difficult and time-consuming task since the deployment in the operation room yields various challenges for the developers.
+
+Medical imaging and visualization is an extensive field of research and brings together experts and researchers of many different disciplines.
+Research groups often split the task into sub-problems and domain specialists tackle them in individual projects looking for the optimal solution.
+Companies then try to implement these methods into (often highly specialized) end-products, which eventually are to be used by the clinicians.
+Such highly interdisciplinary work often runs into problems when it comes to sharing a common code base or integrating the work from multiple working groups into a single solution.
+In particular in environments with limited funding and high employee fluctuation, such as universities, created software libraries are often abandoned after finishing the project and are hardly designed to be reused by others.
+
+Our CAMPVis software software platform is designed to fill exactly this gap.
+Targeting medical image computing and visualization and in particular multi-modal image fusion for intra-operative usage, it provides not only essential data structures and algorithms but also an extensive infrastructure to facilitate the collaboration in heterogeneous environments.
+With the above motivation, CAMPVis was developed with the folling main design goals:
+\begin{itemize}
+	\item
+	Platform-independence and standard compliance
+	\item 
+	Focus on research-usage supporting rapid software prototyping, but at the same time allowing for easy transformation of implemented algorithms to end-user products
+	\item 
+	``Sandbox-like environments'': While using the same code base multiple developers can implement code independently from each other without forcing the other to meet one's code dependencies 
+	\item 
+	Support of distributed/decentralized computing
+\end{itemize}
+
+Further, we target a modern and clean software design with a slim, modular architecture and as few mandatory external dependecies as possible.
+Since the CAMPVis project starts mostly from scratch, we want to only use state-of-the-art technologies and avoid deprecated interfaces due to forced backwards compatibility at all costs.
+
+In order to meet these requirements, we use the software design of modern video game engines as reference and inspiration. 
+3D video games have a long tradition in simulating complex environments and providing real-time visualizations.
+Massively multiplayer online games (MMOGs) manage to synchronize the game state over thousands of computers.
+Hence, video game engines provide a promising approach to combine the handling of a large amount of data, real-time graphics, interactivity and network computing into a uniform, extensible infrastructure.
+
+% discusses the software architecture, design decisions and applications
+This technical report introduces the CAMPVis research framework for medical imaging and visualization, which will be released under a permissive open source license.
+Section \ref{sec:related-work} provides an overview over similar software platforms and introduces the Entity Component System architecture, which serves as main inspiration for the CAMPVis software design.
+The general software architecture and design decisions are discussed in Section \ref{sec:architecture}, while important features of the CAMPVis framework are introduced in Section \ref{sec:features}.
+Section \ref{sec:applications} presents two example applications in medical imaging and visualization that were realized using the CAMPVis software platform.
+
+
+
+\section{Related Work}
+\label{sec:related-work}
+
+Today, there is a plethora of different software platforms and applications for medical imaging and visualization available, many of them being open source.
+
+Some of the platforms, such as ITK \cite{ITK} focus only on the image processing part while others, such as VTK \cite{VTK},  Voreen \cite{Voreen09} or ImageVis3D \cite{fogal2010tuvokimagevis3d}, only focus on the visualization part.
+Most software frameworks, however, try to combine both aspects into a single platform.
+While 3D Slicer \cite{3dslicer} and MITK \cite{wolf2005mitk} focus more on the application domain, other frameworks, such as MeVisLab \cite{ritter2011mevislab}, DeVIDE \cite{botha2008devide} or XIP \cite{xip}, use the concept of a data flow network to better support rapid prototyping development.
+
+In 2007, Bitter et al. compared four freely available frameworks for medical imaging and visualization based on ITK \cite{bitter2007comparison}, while the survey paper of Caban et al. more focuses on the rapid development aspect of such libraries \cite{caban2007rapiddevelopment}.
+
+\subsection{Entity Component System Architecture}
+
+Many modern game engines exploit data-driven programming and implement the \emph{Entity Component System} (ECS) paradigm as main software architecture.
+While there is no official definition of such a system, most approaches show strong similarities in their central design.
+The main intention of an ECS is to break the complex inheritance graphs, which arise when using classic object-oriented programming (OOP) paradigms to implement a game engine with its large number of different game objects each often having multiple aspects \cite{bilas2002slides,mcshaffry2003game}. 
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{./img/ecs_uml.pdf}
+	\caption{
+		UML diagram illustrating the \textbf{Entity Component System software architecture}, which is separated into three parts:
+		The data domain storing the system state, the algorithm domain storing the functionality and the EntityManager as database for storing all entities.
+	}
+	\label{fig:ecs-uml}
+\end{figure}
+
+The central idea of ECS is to decouple objects from their state and their functionality (Figure \ref{fig:ecs-uml}).
+This is achieved through introducing three concepts \cite{Martin09}:
+\begin{description}
+	\item[Entity:]
+	The entity is the single general purpose object that stores neither data nor functionality (i.e. methods).
+	It's sole purpose is to provide a tag for each game object.
+	
+	\item[Component:]
+	Components are attached to entities and store the raw data but no functionality. 
+	Their purpose is to define a certain aspect of the object and how it interacts with the world.
+	When attaching a component to an entity this labels the entity to possess this particular aspect.
+	An entity can have multiple components attached and each component can be attached to multiple entities.
+	
+	\item[System:]
+	The system defines the actual functionality.
+	Usually, there is one system for each component (aspect) that models and implements the global interaction and functionality of the game.
+\end{description}
+
+This concept allows very flexible game design were usually many objects of different type share parts of their aspects.
+Squeezing this into a classic OOP architecture would require a highly fragmented and complex inheritance graph of a large number of very tiny classes and interfaces or a bunch of quite large and partly redundant classes \cite{mcshaffry2003game}.
+
+
+\section{Software Architecture}
+\label{sec:architecture}
+
+\subsection{Build System}
+To provide a uniform build process across multiple platforms and compilers, CAMPVis uses the CMake build system \cite{CMake}, which uses a scripting language to define the build process.
+This allows us to effectively manage and configure the various build options, as well as to scan the file system for available modules to implement our module architecture (cf. section \ref{sec:module-architecture}).
+In a separate step, the build instructions are then transformed to project and make files for the specific target architecture.
+
+
+\subsection{Package Architecture}
+Also the CAMPVis package architecture follows the separation of data domain and algorithm domain as motivated by the ECS paradigm. 
+Inspired by Voreen \cite{Voreen09}, we further separate all GUI toolkit dependent code into a separate package (Figure \ref{fig:macrostructure}).
+
+\begin{description}
+	\item[Core Package:]
+	Wraps the data domain and provides the infrastructure for the core system of CAMPVis. 
+	These are basic data structures, base classes for processors, pipelines, properties, etc., common tool classes such as type traits or string utilities, as well as common GLSL headers.
+	This package has as few external dependencies as possible and in particular no GUI dependencies.
+	
+	\item[Modules Package:]
+	The modules package wraps the algorithm domain and contains the main functionality of CAMPVis. 
+	These are individual processors that implement concrete algorithms and individual pipelines that implement solutions and workflows for concrete applications.
+	This package is also not dependent on GUI libraries.
+	An important aspect of the modules package is that the package actually is a collection of modules, which can individually be selected to be included into the build or not.
+	This allows to easily manage multiple independent modules maintained by different people.
+	If one of them is faulty it can be excluded from the build so that CAMPVis is still compilable (cf. Section \ref{sec:module-architecture}).
+	
+	\item[Application:]
+	The CAMPVis application package provides the tools to build an actual application based on CAMPVis.
+	It ties together the core and modules package and provides the user with a GUI.
+	This GUI is intended as research interface and hence exposes all internal parameters (i.e. properties) of the individual processors and pipelines.
+	Furthermore, it comes with a convenient debug interface to inspect the contents of the DataContainer.
+	However, the application package is fully optional and can be replaced by own implementations, for instance when integrating CAMPVis into an existing application.
+\end{description}
+
+
+The number of external libraries required for the core package kept as small as possible.
+Besides OpenGL 3.3 and a small OpenGL wrapper library \cite{tgt}, the single other mandatory external library is Intel TBB \cite{inteltbb} providing clean interfaces to support multithreading and concurrent algorithms.
+All other potential dependecies are part of individual CAMPVis modules and thus only required when the corresponding module is enabled.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=.45\textwidth]{./img/package_diagram.pdf}
+	\caption{
+		UML diagram of the \textbf{CAMPVis package structure}, which features a separation into data domain (core module), algorithm domain (modules package) and user interface (application package).
+	}
+	\label{fig:macrostructure}
+\end{figure}
+
+
+
+\subsection{The Entitiy Component System for CAMPVis}
+
+Since the CAMPVis software design is inspired by modern game architectures we use the Entity Component System paradigm as basic architecture.
+Its main benefit is the very strict and clear separation of data and algorithms that allows for a great amount of flexibility.
+However, a software for medical imaging and visualization has a significantly smaller amount of different live object during runtime than common video games and not all of its systems are of fully global nature.
+Therefore, we applied some modifications to the classic ECS approach (Figure \ref{fig:campvis-ecs-uml}).
+
+On the data domain, we implement the classic concept of entities, which act as general purpose object and stores neither data nor functionality.
+Each entity has a unique identifier (for which we use strings in order to facilitate the handling for the user) and is stored and managed by the \emph{DataContainer}, an entity database implemented as map.
+Therefore, we call our entities \emph{DataHandle}.
+In the current implementation, every DataHandle just points to a single data aspect (e.g. transformation, image, geometry, etc.).
+However, for the future it is planned to have DataHandles aggregating multiple data aspects (components) in order to move this design closer towards the classic ECS architecture.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{./img/campvis_ecs_uml.pdf}
+	\caption{
+		UML diagram illustrating the \textbf{adapted Entity Component System software architecture for CAMPVis}, which also separates the database, the data domain and the algorithm domain from each other.		
+	}
+	\label{fig:campvis-ecs-uml}
+\end{figure}
+
+Regarding the algorithm domain, there is no fixed collection of systems in CAMPVis because of its nature of being a research framework.
+The necessary systems are rather dependent on the actual project implemented in the CAMPVis platform.
+Therefore, we decided to adapt the classic ECS model to a platform featuring a library of systems, which behave like building blocks and can be easily assembled together for each individual application.
+We call these building blocks of systems \emph{processors} as they are the central object to encapsulate specific algorithms. 
+This approach is very similar to modules in MeVisLab and processors in Voreen. 
+It encourages the developers to break their problems into sub-problems, which facilitates reusing code and provides an excellent rapid-prototyping environment.
+
+However, from our experience there are certain limits in terms of generality. 
+Forcing developers to design the processors as generic as possible either leads to a flood of very tiny and specific processors or to massive globs that do everything alone and try to handle every corner case. 
+Since we consider both these extremes as not desirable, we want to provide as much freedom as possible when combining the processors.
+Therefore, contrary to MeVisLab or Voreen, CAMPVis does not impose a fixed a-priori structure, such as a data flow network.
+Instead, CAMPVis offers the very generic concept of a \emph{Pipeline} that coordinates the data domain (DataContainer) with the algorithm domain (processors).
+Every pipeline works on a single DataContainer and can aggregate multiple processors (Figure \ref{fig:pipeline-concept-2}).
+The evaluation logic can be automated (e.g. to simulate a data flow network) as well as a custom pipeline-specific implementation.
+This provides maximum freedom to the developer by allowing to implement pipeline-specific code directly into the pipeline, instead of forcing him to extend exisiting processors or writing new ones for one-time tasks.
+In ECS terminology, a pipeline represents a system and pipelines are either executed in a continuous (render) loop or event-based on user-interaction.
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.45\textwidth]{./img/pipeline-concept-2.pdf}
+	\caption{CAMPVis \textbf{pipelines} take care of coordinating the algorithm domain (processors) with the data domain (DataContainer).}
+	\label{fig:pipeline-concept-2}
+\end{figure}
+
+CAMPVis processors are designed to be very loosely coupled: 
+Following the ECS paradigm, a processor only implements functionality and is inherently state-less regarding the data domain.
+Hence, it neither is aware of other processors it might be collaborating with nor does it know a-priori on which data to work on. 
+Instead, this information is provided when executing the processor by passing a reference to the DataContainer holding the entities.
+This is also the indented way of coordinating the processors within a pipeline (cf. Figure \ref{fig:pipeline-concept-2}).
+During execution, the processor queries the DataContainer for entities with certain components and performs its computations on them. 
+The results are then pushed back into the DataContainer so that they can be used by other processors.
+
+
+
+
+\subsection{Properties}
+
+Inspired by ITK and Voreen, CAMPVis also offers a property system to configure processors and pipelines.
+Instead of directly configuring a class through primitive local member variables, one should use \emph{Properties}, which wrap around a data types and offer various benefits:
+\begin{itemize}
+	\item Providing an observer-like behavior
+	\item Providing automatic getter/setter methods
+	\item Taking care of thread-safety
+	\item The application package can provide an automatically provided GUI
+\end{itemize}
+
+
+\subsection{Module Architecture}
+\label{sec:module-architecture}
+
+One of the initial requirements was to provide a sandbox-like environment for developers.
+Since CAMPVis is mainly intended as research platform, there may be a large number of developers that are working on different very heterogeneous projects at the same time.
+
+Therefore, we developed a module system as sandbox environment into our CMake build scripts.
+It parses the file system for available modules and allows the user to select for each module whether it should be included into the build or not.
+This minimizes possible side effects when having multiple projects sharing the same code base.
+For instance, if one module requires an external library as dependency, other independent modules are still able to compile and run without it.
+At the same time, however, it is possible to define module dependencies so that developers can easily reuse code.
+In combination with our factory registration system, the CAMPVis module architecture further allows modules to register their classes with object factories at static initialization time (cf. Section \ref{sec:registration}).
+
+
+
+\section{Framework Features}
+\label{sec:features}
+
+
+\subsection{Signal Manager}
+For a large-scale software framework inter-object communincation becomes an important issue. 
+Game-engines often feature an event system for this purpose, where objects notify potential listeners by sending generic events through a central event manager instance \cite{mcshaffry2003game}.
+Sender and receiver of events do not know each other and all communication is passed via the event manager. The sender object simply sends an event message of certain type and the event manager then takes care of delivering the message to all listeners that registered themselves for this event type.
+The major advantage of such a system is its simplicity in design, easy decoupling of sending and receiving events (asynchroneous messaging) and the fact that all communication runs through a central place, which makes tracking, monitoring and debugging of communication easy.
+
+However, for our targeted software platform for medical imaging, such a system has one disadvantage: The mapping between sender and receiver of a message is solely based on the event type.
+Since the inheritance graph of our software framework is more broad than deep (i.e. many communicating classes inherit from the same base class), effective filtering and routing of messages becomes an issue:
+One solution would be declaring a distinct event type for each subclass.
+However, since the semantic nature of all those events is the same (only the sender type changes), this approach would not follow clean object-oriented software design.
+The other solution would be to define the event type in the common base class, so that all child objects send messages using the same type.
+In such a case, however, the receiving object would receive all messages of all objects and thus need to filter out the relevant messages.
+
+Therefore, we decided to use the signal-slot pattern for our software framework and enhance it with the central manager part of event systems.
+As in the traditional signal-slot pattern, relationships between senders (signals) and receivers (slots) are defined through connections.
+Thus, the sending objects does know, which objects would like to receive its messages.
+The actual processing of the communication is however done by the signal manager, which acts as a central singleton and takes care of the dispatching of messages.
+This way, we achieve the flexibility of signals and slots in combination with easy tracking and monitoring, as well as with implicit asynchroneous messaging.
+
+Our signal-slot API allows for emitting signals in three different ways:
+\begin{description}
+	\item[Direct/blocking call:]
+	Using signal::triggerSignal(), the signal will be processed directly in the emitting thread, the call will block until all signal processing has finished.
+	
+	\item[Asynchroneous call:]
+	Using signal::queueSignal(), the signal will be put into the signal manager queue and processed asynchroneously in the signal manager thread.
+	Hence, the call will immediately return.
+	
+	\item[Default call:]
+	Using signal::emitSignal(), the signal will be queued by default, unless the calling thread is also the signal handling thread (i.e. in case of cascading signals). 
+	This ensures that cascading signals are processed in a single batch.
+\end{description}
+
+\paragraph{Implementation Details}~\\
+We designed a special data structure to store the per-signal connection information.
+Our concurrent\_pointer\_list<T> data structure, based on tbb::concurrent\_vector<T>, is a list-like container that allows for thread-safe bidirectional iteration, insertion and removal of elements. 
+Instead of removing deleted items from the data structure, we mark them internally as nullptr.
+Since connections are stored as pointers to slots and pointer types support atomic operations, this is an effective solution to avoid per-signal mutexes.
+
+To facilitate the debugging of sent messages, we implemented a transparent debug layer into our sigslot API.
+When built with the debug flag enabled, all emitted signals will automatically store information on the calling function, file and line together with the sent message (Listing \ref{lst:sigslot}).
+This compensates for the incomplete information in the call stack in multi-threaded, asynchroneous messages.
+
+\begin{listing}[hbt]
+	\myminted{sigslot_debug.txt}
+	\caption{
+		Code excerpt of the debugging hooks for our signal-slot API.
+		Using C macros we can redefine the signal symbol to a debug implementation that stores information on the calling function, file and line for debugging purposes.
+	}
+	\label{lst:sigslot}
+\end{listing}
+
+Furthermore, we use a memory pool for creating the signal handles, which are relatively tiny objects and created with high frequency from different threads.
+Relying on the default system allocator here introduces a performance penalty, as it usually employs critical sections around each allocation and deallocation.
+Implementing a pre-allocated memory pool as custom allocator elegantly cirvumcents this issue.
+For minimal efforts, we use tbb::memory\_pool in CAMPVis, which yields a speedup of almost 20\% compared to the standard memory allocator.
+
+
+\subsection{Factory Registration}
+\label{sec:registration}
+Another notable feature of the CAMPVis software platform is dynamic module registration. 
+This lets modules register their classes with object factories, so that the core code can generically access their functionality without actually knowing of them at build time.
+With CAMPVis, this counts for instance for the dynamic registration of image converters, pipelines and property widgets.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{./img/factory_architecture.pdf}
+	\caption{UML diagram illustrating our \textbf{static factory registration architecture}.}
+	\label{fig:factory-registration}
+\end{figure}
+
+\begin{figure*}[htb]
+	\centering
+	\includegraphics[width=0.9\textwidth]{./img/scripting-package-diagram.png}
+	\caption{Package diagram illustrating what components make up the \textbf{scripting layer} and how they relate to each other and standard CAMPVis packages.}
+	\label{fig:scripting-package}
+\end{figure*}
+
+Therefore, CAMPVis combines the static registration C++ idiom with the factory pattern.
+Using C++ templates and static member variables, we achieve a non-intrusive solution for automatic module registration at static initialization time.
+% \SYN{As usual}, the object factory singleton maps object identifiers (e.g. std::string, type\_info, ...) to function pointers to create the object.
+Its central piece is the templated Registrar class with two essential parts:
+\begin{enumerate}
+	\item a static function to create an object of that type (as it knows the object type through the template),
+	\item a static integer member variable.
+\end{enumerate}
+Its initialization is performed by a function call to the factory singleton's registration method (cf. Figure \ref{fig:factory-registration} and Listing \ref{lst:factory-registration}), which returns an integer to store in the static field (while the actual value does not really matter, our implementation returns the number of the just registered object).
+
+\begin{listing}[hbt]
+	\myminted{registration.txt}
+	\caption{Code excerpt showing the C++ static registration idiom we use for factory registration.}
+	\label{lst:factory-registration}
+\end{listing}
+
+
+
+\subsection{Scripting Layer}
+
+
+CAMPVis has an optional scripting layer which can be enabled in order to add support for runtime-scripting with the Lua scripting language \cite{lua}.
+This serves various purposes:
+On the one hand it offers a scripting console, which allows to inspect and modify the data model at runtime through Lua commands.
+Similar to MATLAB \cite{matlab} or many game engines, this allows developers straight-forward interaction with their software at runtime without the need to explicitly program a graphical user interface.
+On the other hand the scripting layer allows to define entire pipelines in Lua scripts.
+This accelerates the rapid prototyping nature of CAMPVis even further since changes to pipelines no longer relate to a recompilation of C++ code but only to updating the script and loading it at runtime.
+
+Furthermore, we plan to exploit the scripting support as persistence mechanism:
+In order to save the current program state in a file, CAMPVis will write a Lua script holding the necessary code to recreate the pipeline and its state.
+
+
+\paragraph{Implementation Details}~\\
+C++ classes to which Lua pipelines should have access to (e.g. processors and properties) need to be exposed to Lua scripts by creating bindings for them. The scripting layer uses SWIG \cite{swig} to wrap selected CAMPVis modules and core packages, and generate Lua modules that make them available to scripted pipelines (Figure \ref{fig:scripting-package}).
+
+The process of generating bindings is not completely automated - SWIG must be told what classes to wrap, which of their members to expose, and how to deal with advanced C++ features such as templates. This information is encoded in interface files which are fed to SWIG along with the C++ code to produce Lua modules (Figure \ref{fig:swig-binding-generation}).
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[width=0.45\textwidth]{./img/swig-binding-generation.png}
+	\caption{\textbf{Lua binding generation} through SWIG.}
+	\label{fig:swig-binding-generation}
+\end{figure}
+
+\subsection{Network Communication}
+\label{sec:network-communication}
+One of the initial requirements during CAMPVis development was a good support for network communication, which has several use cases.
+Multi-modal image fusion often has to deal with multiple devices, which have an continuous exchange of data such as images, tracking information or control commands.
+In cases where mobile devices such as tablet computers lack the necessary computation power, distributed computing can furthermore provide a solution where the actual computations are performed on a stationary workstation and only the results are streamed to the mobile device.
+
+The original plan was to integrate such a network communication stack directly into the CAMPVis core, as it is done with many video game engines.
+However, since there are already various established solutions available for streaming medical imaging data over network, we decided against implementing another protocol.
+Instead networking support is enabled through CAMPVis modules.
+The current implementation features wrappers for both CAMPCom \cite{schoch2013lightweight} and OpenIGTLink \cite{tokuda2009openigtlink}, two state-of-the-art libraries for real-time streaming of medical imaging data.
+
+
+\section{Applications}
+\label{sec:applications}
+
+Besides proof-of-concept implementations and simple demos, we used CAMPVis already for two large projects.
+
+In cooperation with the urology department of our university hospital we developed a multimodal image-guided prostate biopsy framework (Figure \ref{fig:prostate-biopsy-gui}).
+It features the acquisition of prostate 3D freehand ultrasound, which is registered to a pre-operative MR image.
+Streaming the tracking information into CAMPVis using the OpenIGTLink protocol (cf. section \ref{sec:network-communication}), we can provide a real-time visualization of the MR image in the same view as the ultrasound plane to support the clinician's navigation during the biospy.
+The initial feedback from the clinicians were very positive \cite{shah2014opensource}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{./img/prostate-biopsy-gui.jpg}
+	\caption{Screenshot of the developed image-guided prostate biopsy framework \cite{shah2014opensource} implemented in CAMPVis.}
+	\label{fig:prostate-biopsy-gui}
+\end{figure}
+
+Furthermore, we used the CAMPVis research framework to develop a predicate-based focus-and-context volume rendering technique (Figure \ref{fig:predicates-gui}).
+We introduce point predicates as a novel generic formulation for integrating the evaluation arbitrary information into the classification process, which allows us to successfully filter clinically relevant from non-relevant information. 
+We complement our approach with the predicate histogram as an effective and intuitive user interface showing an overview over the parameter space and providing with interaction metaphors to interactively manipulate the visualization result in real-time. 
+In combination with a scribble technique we obtain an intuitive workflow, which allows also non-expert users to obtain insightful visualizations \cite{schultezub2014ieeevis}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{./img/predicates-gui.jpg}
+	\caption{Screenshot of the developed predicate-based focus-and-context volume rendering system \cite{schultezub2014ieeevis} implemented in CAMPVis.}
+	\label{fig:predicates-gui}
+\end{figure}
+
+
+\section{Conclusion}
+
+We presented a new software framework targeted for medical imaging and visualization and in particular multi-modal image fusion for intra-operative usage.
+As novel approach, the system architecture and design was inspired by modern video game engines, which are very effective in handling large amounts of data in an interactive real-time environment.
+First applications show that our research platform can be successfully used as basis for concrete projects.
+
+Future work includes the portation of CAMPVis onto mobile tablet computers as well as some adaption of the data model in order to move even closer to the classic Entity Component System architecture.
+CAMPVis will be published under the Apache License, Version 2.0. 
+
+
+\section*{Acknowledgements}
+The development of CAMPVis is funded by the the ``SoftwareCampus'' program of the German Federal Ministry of Education and Research (BMBF, F\"orderkennzeichen 01IS12057) .
+
+\bibliographystyle{abbrv}
+\bibliography{campvis_tr}

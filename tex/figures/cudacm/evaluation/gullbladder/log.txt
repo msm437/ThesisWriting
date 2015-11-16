@@ -1,0 +1,48 @@
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_256_20:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.993867, Minimum of the Minima: 0.901619
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_256_50:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.997714, Minimum of the Minima: 0.931704
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_256_80:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.99858, Minimum of the Minima: 0.947302
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_256_100:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.998917, Minimum of the Minima: 0.957159
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_256_110:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.999051, Minimum of the Minima: 0.959948
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_256_110_reset:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.988518, Minimum of the Minima: 0.887196
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_384_50:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.997017, Minimum of the Minima: 0.922234
+Comparing Z:\03_gallenblase\cmCUDA_512_5000 to Z:\03_gallenblase\cmCUDA_512_30:
+0
+100
+200
+300
+Structured Similarity, Averaged average: 0.993264, Minimum of the Minima: 0.89453

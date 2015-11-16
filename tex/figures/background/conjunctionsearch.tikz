@@ -1,0 +1,27 @@
+\begin{tikzpicture}[%
+	node distance=12mm and 6mm%
+	]%
+	\pgfmathsetseed{4211}
+	
+	\foreach \x in {1,...,7} {
+		\foreach \y in {1,...,7} {
+			% random direction and length
+			\pgfmathsetmacro\randx{rnd*0.8 - 0.4}
+			\pgfmathsetmacro\randy{rnd*0.4 - 0.4}
+
+			\pgfmathdeclarerandomlist{randAngles}{{0}{90}}
+			\pgfmathrandomitem{\randAngle}{randAngles}
+
+			% arrow
+			\ifthenelse{\equal{\randAngle}{0}}{
+				\draw[line width=2pt,color=MyColor2] (\x * 0.75 + \randy, \y * 0.75 + \randy + 0.35) -- +(\randAngle: 0.5);
+			}{
+				\draw[line width=2pt,color=MyColor1] (\x * 0.75 + \randx, \y * 0.75 + \randy) -- +(\randAngle: 0.5);
+			}
+			
+			
+		}
+	}
+	
+	\draw[line width=2pt, color=MyColor1] (1.5, 1.25) -- +(0.5, 0);	
+\end{tikzpicture}	

@@ -1,0 +1,28 @@
+\begin{tikzpicture}[
+	thick, decoration={coil, aspect=0.3, amplitude=-10mm},
+	wave/.style={
+		decorate, decoration={segment length=4mm}
+	},
+	compr/.style={
+		decorate, decoration={segment length=2mm}
+	},
+	rare/.style={
+		decorate, decoration={segment length=8mm}
+	},
+]
+
+	\draw[wave]  (0cm, 0) -- (2cm, 0);
+	\draw[compr] (2cm, 0) -- (3cm, 0);
+	\draw[wave]  (3cm, 0) -- (5cm, 0);
+	\draw[wave, transform canvas={xscale=1.6}, semithick]  (3.125cm, 0) -- (4.375cm, 0);
+	%\draw[rare]  (5cm, 0) -- (7.41cm, 0);
+	\draw[wave]  (7cm, 0) -- (9cm, 0);
+	\draw[compr] (9cm, 0) -- (10cm, 0);
+	\draw[wave]  (10cm, 0) -- (12cm, 0);
+	
+	\node [fill=white] at (2.25cm, 0) { Compression };
+	\node [fill=white] at (5.9cm, 0) { \ Rarefaction \ };
+	\node [fill=white] at (9.25cm, 0) { Compression };
+	
+	\draw [pfeil, <->] (2.25, 1.25) to node [color=MyColor2, sloped, above] {$\lambda$} (9.25, 1.25);
+\end{tikzpicture}

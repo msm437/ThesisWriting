@@ -1,0 +1,71 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\ttl@tocsep 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Uncertainty visualization of radio-frequency ablation zones as proposed by Rieder et al. \cite {Rieder:2011:AblationApproximation}. \relax }}{4}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Uncertainty visualization of segmentation algorithm results as proposed by Prassni et al. \cite {Prassni:2010:Uncertainty}. \relax }}{5}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces \textbf {Kidney ultrasound using the liver as acoustic window} with applied uncertainty visualization using chroma as visual variables (cf. Section \ref {sec:cmvis:mapping-schemes}). A slight repositioning of the transducer results in a considerable increase of confidence in image (b) compared to (a).\relax }}{5}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{5}{subfigure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{5}{subfigure.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces \textbf {Schematic diagram} of the different proposed uncertainty visualization schemes. Given the original B-mode ultrasound image $I$, we compute its Confidence Map $CM$ and a Gaussian blurred version $G_\sigma $. The uncertainty map $U$ is derived from $CM$ by inverse linear mapping (cf. Equation \ref {eq:cmvis:u-from-cm}). For the color overlay and the uncertainty mapping to chroma, we compute a derived uncertainty measure $U'$ using a transfer function. Finally, the uncertainty information is fused into the original ultrasound image using one of the three visualization schemes. \relax }}{8}{figure.caption.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Illustration of the color overlay mapping scheme. The high contrast yellow overlay allows for an {\bfseries \textsl {\leavevmode {\color {OliveGreen}[clear investigation?]}}} of the signal loss effects in ultrasound. \relax }}{9}{figure.caption.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Illustration of the chroma mapping scheme. Unreliable regions in the image are depicted with an orange overlay. Since the color transformation is applied in the perceptually uniform CIE L*C*h* color space, the perceived pixel intensity is maintained. \relax }}{10}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Illustration of the fuzziness mapping scheme. Unreliable regions in the image are blurred while reliable regions are sharpened through unsharp masking. Especially in video sequences this provides a very strong perceptual cue for uncertainty while at the same time maintaining the ultrasound image in its original gray scale color domain. \relax }}{11}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.8}{\ignorespaces User study results on the educational value of our technique to ultrasound novices. Almost all test subjects appreciate the added uncertainty visualization and confirm that it helps them with understanding the ultrasound image formation process and getting a better understanding of uncertainty in B-mode imaging. \relax }}{12}{figure.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.9}{\ignorespaces User study results on the perception and clinical value for ultrasound novices on a 5-point Likert scale. While there is no clear favorite visualization scheme, a bias towards the colorful mappings is present. Furthermore, some students said that the added information helps them with finding target anatomical structures faster. \relax }}{13}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Questionnaire results on \textbf {expert sonographers' uncertainty perception}. Each question was answered independently for the two different sequences. Therefore, there are 14 answers in total. \relax }}{13}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \textbf {Schematic diagram} of the proposed incremental compounding technique. We acquire a constant stream of tracked ultrasound frames and compute the per-pixel uncertainty for each frame. We furthermore, perform the on-line inter-frame registration and partition the stream into small batches of homogeneous orientation. Our incremental compounding then continuously compounds the batches into the accumulated ultrasound intensity and uncertainty volume. After each incremental compounding step the interactive visualization can be updated. \relax }}{16}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \textbf {Elevational decorrelation curve} describing the distance between two adjacent ultrasound frames given their correlation $\rho $ \cite {Housden07,Chen97,Afsham14}. \relax }}{18}{figure.caption.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Reconstruction of an \textbf {abdominal phantom scan with probe pressure changes}: (a) MPR through the compounded volume without applying our pressure compensation technique; (b) the same MPR through the compounded volume with pressure compensation applied. For comparison, (c) shows the same target acquired using constant probe pressure.\relax }}{19}{figure.caption.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{19}{subfigure.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{19}{subfigure.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{19}{subfigure.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Illustration of \textbf {artifacts occurring in distance-weighted compounded regions} where multiple ultrasound frames from different directions intersect. With traditional methods, voxel $v_1$ is mainly based on the information of frame $f_1$ while its neigbour voxel $v_2$ is mainly based on the information in frame $f_3$. However, their intensities at this spatial location may significantly differ since the frames travel through different acoustic windows. \relax }}{21}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Effect of the \textbf {orientation-driven clustering} of ultrasound frames: Both images show reconstructions of a tortuous sweep of upper arm ultrasound. (a) Traditional techniques with distance-only weighting show severe stripe artifacts (yellow arrows) in regions of overlapping frames. (b) Partitioning the sweep into clusters of homogeneous orientation and fusing the clusters based on uncertainty suppreses these artifacts almost entirely. Please mind that both volumes were compounded \emph {without} applying our pressure compensation technique to highlight the beneficial effect of the orientation-driven clustering. \relax }}{21}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{21}{subfigure.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{21}{subfigure.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Multi-planar reconstructions of in-vivo acquisitions of the Infraspinatus muscle showing the \textbf {effectiveness of the pressure compensation}. Though the sweep was acquired by a professional sonographer trying to maintain constant probe pressure, the result of a traditional compounding technique (a) has an unsteady appearance and shows discontinuities throughout the different muscle layers. Applying our orientation-driven inter-frame registration and pressure compensation even on low resolution grid with $10\text {mm} \times 10.5\text {mm}$ patch size (b) yields a significant increase in image quality. Further increasing the resolution of the deformation field to $7.5\text {mm} \times 2.1\text {mm}$ patch size (c) yields only slight improvements. \relax }}{24}{figure.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {No pressure compensation applied.}}}{24}{subfigure.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Inter-frame registration with $3 \times 4$ patches yielding a patch size of $10\text {mm} \times 10.5\text {mm}$.}}}{24}{subfigure.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Inter-frame registration with $4 \times 20$ patches yielding a patch size of $7.5\text {mm} \times 2.1\text {mm}$.}}}{24}{subfigure.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces \textbf {3D visualization of an achilles tendon} data set compounded with our technique. Due to the high curvature of the skin surface this is a challenging anatomy for sonography. Our clinical partners appreciate the high quality spatial reconstruction where possible lesions are easy to identify. \relax }}{26}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces \textbf {Illustration of our evaluation method}: First two images show the MPRs for each perpendicular sweep, the third one shows the color-coded absolute difference of their intensities after 3D-3D rigid registration. (a) traditional backward-compounding \cite {Wein06} fails to align the different structures; (b) our technique yields alignment of all structures. The quantitative results are shown in Table \ref {tbl:registration-results}. \relax }}{27}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Baseline}}}{27}{subfigure.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Our Technique}}}{27}{subfigure.8.2}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

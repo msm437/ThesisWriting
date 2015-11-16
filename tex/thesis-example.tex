@@ -1,0 +1,278 @@
+% **************************************************
+% Clean Thesis
+% -- A LaTeX Style for Thesis Documents --
+%
+% Copyright (C) 2011-2015 Ricardo Langner
+% **************************************************
+%
+% Readme:
+% ----------------------------------------
+% Please check out the README.md file in the root of this package.
+%
+%
+% License Information:
+% ----------------------------------------
+% "Clean Thesis" is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% "Clean Thesis" is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% **************************************************
+
+%\newcommand{\LeDraft}{true}
+\newcommand{\LeDraft}{false}
+
+% **************************************************
+% Document Class Definition
+% **************************************************
+\documentclass[%
+	paper=A4,					% paper size --> A4 is default in Germany
+	twoside=true,				% onesite or twoside printing
+	openright,					% doublepage cleaning ends up right side
+	parskip=full,				% spacing value / method for paragraphs
+	chapterprefix=true,			% prefix for chapter marks
+	10pt,						% font size
+	headings=normal,			% size of headings
+	bibliography=totoc,			% include bib in toc
+	listof=totoc,				% include listof entries in toc
+	titlepage=on,				% own page for each title page
+	captions=tableabove,		% display table captions above the float env
+	draft=\LeDraft,				% value for draft version
+]{scrreprt}%
+
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Personally Natural Perception and Interaction in Mixed Reality}
+\newcommand{\thesisName}{Meng Ma}
+\newcommand{\thesisSubject}{Dissertation}
+\newcommand{\thesisDate}{\today}
+\newcommand{\thesisVersion}{0.0}
+
+\newcommand{\thesisVorsitzender}{...}
+\newcommand{\thesisVorsitzenderAffiliation}{...}
+
+\newcommand{\thesisFirstReviewer}{Prof. Nassir Navab, Ph.D.}
+\newcommand{\thesisFirstReviewerAffiliation}{
+	Technische Universität München\\[-1mm]
+	Computer Aided Medical Procedures
+}
+
+\newcommand{\thesisSecondReviewer}{\TODO{Prof. Dr.-Ing. Bernhard Preim}}
+\newcommand{\thesisSecondReviewerAffiliation}{
+	 Otto-von-Guericke-Universität\\[-1mm]
+	 Institut für Simulation und Graphik
+}
+
+\newcommand{\thesisFirstSupervisor}{Prof. Nassir Navab}
+\newcommand{\thesisSecondSupervisor}{Dr. Maximilian Baust}
+
+\newcommand{\thesisUniversity}{\protect{Technische Universität München}}
+\newcommand{\thesisUniversityDepartment}{Fakultät für Informatik}
+\newcommand{\thesisUniversityInstitute}{Lehrstuhl für Informatikanwendungen in der Medizin \& Augmented Reality}
+\newcommand{\thesisUniversityGroup}{}
+\newcommand{\thesisUniversityCity}{Garching bei München}
+\newcommand{\thesisUniversityStreetAddress}{Boltzmannstraße 3}
+\newcommand{\thesisUniversityPostalCode}{85748}
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[english]{babel} 	% babel system, adjust the language of the content
+\usepackage[					% clean thesis style
+	figuresep=colon,%
+	sansserif=false,%
+	hangfigurecaption=true,%
+	hangsection=true,%
+	hangsubsection=true,%
+	colorize=full,%
+	colortheme=bluemagenta,
+	draft=\LeDraft				% value for draft version
+]{cleanthesis}
+
+\hypersetup{					% setup the hyperref-package options
+	pdftitle={\thesisTitle},	% 	- title (PDF meta)
+	pdfsubject={\thesisSubject},% 	- subject (PDF meta)
+	pdfauthor={\thesisName},	% 	- author (PDF meta)
+	plainpages=false,			% 	-
+	colorlinks=false,			% 	- colorize links?
+	pdfborder={0 0 0},			% 	-
+	breaklinks=true,			% 	- allow line break inside links
+	bookmarksnumbered=true,		%
+	bookmarksopen=true			%
+}
+
+\usepackage[					    % use biblatex for bibliography
+	backend=bibtex,		      		% 	- use biber backend (bibtex replacement) or bibtex
+	bibencoding=utf8,				% 	- use auto file encode
+	style=numeric,				% 	- use alphabetic (or numeric) bib style
+	natbib=true,					% 	- allow natbib commands
+	hyperref=true,					% 	- activate hyperref support
+	backref=true,					% 	- activate backrefs
+	isbn=false,						% 	- don't show isbn tags
+	url=false,						% 	- don't show url tags
+	doi=false,						% 	- don't show doi tags
+	urldate=long,					% 	- display type for dates
+	maxnames=3,%
+	minnames=1,%
+	maxbibnames=5,%
+	minbibnames=3,%
+	maxcitenames=2,%
+	mincitenames=1,%
+	defernumbers=true%
+]{biblatex}
+\bibliography{bib-refs}
+
+%\makeatletter
+%
+%\newrobustcmd*{\parentexttrack}[1]{%
+%	\begingroup
+%	\blx@blxinit
+%	\blx@setsfcodes
+%	\blx@bibopenparen#1\blx@bibcloseparen
+%	\endgroup}
+%
+%\AtEveryCite{%
+%	\let\parentext=\parentexttrack%
+%	\let\bibopenparen=\bibopenbracket%
+%	\let\bibcloseparen=\bibclosebracket}
+%
+%\makeatother
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{tabu}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\renewcommand{\arraystretch}{1.5}		% set vertical line padding to factor 1.5
+\setlength{\tabcolsep}{8pt}				% set the column separation (6pt is default)
+\setlength{\heavyrulewidth}{0.10em}		% set the thickness of the top and bottom rules
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\usepackage{tikz}
+\input{content/tikzsetup.tex}
+
+\usepackage{rotating}
+\usepackage{ifthen}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\captionsetup[subfigure]{format=plain,labelsep=space,singlelinecheck=true}
+
+% **************************************************
+% More custom commands
+% **************************************************
+\newcommand{\add}[1]{{\color{cyan}{#1}}} 
+\newcommand{\addd}[1]{{\color{blue}{#1}}} 
+%\newcommand{\add}[1]{#1} 
+%\newcommand{\addd}[1]{#1} 
+\newcommand{\TODO}[1]{{\bfseries\textsl{\textcolor{red}{[#1]}}}}
+\newcommand{\CN}{\TODO{citation needed}}
+\newcommand{\II}{{\bfseries\textsl{\textcolor{RubineRed}{[insert image]}}}}
+\newcommand{\III}[1]{{\bfseries\textsl{\textcolor{RubineRed}{[insert image: #1]}}}}
+\newcommand{\SYN}[1]{{\bfseries\textsl{\textcolor{OliveGreen}{[#1?]}}}}
+
+
+% **************************************************
+% Document CONTENT
+% **************************************************
+\begin{document}
+
+% --------------------------
+% rename document parts
+% --------------------------
+%\renewcaptionname{ngerman}{\figurename}{Abb.}
+%\renewcaptionname{ngerman}{\tablename}{Tab.}
+\renewcaptionname{english}{\figurename}{Fig.}
+\renewcaptionname{english}{\tablename}{Tab.}
+
+% --------------------------
+% Front matter
+% --------------------------
+\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
+\pagestyle{empty}				% no header or footers
+\input{content/titlepages}		% INCLUDE: all titlepages
+\cleardoublepage
+
+\pagestyle{plain}				% display just page numbers
+\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\cleardoublepage
+%
+\input{content/acknowledgement} % INCLUDE: acknowledgement
+\cleardoublepage
+%
+\setcounter{tocdepth}{2}		% define depth of toc
+\tableofcontents				% display table of contents
+\cleardoublepage
+
+% --------------------------
+% Body matter
+% --------------------------
+\pagenumbering{arabic}			% arabic page numbering
+\setcounter{page}{1}			% set page counter
+\pagestyle{maincontentstyle} 	% fancy header and footer
+
+%\part{Review on Medical Visualization}
+%\input{content/01-introduction} 
+%\input{content/02-background}
+%
+%%\input{content/03-methods} 
+
+\part{Methodology}
+%\input{content/cudacm}
+\input{content/cmvis}
+\input{content/uscompounding}t
+\cleardoublepage
+
+% --------------------------
+% Back matter
+% --------------------------
+{%
+\setstretch{1.1}
+\renewcommand{\bibfont}{\normalfont\small}
+\setlength{\biblabelsep}{4pt}
+\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
+\printbibliography[nottype=online]
+\printbibliography[heading=subbibliography,title={Online Resources},type=online,prefixnumbers={@}]
+}
+\cleardoublepage
+
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+\input{content/declaration}
+\clearpage
+\newpage
+\mbox{}
+
+% **************************************************
+% End of Document CONTENT
+% **************************************************
+\end{document}

@@ -1,0 +1,67 @@
+\begin{tikzpicture}[
+DaLine/.style={red, line width=0.5mm},
+base/.style={
+	rectangle, rounded corners=1.5mm, drop shadow, %
+	align=left,
+	thick,
+	top color=white,
+	font=\sffamily\footnotesize,
+	rectangle split, rectangle split parts=2, rectangle split part align={left, center}, rectangle split horizontal=true,
+	anchor=west
+},
+outer sep=2mm,
+inner xsep=3mm
+]
+	
+	\node (domain) [base, draw=MyColor1, bottom color=MyColor1!60] {
+		\textbf{Threat}: wrong problem\\
+		\textbf{Validate}: observe and interview target users\\
+		\vspace{59mm}
+		\\
+		\textbf{Validate}: observe adoption rates
+		\hspace*{70mm}
+	\nodepart{two}
+		\begin{sideways}{\textbf{Domain Problem Characterization}}\end{sideways}
+	};
+	
+	\node (data) [base, draw=MyColor2, bottom color=MyColor2!60] at ($ (domain.text west) + (4mm, -1mm) $) {
+		\textbf{Threat}: bad data/operation abstraction\\
+		\vspace{44mm}
+		\\
+		\textbf{Validate}: test on target users, collect anecdotal evidence of utility\\
+		\textbf{Validate}: field study, document human usage of deployed system\hspace*{13mm}
+	\nodepart{two}
+		\begin{sideways}{\textbf{Data/Operation Abstraction}}\end{sideways}
+	};
+	
+	\node (encoding) [base, draw=MyColor3, bottom color=MyColor3!60] at ($ (data.text west) + (4mm, 2mm) $) {
+		\textbf{Threat}: ineffective encoding/interaction technique\\
+		\textbf{Validate}: justify encoding/interaction technique\\
+		\vspace{20mm}
+		\\
+		\textbf{Validate}: qualitative/quantitative result image analysis\\
+		(test on any users, informal usability study) \\
+		\textbf{Validate}: lab study, measure human time/errors for operation
+	\nodepart{two}
+		\begin{sideways}{\textbf{Encoding/Interaction Technique}}\end{sideways}
+	};
+	
+	\node (algorithm) [base, draw=MyColor4, bottom color=MyColor4!60] at ($ (encoding.text west) + (4mm, 2mm) $) {
+		\textbf{Threat}: slow algorithm\\
+		\textbf{Validate}: analyze computational complexity\\
+		\vspace{5mm}
+		\\
+		\textbf{Validate}: measure system time/memory\hspace*{10mm}
+	\nodepart{two}
+		\begin{sideways}{\textbf{Algorithm}}\end{sideways}
+	};
+	
+	\node (implement) [base, draw=MyColor5, bottom color=MyColor5!60, rectangle split parts=1] at ($ (algorithm.text west) + (4mm, -1mm) $) {
+		\hspace*{5mm}\textbf{Implement System}\hspace*{5mm}
+	};
+	
+	\draw [DaLine] ($ (domain.two west)    + (3.5mm, 35.5mm) $) -- ($ (domain.two west)    + (3.5mm, -35.25mm) $);
+	\draw [DaLine] ($ (data.two west)      + (3.5mm, 28mm) $)   -- ($ (data.two west)      + (3.5mm, -27.5mm) $);
+	\draw [DaLine] ($ (encoding.two west)  + (3.5mm, 19.5mm) $) -- ($ (encoding.two west)  + (3.5mm, -19mm) $);
+	\draw [DaLine] ($ (algorithm.two west) + (3.5mm, 8.75mm) $) -- ($ (algorithm.two west) + (3.5mm, -8mm) $);
+\end{tikzpicture}

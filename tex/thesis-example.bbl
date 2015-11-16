@@ -1,0 +1,1075 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Aldrich:2007:USPhysics}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Aldrich}{A.}%
+     {John~E}{J.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AJE1}
+  \strng{fullhash}{AJE1}
+  \field{sortinit}{A}
+  \verb{doi}
+  \verb 10.1097/01.ccm.0000260624.99430.22
+  \endverb
+  \field{issn}{0090-3493}
+  \field{number}{5 Suppl}
+  \field{pages}{S131—7}
+  \field{title}{Basic physics of ultrasound imaging}
+  \verb{url}
+  \verb http://dx.doi.org/10.1097/01.CCM.0000260624.99430.22
+  \endverb
+  \field{volume}{35}
+  \field{journaltitle}{Critical care medicine}
+  \field{year}{2007}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Borgo:2012:GlyphVisualization}{inproceedings}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Borgo}{B.}%
+     {Rita}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kehrer}{K.}%
+     {Johannes}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chung}{C.}%
+     {David H.~S.}{D.~H.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maguire}{M.}%
+     {Eamonn}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Laramee}{L.}%
+     {Robert~S.}{R.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hauser}{H.}%
+     {Helwig}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ward}{W.}%
+     {Matthew}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Min}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{2}{}{%
+    {{}%
+     {Sbert}{S.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Szirmay-Kalos}{S.-K.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Eurographics Association}%
+  }
+  \strng{namehash}{BR+1}
+  \strng{fullhash}{BRKJCDHSMELRSHHWMCM1}
+  \field{sortinit}{B}
+  \field{booktitle}{Eurographics 2013 - State of the Art Reports}
+  \verb{doi}
+  \verb 10.2312/conf/EG2013/stars/039-063
+  \endverb
+  \field{issn}{1017-4656}
+  \field{title}{Glyph-based Visualization: Foundations, Design Guidelines,
+  Techniques and Applications}
+  \field{year}{2012}
+\endentry
+
+\entry{Brecheisen:2009:ParameterSensitivy}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Brecheisen}{B.}%
+     {Ralph}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vilanova}{V.}%
+     {Anna}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Platel}{P.}%
+     {Bram}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Romeny}{R.}%
+     {Bart Ter~Haar}{B.~T.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{BR+2}
+  \strng{fullhash}{BRVAPBRBTH1}
+  \field{sortinit}{B}
+  \field{number}{6}
+  \field{pages}{1441\bibrangedash 1448}
+  \field{title}{Parameter sensitivity visualization for DTI fiber tracking}
+  \field{volume}{15}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2009}
+\endentry
+
+\entry{Brown:2004:VibrationVis}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Brown}{B.}%
+     {Ross}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{stereo vision, uncertainty visualisation, vibrating textures, visual
+  features}
+  \strng{namehash}{BR1}
+  \strng{fullhash}{BR1}
+  \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the 2Nd International Conference on Computer
+  Graphics and Interactive Techniques in Australasia and South East Asia}
+  \verb{doi}
+  \verb 10.1145/988834.988849
+  \endverb
+  \field{isbn}{1-58113-883-0}
+  \field{pages}{84\bibrangedash 89}
+  \field{series}{GRAPHITE '04}
+  \field{title}{Animated Visual Vibrations As an Uncertainty Visualisation
+  Technique}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/988834.988849
+  \endverb
+  \list{location}{1}{%
+    {Singapore}%
+  }
+  \field{year}{2004}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Butter:2007:UsTraining}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Butter}{B.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grant}{G.}%
+     {Thomas~H}{T.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Egan}{E.}%
+     {Mari}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaye}{K.}%
+     {Marsha}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wayne}{W.}%
+     {Diane~B}{D.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carrión-Carire}{C.-C.}%
+     {Violeta}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McGaghie}{M.}%
+     {William~C}{W.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Blackwell Publishing Ltd}%
+  }
+  \strng{namehash}{BJ+1}
+  \strng{fullhash}{BJGTHEMKMWDBCCVMWC1}
+  \field{sortinit}{B}
+  \verb{doi}
+  \verb 10.1111/j.1365-2923.2007.02848.x
+  \endverb
+  \field{issn}{1365-2923}
+  \field{number}{9}
+  \field{pages}{843\bibrangedash 848}
+  \field{title}{Does ultrasound training boost Year 1 medical student
+  competence and confidence when learning abdominal examination?}
+  \verb{url}
+  \verb http://dx.doi.org/10.1111/j.1365-2923.2007.02848.x
+  \endverb
+  \field{volume}{41}
+  \field{journaltitle}{Medical Education}
+  \field{year}{2007}
+\endentry
+
+\entry{Han:2011:UncertaintyInHealthCare}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Han}{H.}%
+     {Paul K.~J.}{P.~K.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klein}{K.}%
+     {William M.~P.}{W.~M.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Arora}{A.}%
+     {Neeraj~K.}{N.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HPKJ+1}
+  \strng{fullhash}{HPKJKWMPANK1}
+  \field{sortinit}{H}
+  \verb{doi}
+  \verb 10.1177/0272989X10393976
+  \endverb
+  \verb{eprint}
+  \verb http://mdm.sagepub.com/content/31/6/828.full.pdf+html
+  \endverb
+  \field{number}{6}
+  \field{pages}{828\bibrangedash 838}
+  \field{title}{Varieties of Uncertainty in Health Care: A Conceptual Taxonomy}
+  \verb{url}
+  \verb http://mdm.sagepub.com/content/31/6/828.abstract
+  \endverb
+  \field{volume}{31}
+  \field{journaltitle}{Medical Decision Making}
+  \field{year}{2011}
+\endentry
+
+\entry{Hao:2016:TemporalEnsembles}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hao}{H.}%
+     {L.}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Healey}{H.}%
+     {C.G.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bass}{B.}%
+     {S.A.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Data mining;Data visualization;Octrees;Shape;Shape
+  measurement;Three-dimensional displays;Visualization;Ensemble visualization}
+  \strng{namehash}{HL+1}
+  \strng{fullhash}{HLHCBS1}
+  \field{sortinit}{H}
+  \verb{doi}
+  \verb 10.1109/TVCG.2015.2468093
+  \endverb
+  \field{issn}{1077-2626}
+  \field{number}{1}
+  \field{pages}{787\bibrangedash 796}
+  \field{title}{Effective Visualization of Temporal Ensembles}
+  \field{volume}{22}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2016}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Kao:2001:Eosvis}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Kao}{K.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dungan}{D.}%
+     {J.L.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pang}{P.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{data visualisation;geophysics computing;uncertainty handling;Earth
+  Observing System;Earth science;conditional simulation;distribution data
+  sets;feature-wise;forest cover;geostatistics;ground
+  measurements;pixel-wise;satellite imagery;uncertainty model;Data
+  visualization;Earth Observing System;Frequency;Geophysical
+  measurements;Geoscience;Image analysis;Predictive models;Probability
+  distribution;Satellites;Uncertainty}
+  \strng{namehash}{KD+1}
+  \strng{fullhash}{KDDJPA1}
+  \field{sortinit}{K}
+  \field{booktitle}{Visualization, 2001. VIS '01. Proceedings}
+  \verb{doi}
+  \verb 10.1109/VISUAL.2001.964550
+  \endverb
+  \field{pages}{457\bibrangedash 589}
+  \field{title}{Visualizing {2D} probability distributions from {EOS} satellite
+  image-derived data sets: a case study}
+  \field{year}{2001}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Kindlman:2006:GlyphPacking}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kindlmann}{K.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Westin}{W.}%
+     {C.-F.}{C.-F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KGWCF1}
+  \strng{fullhash}{KGWCF1}
+  \field{sortinit}{K}
+  \verb{doi}
+  \verb 10.1109/TVCG.2006.134
+  \endverb
+  \field{issn}{1077-2626}
+  \field{number}{5}
+  \field{pages}{1329\bibrangedash 1336}
+  \field{title}{Diffusion Tensor Visualization with Glyph Packing}
+  \field{volume}{12}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2006}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Knudtson:2004:TraumaSuite}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Knudtson}{K.}%
+     {Jason~L}{J.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dort}{D.}%
+     {Jonathan~M}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Helmer}{H.}%
+     {Stephen~D}{S.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smith}{S.}%
+     {R~Stephen}{R.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KJL+1}
+  \strng{fullhash}{KJLDJMHSDSRS1}
+  \field{sortinit}{K}
+  \verb{doi}
+  \verb 10.1097/01.ta.0000114529.99353.22
+  \endverb
+  \field{issn}{0022-5282}
+  \field{number}{3}
+  \field{pages}{527\bibrangedash 530}
+  \field{title}{Surgeon-performed ultrasound for pneumothorax in the trauma
+  suite}
+  \verb{url}
+  \verb http://dx.doi.org/10.1097/01.TA.0000114529.99353.22
+  \endverb
+  \field{volume}{56}
+  \field{journaltitle}{The Journal of trauma}
+  \field{year}{2004}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Lundstrom:2007:Animation}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Lundström}{L.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ljung}{L.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Persson}{P.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ynnerman}{Y.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{biological tissues;computer animation;data visualisation;image
+  classification;medical image processing;probability;rendering (computer
+  graphics);uncertainty handling;diagnostic medical imaging;direct user
+  interaction;direct volume rendering;medical data sets;medical volume
+  rendering;probabilistic animation;probabilistic transfer function
+  model;tissue classification task;uncertainty
+  visualization;Animation;Biomedical imaging;Computed tomography;Data
+  visualization;Focusing;Medical diagnostic imaging;Medical simulation;Sampling
+  methods;Transfer functions;Uncertainty;Uncertainty;medical
+  visualization;probability;transfer function;volume
+  rendering;Algorithms;Anatomy, Artistic;Computer Graphics;Computer
+  Simulation;Image Enhancement;Image Interpretation, Computer-Assisted;Imaging,
+  Three-Dimensional;Medical Illustration;Models, Anatomic;Models,
+  Statistical;Reproducibility of Results;Sensitivity and Specificity;Video
+  Recording}
+  \strng{namehash}{LC+1}
+  \strng{fullhash}{LCLPPAYA1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb 10.1109/TVCG.2007.70518
+  \endverb
+  \field{issn}{1077-2626}
+  \field{number}{6}
+  \field{pages}{1648\bibrangedash 1655}
+  \field{title}{Uncertainty Visualization in Medical Volume Rendering Using
+  Probabilistic Animation}
+  \field{volume}{13}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2007}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{MacEachren:2012:VisualSemiotics}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {MacEachren}{M.}%
+     {A.M.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Roth}{R.}%
+     {R.E.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O'Brien}{O.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Swingley}{S.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gahegan}{G.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{data visualisation;iconic representations;intuitive abstract;map
+  reading task;representation intuitiveness;typology;uncertainty
+  visualization;visual semiotics;visual
+  variable;Semiotics;Syntactics;Uncertainty;Visual analytics;Uncertainty
+  visualization;semiotics;uncertainty categories;visual variables}
+  \strng{namehash}{MA+1}
+  \strng{fullhash}{MARROJLBSDGM1}
+  \field{sortinit}{M}
+  \verb{doi}
+  \verb 10.1109/TVCG.2012.279
+  \endverb
+  \field{issn}{1077-2626}
+  \field{number}{12}
+  \field{pages}{2496\bibrangedash 2505}
+  \field{title}{Visual Semiotics \& Uncertainty Visualization: An Empirical
+  Study}
+  \field{volume}{18}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2012}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Noble:2011:Ultrasound}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Noble}{N.}%
+     {J.~Alison}{J.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Navab}{N.}%
+     {Nassir}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Becher}{B.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Royal Society}%
+  }
+  \strng{namehash}{NJA+1}
+  \strng{fullhash}{NJANNBH1}
+  \field{sortinit}{N}
+  \verb{doi}
+  \verb 10.1098/rsfs.2011.0025
+  \endverb
+  \field{isbn}{2042-8901}
+  \field{issn}{2042-8898}
+  \field{number}{4}
+  \field{pages}{673\bibrangedash 685}
+  \field{title}{Ultrasonic image analysis and image-guided interventions}
+  \field{volume}{1}
+  \field{journaltitle}{Interface Focus}
+  \field{year}{2011}
+\endentry
+
+\entry{Obermaier:2014:FutureEnsemble}{article}{}
+  \true{moreauthor}
+  \name{author}{2}{}{%
+    {{}%
+     {Obermaier}{O.}%
+     {Henriette}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Joy}{J.}%
+     {Kenneth}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{OHJK+1}
+  \strng{fullhash}{OHJK+1}
+  \field{sortinit}{O}
+  \field{number}{3}
+  \field{pages}{8\bibrangedash 11}
+  \field{title}{Future challenges for ensemble visualization}
+  \field{volume}{34}
+  \field{journaltitle}{Computer Graphics and Applications, IEEE}
+  \field{year}{2014}
+\endentry
+
+\entry{Pfaffelmoser:2011:VisualizingVariability}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Pfaffelmoser}{P.}%
+     {Tobias}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reitinger}{R.}%
+     {Matthias}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Westermann}{W.}%
+     {R{\"u}diger}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{PT+1}
+  \strng{fullhash}{PTRMWR1}
+  \field{sortinit}{P}
+  \field{booktitle}{Computer Graphics Forum}
+  \field{number}{3}
+  \field{pages}{951\bibrangedash 960}
+  \field{title}{Visualizing the positional and geometrical variability of
+  isosurfaces in uncertain scalar fields}
+  \field{volume}{30}
+  \field{year}{2011}
+\endentry
+
+\entry{Plataniotis:2000:ColorImageProcessing}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Plataniotis}{P.}%
+     {Konstantinos~N}{K.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Venetsanopoulos}{V.}%
+     {Anastasios~N}{A.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{PKNVAN1}
+  \strng{fullhash}{PKNVAN1}
+  \field{sortinit}{P}
+  \field{title}{Color image processing and applications}
+  \field{year}{2000}
+\endentry
+
+\entry{Pothkow:2011:PositionalUncertainty}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {P{\"o}thkow}{P.}%
+     {Kai}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hege}{H.}%
+     {Hans-Christian}{H.-C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PKHHC1}
+  \strng{fullhash}{PKHHC1}
+  \field{sortinit}{P}
+  \field{number}{10}
+  \field{pages}{1393\bibrangedash 1406}
+  \field{title}{Positional uncertainty of isocontours: Condition analysis and
+  probabilistic measures}
+  \field{volume}{17}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2011}
+\endentry
+
+\entry{Prassni:2010:Uncertainty}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Pra{\ss}ni}{P.}%
+     {J{\"o}rg~Stefan}{J.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ropinski}{R.}%
+     {Timo}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hinrichs}{H.}%
+     {Klaus}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PJS+1}
+  \strng{fullhash}{PJSRTHK1}
+  \field{sortinit}{P}
+  \field{number}{6}
+  \field{pages}{1358\bibrangedash 1365}
+  \field{title}{Uncertainty-aware guided volume segmentation}
+  \field{volume}{16}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2010}
+\endentry
+
+\entry{Rautenhaus:2015:EnsembleVisualization}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Rautenhaus}{R.}%
+     {Marc}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grams}{G.}%
+     {Christian~M}{C.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sch{\"a}fler}{S.}%
+     {Andreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Westermann}{W.}%
+     {R{\"u}diger}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RM+1}
+  \strng{fullhash}{RMGCMSAWR1}
+  \field{sortinit}{R}
+  \field{booktitle}{EGU General Assembly Conference Abstracts}
+  \field{pages}{11908}
+  \field{title}{Visualization of 3D ensemble weather forecasts to predict
+  uncertain warm conveyor belt situations}
+  \field{volume}{17}
+  \field{year}{2015}
+\endentry
+
+\entry{Rieder:2011:AblationApproximation}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Rieder}{R.}%
+     {Christian}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kroeger}{K.}%
+     {Thorben}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schumann}{S.}%
+     {Christian}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hahn}{H.}%
+     {Horst~K}{H.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{RC+1}
+  \strng{fullhash}{RCKTSCHHK1}
+  \field{sortinit}{R}
+  \field{number}{12}
+  \field{pages}{1812\bibrangedash 1821}
+  \field{title}{GPU-based real-time approximation of the ablation zone for
+  radiofrequency ablation}
+  \field{volume}{17}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2011}
+\endentry
+
+\entry{Ristovski:2014:UncertaintyInMedVis}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Ristovski}{R.}%
+     {Gordan}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Preusser}{P.}%
+     {Tobias}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hahn}{H.}%
+     {Horst~K.}{H.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Linsen}{L.}%
+     {Lars}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Taxonomies}
+  \strng{namehash}{RG+1}
+  \strng{fullhash}{RGPTHHKLL1}
+  \field{sortinit}{R}
+  \verb{doi}
+  \verb http://dx.doi.org/10.1016/j.cag.2013.10.015
+  \endverb
+  \field{issn}{0097-8493}
+  \field{pages}{60 \bibrangedash  73}
+  \field{title}{Uncertainty in medical visualization: Towards a taxonomy}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S0097849313001568
+  \endverb
+  \field{volume}{39}
+  \field{journaltitle}{Computers \& Graphics}
+  \field{year}{2014}
+\endentry
+
+\entry{Sanyal:2009:UncertaintyVis}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Sanyal}{S.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Song}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bhattacharya}{B.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Amburn}{A.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moorhead}{M.}%
+     {R.J.}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{data visualisation;ANOVA;counting task;data surface;data
+  visualization;error rate;errorbars;glyphs;search task;surface
+  color-mapping;uncertainty visualization;Analysis of variance;Data
+  acquisition;Data engineering;Data visualization;Error
+  analysis;Pipelines;Quality assurance;Uncertainty;User study;uncertainty
+  visualization}
+  \strng{namehash}{SJ+1}
+  \strng{fullhash}{SJZSBGAPMR1}
+  \field{sortinit}{S}
+  \verb{doi}
+  \verb 10.1109/TVCG.2009.114
+  \endverb
+  \field{issn}{1077-2626}
+  \field{number}{6}
+  \field{pages}{1209\bibrangedash 1218}
+  \field{title}{A User Study to Compare Four Uncertainty Visualization Methods
+  for {1D} and {2D} Datasets}
+  \field{volume}{15}
+  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
+  on}
+  \field{year}{2009}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Scanlan:1991:Artifacts}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Scanlan}{S.}%
+     {KA}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SK1}
+  \strng{fullhash}{SK1}
+  \field{sortinit}{S}
+  \verb{doi}
+  \verb 10.2214/ajr.156.6.2028876
+  \endverb
+  \field{issn}{0361-803X}
+  \field{number}{6}
+  \field{pages}{1267—1272}
+  \field{title}{Sonographic artifacts and their origins}
+  \verb{url}
+  \verb http://intl.ajronline.org/cgi/reprint/156/6/1267.pdf
+  \endverb
+  \field{volume}{156}
+  \field{journaltitle}{AJR. American journal of roentgenology}
+  \field{year}{1991}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{SchulteZuBerge:2014:CAMPVis}{report}{}
+  \name{author}{4}{}{%
+    {{}%
+     {{Schulte zu Berge}}{S.}%
+     {Christian}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grunau}{G.}%
+     {Artur}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mahmud}{M.}%
+     {Hossain}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Navab}{N.}%
+     {Nassir}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SC+1}
+  \strng{fullhash}{SCGAMHNN1}
+  \field{sortinit}{S}
+  \field{title}{{CAMPVis} -- {A} Game Engine-inspired Research Framework for
+  Medical Imaging and Visualization}
+  \verb{url}
+  \verb \url{http://campar.in.tum.de/Main/CAMPVis}
+  \endverb
+  \list{institution}{1}{%
+    {Technische Universit{\"a}t M{\"u}nchen}%
+  }
+  \field{type}{techreport}
+  \field{year}{2014}
+\endentry
+
+\entry{Tokuda:2009:Openigtlink}{article}{}
+  \name{author}{16}{}{%
+    {{}%
+     {Tokuda}{T.}%
+     {Junichi}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fischer}{F.}%
+     {Gregory~S.}{G.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Papademetris}{P.}%
+     {Xenophon}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yaniv}{Y.}%
+     {Ziv}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ibanez}{I.}%
+     {Luis}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cheng}{C.}%
+     {Patrick}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Haiying}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Blevins}{B.}%
+     {Jack}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Arata}{A.}%
+     {Jumpei}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Golby}{G.}%
+     {Alexandra~J.}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kapur}{K.}%
+     {Tina}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pieper}{P.}%
+     {Steve}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Burdette}{B.}%
+     {Everette~C.}{E.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fichtinger}{F.}%
+     {Gabor}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tempany}{T.}%
+     {Clare~M.}{C.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hata}{H.}%
+     {Nobuhiko}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {John Wiley & Sons, Ltd.}%
+  }
+  \keyw{image-guided therapy, surgical navigation, network communication
+  protocol}
+  \strng{namehash}{TJ+1}
+  \strng{fullhash}{TJFGSPXYZILCPLHBJAJGAJKTPSBECFGTCMHN1}
+  \field{sortinit}{T}
+  \verb{doi}
+  \verb 10.1002/rcs.274
+  \endverb
+  \field{issn}{1478-596X}
+  \field{number}{4}
+  \field{pages}{423\bibrangedash 434}
+  \field{title}{{OpenIGTLink: an open network protocol for image-guided therapy
+  environment}}
+  \verb{url}
+  \verb http://dx.doi.org/10.1002/rcs.274
+  \endverb
+  \field{volume}{5}
+  \field{journaltitle}{The International Journal of Medical Robotics and
+  Computer Assisted Surgery}
+  \field{year}{2009}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

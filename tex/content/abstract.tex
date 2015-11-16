@@ -1,0 +1,33 @@
+% !TEX root = Clean-Thesis.tex
+%
+\pdfbookmark[0]{Abstract}{Abstract}
+\chapter*{Abstract}
+\label{sec:abstract}
+\vspace*{-10mm}
+
+The continuous advances in the field of medical imaging constantly provide clinicians with new technology promising to facilitate diagnosis, interventions and therapies and improve their outcome.
+Inherent with this progress is that the amount of available data, its resolution and quality is \SYN{heavily} increasing.
+However, such improvements are only of actual use if the data can be adequately presented to the clinician.
+Thus, visual computing in medicine is an important field of research.
+This thesis focuses on the development of such techniques specifically designed for medical ultrasound.
+One of the key strengths of ultrasound is its real-time capability allowing the clinician to interactively examine the patient's anatomy given the visual feedback while manipulating the ultrasound transducer.
+Therefore, the methods for advanced ultrasound image processing and visualization presented in this thesis are designed to ensure maintaining this interactivity.
+
+At first, techniques for improved 2D B-mode ultrasound visualization are presented, where the observer is provided with real-time feedback on the uncertainty present in the image.
+Therefore, in a first step, the necessary information is generated through the computation of ultrasound Confidence Maps estimating per-pixel uncertainty information with respect to the ultrasound signal attenuation.
+While their original formulation has been proven to improve tasks such as image registration and segmentation, their valuable information has never been directly exposed to the clinician.
+Therefore, a real-time capable extension in form of an incremental solver scheme is presented and shown to yield precise results for visualization applications.
+The uncertainty information is eventually fused with the original B-mode images using three carefully chosen visualization schemes.
+Their benefit has been shown for both educational and clinical applications.
+
+The second part of this thesis' contributions targets improved 3D ultrasound visualization.
+In order to generate high-quality 3D volumes from tracked ultrasound sweeps, first an incremental compounding scheme is presented, which combines orientation-driven correlation terms and the aforementioned Confidence Maps in an information fusion approach.
+The subsequent visualization of such ultrasound volumes is a particularly challenging task due to the special nature of B-mode intensities.
+Therefore, a novel classification concept in the form of point predicates is presented, which seamlessly integrates into the standard direct volume rendering pipeline.
+In conjunction with the proposed predicate histogram as intuitive user interface, this technique allows for much more meaningful visualization and facilitates the understanding of the data for the observer.
+
+%\vspace*{20mm}
+%
+%{\usekomafont{chapter}Zusammenfassung}\label{sec:abstract-diff} \\
+%
+%\blindtext

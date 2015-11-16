@@ -1,0 +1,59 @@
+% !TEX root = ../thesis-example.tex
+%
+
+% load needed libraries
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shadows,fit,shapes,shadings,decorations.pathmorphing}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfdeclarelayer{1}
+\pgfdeclarelayer{2}
+\pgfdeclarelayer{3}
+\pgfdeclarelayer{4}
+\pgfdeclarelayer{5}
+\pgfsetlayers{background,main,foreground,1,2,3,4,5}
+
+% define a fancy color map (inspired by Visifire)
+\definecolor{MyColor1}{RGB}{67, 134, 216}
+\definecolor{MyColor2}{RGB}{255, 154, 46}
+\definecolor{MyColor3}{RGB}{219, 68, 63}
+\definecolor{MyColor4}{RGB}{168, 212, 79}
+\definecolor{MyColor5}{RGB}{133, 96, 179}
+\definecolor{MyColor6}{RGB}{60, 191, 227}
+\definecolor{MyColor7}{RGB}{234, 212, 32}
+
+\definecolor{tumblue}{rgb}{0, 0.5, 0.75}
+\definecolor{ocker}{RGB}{119, 112, 95}
+
+\tikzset{%
+	source/.style={%
+		top color=white, bottom color=green!20, draw=green!75!black!75%
+	},%
+	sink/.style={%
+		top color=white, bottom color=red!20, draw=red!75!black!65%
+	},%
+	schritt-base/.style={%
+		rectangle, rounded corners=1.5mm, drop shadow, %
+		align=center, %
+		thick, draw=ctcolormain!75, %
+		top color=white, bottom color=ctcolormain!30,%
+		font=\sffamily\scriptsize%
+	},%
+	entity-base/.style={%
+		chamfered rectangle, chamfered rectangle sep=0.75mm, chamfered rectangle corners={north east}, drop shadow, %
+		align=center, %
+		thick, draw=black!20, %
+		top color=white, bottom color=black!10,%
+		font=\sffamily\scriptsize%
+	}, %
+	pfeil/.style={%
+		|-, ->, very thick%
+		,draw=MyColor2, >=stealth'%
+		,{rounded corners}%
+	},%
+}
+
+\newcommand{\PORT}[4]{%
+	\coordinate (#1) at #2;%
+	\filldraw [draw=white, fill=#3] (#1) circle (1mm) #4;%
+}

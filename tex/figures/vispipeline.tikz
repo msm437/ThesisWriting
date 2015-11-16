@@ -1,0 +1,71 @@
+\begin{tikzpicture}[%
+	source/.style={%
+		top color=white, bottom color=green!20, draw=green!75!black!75%
+	},%
+	sink/.style={%
+		top color=white, bottom color=red!20, draw=red!75!black!65%
+	},%
+	schritt/.style={%
+		schritt-base, rectangle split, rectangle split parts=2, minimum height=8mm, minimum width=28mm, %
+	},%
+	entity/.style={%
+		entity-base, shape=signal, signal from=west, minimum height=10mm, minimum width=28mm%
+	}, %
+	node distance=12mm and 6mm%
+	]%
+	
+	\node (sensors) [entity, signal from=nowhere, minimum width=23mm] { Sensors \\ Models \\ Data Bases };
+	\node (rawdata) [entity, right=of sensors] { Raw Data };
+	\node (deriveddata) [entity, right=of rawdata] { Derived Data };
+	\node (primitives) [entity, right=of deriveddata] { Renderable \\ Representation };
+	\node (image) [entity, right=of primitives, signal to=nowhere, minimum width=23mm] { Image };
+	
+	\node (foo1) [right=of sensors, xshift=-6mm] {};
+	\node (foo2) [right=of rawdata, xshift=-6mm] {};
+	\node (foo3) [right=of deriveddata, xshift=-6mm] {};
+	\node (foo4) [right=of primitives, xshift=-6mm] {};
+	
+	\node (acquisition) [schritt, above=of foo1] { 
+		\textbf{Acquisition} 
+		\nodepart{two}
+		Measuring \\
+		Simulating \\
+		Querying
+	};
+	
+	\node (processing) [schritt, below=of foo2] { 
+		\textbf{Processing}
+		\nodepart{two}
+		Data Conversion \\
+		Filtering \\
+		Segmentation
+	};
+	
+	\node (mapping) [schritt, above=of foo3] { 
+		\textbf{Mapping}
+		\nodepart{two}
+		Graphical Primitives \\
+		Optical Properties\\
+	};
+	
+	\node (rendering) [schritt, below=of foo4] { 
+		\textbf{Rendering}
+		\nodepart{two}
+		Compositing \\
+		Visibility Calculation \\
+		Shading
+	};
+	
+	\draw [pfeil] (sensors.north) to [out=90, in=215] (acquisition);
+	\draw [pfeil] (acquisition) to [out=325, in=90] (rawdata.north);
+	
+	\draw [pfeil] (rawdata.south) to [out=270, in=145] (processing);
+	\draw [pfeil] (processing) to [out=35, in=270] (deriveddata.south);
+	
+	\draw [pfeil] (deriveddata.north) to [out=90, in=215] (mapping);
+	\draw [pfeil] (mapping) to [out=325, in=90] (primitives.north);
+	
+	\draw [pfeil] (primitives.south) to [out=270, in=145] (rendering);
+	\draw [pfeil] (rendering) to [out=35, in=270] (image.south);
+	
+\end{tikzpicture}	
