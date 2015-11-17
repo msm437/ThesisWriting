@@ -1,40 +1,44 @@
 % !TEX root = ../thesis-example.tex
 %
-\part{Methodology}
-
 \chapter*{Overview}
+\vspace*{-15mm}
 \label{sec:methods}
 
-\cleanchapterquote{Wer anderen einen Bratwurst brät, hat ein Bratwurstbratgerät.}{Autor unbekannt}{}
+Title: Personal Perception and Interaction with Mixed Reality (Involving a Human)
 
 The general story line should be like this:
 \begin{enumerate}
 	\item
-		\emph{Advanced 2D Ultrasound Visualization}: IEEEVis'15 paper on uncertainty visualization for B-mode US
+		\emph{Review on Mixed Reality}: The history of MR, focusing on how to improve the perception of the digital information and the new interactive methods. 
+		 \begin{enumerate}
+		  \item	\emph{Introduction} The history, objectives and requirements in different stages and how the technology develops, the current states.
+		  \item	\emph{Related Works} The MRs involving a human, the main contributions of these works which tried to improve Personal Perception and Interaction. 
+		 \end{enumerate}
 	
 	\item
-		\emph{Advanced Ultrasound Processing/Compounding}: IPCAI'14 paper on orientation-driven ultrasound compounding in order to generate high quality 3D US volumes
+		\emph{Personal Perception with Magic Mirror}: How to improve the perception in the Magic Mirror framework.
+		\begin{enumerate}
+		\item	\emph{Magic Mirror conception} The magic mirror framework, software and hardware
+		\item	\emph{Accuracy of Registration} improve the perception of the MR view via accurate registration. Anatomy learning (ISMAR 2013 and The journal paper)
+		\item	\emph{Natural Interaction} Make the user believe the virtual element is a part of his or her own body. (Organ game and the Muscle learning)
+		\end{enumerate}
 	
 	\item
-		\emph{Advanced 3D Ultrasound Visualization}: IEEEVis'14 paper on Predicate-based visualization
+		\emph{Personal Pointing Interaction}: The interaction with MR via pointing gesture
+		\begin{enumerate}
+			\item \emph{Calibration and Recovery of Pointing gesture} The PAST methods and the evaluation. (paper for IEEE VR)
+			\item \emph{Interaction with Multi-screen} The paper for IPCAI
+			\item \emph{Augmented Human to access the real world} The case without depth info. Natural pointing interaction for optical see-through AR to help wearable computer to fetch the information%for UbiComp
+		\end{enumerate}
+	\item \emph{Collaborated Mixed Reality} combine the technology for perception and interaction
+		\begin{enumerate}
+			\item \emph{Magic mirror with pointing gesture} One patient <-> one Kinect and one display  doing the rehabilitation exercise.
+			One nurse with pointing gesture: to control multi-screen and device to give introduction 
+			Parents monitor children’s magic mirror  teacher monitor student’s magic mirror 
+			
+		\end{enumerate}
 \end{enumerate}
 
-These are my three main papers for the thesis. Other related work might be considered to be included as well:
-\begin{itemize}
-	\item
-		\emph{Prostate biopsy visualization}: Though this is mostly Oliver's and Amit's work, it is closely related to my thesis topic. Furthermore, the visualization was implemented in CAMPVis and with my help. Thus I could talk about multi-modal visualization and how intra-operative US visualization can be helpful.
-		
-	\item
-		\emph{Uncertainty Visualization for 3D Ultrasound}: So far, I have not worked on this. Nevertheless, this would be a nice bridge section between 1 and 2+3 from above. Also Nassir suggested this. Thus, I should consider adding at least a generic section/chapter on this, discussing possible approaches, however without an in-depth evaluation.
-		
-	\item
-		\emph{Schematic Neuro Electrode Map}: This is a really nice piece of work, however, not related at all to the thesis topic. Furthermore, the work is at least 50\% from Jakob and already published in his Bachelor's thesis. Thus, an in-depth discussion of this as part of this thesis is doubtful.
-	
-	\item
-		\emph{3D Velocity Field and Flow Profile Reconstruction from Arbitrarily Sampled Doppler Ultrasound Data}: This is also originally Oliver's work to which I only contributed parts of the visualization. I could briefly mention this piece of work as example for flow visualization - since it is at least connected to US.
-\end{itemize}
-
-Finally, I could have an extra section on software frameworks for medical Visualization, namely CAMPVis. There, I could discuss design and implementation decisions. Since CAMPVis is a huge part of my work with the chair, I should check whether such a chapter makes sense in a PhD thesis at our chair.
 
 
 

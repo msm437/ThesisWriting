@@ -4,18 +4,8 @@
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Quantitative evaluation results of our user study with ultrasound novices. The table shows the average time \emph {(seconds)} required to optimize the view on target anatomies (aggregated results from 9 of the 13 users, since not all acquisitions were complete). With enabled uncertainty visualization, the users managed to decide faster when they had a good view on the target anatomy than with the plain B-mode image. \relax }}{12}{table.caption.23}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.2}{\ignorespaces Results on \textbf {expert sonographers evaluating the clinical value}.\relax }}{14}{table.caption.28}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces Quantification of the local entropy in compounded volumes in terms of mean intensity difference to neighboring voxels. \relax }}{27}{table.caption.52}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.2}{\ignorespaces NCC and log-scale SNR in the overlapping region after registering the two compounded volumes of two sweeps with perpendicular trajectories of the same anatomy.\relax }}{28}{table.caption.54}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.3}{\ignorespaces System performance of our incremental compounding technique at different target volume resolutions. The timings measure the compounding only (no generation of uncertainty information or visualization). \relax }}{29}{table.caption.56}
+\ttl@tocsep 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

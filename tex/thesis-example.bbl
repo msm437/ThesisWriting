@@ -16,1057 +16,970 @@
   {}
 \endgroup
 
-\entry{Aldrich:2007:USPhysics}{article}{}
-  \name{author}{1}{}{%
+\entry{Carpendale2010}{article}{}
+  \name{author}{2}{}{%
     {{}%
-     {Aldrich}{A.}%
-     {John~E}{J.~E.}%
+     {Carpendale}{C.}%
+     {Jeremy I~M}{J.~I.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carpendale}{C.}%
+     {Ailidh~B.}{A.~B.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{AJE1}
-  \strng{fullhash}{AJE1}
-  \field{sortinit}{A}
+  \keyw{Gestures,Infancy,Pointing,Social development}
+  \strng{namehash}{CJIMCAB1}
+  \strng{fullhash}{CJIMCAB1}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  Although there is consensus about the importance of early communicative
+  gestures such as pointing, there is an ongoing debate regarding how infants
+  develop the ability to understand and produce pointing gestures. We review
+  competing theories regarding this development and use observations from a
+  diary study of infants social development, focusing primarily on one infant
+  from 6 to 14 months to illustrate a currently neglected view of the
+  development of pointing. According to this view, infants first use their
+  extended index finger as a manifestation of their own attention that emerges
+  from their tactile exploration of close-by objects. Their gesture gradually
+  becomes social in its use as infants become aware of the meaning of their
+  action for adults.%
+  }
   \verb{doi}
-  \verb 10.1097/01.ccm.0000260624.99430.22
+  \verb 10.1159/000315168
   \endverb
-  \field{issn}{0090-3493}
-  \field{number}{5 Suppl}
-  \field{pages}{S131—7}
-  \field{title}{Basic physics of ultrasound imaging}
+  \field{isbn}{0018-716X}
+  \field{issn}{0018716X}
+  \field{number}{3}
+  \field{pages}{110\bibrangedash 126}
+  \field{title}{{The development of pointing: From personal directedness to
+  interpersonal direction}}
   \verb{url}
-  \verb http://dx.doi.org/10.1097/01.CCM.0000260624.99430.22
+  \verb http://www.karger.com/Article/Fulltext/315168
   \endverb
-  \field{volume}{35}
-  \field{journaltitle}{Critical care medicine}
-  \field{year}{2007}
+  \field{volume}{53}
+  \field{journaltitle}{Hum. Dev.}
+  \field{year}{2010}
+\endentry
+
+\entry{Harrison2011}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Harrison}{H.}%
+     {Chris}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Benko}{B.}%
+     {Hrvoje}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wilson}{W.}%
+     {Andrew~D.}{A.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM Press}%
+  }
+  \keyw{appropriated surfaces,finger tracking,object classification,on-body
+  computing,on-demand interfaces}
+  \strng{namehash}{HC+1}
+  \strng{fullhash}{HCBHWAD1}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  Abstract OmniTouch is a wearable depth-sensing and projection system that
+  enables interactive multitouch applications on everyday surfaces. Beyond the
+  shoulder-worn system, there is no instrumentation of the user or environment.
+  Foremost, the system allows the ... $\backslash$n%
+  }
+  \field{booktitle}{Proc. 24th Annu. ACM Symp. User interface Softw. Technol. -
+  UIST '11}
+  \verb{doi}
+  \verb 10.1145/2047196.2047255
+  \endverb
+  \field{isbn}{9781450307161}
+  \field{issn}{10974199}
+  \field{pages}{441}
+  \field{title}{{OmniTouch}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?doid=2047196.2047255
+  \endverb
+  \list{location}{1}{%
+    {New York, New York, USA}%
+  }
+  \field{year}{2011}
   \warn{\item Invalid format of field 'month'}
 \endentry
 
-\entry{Borgo:2012:GlyphVisualization}{inproceedings}{}
-  \name{author}{8}{}{%
+\entry{Hart2006}{article}{}
+  \name{author}{1}{}{%
     {{}%
-     {Borgo}{B.}%
-     {Rita}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kehrer}{K.}%
-     {Johannes}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chung}{C.}%
-     {David H.~S.}{D.~H.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Maguire}{M.}%
-     {Eamonn}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Laramee}{L.}%
-     {Robert~S.}{R.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hauser}{H.}%
-     {Helwig}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ward}{W.}%
-     {Matthew}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chen}{C.}%
-     {Min}{M.}%
+     {Hart}{H.}%
+     {S.~G.}{S.~G.}%
      {}{}%
      {}{}}%
   }
-  \name{editor}{2}{}{%
-    {{}%
-     {Sbert}{S.}%
-     {M.}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Szirmay-Kalos}{S.-K.}%
-     {L.}{L.}%
-     {}{}%
-     {}{}}%
+  \list{language}{1}{%
+    {en}%
   }
   \list{publisher}{1}{%
-    {The Eurographics Association}%
+    {SAGE Publications}%
   }
-  \strng{namehash}{BR+1}
-  \strng{fullhash}{BRKJCDHSMELRSHHWMCM1}
-  \field{sortinit}{B}
-  \field{booktitle}{Eurographics 2013 - State of the Art Reports}
+  \keyw{GS4 - Integrative Approaches to Understanding Comp}
+  \strng{namehash}{HSG1}
+  \strng{fullhash}{HSG1}
+  \field{sortinit}{H}
+  \field{abstract}{%
+  NASA-TLX is a multi-dimensional scale designed to obtain workload estimates
+  from one or more operators while they are performing a task or immediately
+  afterwards. The years of research that preceded subscale selection and the
+  weighted averaging approach resulted in a tool that has proven to be
+  reasonably easy to use and reliably sensitive to experimentally important
+  manipulations over the past 20 years. Its use has spread far beyond its
+  original application (aviation), focus (crew complement), and language
+  (English). This survey of 550 studies in which NASA-TLX was used or reviewed
+  was undertaken to provide a resource for a new generation of users. The goal
+  was to summarize the environments in which it has been applied, the types of
+  activities the raters performed, other variables that were measured that did
+  (or did not) covary, methodological issues, and lessons learned%
+  }
   \verb{doi}
-  \verb 10.2312/conf/EG2013/stars/039-063
+  \verb 10.1177/154193120605000909
   \endverb
-  \field{issn}{1017-4656}
-  \field{title}{Glyph-based Visualization: Foundations, Design Guidelines,
-  Techniques and Applications}
+  \field{isbn}{1071-1813}
+  \field{issn}{1071-1813}
+  \field{number}{9}
+  \field{pages}{904\bibrangedash 908}
+  \field{title}{{Nasa-Task Load Index (NASA-TLX); 20 Years Later}}
+  \verb{url}
+  \verb http://pro.sagepub.com/content/50/9/904.abstract
+  \endverb
+  \field{volume}{50}
+  \field{journaltitle}{Proc. Hum. Factors Ergon. Soc. Annu. Meet.}
+  \field{year}{2006}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Johnson2011a}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Johnson}{J.}%
+     {Rose}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O'Hara}{O.}%
+     {Kenton}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sellen}{S.}%
+     {Abigail}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cousins}{C.}%
+     {Claire}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Criminisi}{C.}%
+     {Antonio}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{ethnography,fieldwork,gesture input,image use,medical
+  practice,touchless interaction}
+  \strng{namehash}{JR+1}
+  \strng{fullhash}{JROKSACCCA1}
+  \field{sortinit}{J}
+  \field{abstract}{%
+  The growth of image-guided procedures in surgical settings has led to an
+  increased need to interact with digital images under sterile conditions.
+  Traditional touch-based interaction techniques present challenges for
+  managing asepsis in these environments leading to suggestions that new
+  touchless interaction techniques may provide a compelling set of
+  alternatives. In this paper we explore the potential for touchless
+  interaction in image-guided Interventional Radiology (IR) through an
+  ethnographic study. The findings highlight how the distribution of labour and
+  spatial practices of this work are organised with respect to concerns about
+  asepsis and radiation exposure, the physical and cognitive demands of
+  artefact manipulation, patient management, and the construction of
+  "professional vision". We discuss the implications of these key features of
+  the work for touchless interaction technologies within IR and suggest that
+  such issues will be of central importance in considering new input techniques
+  in other medical settings.%
+  }
+  \field{booktitle}{Proc. 2011 Annu. Conf. Hum. factors Comput. Syst. - CHI
+  '11}
+  \verb{doi}
+  \verb 10.1145/1978942.1979436
+  \endverb
+  \field{isbn}{9781450302289}
+  \field{pages}{3323\bibrangedash 3332}
+  \field{title}{{Exploring the potential for touchless interaction in
+  image-guided interventional radiology}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1978942.1979436
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{Kurata2000}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Kurata}{K.}%
+     {T}{T}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Okuma}{O.}%
+     {T}{T}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kourogi}{K.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sakaue}{S.}%
+     {K}{K}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{1 wearable augmented environments,human interface,real-time
+  system,vironments,visual wearables,wearable augmented en-}
+  \strng{namehash}{KT+1}
+  \strng{fullhash}{KTOTKMSK1}
+  \field{sortinit}{K}
+  \field{abstract}{%
+  This paper describes a wearable input interface the functions of which is
+  similar to the usual mouse. The Hand-mouse is realized by classifying each
+  pixel as a hand pixel or a background pixel based on approximation of a color
+  histogram with the Gaussian mixture model and by tting the simple model of
+  hand shapes into the classi ed hand pixels.%
+  }
+  \field{booktitle}{Symp. Mix. Real.}
+  \field{pages}{188\bibrangedash 189}
+  \field{title}{{The Hand-mouse: A Human Interface Suitable for Augmented
+  Reality Environments Enabled by Visual Wearables}}
+  \verb{url}
+  \verb http://citeseerx.ist.psu.edu/viewdoc/download?rep=rep1{\&}type=pdf{\&}d
+  \verb oi=10.1.1.141.5128
+  \endverb
+  \field{year}{2000}
+\endentry
+
+\entry{Matthews2012}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Matthews}{M.}%
+     {Danielle}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Behne}{B.}%
+     {Tanya}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lieven}{L.}%
+     {Elena}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tomasello}{T.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MD+1}
+  \strng{fullhash}{MDBTLETM1}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Despite its importance in the development of children's skills of social
+  cognition and communication, very little is known about the ontogenetic
+  origins of the pointing gesture. We report a training study in which mothers
+  gave children one month of extra daily experience with pointing as compared
+  with a control group who had extra experience with musical activities. One
+  hundred and two infants of 9, 10, or 11 months of age were seen at the
+  beginning, middle, and end of this one-month period and tested for
+  declarative pointing and gaze following. Infants'ability to point with the
+  index finger at the end of the study was not affected by the training but was
+  instead predicted by infants' prior ability to follow the gaze direction of
+  an adult. The frequency with which infants pointed indexically was also
+  affected by infant gaze following ability and, in addition, by maternal
+  pointing frequency in free play, but not by training. In contrast, infants'
+  ability to monitor their partner's gaze when pointing, and the frequency with
+  which they did so, was affected by both training and maternal pointing
+  frequency in free play. These results suggest that prior social cognitive
+  advances, rather than adult socialization of pointing per se, determine the
+  developmental onset of indexical pointing, but socialization processes such
+  as imitation and adult shaping subsequently affect both infants' ability to
+  monitor their interlocutor's gaze while they point and how frequently infants
+  choose to point.%
+  }
+  \verb{doi}
+  \verb 10.1111/j.1467-7687.2012.01181.x
+  \endverb
+  \field{isbn}{1467-7687}
+  \field{issn}{1363755X}
+  \field{number}{6}
+  \field{pages}{817\bibrangedash 829}
+  \field{title}{{Origins of the human pointing gesture: a training study}}
+  \verb{url}
+  \verb http://doi.wiley.com/10.1111/j.1467-7687.2012.01181.x
+  \endverb
+  \field{volume}{15}
+  \field{journaltitle}{Dev. Sci.}
   \field{year}{2012}
 \endentry
 
-\entry{Brecheisen:2009:ParameterSensitivy}{article}{}
-  \name{author}{4}{}{%
+\entry{McNeill2000}{article}{}
+  \name{author}{1}{}{%
     {{}%
-     {Brecheisen}{B.}%
-     {Ralph}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Vilanova}{V.}%
-     {Anna}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Platel}{P.}%
-     {Bram}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Romeny}{R.}%
-     {Bart Ter~Haar}{B.~T.~H.}%
+     {McNeill}{M.}%
+     {D}{D}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {IEEE}%
+  \strng{namehash}{MD1}
+  \strng{fullhash}{MD1}
+  \field{sortinit}{M}
+  \field{title}{{15 Catchments and contexts: non-modular factors in speech and
+  gesture production}}
+  \verb{url}
+  \verb https://books.google.de/books?hl=en{\&}lr={\&}id=DRBcMQuSrf8C{\&}oi=fnd
+  \verb {\&}pg=PA312{\&}dq=catchments+and+context+non-modular+factors+in+speech
+  \verb +and+gesture{\&}ots=jCCY5ztpmq{\&}sig=VsHbZojrjLuVgrTKiTpjqfZyBq4
+  \endverb
+  \verb{file}
+  \verb :C$\backslash$:/Users/MaMeng/AppData/Local/Mendeley Ltd./Mendeley Deskt
+  \verb op/Downloaded/McNeill - 2000 - 15 Catchments and contexts non-modular f
+  \verb actors in speech and gesture production.pdf:pdf
+  \endverb
+  \field{journaltitle}{Lang. gesture}
+  \field{year}{2000}
+\endentry
+
+\entry{Mistry2009}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Mistry}{M.}%
+     {Pranav}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maes}{M.}%
+     {Pattie}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chang}{C.}%
+     {Liyan}{L.}%
+     {}{}%
+     {}{}}%
   }
-  \strng{namehash}{BR+2}
-  \strng{fullhash}{BRVAPBRBTH1}
-  \field{sortinit}{B}
-  \field{number}{6}
-  \field{pages}{1441\bibrangedash 1448}
-  \field{title}{Parameter sensitivity visualization for DTI fiber tracking}
-  \field{volume}{15}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
+  \keyw{Augmented reality,Gestural interaction,Object augmentation,Tangible
+  computing,Wearable interface}
+  \strng{namehash}{MP+1}
+  \strng{fullhash}{MPMPCL1}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  Information is traditionally confined to paper or digitally to a screen. In
+  this paper, we introduce WUW, a wearable gestural interface, which attempts
+  to bring information out into the tangible world. By using a tiny projector
+  and a camera mounted on a hat or coupled in a pendant like wearable device,
+  WUW sees what the user sees and visually augments surfaces or physical
+  objects the user is interacting with. WUW projects information onto surfaces,
+  walls, and physical objects around us, and lets the user interact with the
+  projected information through natural hand gestures, arm movements, or
+  interaction with the object itself.%
+  }
+  \verb{doi}
+  \verb 10.1145/1520340.1520626
+  \endverb
+  \field{isbn}{9781605582474}
+  \field{issn}{9781605582467}
+  \field{pages}{4111}
+  \field{title}{{WUW - wear Ur world}}
+  \verb{url}
+  \verb http://www.scopus.com/inward/record.url?eid=2-s2.0-70349163742{\&}partn
+  \verb erID=tZOtx3y1
+  \endverb
+  \verb{file}
+  \verb :C$\backslash$:/Users/MaMeng/AppData/Local/Mendeley Ltd./Mendeley Deskt
+  \verb op/Downloaded/Mistry, Maes, Chang - 2009 - WUW-wear Ur world a wearable
+  \verb  gestural interface.pdf:pdf
+  \endverb
+  \field{journaltitle}{Proc. 27th Int. Conf. Ext. Abstr. Hum. factors Comput.
+  Syst. - CHI EA '09}
   \field{year}{2009}
 \endentry
 
-\entry{Brown:2004:VibrationVis}{inproceedings}{}
-  \name{author}{1}{}{%
+\entry{Moraes2012}{article}{}
+  \name{author}{4}{}{%
     {{}%
-     {Brown}{B.}%
-     {Ross}{R.}%
+     {Moraes}{M.}%
+     {Thiago~Franco}{T.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Amorim}{A.}%
+     {Paulo Henrique~Junqueira}{P.~H.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Azevedo}{A.}%
+     {F{\'{a}}bio~S}{F.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Silva}{S.}%
+     {Jorge Vicente~Lopes}{J.~V.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MTF+1}
+  \strng{fullhash}{MTFAPHJAFSSJVL1}
+  \field{sortinit}{M}
+  \field{abstract}{%
+  This work presents InVesalius, an open-source imaging. Initially, the
+  historical context and motivation for its development are discussed. Then,
+  the software structure and some development aspects are commented, as well as
+  InVesalius main tools and applications. At the end, the results of a survey
+  realized within the user community are presented.%
+  }
+  \field{pages}{405\bibrangedash 408}
+  \field{title}{{InVesalius - An open-source imaging application}}
+  \field{journaltitle}{Comput. Vis. Med. Image Process.}
+  \field{year}{2012}
+\endentry
+
+\entry{Nanayakkara2013a}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nanayakkara}{N.}%
+     {Suranga}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shilkrot}{S.}%
+     {Roy}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yeo}{Y.}%
+     {Kian~Peen}{K.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maes}{M.}%
+     {Pattie}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NS+1}
+  \strng{fullhash}{NSSRYKPMP1}
+  \field{sortinit}{N}
+  \field{abstract}{%
+  Finger-worn interfaces remain a vastly unexplored space for user interfaces,
+  despite the fact that our fingers and hands are naturally used for
+  referencing and interacting with the environment. In this paper we present
+  design guidelines and implementation of a finger-worn I/O device, the
+  EyeRing, which leverages the universal and natural gesture of pointing. We
+  present use cases of EyeRing for both visually impaired and sighted people.
+  We discuss initial reactions from visually impaired users which suggest that
+  EyeRing may indeed offer a more seamless solution for dealing with their
+  immediate surroundings than the solutions they currently use. We also report
+  on a user study that demonstrates how EyeRing reduces effort and disruption
+  to a sighted user. We conclude that this highly promising form factor offers
+  both audiences enhanced, seamless interaction with information related to
+  objects in the environment.%
+  }
+  \verb{doi}
+  \verb 10.1145/2459236.2459240
+  \endverb
+  \field{isbn}{9781450319041}
+  \field{pages}{13\bibrangedash 20}
+  \field{title}{{EyeRing}}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?doid=2459236.2459240
+  \endverb
+  \verb{file}
+  \verb :E$\backslash$:/papers/Nanayakkara et al/Proceedings of the 4th Augment
+  \verb ed Human International Conference on - AH '13/Nanayakkara et al. - 2013
+  \verb  - EyeRing.pdf:pdf
+  \endverb
+  \field{journaltitle}{Proc. 4th Augment. Hum. Int. Conf. - AH '13}
+  \field{year}{2013}
+\endentry
+
+\entry{OHara2014a}{article}{}
+  \name{author}{11}{}{%
+    {{}%
+     {O'Hara}{O.}%
+     {Kenton}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dastur}{D.}%
+     {Neville}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carrell}{C.}%
+     {Tom}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gonzalez}{G.}%
+     {Gerardo}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sellen}{S.}%
+     {Abigail}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Penney}{P.}%
+     {Graeme}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Varnavas}{V.}%
+     {Andreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mentis}{M.}%
+     {Helena}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Criminisi}{C.}%
+     {Antonio}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Corish}{C.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rouncefield}{R.}%
+     {Mark}{M.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
     {ACM}%
   }
-  \keyw{stereo vision, uncertainty visualisation, vibrating textures, visual
-  features}
-  \strng{namehash}{BR1}
-  \strng{fullhash}{BR1}
-  \field{sortinit}{B}
-  \field{booktitle}{Proceedings of the 2Nd International Conference on Computer
-  Graphics and Interactive Techniques in Australasia and South East Asia}
+  \strng{namehash}{OK+1}
+  \strng{fullhash}{OKDNCTGGSAPGVAMHCACRRM1}
+  \field{sortinit}{O}
+  \field{abstract}{%
+  除证明非接触式交互系统的技术可行
+  性外，还应将外科手术中的这类系统进
+  行合理设计，让其能在手术室操作环境 内工作。
+  手势设计不仅应考虑与医学影像的个
+  体交互，还应考虑如何在协作讨论环境 下使用这些影像。
+  与单手和双手相关的手势设计应能满
+  足表达丰富度的要求，以及手术医生双
+  手操作的要求，同时还要受到了手术小
+  组成员靠近程度及无菌操作所产生的动 作限制的限制。%
+  }
   \verb{doi}
-  \verb 10.1145/988834.988849
+  \verb 10.1145/2541883.2541899
   \endverb
-  \field{isbn}{1-58113-883-0}
-  \field{pages}{84\bibrangedash 89}
-  \field{series}{GRAPHITE '04}
-  \field{title}{Animated Visual Vibrations As an Uncertainty Visualisation
-  Technique}
+  \field{isbn}{0001-0782}
+  \field{issn}{00010782}
+  \field{number}{1}
+  \field{pages}{70\bibrangedash 77}
+  \field{title}{{Touchless interaction in surgery}}
   \verb{url}
-  \verb http://doi.acm.org/10.1145/988834.988849
+  \verb http://dl.acm.org/citation.cfm?doid=2541883.2541899
+  \endverb
+  \field{volume}{57}
+  \verb{file}
+  \verb :E$\backslash$:/papers/O'Hara et al/Communications of the ACM/O'Hara et
+  \verb  al. - 2014 - Touchless interaction in surgery(2).pdf:pdf
+  \endverb
+  \field{journaltitle}{Commun. ACM}
+  \field{year}{2014}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Pederson2010}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Pederson}{P.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Janlert}{J.}%
+     {Lars-Erik}{L.-E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Surie}{S.}%
+     {Dipak}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM Press}%
+  }
+  \keyw{interaction paradigm,user interface design}
+  \strng{namehash}{PT+1}
+  \strng{fullhash}{PTJLESD1}
+  \field{sortinit}{P}
+  \field{booktitle}{Proc. 6th Nord. Conf. Human-Computer Interact. Extending
+  Boundaries - Nord. '10}
+  \verb{doi}
+  \verb 10.1145/1868914.1869022
+  \endverb
+  \field{isbn}{9781605589343}
+  \field{pages}{755}
+  \field{title}{{Towards a model for egocentric interaction with physical and
+  virtual objects}}
+  \verb{url}
+  \verb http://portal.acm.org/citation.cfm?doid=1868914.1869022
   \endverb
   \list{location}{1}{%
-    {Singapore}%
+    {New York, New York, USA}%
   }
-  \field{year}{2004}
-  \warn{\item Can't use 'location' + 'address'}
-\endentry
-
-\entry{Butter:2007:UsTraining}{article}{}
-  \name{author}{7}{}{%
-    {{}%
-     {Butter}{B.}%
-     {John}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Grant}{G.}%
-     {Thomas~H}{T.~H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Egan}{E.}%
-     {Mari}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kaye}{K.}%
-     {Marsha}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wayne}{W.}%
-     {Diane~B}{D.~B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Carrión-Carire}{C.-C.}%
-     {Violeta}{V.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {McGaghie}{M.}%
-     {William~C}{W.~C.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Blackwell Publishing Ltd}%
-  }
-  \strng{namehash}{BJ+1}
-  \strng{fullhash}{BJGTHEMKMWDBCCVMWC1}
-  \field{sortinit}{B}
-  \verb{doi}
-  \verb 10.1111/j.1365-2923.2007.02848.x
-  \endverb
-  \field{issn}{1365-2923}
-  \field{number}{9}
-  \field{pages}{843\bibrangedash 848}
-  \field{title}{Does ultrasound training boost Year 1 medical student
-  competence and confidence when learning abdominal examination?}
-  \verb{url}
-  \verb http://dx.doi.org/10.1111/j.1365-2923.2007.02848.x
-  \endverb
-  \field{volume}{41}
-  \field{journaltitle}{Medical Education}
-  \field{year}{2007}
-\endentry
-
-\entry{Han:2011:UncertaintyInHealthCare}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Han}{H.}%
-     {Paul K.~J.}{P.~K.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Klein}{K.}%
-     {William M.~P.}{W.~M.~P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Arora}{A.}%
-     {Neeraj~K.}{N.~K.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{HPKJ+1}
-  \strng{fullhash}{HPKJKWMPANK1}
-  \field{sortinit}{H}
-  \verb{doi}
-  \verb 10.1177/0272989X10393976
-  \endverb
-  \verb{eprint}
-  \verb http://mdm.sagepub.com/content/31/6/828.full.pdf+html
-  \endverb
-  \field{number}{6}
-  \field{pages}{828\bibrangedash 838}
-  \field{title}{Varieties of Uncertainty in Health Care: A Conceptual Taxonomy}
-  \verb{url}
-  \verb http://mdm.sagepub.com/content/31/6/828.abstract
-  \endverb
-  \field{volume}{31}
-  \field{journaltitle}{Medical Decision Making}
-  \field{year}{2011}
-\endentry
-
-\entry{Hao:2016:TemporalEnsembles}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Hao}{H.}%
-     {L.}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Healey}{H.}%
-     {C.G.}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bass}{B.}%
-     {S.A.}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Data mining;Data visualization;Octrees;Shape;Shape
-  measurement;Three-dimensional displays;Visualization;Ensemble visualization}
-  \strng{namehash}{HL+1}
-  \strng{fullhash}{HLHCBS1}
-  \field{sortinit}{H}
-  \verb{doi}
-  \verb 10.1109/TVCG.2015.2468093
-  \endverb
-  \field{issn}{1077-2626}
-  \field{number}{1}
-  \field{pages}{787\bibrangedash 796}
-  \field{title}{Effective Visualization of Temporal Ensembles}
-  \field{volume}{22}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2016}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Kao:2001:Eosvis}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Kao}{K.}%
-     {D.}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dungan}{D.}%
-     {J.L.}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Pang}{P.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{data visualisation;geophysics computing;uncertainty handling;Earth
-  Observing System;Earth science;conditional simulation;distribution data
-  sets;feature-wise;forest cover;geostatistics;ground
-  measurements;pixel-wise;satellite imagery;uncertainty model;Data
-  visualization;Earth Observing System;Frequency;Geophysical
-  measurements;Geoscience;Image analysis;Predictive models;Probability
-  distribution;Satellites;Uncertainty}
-  \strng{namehash}{KD+1}
-  \strng{fullhash}{KDDJPA1}
-  \field{sortinit}{K}
-  \field{booktitle}{Visualization, 2001. VIS '01. Proceedings}
-  \verb{doi}
-  \verb 10.1109/VISUAL.2001.964550
-  \endverb
-  \field{pages}{457\bibrangedash 589}
-  \field{title}{Visualizing {2D} probability distributions from {EOS} satellite
-  image-derived data sets: a case study}
-  \field{year}{2001}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Kindlman:2006:GlyphPacking}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Kindlmann}{K.}%
-     {G.}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Westin}{W.}%
-     {C.-F.}{C.-F.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KGWCF1}
-  \strng{fullhash}{KGWCF1}
-  \field{sortinit}{K}
-  \verb{doi}
-  \verb 10.1109/TVCG.2006.134
-  \endverb
-  \field{issn}{1077-2626}
-  \field{number}{5}
-  \field{pages}{1329\bibrangedash 1336}
-  \field{title}{Diffusion Tensor Visualization with Glyph Packing}
-  \field{volume}{12}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2006}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Knudtson:2004:TraumaSuite}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Knudtson}{K.}%
-     {Jason~L}{J.~L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dort}{D.}%
-     {Jonathan~M}{J.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Helmer}{H.}%
-     {Stephen~D}{S.~D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Smith}{S.}%
-     {R~Stephen}{R.~S.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KJL+1}
-  \strng{fullhash}{KJLDJMHSDSRS1}
-  \field{sortinit}{K}
-  \verb{doi}
-  \verb 10.1097/01.ta.0000114529.99353.22
-  \endverb
-  \field{issn}{0022-5282}
-  \field{number}{3}
-  \field{pages}{527\bibrangedash 530}
-  \field{title}{Surgeon-performed ultrasound for pneumothorax in the trauma
-  suite}
-  \verb{url}
-  \verb http://dx.doi.org/10.1097/01.TA.0000114529.99353.22
-  \endverb
-  \field{volume}{56}
-  \field{journaltitle}{The Journal of trauma}
-  \field{year}{2004}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Lundstrom:2007:Animation}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Lundström}{L.}%
-     {C.}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ljung}{L.}%
-     {P.}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Persson}{P.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ynnerman}{Y.}%
-     {A.}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{biological tissues;computer animation;data visualisation;image
-  classification;medical image processing;probability;rendering (computer
-  graphics);uncertainty handling;diagnostic medical imaging;direct user
-  interaction;direct volume rendering;medical data sets;medical volume
-  rendering;probabilistic animation;probabilistic transfer function
-  model;tissue classification task;uncertainty
-  visualization;Animation;Biomedical imaging;Computed tomography;Data
-  visualization;Focusing;Medical diagnostic imaging;Medical simulation;Sampling
-  methods;Transfer functions;Uncertainty;Uncertainty;medical
-  visualization;probability;transfer function;volume
-  rendering;Algorithms;Anatomy, Artistic;Computer Graphics;Computer
-  Simulation;Image Enhancement;Image Interpretation, Computer-Assisted;Imaging,
-  Three-Dimensional;Medical Illustration;Models, Anatomic;Models,
-  Statistical;Reproducibility of Results;Sensitivity and Specificity;Video
-  Recording}
-  \strng{namehash}{LC+1}
-  \strng{fullhash}{LCLPPAYA1}
-  \field{sortinit}{L}
-  \verb{doi}
-  \verb 10.1109/TVCG.2007.70518
-  \endverb
-  \field{issn}{1077-2626}
-  \field{number}{6}
-  \field{pages}{1648\bibrangedash 1655}
-  \field{title}{Uncertainty Visualization in Medical Volume Rendering Using
-  Probabilistic Animation}
-  \field{volume}{13}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2007}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{MacEachren:2012:VisualSemiotics}{article}{}
-  \name{author}{6}{}{%
-    {{}%
-     {MacEachren}{M.}%
-     {A.M.}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Roth}{R.}%
-     {R.E.}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {O'Brien}{O.}%
-     {J.}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Li}{L.}%
-     {B.}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Swingley}{S.}%
-     {D.}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Gahegan}{G.}%
-     {M.}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{data visualisation;iconic representations;intuitive abstract;map
-  reading task;representation intuitiveness;typology;uncertainty
-  visualization;visual semiotics;visual
-  variable;Semiotics;Syntactics;Uncertainty;Visual analytics;Uncertainty
-  visualization;semiotics;uncertainty categories;visual variables}
-  \strng{namehash}{MA+1}
-  \strng{fullhash}{MARROJLBSDGM1}
-  \field{sortinit}{M}
-  \verb{doi}
-  \verb 10.1109/TVCG.2012.279
-  \endverb
-  \field{issn}{1077-2626}
-  \field{number}{12}
-  \field{pages}{2496\bibrangedash 2505}
-  \field{title}{Visual Semiotics \& Uncertainty Visualization: An Empirical
-  Study}
-  \field{volume}{18}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2012}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Noble:2011:Ultrasound}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Noble}{N.}%
-     {J.~Alison}{J.~A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Navab}{N.}%
-     {Nassir}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Becher}{B.}%
-     {H.}{H.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Royal Society}%
-  }
-  \strng{namehash}{NJA+1}
-  \strng{fullhash}{NJANNBH1}
-  \field{sortinit}{N}
-  \verb{doi}
-  \verb 10.1098/rsfs.2011.0025
-  \endverb
-  \field{isbn}{2042-8901}
-  \field{issn}{2042-8898}
-  \field{number}{4}
-  \field{pages}{673\bibrangedash 685}
-  \field{title}{Ultrasonic image analysis and image-guided interventions}
-  \field{volume}{1}
-  \field{journaltitle}{Interface Focus}
-  \field{year}{2011}
-\endentry
-
-\entry{Obermaier:2014:FutureEnsemble}{article}{}
-  \true{moreauthor}
-  \name{author}{2}{}{%
-    {{}%
-     {Obermaier}{O.}%
-     {Henriette}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Joy}{J.}%
-     {Kenneth}{K.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{OHJK+1}
-  \strng{fullhash}{OHJK+1}
-  \field{sortinit}{O}
-  \field{number}{3}
-  \field{pages}{8\bibrangedash 11}
-  \field{title}{Future challenges for ensemble visualization}
-  \field{volume}{34}
-  \field{journaltitle}{Computer Graphics and Applications, IEEE}
-  \field{year}{2014}
-\endentry
-
-\entry{Pfaffelmoser:2011:VisualizingVariability}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Pfaffelmoser}{P.}%
-     {Tobias}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Reitinger}{R.}%
-     {Matthias}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Westermann}{W.}%
-     {R{\"u}diger}{R.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{organization}{1}{%
-    {Wiley Online Library}%
-  }
-  \strng{namehash}{PT+1}
-  \strng{fullhash}{PTRMWR1}
-  \field{sortinit}{P}
-  \field{booktitle}{Computer Graphics Forum}
-  \field{number}{3}
-  \field{pages}{951\bibrangedash 960}
-  \field{title}{Visualizing the positional and geometrical variability of
-  isosurfaces in uncertain scalar fields}
-  \field{volume}{30}
-  \field{year}{2011}
-\endentry
-
-\entry{Plataniotis:2000:ColorImageProcessing}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Plataniotis}{P.}%
-     {Konstantinos~N}{K.~N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Venetsanopoulos}{V.}%
-     {Anastasios~N}{A.~N.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {Springer}%
-  }
-  \strng{namehash}{PKNVAN1}
-  \strng{fullhash}{PKNVAN1}
-  \field{sortinit}{P}
-  \field{title}{Color image processing and applications}
-  \field{year}{2000}
-\endentry
-
-\entry{Pothkow:2011:PositionalUncertainty}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {P{\"o}thkow}{P.}%
-     {Kai}{K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hege}{H.}%
-     {Hans-Christian}{H.-C.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{PKHHC1}
-  \strng{fullhash}{PKHHC1}
-  \field{sortinit}{P}
-  \field{number}{10}
-  \field{pages}{1393\bibrangedash 1406}
-  \field{title}{Positional uncertainty of isocontours: Condition analysis and
-  probabilistic measures}
-  \field{volume}{17}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2011}
-\endentry
-
-\entry{Prassni:2010:Uncertainty}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Pra{\ss}ni}{P.}%
-     {J{\"o}rg~Stefan}{J.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ropinski}{R.}%
-     {Timo}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hinrichs}{H.}%
-     {Klaus}{K.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{PJS+1}
-  \strng{fullhash}{PJSRTHK1}
-  \field{sortinit}{P}
-  \field{number}{6}
-  \field{pages}{1358\bibrangedash 1365}
-  \field{title}{Uncertainty-aware guided volume segmentation}
-  \field{volume}{16}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
   \field{year}{2010}
-\endentry
-
-\entry{Rautenhaus:2015:EnsembleVisualization}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Rautenhaus}{R.}%
-     {Marc}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Grams}{G.}%
-     {Christian~M}{C.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sch{\"a}fler}{S.}%
-     {Andreas}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Westermann}{W.}%
-     {R{\"u}diger}{R.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{RM+1}
-  \strng{fullhash}{RMGCMSAWR1}
-  \field{sortinit}{R}
-  \field{booktitle}{EGU General Assembly Conference Abstracts}
-  \field{pages}{11908}
-  \field{title}{Visualization of 3D ensemble weather forecasts to predict
-  uncertain warm conveyor belt situations}
-  \field{volume}{17}
-  \field{year}{2015}
-\endentry
-
-\entry{Rieder:2011:AblationApproximation}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Rieder}{R.}%
-     {Christian}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kroeger}{K.}%
-     {Thorben}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Schumann}{S.}%
-     {Christian}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hahn}{H.}%
-     {Horst~K}{H.~K.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {IEEE}%
-  }
-  \strng{namehash}{RC+1}
-  \strng{fullhash}{RCKTSCHHK1}
-  \field{sortinit}{R}
-  \field{number}{12}
-  \field{pages}{1812\bibrangedash 1821}
-  \field{title}{GPU-based real-time approximation of the ablation zone for
-  radiofrequency ablation}
-  \field{volume}{17}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2011}
-\endentry
-
-\entry{Ristovski:2014:UncertaintyInMedVis}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Ristovski}{R.}%
-     {Gordan}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Preusser}{P.}%
-     {Tobias}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hahn}{H.}%
-     {Horst~K.}{H.~K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Linsen}{L.}%
-     {Lars}{L.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Taxonomies}
-  \strng{namehash}{RG+1}
-  \strng{fullhash}{RGPTHHKLL1}
-  \field{sortinit}{R}
-  \verb{doi}
-  \verb http://dx.doi.org/10.1016/j.cag.2013.10.015
-  \endverb
-  \field{issn}{0097-8493}
-  \field{pages}{60 \bibrangedash  73}
-  \field{title}{Uncertainty in medical visualization: Towards a taxonomy}
-  \verb{url}
-  \verb http://www.sciencedirect.com/science/article/pii/S0097849313001568
-  \endverb
-  \field{volume}{39}
-  \field{journaltitle}{Computers \& Graphics}
-  \field{year}{2014}
-\endentry
-
-\entry{Sanyal:2009:UncertaintyVis}{article}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Sanyal}{S.}%
-     {J.}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Zhang}{Z.}%
-     {Song}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bhattacharya}{B.}%
-     {G.}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Amburn}{A.}%
-     {P.}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Moorhead}{M.}%
-     {R.J.}{R.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{data visualisation;ANOVA;counting task;data surface;data
-  visualization;error rate;errorbars;glyphs;search task;surface
-  color-mapping;uncertainty visualization;Analysis of variance;Data
-  acquisition;Data engineering;Data visualization;Error
-  analysis;Pipelines;Quality assurance;Uncertainty;User study;uncertainty
-  visualization}
-  \strng{namehash}{SJ+1}
-  \strng{fullhash}{SJZSBGAPMR1}
-  \field{sortinit}{S}
-  \verb{doi}
-  \verb 10.1109/TVCG.2009.114
-  \endverb
-  \field{issn}{1077-2626}
-  \field{number}{6}
-  \field{pages}{1209\bibrangedash 1218}
-  \field{title}{A User Study to Compare Four Uncertainty Visualization Methods
-  for {1D} and {2D} Datasets}
-  \field{volume}{15}
-  \field{journaltitle}{Visualization and Computer Graphics, IEEE Transactions
-  on}
-  \field{year}{2009}
   \warn{\item Invalid format of field 'month'}
 \endentry
 
-\entry{Scanlan:1991:Artifacts}{article}{}
+\entry{Suzuki1985}{misc}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Suzuki}{S.}%
+     {Satoshi}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Abe}{A.}%
+     {Keiichi}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SSAK1}
+  \strng{fullhash}{SSAK1}
+  \field{sortinit}{S}
+  \field{abstract}{%
+  Two border following algorithms are proposed for the topological analysis of
+  digitized binary images. The first one determines the surroundness relations
+  among the borders of a binary image. Since the outer borders and the hole
+  borders have a one-to-one correspondence to the connected components of
+  l-pixels and to the holes, respectively, the proposed algorithm yields a
+  representation of a binary image, from which one can extract some sort of
+  features without reconstructing the image. The second algorithm, which is a
+  modified version of the first, follows only the outermost borders (i.e., the
+  outer borders which are not surrounded by holes). These algorithms can be
+  effectively used in component counting, shrinking, and topological structural
+  analysis of binary images, when a sequential digital computer is used%
+  }
+  \field{booktitle}{Comput. Vision, Graph. Image Process.}
+  \verb{doi}
+  \verb 10.1016/0734-189X(85)90136-7
+  \endverb
+  \field{isbn}{0734-189X}
+  \field{issn}{0734189X}
+  \field{number}{3}
+  \field{pages}{396}
+  \field{title}{{Topological structural analysis of digitized binary images by
+  border following}}
+  \field{volume}{29}
+  \field{year}{1985}
+\endentry
+
+\entry{Swindells2002}{thesis}{}
   \name{author}{1}{}{%
     {{}%
-     {Scanlan}{S.}%
-     {KA}{K.}%
+     {Swindells}{S.}%
+     {Colin~Edward}{C.~E.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{SK1}
-  \strng{fullhash}{SK1}
+  \strng{namehash}{SCE1}
+  \strng{fullhash}{SCE1}
   \field{sortinit}{S}
+  \field{abstract}{%
+  Computing devices within current work and play environments are relatively
+  static. As the number of 'networked' devices grows, and as people and their
+  devices become more dynamic, situations will commonly arise where users will
+  wish to use 'that device there' instead of navigating through traditional
+  user interface widgets such as lists. This paper describes a process for
+  identifying devices through a pointing gesture using custom tags and a custom
+  stylus called the gesturePen. Implementation details for this system are
+  provided along with qualitative and quantitative results from a formal user
+  study. As ubiquitous computing environments become more pervasive, people
+  will rapidly switch their focus between many computing devices. The results
+  of our work demonstrate that our gesturePen method can improve the user
+  experience in ubiquitous environments by facilitating significantly faster
+  interactions between computing devices.%
+  }
+  \field{booktitle}{Thes}
   \verb{doi}
-  \verb 10.2214/ajr.156.6.2028876
+  \verb 10.1145/571985.572007
   \endverb
-  \field{issn}{0361-803X}
-  \field{number}{6}
-  \field{pages}{1267—1272}
-  \field{title}{Sonographic artifacts and their origins}
+  \field{isbn}{1581134886}
+  \field{number}{2}
+  \field{pages}{151}
+  \field{title}{{That one there! Pointing to establish device identity}}
   \verb{url}
-  \verb http://intl.ajronline.org/cgi/reprint/156/6/1267.pdf
+  \verb http://portal.acm.org/citation.cfm?doid=571985.572007
   \endverb
-  \field{volume}{156}
-  \field{journaltitle}{AJR. American journal of roentgenology}
-  \field{year}{1991}
-  \warn{\item Invalid format of field 'month'}
+  \field{volume}{4}
+  \verb{file}
+  \verb :C$\backslash$:/Users/MaMeng/AppData/Local/Mendeley Ltd./Mendeley Deskt
+  \verb op/Downloaded/Swindells - 2002 - That one there! Pointing to establish
+  \verb device identity.pdf:pdf
+  \endverb
+  \field{type}{phdthesis}
+  \field{year}{2002}
 \endentry
 
-\entry{SchulteZuBerge:2014:CAMPVis}{report}{}
-  \name{author}{4}{}{%
+\entry{Tangcharoen2011}{misc}{}
+  \name{author}{9}{}{%
     {{}%
-     {{Schulte zu Berge}}{S.}%
-     {Christian}{C.}%
+     {Tangcharoen}{T.}%
+     {T}{T}%
      {}{}%
      {}{}}%
     {{}%
-     {Grunau}{G.}%
-     {Artur}{A.}%
+     {Bell}{B.}%
+     {A}{A}%
      {}{}%
      {}{}}%
     {{}%
-     {Mahmud}{M.}%
-     {Hossain}{H.}%
+     {Hegde}{H.}%
+     {S}{S}%
      {}{}%
      {}{}}%
     {{}%
-     {Navab}{N.}%
-     {Nassir}{N.}%
+     {Hussain}{H.}%
+     {T}{T}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beerbaum}{B.}%
+     {P}{P}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaeffter}{S.}%
+     {T}{T}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Razavi}{R.}%
+     {R}{R}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Botnar}{B.}%
+     {R~M}{R.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Greil}{G.}%
+     {G~F}{G.~F.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{SC+1}
-  \strng{fullhash}{SCGAMHNN1}
-  \field{sortinit}{S}
-  \field{title}{{CAMPVis} -- {A} Game Engine-inspired Research Framework for
-  Medical Imaging and Visualization}
-  \verb{url}
-  \verb \url{http://campar.in.tum.de/Main/CAMPVis}
-  \endverb
-  \list{institution}{1}{%
-    {Technische Universit{\"a}t M{\"u}nchen}%
+  \keyw{Child,Congenital/pathology,Coronary Vessel
+  Anomalies/*pathology,Coronary Vessels/*pathology,Female,Heart
+  Defects,Humans,Infant,Magnetic Resonance
+  Angiography/*methods,Male,Preschool,Reproducibility of Results,Sensitivity
+  and Specificity}
+  \strng{namehash}{TT+1}
+  \strng{fullhash}{TTBAHSHTBPSTRRBRMGGF1}
+  \field{sortinit}{T}
+  \field{abstract}{%
+  PURPOSE: To evaluate the feasibility and accuracy of magnetic resonance (MR)
+  coronary angiography for the detection of coronary artery anomalies in
+  infants and children by using surgical findings as a reference. MATERIALS AND
+  METHODS: The data analysis was approved by the institutional review board.
+  One hundred children with congenital heart disease underwent MR coronary
+  angiography while under general anesthesia (mean age +/- standard deviation,
+  3.9 years +/- 3; age range, 0.2-11 years). A navigator-gated, T2-prepared,
+  three-dimensional steady-state free precession whole-heart protocol
+  (isotropic voxel size, 1.0-1.3 mm(3); mean imaging time, 4.6 minutes +/- 1.2;
+  mean navigator efficiency, 70{\%}; 3-mm gating window) was used after
+  injection of gadopentetate dimeglumine. The cardiac rest period (end systole
+  or middiastole) and acquisition window were prospectively assessed for each
+  patient. Coronary artery image quality (score of 0 [nondiagnostic] to 4
+  [excellent]), vessel sharpness, and coronary artery anomalies were assessed
+  by two observers. Surgery was performed in 58 patients, and those findings
+  were used to define accuracy. Variables were assessed between age groups by
+  using either analysis of variance or Kruskal-Wallis tests. RESULTS:
+  Diagnostic image quality (score, >/=1 for all coronary artery segments) was
+  obtained in 46 of the 58 patients (79{\%}) who underwent surgery. The origin
+  and course of the coronary artery anatomy depicted with MR imaging was
+  confirmed at surgery in all 46 patients-including the four (9{\%}) with
+  substantial coronary artery anomalies. Diagnostic-quality images were
+  obtained in 84 of the 100 patients. The rate of success improved
+  significantly when patients were older than 4 months (88{\%} for patients >4
+  months vs 17{\%} for patients </=4 months, P < .001). CONCLUSION: Improved
+  whole-heart MR coronary angiography enables accurate detection of abnormal
+  origin and course of the coronary artery system even in very young patients
+  with congenital heart disease.%
   }
-  \field{type}{techreport}
-  \field{year}{2014}
+  \field{booktitle}{Radiology}
+  \verb{doi}
+  \verb radiol.10100828 [pii] 10.1148/radiol.10100828
+  \endverb
+  \field{isbn}{1527-1315 (Electronic) 0033-8419 (Linking)}
+  \field{issn}{1527-1315}
+  \field{number}{1}
+  \field{pages}{240\bibrangedash 247}
+  \field{title}{{Detection of coronary artery anomalies in infants and young
+  children with congenital heart disease by using MR imaging}}
+  \verb{url}
+  \verb http://www.ncbi.nlm.nih.gov/pubmed/21325034
+  \endverb
+  \field{volume}{259}
+  \field{year}{2011}
 \endentry
 
-\entry{Tokuda:2009:Openigtlink}{article}{}
-  \name{author}{16}{}{%
+\entry{export:244725}{article}{}
+  \name{author}{1}{}{%
     {{}%
-     {Tokuda}{T.}%
-     {Junichi}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Fischer}{F.}%
-     {Gregory~S.}{G.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Papademetris}{P.}%
-     {Xenophon}{X.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yaniv}{Y.}%
-     {Ziv}{Z.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ibanez}{I.}%
-     {Luis}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Cheng}{C.}%
-     {Patrick}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Liu}{L.}%
-     {Haiying}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Blevins}{B.}%
-     {Jack}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Arata}{A.}%
-     {Jumpei}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Golby}{G.}%
-     {Alexandra~J.}{A.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kapur}{K.}%
-     {Tina}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Pieper}{P.}%
-     {Steve}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Burdette}{B.}%
-     {Everette~C.}{E.~C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Fichtinger}{F.}%
-     {Gabor}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tempany}{T.}%
-     {Clare~M.}{C.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hata}{H.}%
-     {Nobuhiko}{N.}%
+     {Valentin}{V.}%
+     {Julien}{J.}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
-    {John Wiley & Sons, Ltd.}%
+    {ACM – Association for Computing Machinery}%
   }
-  \keyw{image-guided therapy, surgical navigation, network communication
-  protocol}
-  \strng{namehash}{TJ+1}
-  \strng{fullhash}{TJFGSPXYZILCPLHBJAJGAJKTPSBECFGTCMHN1}
-  \field{sortinit}{T}
+  \strng{namehash}{VJ1}
+  \strng{fullhash}{VJ1}
+  \field{sortinit}{V}
+  \field{abstract}{%
+  Muscles provide physiological functions to drive body movement and
+  anatomically characterize body shape, making them a crucial component of
+  modeling animated human figures. Substantial efforts have been ex- pended on
+  developing computational models of muscles for the purpose of increasing
+  realism and accuracy in a broad range of applications, includ- ing computer
+  graphics and biomechanics. We survey various approaches that have been
+  employed to model and simulate muscles both morpholog- ically and
+  functionally. Modeling the realistic morphology of muscle re- quires that
+  muscle deformations be accurately depicted. To this end, sev- eral
+  methodologies have been presented, including geometrically-based,
+  physically-based, and data-driven approaches. On the other hand, the simu-
+  lation of physiological muscle functions aims to identify the biomechanical
+  controls responsible for realistic human motion. Estimating these muscle
+  controls has been pursued through static and dynamic simulations. We re- view
+  and discuss all these approaches, and conclude with suggestions for future
+  research.%
+  }
   \verb{doi}
-  \verb 10.1002/rcs.274
+  \verb 10.1145/1559755.1559763
   \endverb
-  \field{issn}{1478-596X}
+  \field{issn}{07300301}
   \field{number}{4}
-  \field{pages}{423\bibrangedash 434}
-  \field{title}{{OpenIGTLink: an open network protocol for image-guided therapy
-  environment}}
+  \field{pages}{1\bibrangedash 12}
+  \field{title}{{SemanticPaint: Interactive 3D Labelling and Learning at your
+  Fingertips}}
   \verb{url}
-  \verb http://dx.doi.org/10.1002/rcs.274
+  \verb http://research.microsoft.com/apps/pubs/default.aspx?id=244725
   \endverb
-  \field{volume}{5}
-  \field{journaltitle}{The International Journal of Medical Robotics and
-  Computer Assisted Surgery}
-  \field{year}{2009}
+  \field{volume}{28}
+  \field{journaltitle}{ACM Trans. Graph.}
+  \field{year}{2015}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Wagner2007a}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wagner}{W.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schmalstieg}{S.}%
+     {Dieter}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WDSD1}
+  \strng{fullhash}{WDSD1}
+  \field{sortinit}{W}
+  \field{abstract}{%
+  In this paper we present ARToolKitPlus, a successor to the popular ARToolKit
+  pose tracking library. ARToolKitPlus has been optimized and extended for the
+  usage on mobile devices such as smartphones, PDAs and Ultra Mobile PCs
+  (UMPCs). We explain the need and specific requirements of pose tracking on
+  mobile devices and how we met those requirements. To prove the applicability
+  we performed an extensive benchmark series on a braod range of off-the-shelf
+  handhelds.%
+  }
+  \field{booktitle}{Proc. 12th Comput. Vis. Winter Work. CVWW07}
+  \verb{doi}
+  \verb 10.1.1.157.1879
+  \endverb
+  \field{pages}{139\bibrangedash 146}
+  \field{title}{{ARToolKitPlus for Pose Tracking on Mobile Devices}}
+  \verb{url}
+  \verb http://www.icg.tu-graz.ac.at/Members/daniel/ARToolKitPlusMobilePoseTrac
+  \verb king
+  \endverb
+  \field{year}{2007}
+\endentry
+
+\entry{Zhang2000}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{2d pattern,Absolute conic,Calibration from planes,Camera
+  calibration,Closed-form solution,Flexible plane-based calibration,Flexible
+  setup,Lens distortion,Maximum likelihood estimation,Projective mapping}
+  \strng{namehash}{ZZ1}
+  \strng{fullhash}{ZZ1}
+  \field{sortinit}{Z}
+  \field{abstract}{%
+  We propose a flexible technique to easily calibrate a camera. It only
+  requires the camera to observe a planar pattern shown at a few (at least two)
+  different orientations. Either the camera or the planar pattern can be freely
+  moved. The motion need not be known. Radial lens distortion is modeled. The
+  proposed procedure consists of a closed-form solution, followed by a
+  nonlinear refinement based on the maximum likelihood criterion. Both computer
+  simulation and real data have been used to test the proposed technique and
+  very good results have been obtained. Compared with classical techniques
+  which use expensive equipment such as two or three orthogonal planes, the
+  proposed technique is easy to use and flexible. It advances 3D computer
+  vision one more step from laboratory environments to real world use.%
+  }
+  \verb{doi}
+  \verb 10.1109/34.888718
+  \endverb
+  \field{isbn}{0162-8828}
+  \field{issn}{01628828}
+  \field{number}{11}
+  \field{pages}{1330\bibrangedash 1334}
+  \field{title}{{A flexible new technique for camera calibration}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=888718
+  \endverb
+  \field{volume}{22}
+  \field{journaltitle}{IEEE Trans. Pattern Anal. Mach. Intell.}
+  \field{year}{2000}
 \endentry
 
 \lossort

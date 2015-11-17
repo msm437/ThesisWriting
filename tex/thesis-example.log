@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.3)  16 NOV 2015 16:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.3)  17 NOV 2015 16:46
 entering extended mode
 **thesis-example.tex
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.tex
@@ -1308,6 +1308,9 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen167
 )
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\was\gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.st
 y (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
@@ -1792,29 +1795,29 @@ Package biblatex Info: ... file 'english.lbx' found.
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
 File: english.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
 ) (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 203.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 203.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 205.
 
 
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Try loading font information for T1+bch on input line 203.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Try loading font information for T1+bch on input line 205.
 
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1bch.fd"
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
@@ -1833,7 +1836,7 @@ File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 \makeMPintoPDFobject=\count349
 \everyMPtoPDFconversion=\toks47
 )
-LaTeX Info: Redefining \microtypecontext on input line 203.
+LaTeX Info: Redefining \microtypecontext on input line 205.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1848,7 +1851,7 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
 \AtBeginShipoutBox=\box85
-Package hyperref Info: Link coloring OFF on input line 203.
+Package hyperref Info: Link coloring OFF on input line 205.
 
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1858,9 +1861,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 203.
-LaTeX Info: Redefining \pageref on input line 203.
-LaTeX Info: Redefining \nameref on input line 203.
+LaTeX Info: Redefining \ref on input line 205.
+LaTeX Info: Redefining \pageref on input line 205.
+LaTeX Info: Redefining \nameref on input line 205.
 
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.out)
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.out)
@@ -1918,86 +1921,57 @@ Package biblatex Info: ... file 'thesis-example.bbl' found.
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Aldrich:2007:USPhysics':
+(biblatex)                with 'Harrison2011':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Brown:2004:VibrationVis':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Hao:2016:TemporalEnsembles':
+(biblatex)                with 'Hart2006':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Kao:2001:Eosvis':
+(biblatex)                with 'OHara2014a':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Kindlman:2006:GlyphPacking':
+(biblatex)                with 'Pederson2010':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Knudtson:2004:TraumaSuite':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Lundstrom:2007:Animation':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'MacEachren:2012:VisualSemiotics':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Sanyal:2009:UncertaintyVis':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Scanlan:1991:Artifacts':
+(biblatex)                with 'export:244725':
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 203.
-Package biblatex Info: Reference segment=0 on input line 203.
+Package biblatex Info: Reference section=0 on input line 205.
+Package biblatex Info: Reference segment=0 on input line 205.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/bch/m/n --> TS1/bch/b/n on input line 205.
+Package gensymb Info: Math companion symbols declared on input line 205.
+LaTeX Info: Redefining \degree on input line 205.
+LaTeX Info: Redefining \celsius on input line 205.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
+erthousand on input line 205.
+LaTeX Info: Redefining \ohm on input line 205.
+Package gensymb Info: Using \textohm for \ohm on input line 205.
+Package gensymb Info: Using \textmu for \micro on input line 205.
  ABD: EveryShipout initializing macros
-Package scrbase Info: activating english \figurename on input line 210.
-Package scrbase Info: activating english \tablename on input line 211.
+Package scrbase Info: activating english \figurename on input line 212.
+Package scrbase Info: activating english \tablename on input line 213.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 232.
 
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/titlepages.tex
-[1
-
-
-
-{C:/Users/MaMeng/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
-
-
-]
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 21.
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qhv.fd
-File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 Package microtype Info: Loading generic settings for font family
-(microtype)             `qhv' (encoding: T1).
+(microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 232.
 
-<gfx/TUM_logo.pdf, id=193, 51.392pt x 27.15807pt>
-File: gfx/TUM_logo.pdf Graphic file (type pdf)
- <use gfx/TUM_logo.pdf>
-Package pdftex.def Info: gfx/TUM_logo.pdf used on input line 24.
-(pdftex.def)             Requested size: 113.81102pt x 60.14449pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 26.
 
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2006,40 +1980,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-
-LaTeX Font Warning: Font shape `T1/qhv/b/sl' in size <14.4> not available
-(Font)              Font shape `T1/qhv/b/it' tried instead on input line 63.
-
-[3 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/gfx/TUM_logo.pdf>])
-[4] (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/abstract.tex
-LaTeX Font Info:    Try loading font information for T1+phv on input line 4.
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `phv' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [5
-
-
-
-
-] [6
-
-
-]
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/acknowledgement.
-tex) [7
-
-
-] [8
-
-
-]
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <20.74> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 229.
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 232.
 
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.toc
 LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
@@ -2092,687 +2034,114 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 7.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 7.
-)
-\tf@toc=\write6
-
-[9] [10
-
-
-]
-LaTeX Font Info:    Try loading font information for T1+pbk on input line 245.
- ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pbk.fd"
-File: t1pbk.fd 2001/06/04 font definitions for T1/pbk.
-)
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <11> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 245.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `pbk' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <60> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 245.
-
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/cmvis.tex
-[1
-
-
-] [2
-
-
-]
-Chapter 1.
-
-LaTeX Warning: Reference `chap:cudacm' on page 3 undefined on input line 9.
-
-
-LaTeX Warning: Reference `sec:background:vis:vispipeline' on page 3 undefined o
-n input line 26.
-
-[3] <figures/cmvis/rieder-rfablation.jpg, id=294, 1296.845pt x 815.045pt>
-File: figures/cmvis/rieder-rfablation.jpg Graphic file (type jpg)
-
-<use figures/cmvis/rieder-rfablation.jpg>
-Package pdftex.def Info: figures/cmvis/rieder-rfablation.jpg used on input line
- 33.
-(pdftex.def)             Requested size: 301.92375pt x 189.75717pt.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 36.
-
-<figures/cmvis/prassni-uncertainty1.jpg, id=301, 491.8375pt x 331.2375pt>
-File: figures/cmvis/prassni-uncertainty1.jpg Graphic file (type jpg)
-
-<use figures/cmvis/prassni-uncertainty1.jpg>
-Package pdftex.def Info: figures/cmvis/prassni-uncertainty1.jpg used on input l
-ine 50.
-(pdftex.def)             Requested size: 168.98616pt x 113.81102pt.
-
-<figures/cmvis/prassni-uncertainty2.jpg, id=302, 548.0475pt x 456.70625pt>
-File: figures/cmvis/prassni-uncertainty2.jpg Graphic file (type jpg)
-
-<use figures/cmvis/prassni-uncertainty2.jpg>
-Package pdftex.def Info: figures/cmvis/prassni-uncertainty2.jpg used on input l
-ine 52.
-(pdftex.def)             Requested size: 136.56831pt x 113.81102pt.
-
-Underfull \vbox (badness 1742) has occurred while \output is active []
-
- [4 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/rieder
--rfablation.jpg>]
-
-LaTeX Warning: Reference `sec:cudacm:us-image-formation' on page 5 undefined on
- input line 73.
-
-<figures/cmvis/liver_high_uncertainty.jpg, id=326, 1023.825pt x 674.52pt>
-File: figures/cmvis/liver_high_uncertainty.jpg Graphic file (type jpg)
-
-<use figures/cmvis/liver_high_uncertainty.jpg>
-Package pdftex.def Info: figures/cmvis/liver_high_uncertainty.jpg used on input
- line 83.
-(pdftex.def)             Requested size: 169.07655pt x 111.38362pt.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 83.
-
-<figures/cmvis/liver_low_uncertainty.jpg, id=327, 1023.825pt x 674.52pt>
-File: figures/cmvis/liver_low_uncertainty.jpg Graphic file (type jpg)
-
-<use figures/cmvis/liver_low_uncertainty.jpg>
-Package pdftex.def Info: figures/cmvis/liver_low_uncertainty.jpg used on input 
-line 87.
-(pdftex.def)             Requested size: 169.07655pt x 111.38362pt.
-
-Underfull \vbox (badness 1688) has occurred while \output is active []
-
- [5 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/prassn
-i-uncertainty1.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figu
-res/cmvis/prassni-uncertainty2.jpg> <E:/TUM_Narvis/documents/projectDocs/Thesis
-Writing/tex/figures/cmvis/liver_high_uncertainty.jpg> <E:/TUM_Narvis/documents/
-projectDocs/ThesisWriting/tex/figures/cmvis/liver_low_uncertainty.jpg>]
-LaTeX Font Info:    Try loading font information for TS1+bch on input line 111.
-
+LaTeX Font Info:    Try loading font information for TS1+bch on input line 5.
 
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1bch.fd"
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-
-LaTeX Warning: Reference `sec:cudacm:cm' on page 6 undefined on input line 114.
-
-
-[6]
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\figures/cmvis/scheme.tik
-z
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <7> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 19.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 22.
-)
+(Font)              <10> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 159.
- [7] <figures/cmvis/color-overlay-100.jpg, id=397, 511.9125pt x 337.26pt>
-File: figures/cmvis/color-overlay-100.jpg Graphic file (type jpg)
-
-<use figures/cmvis/color-overlay-100.jpg>
-Package pdftex.def Info: figures/cmvis/color-overlay-100.jpg used on input line
- 199.
-(pdftex.def)             Requested size: 169.07655pt x 111.38876pt.
-
-<figures/cmvis/color-overlay-300.jpg, id=398, 511.9125pt x 337.26pt>
-File: figures/cmvis/color-overlay-300.jpg Graphic file (type jpg)
-
-<use figures/cmvis/color-overlay-300.jpg>
-Package pdftex.def Info: figures/cmvis/color-overlay-300.jpg used on input line
- 201.
-(pdftex.def)             Requested size: 169.07655pt x 111.38876pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/scheme
-/us_original.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figure
-s/cmvis/scheme/us_blurred.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriti
-ng/tex/figures/cmvis/scheme/us_cm.png> <E:/TUM_Narvis/documents/projectDocs/The
-sisWriting/tex/figures/cmvis/scheme/us_uncertainty.png> <E:/TUM_Narvis/document
-s/projectDocs/ThesisWriting/tex/figures/cmvis/scheme/us_uncertainty.png> <E:/TU
-M_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/scheme/tf.png> <
-E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/scheme/mapp
-ing_fuzziness.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figur
-es/cmvis/scheme/mapping_chroma.png> <E:/TUM_Narvis/documents/projectDocs/Thesis
-Writing/tex/figures/cmvis/scheme/mapping_overlay.png>]
-<figures/cmvis/chroma-100.jpg, id=425, 511.9125pt x 337.26pt>
-File: figures/cmvis/chroma-100.jpg Graphic file (type jpg)
-
-<use figures/cmvis/chroma-100.jpg>
-Package pdftex.def Info: figures/cmvis/chroma-100.jpg used on input line 237.
-(pdftex.def)             Requested size: 169.07655pt x 111.38876pt.
-
-<figures/cmvis/chroma-300.jpg, id=426, 511.9125pt x 337.26pt>
-File: figures/cmvis/chroma-300.jpg Graphic file (type jpg)
-
-<use figures/cmvis/chroma-300.jpg>
-Package pdftex.def Info: figures/cmvis/chroma-300.jpg used on input line 239.
-(pdftex.def)             Requested size: 169.07655pt x 111.38876pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/color-
-overlay-100.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures
-/cmvis/color-overlay-300.jpg>]
-<figures/cmvis/fuzzy-100.jpg, id=444, 511.9125pt x 337.26pt>
-File: figures/cmvis/fuzzy-100.jpg Graphic file (type jpg)
-
-<use figures/cmvis/fuzzy-100.jpg>
-Package pdftex.def Info: figures/cmvis/fuzzy-100.jpg used on input line 270.
-(pdftex.def)             Requested size: 169.07655pt x 111.38876pt.
-
-<figures/cmvis/fuzzy-300.jpg, id=445, 511.9125pt x 337.26pt>
-File: figures/cmvis/fuzzy-300.jpg Graphic file (type jpg)
-
-<use figures/cmvis/fuzzy-300.jpg>
-Package pdftex.def Info: figures/cmvis/fuzzy-300.jpg used on input line 272.
-(pdftex.def)             Requested size: 169.07655pt x 111.38876pt.
-
-
-LaTeX Warning: Reference `cmvis:eq:cm-system' on page 10 undefined on input lin
-e 293.
-
-
-LaTeX Warning: Reference `chap:cudacm' on page 10 undefined on input line 296.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/chrom
-a-100.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis
-/chroma-300.jpg>] [11 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/fi
-gures/cmvis/fuzzy-100.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/t
-ex/figures/cmvis/fuzzy-300.jpg>]
-<figures/cmvis/evaluation/helpful_to_learn_us.png, id=464, 578.16pt x 433.62pt>
-File: figures/cmvis/evaluation/helpful_to_learn_us.png Graphic file (type png)
-<use figures/cmvis/evaluation/helpful_to_learn_us.png>
-Package pdftex.def Info: figures/cmvis/evaluation/helpful_to_learn_us.png used 
-on input line 334.
-(pdftex.def)             Requested size: 197.25905pt x 147.93831pt.
-
-<figures/cmvis/evaluation/helpful_to_understand_uncertainty.png, id=465, 578.16
-pt x 433.62pt>
-File: figures/cmvis/evaluation/helpful_to_understand_uncertainty.png Graphic fi
-le (type png)
-
-<use figures/cmvis/evaluation/helpful_to_understand_uncertainty.png>
-Package pdftex.def Info: figures/cmvis/evaluation/helpful_to_understand_uncerta
-inty.png used on input line 335.
-(pdftex.def)             Requested size: 197.25905pt x 147.93831pt.
- [12 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/evalu
-ation/helpful_to_learn_us.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriti
-ng/tex/figures/cmvis/evaluation/helpful_to_understand_uncertainty.png>]
-<figures/cmvis/evaluation/intuitiveness.png, id=477, 578.16pt x 433.62pt>
-File: figures/cmvis/evaluation/intuitiveness.png Graphic file (type png)
-
-<use figures/cmvis/evaluation/intuitiveness.png>
-Package pdftex.def Info: figures/cmvis/evaluation/intuitiveness.png used on inp
-ut line 354.
-(pdftex.def)             Requested size: 197.25905pt x 147.93831pt.
-
-<figures/cmvis/evaluation/helpful_to_find_anatomy.png, id=478, 578.16pt x 433.6
-2pt>
-File: figures/cmvis/evaluation/helpful_to_find_anatomy.png Graphic file (type p
-ng)
- <use figures/cmvis/evaluation/helpful_to_find_anatomy.png>
-Package pdftex.def Info: figures/cmvis/evaluation/helpful_to_find_anatomy.png u
-sed on input line 355.
-(pdftex.def)             Requested size: 197.25905pt x 147.93831pt.
-
-<figures/cmvis/evaluation/expert_uncertainty_perception.png, id=479, 578.16pt x
- 325.215pt>
-File: figures/cmvis/evaluation/expert_uncertainty_perception.png Graphic file (
-type png)
- <use figures/cmvis/evaluation/expert_uncertainty_perception.png>
-Package pdftex.def Info: figures/cmvis/evaluation/expert_uncertainty_perception
-.png used on input line 374.
-(pdftex.def)             Requested size: 197.25905pt x 110.95374pt.
-
-<figures/cmvis/evaluation/expert_diagnostic_value.png, id=480, 578.16pt x 325.2
-15pt>
-File: figures/cmvis/evaluation/expert_diagnostic_value.png Graphic file (type p
-ng)
- <use figures/cmvis/evaluation/expert_diagnostic_value.png>
-Package pdftex.def Info: figures/cmvis/evaluation/expert_diagnostic_value.png u
-sed on input line 375.
-(pdftex.def)             Requested size: 197.25905pt x 110.95374pt.
-
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
- [13 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvis/evalu
-ation/intuitiveness.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex
-/figures/cmvis/evaluation/helpful_to_find_anatomy.png> <E:/TUM_Narvis/documents
-/projectDocs/ThesisWriting/tex/figures/cmvis/evaluation/expert_uncertainty_perc
-eption.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/cmvi
-s/evaluation/expert_diagnostic_value.png>]
-
-LaTeX Warning: Reference `chap:cudacm' on page 14 undefined on input line 417.
-
+(Font)              <7> on input line 11.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 11.
 )
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/uscompounding.te
-x [14]
-Chapter 2.
-
-LaTeX Warning: Citation 'vanhoenacker2007orthopedicImaging' on page 15 undefine
-d on input line 7.
-
-
-LaTeX Warning: Citation 'Noble06' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Noble11' on page 15 undefined on input line 11.
-
-
-LaTeX Warning: Citation 'Solberg07' on page 15 undefined on input line 26.
-
-[15
-
-
-]
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\figures/uscompounding/sc
-heme.tikz
-Overfull \vbox (0.62639pt too high) detected at line 33
- []
-
-
-Overfull \vbox (0.62639pt too high) detected at line 40
- []
-
-
-Overfull \vbox (0.62639pt too high) detected at line 60
- []
-
-
-Overfull \vbox (0.62639pt too high) detected at line 66
- []
-
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-)
-
-LaTeX Warning: Citation 'Coupe05' on page 16 undefined on input line 45.
-
-
-LaTeX Warning: Citation 'Wein06' on page 16 undefined on input line 45.
-
-
-LaTeX Warning: Citation 'Wein06' on page 16 undefined on input line 48.
-
-
-LaTeX Warning: Citation 'Rohling1999' on page 16 undefined on input line 53.
-
-
-LaTeX Warning: Citation 'Sanches2002' on page 16 undefined on input line 53.
-
-
-LaTeX Warning: Citation 'Klein12' on page 16 undefined on input line 53.
-
-
-LaTeX Warning: Citation 'zettinig14' on page 16 undefined on input line 54.
-
-
-LaTeX Warning: Citation 'Morozov11' on page 16 undefined on input line 56.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/uscompoundi
-ng/im50.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/usc
-ompounding/cluster.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/
-figures/uscompounding/cm50.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWrit
-ing/tex/figures/uscompounding/cube.png> <E:/TUM_Narvis/documents/projectDocs/Th
-esisWriting/tex/figures/uscompounding/cube.png> <E:/TUM_Narvis/documents/projec
-tDocs/ThesisWriting/tex/figures/uscompounding/transducer.png> <E:/TUM_Narvis/do
-cuments/projectDocs/ThesisWriting/tex/figures/uscompounding/computer.png>]
-
-LaTeX Warning: Citation 'aldrich07usphysics' on page 17 undefined on input line
- 62.
-
-
-LaTeX Warning: Citation 'Treece02' on page 17 undefined on input line 66.
-
-
-LaTeX Warning: Citation 'Schultezub14' on page 17 undefined on input line 72.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-
-LaTeX Warning: Citation 'Treece02' on page 18 undefined on input line 86.
-
-
-LaTeX Warning: Citation 'Housden07' on page 18 undefined on input line 93.
-
-
-LaTeX Warning: Citation 'Housden07' on page 18 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Chen97' on page 18 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Afsham14' on page 18 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Housden07' on page 18 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'Chen97' on page 18 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'Afsham14' on page 18 undefined on input line 111.
-
-
-LaTeX Warning: Citation 'Schultezub14' on page 18 undefined on input line 121.
-
-
-Underfull \vbox (badness 5119) has occurred while \output is active []
-
- [18]
-<figures/uscompounding/phantom_pressure_original.jpg, id=542, 451.6875pt x 1003
-.75pt>
-File: figures/uscompounding/phantom_pressure_original.jpg Graphic file (type jp
-g)
- <use figures/uscompounding/phantom_pressure_original.jpg>
-Package pdftex.def Info: figures/uscompounding/phantom_pressure_original.jpg us
-ed on input line 141.
-(pdftex.def)             Requested size: 70.41747pt x 156.49014pt.
-
-<figures/uscompounding/phantom_pressure_compensated.jpg, id=543, 451.6875pt x 1
-003.75pt>
-File: figures/uscompounding/phantom_pressure_compensated.jpg Graphic file (type
- jpg)
- <use figures/uscompounding/phantom_pressure_compensated.jpg>
-Package pdftex.def Info: figures/uscompounding/phantom_pressure_compensated.jpg
- used on input line 145.
-(pdftex.def)             Requested size: 70.41747pt x 156.49014pt.
-
-<figures/uscompounding/phantom_no_pressure.jpg, id=544, 423.5825pt x 1061.9675p
-t>
-File: figures/uscompounding/phantom_no_pressure.jpg Graphic file (type jpg)
- <use figures/uscompounding/phantom_no_pressure.jpg>
-Package pdftex.def Info: figures/uscompounding/phantom_no_pressure.jpg used on 
-input line 149.
-(pdftex.def)             Requested size: 62.41647pt x 156.49014pt.
-
-
-LaTeX Warning: Citation 'Treece02' on page 19 undefined on input line 154.
-
-[19 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/uscompoundin
-g/phantom_pressure_original.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWri
-ting/tex/figures/uscompounding/phantom_pressure_compensated.jpg> <E:/TUM_Narvis
-/documents/projectDocs/ThesisWriting/tex/figures/uscompounding/phantom_no_press
-ure.jpg>]
-
-LaTeX Warning: Citation 'Nielsen96' on page 20 undefined on input line 179.
-
-
-LaTeX Warning: Citation 'Thirion98' on page 20 undefined on input line 179.
-
-
-LaTeX Warning: Citation 'Zikic11' on page 20 undefined on input line 179.
-
-
-LaTeX Warning: Citation 'Chen08' on page 20 undefined on input line 180.
-
-
-LaTeX Warning: Citation 'Karamalis12' on page 20 undefined on input line 203.
-
-[20]
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\figures/uscompounding/di
-fferent_angles_artifacts.tikz)
-<figures/uscompounding/cluster-bs.jpg, id=568, 1105.731pt x 294.50024pt>
-File: figures/uscompounding/cluster-bs.jpg Graphic file (type jpg)
-
-<use figures/uscompounding/cluster-bs.jpg>
-Package pdftex.def Info: figures/uscompounding/cluster-bs.jpg used on input lin
-e 224.
-(pdftex.def)             Requested size: 382.43552pt x 101.85432pt.
-
-<figures/uscompounding/cluster-od.jpg, id=569, 1105.731pt x 294.50024pt>
-File: figures/uscompounding/cluster-od.jpg Graphic file (type jpg)
-
-<use figures/uscompounding/cluster-od.jpg>
-Package pdftex.def Info: figures/uscompounding/cluster-od.jpg used on input lin
-e 228.
-(pdftex.def)             Requested size: 382.43552pt x 101.85432pt.
- [21 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/uscompoundi
-ng/cluster-bs.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figur
-es/uscompounding/cluster-od.jpg>]
-
-LaTeX Warning: Citation 'Shepard68' on page 22 undefined on input line 253.
-
-
-LaTeX Warning: Citation 'Wein06' on page 22 undefined on input line 254.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-<figures/uscompounding/registration0x0.jpg, id=597, 218.61674pt x 169.47314pt>
-File: figures/uscompounding/registration0x0.jpg Graphic file (type jpg)
-
-<use figures/uscompounding/registration0x0.jpg>
-Package pdftex.def Info: figures/uscompounding/registration0x0.jpg used on inpu
-t line 309.
-(pdftex.def)             Requested size: 124.79416pt x 96.74292pt.
-
-<figures/uscompounding/registration3x3.jpg, id=598, 218.61674pt x 169.47314pt>
-File: figures/uscompounding/registration3x3.jpg Graphic file (type jpg)
-
-<use figures/uscompounding/registration3x3.jpg>
-Package pdftex.def Info: figures/uscompounding/registration3x3.jpg used on inpu
-t line 313.
-(pdftex.def)             Requested size: 124.79416pt x 96.74292pt.
-
-<figures/uscompounding/registration5x16.jpg, id=599, 218.61674pt x 169.47314pt>
-File: figures/uscompounding/registration5x16.jpg Graphic file (type jpg)
-<use figures/uscompounding/registration5x16.jpg>
-Package pdftex.def Info: figures/uscompounding/registration5x16.jpg used on inp
-ut line 317.
-(pdftex.def)             Requested size: 124.79416pt x 96.74292pt.
-
-
-LaTeX Warning: Citation 'OpenGL43' on page 23 undefined on input line 332.
-
-
-LaTeX Warning: Citation 'SSBO' on page 23 undefined on input line 332.
-
-[23]
-
-LaTeX Warning: Citation 'Wein08' on page 24 undefined on input line 340.
-
-
-LaTeX Warning: Citation 'Wein06' on page 24 undefined on input line 342.
-
-
-Underfull \vbox (badness 1496) has occurred while \output is active []
-
- [24 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/uscompoundi
-ng/registration0x0.jpg> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/
-figures/uscompounding/registration3x3.jpg> <E:/TUM_Narvis/documents/projectDocs
-/ThesisWriting/tex/figures/uscompounding/registration5x16.jpg>]
-
-LaTeX Warning: Citation 'Treece02' on page 25 undefined on input line 372.
-
-<figures/uscompounding/achilles_3d.jpg, id=634, 850.17625pt x 717.68124pt>
-File: figures/uscompounding/achilles_3d.jpg Graphic file (type jpg)
-
-<use figures/uscompounding/achilles_3d.jpg>
-Package pdftex.def Info: figures/uscompounding/achilles_3d.jpg used on input li
-ne 383.
-(pdftex.def)             Requested size: 301.92375pt x 254.8717pt.
- [25]
-
-LaTeX Warning: Citation 'Wein06' on page 26 undefined on input line 425.
-
-
-<figures/uscompounding/difference2_baseline.png, id=643, 589.0005pt x 271.0125p
-t>
-File: figures/uscompounding/difference2_baseline.png Graphic file (type png)
- <use figures/uscompounding/difference2_baseline.png>
-Package pdftex.def Info: figures/uscompounding/difference2_baseline.png used on
- input line 433.
-(pdftex.def)             Requested size: 193.22948pt x 88.90921pt.
-
-<figures/uscompounding/difference2_ours.png, id=644, 589.0005pt x 271.0125pt>
-File: figures/uscompounding/difference2_ours.png Graphic file (type png)
-
-<use figures/uscompounding/difference2_ours.png>
-Package pdftex.def Info: figures/uscompounding/difference2_ours.png used on inp
-ut line 437.
-(pdftex.def)             Requested size: 193.22948pt x 88.90921pt.
-
-
-LaTeX Warning: Citation 'Wein06' on page 26 undefined on input line 443.
-
-[26 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/uscompoundin
-g/achilles_3d.jpg>]
-
-LaTeX Warning: Citation 'Wein06' on page 27 undefined on input line 467.
-
-[27 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/uscompoundin
-g/difference2_baseline.png> <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/
-tex/figures/uscompounding/difference2_ours.png>] [28]
-
-LaTeX Warning: Citation 'Treece02' on page 29 undefined on input line 543.
-
-) [29] [30
-
-
-]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 259.
-
- ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+\tf@toc=\write6
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 233.
+
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: T1).
+(microtype)             `qhv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[31
+[1
+
+{C:/Users/MaMeng/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 \printbibliography[nottype=online]
+                                         [1
 
 
 ]
 
-Package biblatex Warning: Type 'online' not found on input line 260.
+Package biblatex Warning: Type 'online' not found on input line 267.
 
 
-LaTeX Warning: Empty bibliography on input line 260.
+LaTeX Warning: Empty bibliography on input line 267.
 
-[32] (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.lof
-Underfull \vbox (badness 10000) has occurred while \output is active []
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.269 \cleardoublepage
+                       [2]
 
- [33
+Package caption Warning: Unused \captionsetup[subfigure] on input line 186.
+See the caption package documentation for explanation.
 
+[3
 
-])
-\tf@lof=\write7
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34]
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.lot)
-\tf@lot=\write8
-
-[35
-
-
-] [36
 
 
 ]
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/declaration.tex)
-[37
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
+ (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
 
 
-] [38
+Package rerunfilecheck Warning: File `thesis-example.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
-
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
-Package rerunfilecheck Info: File `thesis-example.out' has not changed.
-(rerunfilecheck)             Checksum: B8D8B9424C7B3AC6FAC6A5E091AC40A4;2785.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                thesis-example
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: Checksums for `thesis-example.out':
+(rerunfilecheck)             Before: 69829893BD1AE5187249BBEA7ACECDD2;327
+(rerunfilecheck)             After:  9A340B5B81126EE9F361BDEDA570EB5D;48.
 Package logreq Info: Writing requests to 'thesis-example.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 278.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
  ) 
 Here is how much of TeX's memory you used:
- 35191 strings out of 493921
- 674564 string characters out of 3144874
- 1086941 words of memory out of 3000000
- 37209 multiletter control sequences out of 15000+200000
- 184779 words of font info for 314 fonts, out of 3000000 for 9000
+ 33522 strings out of 493921
+ 639053 string characters out of 3144874
+ 1075217 words of memory out of 3000000
+ 36057 multiletter control sequences out of 15000+200000
+ 78748 words of font info for 120 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 65i,19n,106p,967b,2231s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{E:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{E:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{E:/Program Files (x86)/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathit.enc}{E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-mathex.enc}{E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
-r.enc}{C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ec
-.enc}<C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/b
-chb8a.pfb><C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/char
-ter/bchb8a.pfb><C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea
-/charter/bchr8a.pfb><C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/bit
-strea/charter/bchri8a.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmex10.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.
-pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><E:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi5.pfb><E:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><E:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/lm/lmmi7.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmmi8.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/l
-m/lmmi9.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb>
-<E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr5.pfb><E:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><E:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/lm/lmr7.pfb><E:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/lm/lmr8.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmr9.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss10.p
-fb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><E:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><E:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><E:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/lm/lmsy5.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/lm/lmsy6.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmsy7.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pf
-b><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy9.pfb><E:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:/Users/MaMeng/AppDa
-ta/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MaMeng/App
-Data/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/MaMeng/
-AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/MaMen
-g/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvri.pfb><E:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb><E:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis-example.pdf (48 pages, 6800039 bytes).
+ 65i,12n,106p,920b,1837s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Declaration.0} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.5} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.3} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.1} has been referenced but does not exist,
+ replaced by a fixed one
+
+{C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{
+E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{E:/Program F
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/MaMeng/AppData/Roa
+ming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/MaMeng/AppDat
+a/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/MaMeng/A
+ppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><E:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/MaMeng/AppD
+ata/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MaMeng/Ap
+pData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvr.pfb><E:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis-example.pdf (5 pages, 125874 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
- 53422 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 26301 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -1,36 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis-example.aux
 The style file: biblatex.bst
 Database file #1: thesis-example-blx.bib
-Database file #2: bib-refs.bib
-Warning--I'm ignoring Ristovski:2014:UncertaintyInMedVis's extra "keywords" field
---line 1590 of file bib-refs.bib
-Warning--I'm ignoring Ristovski:2014:UncertaintyInMedVis's extra "keywords" field
---line 1592 of file bib-refs.bib
-Warning--I didn't find a database entry for "vanhoenacker2007orthopedicImaging"
-Warning--I didn't find a database entry for "Noble06"
-Warning--I didn't find a database entry for "Noble11"
-Warning--I didn't find a database entry for "Solberg07"
-Warning--I didn't find a database entry for "Coupe05"
-Warning--I didn't find a database entry for "Wein06"
-Warning--I didn't find a database entry for "Rohling1999"
-Warning--I didn't find a database entry for "Sanches2002"
-Warning--I didn't find a database entry for "Klein12"
-Warning--I didn't find a database entry for "zettinig14"
-Warning--I didn't find a database entry for "Morozov11"
-Warning--I didn't find a database entry for "aldrich07usphysics"
-Warning--I didn't find a database entry for "Treece02"
-Warning--I didn't find a database entry for "Schultezub14"
-Warning--I didn't find a database entry for "Housden07"
-Warning--I didn't find a database entry for "Chen97"
-Warning--I didn't find a database entry for "Afsham14"
-Warning--I didn't find a database entry for "Nielsen96"
-Warning--I didn't find a database entry for "Thirion98"
-Warning--I didn't find a database entry for "Zikic11"
-Warning--I didn't find a database entry for "Chen08"
-Warning--I didn't find a database entry for "Karamalis12"
-Warning--I didn't find a database entry for "Shepard68"
-Warning--I didn't find a database entry for "OpenGL43"
-Warning--I didn't find a database entry for "SSBO"
-Warning--I didn't find a database entry for "Wein08"
+Database file #2: E:/TUM_Narvis/documents/BibTex/library.bib
+Warning--I didn't find a database entry for "Betancourt2015"
+Warning--I didn't find a database entry for "Brooke1996"
 Biblatex version: 3.0
-(There were 28 warnings)
+(There were 2 warnings)

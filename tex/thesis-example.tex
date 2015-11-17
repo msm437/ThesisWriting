@@ -62,7 +62,7 @@
 % **************************************************
 % Information and Commands for Reuse
 % **************************************************
-\newcommand{\thesisTitle}{Personally Natural Perception and Interaction in Mixed Reality}
+\newcommand{\thesisTitle}{Personal Perception and Interaction in Mixed Reality}
 \newcommand{\thesisName}{Meng Ma}
 \newcommand{\thesisSubject}{Dissertation}
 \newcommand{\thesisDate}{\today}
@@ -141,7 +141,7 @@
 	mincitenames=1,%
 	defernumbers=true%
 ]{biblatex}
-\bibliography{bib-refs}
+\bibliography{E:/TUM_Narvis/documents/BibTex/library}
 
 %\makeatletter
 %
@@ -166,6 +166,7 @@
 \usepackage{array}
 \usepackage{booktabs}
 \usepackage{multirow}
+\usepackage{gensymb}
 \renewcommand{\arraystretch}{1.5}		% set vertical line padding to factor 1.5
 \setlength{\tabcolsep}{8pt}				% set the column separation (6pt is default)
 \setlength{\heavyrulewidth}{0.10em}		% set the thickness of the top and bottom rules
@@ -181,6 +182,7 @@
 \usepackage{ifthen}
 \usepackage{subfig}
 \usepackage{wrapfig}
+\usepackage{enumitem}
 \captionsetup[subfigure]{format=plain,labelsep=space,singlelinecheck=true}
 
 % **************************************************
@@ -213,17 +215,18 @@
 % --------------------------
 % Front matter
 % --------------------------
-\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
-\pagestyle{empty}				% no header or footers
-\input{content/titlepages}		% INCLUDE: all titlepages
-\cleardoublepage
-
-\pagestyle{plain}				% display just page numbers
-\input{content/abstract}		% INCLUDE: the abstracts (english and german)
-\cleardoublepage
+%recover the following comment after you finish the main contents
+%\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
+%\pagestyle{empty}				% no header or footers
+%\input{content/titlepages}		% INCLUDE: all titlepages
+%\cleardoublepage
 %
-\input{content/acknowledgement} % INCLUDE: acknowledgement
-\cleardoublepage
+%\pagestyle{plain}				% display just page numbers
+%\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+%\cleardoublepage
+%%
+%\input{content/acknowledgement} % INCLUDE: acknowledgement
+%\cleardoublepage
 %
 \setcounter{tocdepth}{2}		% define depth of toc
 \tableofcontents				% display table of contents
@@ -236,17 +239,21 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
-%\part{Review on Medical Visualization}
+%\part{Review on Mixed Reality}
 %\input{content/01-introduction} 
 %\input{content/02-background}
-%
-%%\input{content/03-methods} 
 
-\part{Methodology}
+%\input{content/03-methods} 
+
+%\part{Personal Perception with Magic Mirror}
 %\input{content/cudacm}
-\input{content/cmvis}
-\input{content/uscompounding}t
-\cleardoublepage
+%\input{content/cmvis}
+%\input{content/uscompounding}t
+%\cleardoublepage
+
+%\part{Personal Pointing Interaction}
+%\input{content/3-PAST}
+%\input{content/3-PointingOR}
 
 % --------------------------
 % Back matter
@@ -261,13 +268,14 @@
 }
 \cleardoublepage
 
-\listoffigures
-\cleardoublepage
-
-\listoftables
-\cleardoublepage
-
-\input{content/declaration}
+%%uncomment the follow comment scope after you finish the writing.
+%\listoffigures
+%\cleardoublepage
+%
+%\listoftables
+%\cleardoublepage
+%
+%\input{content/declaration}
 \clearpage
 \newpage
 \mbox{}
