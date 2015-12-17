@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.3)  17 NOV 2015 16:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.3)  16 DEC 2015 17:49
 entering extended mode
 **thesis-example.tex
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.tex
@@ -1141,11 +1141,12 @@ Package biblatex Info: ... file 'blx-natbib.def' found.
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-natbib.def
 File: blx-natbib.def 2015/10/21 v3.1 biblatex compatibility (PK/JW/AB)
 )
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\numeric.bbx
-File: numeric.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\alphabetic.b
+bx
+File: alphabetic.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
@@ -1154,17 +1155,17 @@ File: standard.bbx 2015/10/21 v3.1 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count292
 \c@bbx:relatedtotal=\count293
 ))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\numeric.cbx
-File: numeric.cbx 2015/10/21 v3.1 biblatex citation style (PK/JW/AB)
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\alphabetic.c
+bx
+File: alphabetic.cbx 2015/10/21 v3.1 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
@@ -1173,10 +1174,9 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
+ (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
 File: biblatex.cfg 
-)))
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+))) ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip105
 
@@ -1603,189 +1603,33 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/tikzsetup.tex
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibrarytrees.code.tex
-File: tikzlibrarytrees.code.tex 2008/02/24 v3.0.1a (rcs-revision 1.2)
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrar
-yarrows.code.tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen214
-))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibrarychains.code.tex
-File: tikzlibrarychains.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.6)
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshadows.code.tex
-File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrar
-yfadings.code.tex
-File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
-)))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryfit.code.tex
-File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
-)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pg
-flibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
-
-))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pg
-flibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
-))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pg
-flibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
-))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pg
-flibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
-))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.callouts.code.tex
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pg
-flibraryshapes.callouts.code.tex))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
-)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pg
-flibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
-
-\pgfnodepartlowerbox=\box47
-\pgfnodeparttwobox=\box48
-\pgfnodepartthreebox=\box49
-\pgfnodepartfourbox=\box50
-\pgfnodeparttwentybox=\box51
-\pgfnodepartnineteenbox=\box52
-\pgfnodeparteighteenbox=\box53
-\pgfnodepartseventeenbox=\box54
-\pgfnodepartsixteenbox=\box55
-\pgfnodepartfifteenbox=\box56
-\pgfnodepartfourteenbox=\box57
-\pgfnodepartthirteenbox=\box58
-\pgfnodeparttwelvebox=\box59
-\pgfnodepartelevenbox=\box60
-\pgfnodeparttenbox=\box61
-\pgfnodepartninebox=\box62
-\pgfnodeparteightbox=\box63
-\pgfnodepartsevenbox=\box64
-\pgfnodepartsixbox=\box65
-\pgfnodepartfivebox=\box66
-)))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibraryshadings.code.tex
-File: tikzlibraryshadings.code.tex 2008/10/29 v3.0.1a (rcs-revision 1.1)
-
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrar
-yshadings.code.tex
-File: pgflibraryshadings.code.tex 2008/10/29 v3.0.1a (rcs-revision 1.2)
-))
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\
-libraries\tikzlibrarydecorations.code.tex
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulede
-corations.code.tex
-\pgfdecoratedcompleteddistance=\dimen215
-\pgfdecoratedremainingdistance=\dimen216
-\pgfdecoratedinputsegmentcompleteddistance=\dimen217
-\pgfdecoratedinputsegmentremainingdistance=\dimen218
-\pgf@decorate@distancetomove=\dimen219
-\pgf@decorate@repeatstate=\count336
-\pgfdecorationsegmentamplitude=\dimen220
-\pgfdecorationsegmentlength=\dimen221
-)
-\tikz@lib@dec@box=\box67
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoratio
-ns\pgflibrarydecorations.pathmorphing.code.tex))
-\pgf@layerbox@background=\box68
-\pgf@layerboxsaved@background=\box69
-\pgf@layerbox@foreground=\box70
-\pgf@layerboxsaved@foreground=\box71
-\pgf@layerbox@1=\box72
-\pgf@layerboxsaved@1=\box73
-\pgf@layerbox@2=\box74
-\pgf@layerboxsaved@2=\box75
-\pgf@layerbox@3=\box76
-\pgf@layerboxsaved@3=\box77
-\pgf@layerbox@4=\box78
-\pgf@layerboxsaved@4=\box79
-\pgf@layerbox@5=\box80
-\pgf@layerboxsaved@5=\box81
-)
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count337
+\c@r@tfl@t=\count336
 \rotFPtop=\skip111
 \rotFPbot=\skip112
-\rot@float@box=\box82
+\rot@float@box=\box47
 \rot@mess@toks=\toks44
 )
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count338
+\c@KVtest=\count337
 \sf@farskip=\skip113
-\sf@captopadj=\dimen222
+\sf@captopadj=\dimen214
 \sf@capskip=\skip114
 \sf@nearskip=\skip115
-\c@subfigure=\count339
-\c@subfigure@save=\count340
-\c@subtable=\count341
-\c@subtable@save=\count342
+\c@subfigure=\count338
+\c@subfigure@save=\count339
+\c@subtable=\count340
+\c@subtable@save=\count341
 \sf@top=\skip116
 \sf@bottom=\skip117
 )
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
-\wrapoverhang=\dimen223
-\WF@size=\dimen224
-\c@WF@wrappedlines=\count343
-\WF@box=\box83
+\wrapoverhang=\dimen215
+\WF@size=\dimen216
+\c@WF@wrappedlines=\count342
+\WF@box=\box48
 \WF@everypar=\toks45
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -1824,16 +1668,16 @@ File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 )
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count344
-\scratchdimen=\dimen225
-\scratchbox=\box84
-\nofMPsegments=\count345
-\nofMParguments=\count346
+\scratchcounter=\count343
+\scratchdimen=\dimen217
+\scratchbox=\box49
+\nofMPsegments=\count344
+\nofMParguments=\count345
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count347
-\MPscratchDim=\dimen226
-\MPnumerator=\count348
-\makeMPintoPDFobject=\count349
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen218
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
 \everyMPtoPDFconversion=\toks47
 )
 LaTeX Info: Redefining \microtypecontext on input line 205.
@@ -1850,7 +1694,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
-\AtBeginShipoutBox=\box85
+\AtBeginShipoutBox=\box50
 Package hyperref Info: Link coloring OFF on input line 205.
 
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1859,7 +1703,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("E:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count350
+\c@section@level=\count349
 )
 LaTeX Info: Redefining \ref on input line 205.
 LaTeX Info: Redefining \pageref on input line 205.
@@ -1921,27 +1765,7 @@ Package biblatex Info: ... file 'thesis-example.bbl' found.
 (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Harrison2011':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Hart2006':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'OHara2014a':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Pederson2010':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'export:244725':
+(biblatex)                with 'ma2013ismar':
 (biblatex)                - Invalid format of field 'month'.
 
 )
@@ -1961,93 +1785,9 @@ Package gensymb Info: Using \textmu for \micro on input line 205.
  ABD: EveryShipout initializing macros
 Package scrbase Info: activating english \figurename on input line 212.
 Package scrbase Info: activating english \tablename on input line 213.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 232.
 
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `phv' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 232.
-
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <20.74> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 232.
-
-(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.toc
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 5.
-LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <12> not available
-(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 5.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 5.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Try loading font information for TS1+bch on input line 5.
-
-("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1bch.fd"
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 11.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 11.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 11.
-)
-\tf@toc=\write6
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 233.
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/0-methods.tex
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 3.
 
 (C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\tex-gyre\t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
@@ -2056,92 +1796,254 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `qhv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+)
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/1-introduction.t
+ex [1
 
-[1
-
-{C:/Users/MaMeng/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
-
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.266 \printbibliography[nottype=online]
-                                         [1
+{C:/Users/MaMeng/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2
 
 
 ]
+Chapter 1.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 4.
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `phv' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/3-PPMM.tex
+[3] [4
 
-Package biblatex Warning: Type 'online' not found on input line 267.
 
+]
+Chapter 2.
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/3-MMC.tex
+[5]
 
-LaTeX Warning: Empty bibliography on input line 267.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.269 \cleardoublepage
-                       [2]
-
-Package caption Warning: Unused \captionsetup[subfigure] on input line 186.
+Package caption Warning: \label without proper \caption on input line 15.
 See the caption package documentation for explanation.
 
-[3
+
+LaTeX Warning: Reference `fig:3-MMC:fingure1' on page 6 undefined on input line
+ 11.
+
+<figures/3-MMC/Figure1.JPG, id=123, 5203.44pt x 3468.96pt>
+File: figures/3-MMC/Figure1.JPG Graphic file (type jpg)
+
+<use figures/3-MMC/Figure1.JPG>
+Package pdftex.def Info: figures/3-MMC/Figure1.JPG used on input line 14.
+(pdftex.def)             Requested size: 281.79427pt x 187.85567pt.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 16.
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <9> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 16.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [6 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/3-MMC/Figure
+1.JPG>])
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/3-PRMM.tex
+
+Package caption Warning: \label without proper \caption on input line 13.
+See the caption package documentation for explanation.
 
 
+LaTeX Warning: Reference `fig:3-PRMM:bonelandmarker' on page 7 undefined on inp
+ut line 10.
+
+<figures/3-PRMM/FiveBoneLandmarker.png, id=139, 642.90187pt x 380.92313pt>
+File: figures/3-PRMM/FiveBoneLandmarker.png Graphic file (type png)
+
+<use figures/3-PRMM/FiveBoneLandmarker.png>
+Package pdftex.def Info: figures/3-PRMM/FiveBoneLandmarker.png used on input li
+ne 14.
+(pdftex.def)             Requested size: 301.92375pt x 178.89438pt.
+ [7]
+
+Package caption Warning: \label without proper \caption on input line 32.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:3-PRMM:5points' on page 8 undefined on input line
+ 20.
+
+<figures/3-PRMM/ModifiedSkeleton.png, id=153, 298.11375pt x 190.91325pt>
+File: figures/3-PRMM/ModifiedSkeleton.png Graphic file (type png)
+
+<use figures/3-PRMM/ModifiedSkeleton.png>
+Package pdftex.def Info: figures/3-PRMM/ModifiedSkeleton.png used on input line
+ 27.
+(pdftex.def)             Requested size: 311.01353pt x 199.16928pt.
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <8> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 27.
+
+<figures/3-PRMM/BoneLandmarkerInCT.png, id=154, 302.93175pt x 209.583pt>
+File: figures/3-PRMM/BoneLandmarkerInCT.png Graphic file (type png)
+
+<use figures/3-PRMM/BoneLandmarkerInCT.png>
+Package pdftex.def Info: figures/3-PRMM/BoneLandmarkerInCT.png used on input li
+ne 31.
+(pdftex.def)             Requested size: 287.88521pt x 199.16928pt.
+ [8 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/3-PRMM/FiveB
+oneLandmarker.png>] [9 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/f
+igures/3-PRMM/ModifiedSkeleton.png> <E:/TUM_Narvis/documents/projectDocs/Thesis
+Writing/tex/figures/3-PRMM/BoneLandmarkerInCT.png>]
+LaTeX Font Info:    Font shape `T1/lmss/b/n' in size <10> not available
+(Font)              Font shape `T1/lmss/bx/n' tried instead on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 53.
+ ("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 53.
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 53.
+
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 53.
+
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\MaMeng\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Try loading font information for TS1+bch on input line 53.
+
+("E:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1bch.fd"
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+) [10]
+
+Package caption Warning: \label without proper \caption on input line 87.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:3-PRMM:ResComparing' on page 11 undefined on inpu
+t line 83.
+
+<figures/3-PRMM/ResComparing.png, id=182, 370.38374pt x 325.215pt>
+File: figures/3-PRMM/ResComparing.png Graphic file (type png)
+
+<use figures/3-PRMM/ResComparing.png>
+Package pdftex.def Info: figures/3-PRMM/ResComparing.png used on input line 86.
+
+(pdftex.def)             Requested size: 402.565pt x 353.47491pt.
+ [11] [12 <E:/TUM_Narvis/documents/projectDocs/ThesisWriting/tex/figures/3-PRMM
+/ResComparing.png>])
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\content/3-IMR.tex
+[13])) [14] [15
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 286.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 286.
- (E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 286.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 286.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+
+(E:\TUM_Narvis\documents\projectDocs\ThesisWriting\tex\thesis-example.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package rerunfilecheck Info: File `thesis-example.out' has not changed.
+(rerunfilecheck)             Checksum: E63A61B0519BF6016937B8693C2CC506;1025.
 
 
-Package rerunfilecheck Warning: File `thesis-example.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `thesis-example.out':
-(rerunfilecheck)             Before: 69829893BD1AE5187249BBEA7ACECDD2;327
-(rerunfilecheck)             After:  9A340B5B81126EE9F361BDEDA570EB5D;48.
 Package logreq Info: Writing requests to 'thesis-example.run.xml'.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 286.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
  ) 
 Here is how much of TeX's memory you used:
- 33522 strings out of 493921
- 639053 string characters out of 3144874
- 1075217 words of memory out of 3000000
- 36057 multiletter control sequences out of 15000+200000
- 78748 words of font info for 120 fonts, out of 3000000 for 9000
+ 30556 strings out of 493921
+ 546488 string characters out of 3144874
+ 958310 words of memory out of 3000000
+ 33016 multiletter control sequences out of 15000+200000
+ 93969 words of font info for 166 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 65i,12n,106p,920b,1837s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Declaration.0} has been referenced but does not e
+ 65i,13n,106p,1411b,1878s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{cite.0@Jonas2012} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Aubin2012} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@ma2013ismar} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Sun2013} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Klontz2013} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Navab2012a} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Blum2012} has been referenced but does not e
 xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{cite.0@DiSerio2013} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{cite.0@Chang2014} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{cite.0@Bacca2014} has been referenced but does not 
+exist, replaced by a fixed one
 
-{C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{
-E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{E:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/MaMeng/AppData/Roa
-ming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/MaMeng/AppDat
-a/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/MaMeng/A
-ppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/charter/bchri8a.pfb><E:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/MaMeng/AppD
-ata/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MaMeng/Ap
-pData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvr.pfb><E:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on thesis-example.pdf (5 pages, 125874 bytes).
+pdfTeX warning (dest): name{cite.0@Council2009} has been referenced but does no
+t exist, replaced by a fixed one
+
+{E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{E:/Program
+ Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{E:/Program Files (x86)/Mi
+KTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{E:/Program Files (x86)/MiKTeX 2.9/fo
+nts/enc/dvips/lm/lm-ec.enc}{E:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/f
+ontname/8r.enc}{C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-
+gyre/q-ec.enc}<C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/bitstrea/
+charter/bchb8a.pfb><C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/bits
+trea/charter/bchb8a.pfb><C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1
+/bitstrea/charter/bchr8a.pfb><C:/Users/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/
+type1/bitstrea/charter/bchri8a.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmmi7.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm
+/lmr7.pfb><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
+><E:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Users/M
+aMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users
+/MaMeng/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qhvr.pfb><E:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on thesis-example.pdf (15 pages, 37085133 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 26301 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 30870 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -125,7 +125,7 @@
 \usepackage[					    % use biblatex for bibliography
 	backend=bibtex,		      		% 	- use biber backend (bibtex replacement) or bibtex
 	bibencoding=utf8,				% 	- use auto file encode
-	style=numeric,				% 	- use alphabetic (or numeric) bib style
+	style=alphabetic,				% 	- use alphabetic (or numeric) bib style
 	natbib=true,					% 	- allow natbib commands
 	hyperref=true,					% 	- activate hyperref support
 	backref=true,					% 	- activate backrefs
@@ -176,7 +176,7 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
 \usepackage{tikz}
-\input{content/tikzsetup.tex}
+%\input{content/tikzsetup.tex}
 
 \usepackage{rotating}
 \usepackage{ifthen}
@@ -228,9 +228,9 @@
 %\input{content/acknowledgement} % INCLUDE: acknowledgement
 %\cleardoublepage
 %
-\setcounter{tocdepth}{2}		% define depth of toc
-\tableofcontents				% display table of contents
-\cleardoublepage
+%\setcounter{tocdepth}{3}		% define depth of toc
+%\tableofcontents				% display table of contents
+%\cleardoublepage
 
 % --------------------------
 % Body matter
@@ -239,34 +239,37 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{maincontentstyle} 	% fancy header and footer
 
-%\part{Review on Mixed Reality}
-%\input{content/01-introduction} 
-%\input{content/02-background}
+\input{content/0-methods} 
 
-%\input{content/03-methods} 
+%\part{Review on Mixed Reality}
+\input{content/1-introduction} 
+%\input{content/2-background}
 
 %\part{Personal Perception with Magic Mirror}
-%\input{content/cudacm}
-%\input{content/cmvis}
-%\input{content/uscompounding}t
+\input{content/3-PPMM}
+
 %\cleardoublepage
 
 %\part{Personal Pointing Interaction}
-%\input{content/3-PAST}
-%\input{content/3-PointingOR}
+%\input{content/4-PAST}
+%\input{content/4-PointingOR}
+%\input{content/4-AccessRW}
+
+%\input{content/5-CMR}
 
 % --------------------------
 % Back matter
 % --------------------------
-{%
-\setstretch{1.1}
-\renewcommand{\bibfont}{\normalfont\small}
-\setlength{\biblabelsep}{4pt}
-\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
-\printbibliography[nottype=online]
-\printbibliography[heading=subbibliography,title={Online Resources},type=online,prefixnumbers={@}]
-}
-\cleardoublepage
+%Reference uncomment at last
+%{%
+%\setstretch{1.1}
+%\renewcommand{\bibfont}{\normalfont\small}
+%\setlength{\biblabelsep}{4pt}
+%\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
+%\printbibliography[nottype=online]
+%\printbibliography[heading=subbibliography,title={Online Resources},type=online,prefixnumbers={@}]
+%}
+%\cleardoublepage
 
 %%uncomment the follow comment scope after you finish the writing.
 %\listoffigures

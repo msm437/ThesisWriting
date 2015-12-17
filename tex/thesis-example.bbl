@@ -16,970 +16,678 @@
   {}
 \endgroup
 
-\entry{Carpendale2010}{article}{}
-  \name{author}{2}{}{%
+\entry{Aubin2012}{article}{}
+  \name{author}{7}{}{%
     {{}%
-     {Carpendale}{C.}%
-     {Jeremy I~M}{J.~I.~M.}%
+     {Aubin}{A.}%
+     {Diane}{D.}%
      {}{}%
      {}{}}%
     {{}%
-     {Carpendale}{C.}%
-     {Ailidh~B.}{A.~B.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{Gestures,Infancy,Pointing,Social development}
-  \strng{namehash}{CJIMCAB1}
-  \strng{fullhash}{CJIMCAB1}
-  \field{sortinit}{C}
-  \field{abstract}{%
-  Although there is consensus about the importance of early communicative
-  gestures such as pointing, there is an ongoing debate regarding how infants
-  develop the ability to understand and produce pointing gestures. We review
-  competing theories regarding this development and use observations from a
-  diary study of infants social development, focusing primarily on one infant
-  from 6 to 14 months to illustrate a currently neglected view of the
-  development of pointing. According to this view, infants first use their
-  extended index finger as a manifestation of their own attention that emerges
-  from their tactile exploration of close-by objects. Their gesture gradually
-  becomes social in its use as infants become aware of the meaning of their
-  action for adults.%
-  }
-  \verb{doi}
-  \verb 10.1159/000315168
-  \endverb
-  \field{isbn}{0018-716X}
-  \field{issn}{0018716X}
-  \field{number}{3}
-  \field{pages}{110\bibrangedash 126}
-  \field{title}{{The development of pointing: From personal directedness to
-  interpersonal direction}}
-  \verb{url}
-  \verb http://www.karger.com/Article/Fulltext/315168
-  \endverb
-  \field{volume}{53}
-  \field{journaltitle}{Hum. Dev.}
-  \field{year}{2010}
-\endentry
-
-\entry{Harrison2011}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Harrison}{H.}%
-     {Chris}{C.}%
+     {King}{K.}%
+     {Sharla}{S.}%
      {}{}%
      {}{}}%
     {{}%
-     {Benko}{B.}%
-     {Hrvoje}{H.}%
+     {Boechler}{B.}%
+     {Patricia}{P.}%
      {}{}%
      {}{}}%
     {{}%
-     {Wilson}{W.}%
-     {Andrew~D.}{A.~D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {ACM Press}%
-  }
-  \keyw{appropriated surfaces,finger tracking,object classification,on-body
-  computing,on-demand interfaces}
-  \strng{namehash}{HC+1}
-  \strng{fullhash}{HCBHWAD1}
-  \field{sortinit}{H}
-  \field{abstract}{%
-  Abstract OmniTouch is a wearable depth-sensing and projection system that
-  enables interactive multitouch applications on everyday surfaces. Beyond the
-  shoulder-worn system, there is no instrumentation of the user or environment.
-  Foremost, the system allows the ... $\backslash$n%
-  }
-  \field{booktitle}{Proc. 24th Annu. ACM Symp. User interface Softw. Technol. -
-  UIST '11}
-  \verb{doi}
-  \verb 10.1145/2047196.2047255
-  \endverb
-  \field{isbn}{9781450307161}
-  \field{issn}{10974199}
-  \field{pages}{441}
-  \field{title}{{OmniTouch}}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?doid=2047196.2047255
-  \endverb
-  \list{location}{1}{%
-    {New York, New York, USA}%
-  }
-  \field{year}{2011}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Hart2006}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Hart}{H.}%
-     {S.~G.}{S.~G.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{language}{1}{%
-    {en}%
-  }
-  \list{publisher}{1}{%
-    {SAGE Publications}%
-  }
-  \keyw{GS4 - Integrative Approaches to Understanding Comp}
-  \strng{namehash}{HSG1}
-  \strng{fullhash}{HSG1}
-  \field{sortinit}{H}
-  \field{abstract}{%
-  NASA-TLX is a multi-dimensional scale designed to obtain workload estimates
-  from one or more operators while they are performing a task or immediately
-  afterwards. The years of research that preceded subscale selection and the
-  weighted averaging approach resulted in a tool that has proven to be
-  reasonably easy to use and reliably sensitive to experimentally important
-  manipulations over the past 20 years. Its use has spread far beyond its
-  original application (aviation), focus (crew complement), and language
-  (English). This survey of 550 studies in which NASA-TLX was used or reviewed
-  was undertaken to provide a resource for a new generation of users. The goal
-  was to summarize the environments in which it has been applied, the types of
-  activities the raters performed, other variables that were measured that did
-  (or did not) covary, methodological issues, and lessons learned%
-  }
-  \verb{doi}
-  \verb 10.1177/154193120605000909
-  \endverb
-  \field{isbn}{1071-1813}
-  \field{issn}{1071-1813}
-  \field{number}{9}
-  \field{pages}{904\bibrangedash 908}
-  \field{title}{{Nasa-Task Load Index (NASA-TLX); 20 Years Later}}
-  \verb{url}
-  \verb http://pro.sagepub.com/content/50/9/904.abstract
-  \endverb
-  \field{volume}{50}
-  \field{journaltitle}{Proc. Hum. Factors Ergon. Soc. Annu. Meet.}
-  \field{year}{2006}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Johnson2011a}{inproceedings}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Johnson}{J.}%
-     {Rose}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {O'Hara}{O.}%
-     {Kenton}{K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sellen}{S.}%
-     {Abigail}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Cousins}{C.}%
-     {Claire}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Criminisi}{C.}%
-     {Antonio}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{ethnography,fieldwork,gesture input,image use,medical
-  practice,touchless interaction}
-  \strng{namehash}{JR+1}
-  \strng{fullhash}{JROKSACCCA1}
-  \field{sortinit}{J}
-  \field{abstract}{%
-  The growth of image-guided procedures in surgical settings has led to an
-  increased need to interact with digital images under sterile conditions.
-  Traditional touch-based interaction techniques present challenges for
-  managing asepsis in these environments leading to suggestions that new
-  touchless interaction techniques may provide a compelling set of
-  alternatives. In this paper we explore the potential for touchless
-  interaction in image-guided Interventional Radiology (IR) through an
-  ethnographic study. The findings highlight how the distribution of labour and
-  spatial practices of this work are organised with respect to concerns about
-  asepsis and radiation exposure, the physical and cognitive demands of
-  artefact manipulation, patient management, and the construction of
-  "professional vision". We discuss the implications of these key features of
-  the work for touchless interaction technologies within IR and suggest that
-  such issues will be of central importance in considering new input techniques
-  in other medical settings.%
-  }
-  \field{booktitle}{Proc. 2011 Annu. Conf. Hum. factors Comput. Syst. - CHI
-  '11}
-  \verb{doi}
-  \verb 10.1145/1978942.1979436
-  \endverb
-  \field{isbn}{9781450302289}
-  \field{pages}{3323\bibrangedash 3332}
-  \field{title}{{Exploring the potential for touchless interaction in
-  image-guided interventional radiology}}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?id=1978942.1979436
-  \endverb
-  \field{year}{2011}
-\endentry
-
-\entry{Kurata2000}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Kurata}{K.}%
-     {T}{T}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Okuma}{O.}%
-     {T}{T}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kourogi}{K.}%
-     {M}{M}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sakaue}{S.}%
-     {K}{K}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{1 wearable augmented environments,human interface,real-time
-  system,vironments,visual wearables,wearable augmented en-}
-  \strng{namehash}{KT+1}
-  \strng{fullhash}{KTOTKMSK1}
-  \field{sortinit}{K}
-  \field{abstract}{%
-  This paper describes a wearable input interface the functions of which is
-  similar to the usual mouse. The Hand-mouse is realized by classifying each
-  pixel as a hand pixel or a background pixel based on approximation of a color
-  histogram with the Gaussian mixture model and by tting the simple model of
-  hand shapes into the classi ed hand pixels.%
-  }
-  \field{booktitle}{Symp. Mix. Real.}
-  \field{pages}{188\bibrangedash 189}
-  \field{title}{{The Hand-mouse: A Human Interface Suitable for Augmented
-  Reality Environments Enabled by Visual Wearables}}
-  \verb{url}
-  \verb http://citeseerx.ist.psu.edu/viewdoc/download?rep=rep1{\&}type=pdf{\&}d
-  \verb oi=10.1.1.141.5128
-  \endverb
-  \field{year}{2000}
-\endentry
-
-\entry{Matthews2012}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Matthews}{M.}%
-     {Danielle}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Behne}{B.}%
-     {Tanya}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lieven}{L.}%
-     {Elena}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tomasello}{T.}%
+     {Burden}{B.}%
      {Michael}{M.}%
      {}{}%
      {}{}}%
+    {{}%
+     {Rockwell}{R.}%
+     {Geoffrey}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Henry}{H.}%
+     {Monica}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gouglas}{G.}%
+     {Sean}{S.}%
+     {}{}%
+     {}{}}%
   }
-  \strng{namehash}{MD+1}
-  \strng{fullhash}{MDBTLETM1}
-  \field{sortinit}{M}
+  \list{publisher}{1}{%
+    {Informa Healthcare}%
+  }
+  \keyw{Education,Feedback,Games,Physicians,Safety,feedback,patient safety
+  education,physicians,serious games}
+  \strng{namehash}{AD+1}
+  \strng{fullhash}{ADKSBPBMRGHMGS1}
+  \field{labelalpha}{Aub+12}
+  \field{sortinit}{A}
   \field{abstract}{%
-  Despite its importance in the development of children's skills of social
-  cognition and communication, very little is known about the ontogenetic
-  origins of the pointing gesture. We report a training study in which mothers
-  gave children one month of extra daily experience with pointing as compared
-  with a control group who had extra experience with musical activities. One
-  hundred and two infants of 9, 10, or 11 months of age were seen at the
-  beginning, middle, and end of this one-month period and tested for
-  declarative pointing and gaze following. Infants'ability to point with the
-  index finger at the end of the study was not affected by the training but was
-  instead predicted by infants' prior ability to follow the gaze direction of
-  an adult. The frequency with which infants pointed indexically was also
-  affected by infant gaze following ability and, in addition, by maternal
-  pointing frequency in free play, but not by training. In contrast, infants'
-  ability to monitor their partner's gaze when pointing, and the frequency with
-  which they did so, was affected by both training and maternal pointing
-  frequency in free play. These results suggest that prior social cognitive
-  advances, rather than adult socialization of pointing per se, determine the
-  developmental onset of indexical pointing, but socialization processes such
-  as imitation and adult shaping subsequently affect both infants' ability to
-  monitor their interlocutor's gaze while they point and how frequently infants
-  choose to point.%
+  The purpose of this study is to pilot test an inexpensive prototype of a
+  serious game with a group of interprofessional health students to determine
+  if the game provides opportunities to learn about patient safety. The game
+  was constructed around a series of scenarios created in consultation with a
+  physician, enabling the player to explore patient safety-related learning
+  objectives within a virtual hospital setting. Players enter into
+  conversations with characters and choose what response to provide from a
+  given selection. At the end of the game, students review their actions, and
+  are provided feedback about their choices. Fourteen participants tested the
+  prototype and filled out the questionnaire. The evaluation of the prototype
+  demonstrated that there is potential for this tool to help students learn to
+  overcome some of the barriers to communications and teamwork that can lead to
+  improved patient safety. The participants enjoyed playing the game, learned
+  something about team communications and thought this was a valid method for
+  learning about patient safety. In addition, this game would be of great
+  benefit to teaching through reflective practice. (PsycINFO Database Record
+  (c) 2012 APA, all rights reserved)%
   }
   \verb{doi}
-  \verb 10.1111/j.1467-7687.2012.01181.x
+  \verb 10.3109/0142159X.2012.689448
   \endverb
-  \field{isbn}{1467-7687}
-  \field{issn}{1363755X}
-  \field{number}{6}
-  \field{pages}{817\bibrangedash 829}
-  \field{title}{{Origins of the human pointing gesture: a training study}}
+  \field{issn}{0142-159X}
+  \field{number}{8}
+  \field{pages}{675}
+  \field{title}{{Serious games for patient safety education.}}
   \verb{url}
-  \verb http://doi.wiley.com/10.1111/j.1467-7687.2012.01181.x
+  \verb http://search.ebscohost.com/login.aspx?direct=true{\&}db=psyh{\&}AN=201
+  \verb 2-20359-019{\&}login.asp{\&}site=ehost-live{\&}scope=site$\backslash$nv
+  \verb ist@ualberta.ca
   \endverb
-  \field{volume}{15}
-  \field{journaltitle}{Dev. Sci.}
+  \field{volume}{34}
+  \field{journaltitle}{Med. Teach.}
   \field{year}{2012}
 \endentry
 
-\entry{McNeill2000}{article}{}
-  \name{author}{1}{}{%
+\entry{Bacca2014}{article}{}
+  \name{author}{4}{}{%
     {{}%
-     {McNeill}{M.}%
-     {D}{D}%
+     {Bacca}{B.}%
+     {Jorge}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Baldiris}{B.}%
+     {Silvia}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fabregat}{F.}%
+     {Ramon}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Graf}{G.}%
+     {Sabine}{S.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{MD1}
-  \strng{fullhash}{MD1}
-  \field{sortinit}{M}
-  \field{title}{{15 Catchments and contexts: non-modular factors in speech and
-  gesture production}}
+  \keyw{Augmented reality,Inclusive learning in augmented
+  reality,Personalization,Systematic review,Trends of AR}
+  \strng{namehash}{BJ+1}
+  \strng{fullhash}{BJBSFRGS1}
+  \field{labelalpha}{Bac+14}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  In recent years, there has been an increasing interest in applying Augmented
+  Reality (AR) to create unique educational settings. So far, however, there is
+  a lack of review studies with focus on investigating factors such as: the
+  uses, advantages, limitations, effectiveness, challenges and features of
+  augmented reality in educational settings. Personalization for promoting an
+  inclusive learning using AR is also a growing area of interest. This paper
+  reports a systematic review of literature on augmented reality in educational
+  settings considering the factors mentioned before. In total, 32 studies
+  published between 2003 and 2013 in 6 indexed journals were analyzed. The main
+  findings from this review provide the current state of the art on research in
+  AR in education. Furthermore, the paper discusses trends and the vision
+  towards the future and opportunities for further research in augmented
+  reality for educational settings.%
+  }
+  \field{issn}{1436-4522}
+  \field{number}{4}
+  \field{pages}{133\bibrangedash 149}
+  \field{title}{{Augmented Reality Trends in Education: A Systematic Review of
+  Research and Applications}}
   \verb{url}
-  \verb https://books.google.de/books?hl=en{\&}lr={\&}id=DRBcMQuSrf8C{\&}oi=fnd
-  \verb {\&}pg=PA312{\&}dq=catchments+and+context+non-modular+factors+in+speech
-  \verb +and+gesture{\&}ots=jCCY5ztpmq{\&}sig=VsHbZojrjLuVgrTKiTpjqfZyBq4
+  \verb http://www.ifets.info/others/abstract.php?art{\_}id=1521
   \endverb
+  \field{volume}{17}
   \verb{file}
-  \verb :C$\backslash$:/Users/MaMeng/AppData/Local/Mendeley Ltd./Mendeley Deskt
-  \verb op/Downloaded/McNeill - 2000 - 15 Catchments and contexts non-modular f
-  \verb actors in speech and gesture production.pdf:pdf
+  \verb :E$\backslash$:/papers/Bacca et al/Educational Technology {\&} Society/
+  \verb Bacca et al. - 2014 - Augmented Reality Trends in Education A Systemati
+  \verb c Review of Research and Applications.pdf:pdf
   \endverb
-  \field{journaltitle}{Lang. gesture}
-  \field{year}{2000}
+  \field{journaltitle}{Educ. Technol. Soc.}
+  \field{year}{2014}
 \endentry
 
-\entry{Mistry2009}{article}{}
-  \name{author}{3}{}{%
+\entry{Blum2012}{article}{}
+  \name{author}{4}{}{%
     {{}%
-     {Mistry}{M.}%
-     {Pranav}{P.}%
+     {Blum}{B.}%
+     {Tobias}{T.}%
      {}{}%
      {}{}}%
     {{}%
-     {Maes}{M.}%
-     {Pattie}{P.}%
+     {Kleeberger}{K.}%
+     {Valerie}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bichlmeier}{B.}%
+     {Christoph}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Navab}{N.}%
+     {Nassir}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Ieee}%
+  }
+  \keyw{H.5.1 [Information Interfaces and Presentation]: A}
+  \strng{namehash}{BT+1}
+  \strng{fullhash}{BTKVBCNN1}
+  \field{labelalpha}{Blu+12}
+  \field{sortinit}{B}
+  \field{abstract}{%
+  The mirracle system extends the concept of an Augmented Reality (AR) magic
+  mirror to the visualization of human anatomy on the body of the user. Using a
+  medical volume renderer a CT dataset is augmented onto the user. By a slice
+  based user interface, slice from the CT and an additional photographic
+  dataset can be selected.%
+  }
+  \verb{doi}
+  \verb 10.1109/VR.2012.6180934
+  \endverb
+  \field{isbn}{9781467312462}
+  \field{pages}{169\bibrangedash 170}
+  \field{title}{{Mirracle: Augmented reality in-situ visualization of human
+  anatomy using a magic mirror}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6180934
+  \endverb
+  \field{journaltitle}{Proc. - IEEE Virtual Real.}
+  \field{year}{2012}
+\endentry
+
+\entry{Council2009}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Council}{C.}%
+     {General~Medical}{G.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{General Medical Council}}{G.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CGMG1}
+  \strng{fullhash}{CGMG1}
+  \field{labelalpha}{CG09}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  The GMC sets the knowledge, skills and behaviours that medical students learn
+  at UK medical schools: these are the outcomes that new UK graduates must be
+  able to demonstrate. The GMC also sets standards for teaching, learning and
+  assessment. These outcomes and standards are laid down in Tomorrow's Doctors
+  (2009) (pdf)%
+  }
+  \verb{doi}
+  \verb http://www.gmc-uk.or
+  \endverb
+  \field{isbn}{9780901458360}
+  \field{issn}{0308-0110}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 108}
+  \field{title}{{Tomorrow ’ s Doctors The duties of a doctor registered with
+  the General Medical Council}}
+  \verb{url}
+  \verb http://www.gmc-uk.org/TomorrowsDoctors{\_}2009.pdf{\_}39260971.pdf
+  \endverb
+  \verb{file}
+  \verb :E$\backslash$:/papers/Council, General Medical Council/2009/Council, G
+  \verb eneral Medical Council - 2009 - Tomorrow ’ s Doctors The duties of a
+  \verb doctor registered with the General Medical Council.pdf:pdf
+  \endverb
+  \field{journaltitle}{2009}
+  \field{year}{2009}
+\endentry
+
+\entry{Chang2014}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Chang}{C.}%
+     {Kuo~En}{K.~E.}%
      {}{}%
      {}{}}%
     {{}%
      {Chang}{C.}%
-     {Liyan}{L.}%
+     {Chia~Tzu}{C.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hou}{H.}%
+     {Huei~Tse}{H.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sung}{S.}%
+     {Yao~Ting}{Y.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chao}{C.}%
+     {Huei~Lin}{H.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lee}{L.}%
+     {Cheng~Ming}{C.~M.}%
      {}{}%
      {}{}}%
   }
-  \keyw{Augmented reality,Gestural interaction,Object augmentation,Tangible
-  computing,Wearable interface}
-  \strng{namehash}{MP+1}
-  \strng{fullhash}{MPMPCL1}
-  \field{sortinit}{M}
+  \keyw{Applications in subject areas,Architectures for educational technology
+  system,Interactive learning environments,Teaching/learning strategies}
+  \strng{namehash}{CKE+1}
+  \strng{fullhash}{CKECCTHHTSYTCHLLCM1}
+  \field{labelalpha}{Cha+14}
+  \field{sortinit}{C}
   \field{abstract}{%
-  Information is traditionally confined to paper or digitally to a screen. In
-  this paper, we introduce WUW, a wearable gestural interface, which attempts
-  to bring information out into the tangible world. By using a tiny projector
-  and a camera mounted on a hat or coupled in a pendant like wearable device,
-  WUW sees what the user sees and visually augments surfaces or physical
-  objects the user is interacting with. WUW projects information onto surfaces,
-  walls, and physical objects around us, and lets the user interact with the
-  projected information through natural hand gestures, arm movements, or
-  interaction with the object itself.%
+  A mobile guide system that integrates art appreciation instruction with
+  augmented reality (AR) was designed as an auxiliary tool for painting
+  appreciation, and the learning performance of three groups of visiting
+  participants was explored: AR-guided, audio-guided, and nonguided (i.e.,
+  without carrying auxiliary devices). The participants were 135 college
+  students, and a quasi-experimental research design was employed. Several
+  learning performance factors of the museum visitors aided with different
+  guided modes were evaluated, including their learning effectiveness, flow
+  experience, the amount of time spent focusing on the paintings, behavioral
+  patterns, and attitude of using the guide systems. The results showed that
+  compared to the audio- and nonguided participants, the AR guide effectively
+  enhanced visitors' learning effectiveness, promoted their flow experience,
+  and extended the amount of time the visitors spent focusing on the paintings.
+  In addition, the visitors' behavioral patterns were dependent upon the guided
+  mode that they used; the visitors who were the most engaged in the gallery
+  experience were those who were using the AR guide. Most of the visitors using
+  the mobile AR-guide system elicited positive responses and acceptance
+  attitudes. ?? 2013 Elsevier Ltd. All rights reserved.%
   }
   \verb{doi}
-  \verb 10.1145/1520340.1520626
+  \verb 10.1016/j.compedu.2013.09.022
   \endverb
-  \field{isbn}{9781605582474}
-  \field{issn}{9781605582467}
-  \field{pages}{4111}
-  \field{title}{{WUW - wear Ur world}}
-  \verb{url}
-  \verb http://www.scopus.com/inward/record.url?eid=2-s2.0-70349163742{\&}partn
-  \verb erID=tZOtx3y1
-  \endverb
-  \verb{file}
-  \verb :C$\backslash$:/Users/MaMeng/AppData/Local/Mendeley Ltd./Mendeley Deskt
-  \verb op/Downloaded/Mistry, Maes, Chang - 2009 - WUW-wear Ur world a wearable
-  \verb  gestural interface.pdf:pdf
-  \endverb
-  \field{journaltitle}{Proc. 27th Int. Conf. Ext. Abstr. Hum. factors Comput.
-  Syst. - CHI EA '09}
-  \field{year}{2009}
+  \field{issn}{03601315}
+  \field{number}{July 2015}
+  \field{pages}{185\bibrangedash 197}
+  \field{title}{{Development and behavioral pattern analysis of a mobile guide
+  system with augmented reality for painting appreciation instruction in an art
+  museum}}
+  \field{volume}{71}
+  \field{journaltitle}{Comput. Educ.}
+  \field{year}{2014}
 \endentry
 
-\entry{Moraes2012}{article}{}
-  \name{author}{4}{}{%
+\entry{Jonas2012}{misc}{}
+  \name{author}{5}{}{%
     {{}%
-     {Moraes}{M.}%
-     {Thiago~Franco}{T.~F.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Amorim}{A.}%
-     {Paulo Henrique~Junqueira}{P.~H.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Azevedo}{A.}%
-     {F{\'{a}}bio~S}{F.~S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Silva}{S.}%
-     {Jorge Vicente~Lopes}{J.~V.~L.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{MTF+1}
-  \strng{fullhash}{MTFAPHJAFSSJVL1}
-  \field{sortinit}{M}
-  \field{abstract}{%
-  This work presents InVesalius, an open-source imaging. Initially, the
-  historical context and motivation for its development are discussed. Then,
-  the software structure and some development aspects are commented, as well as
-  InVesalius main tools and applications. At the end, the results of a survey
-  realized within the user community are presented.%
-  }
-  \field{pages}{405\bibrangedash 408}
-  \field{title}{{InVesalius - An open-source imaging application}}
-  \field{journaltitle}{Comput. Vis. Med. Image Process.}
-  \field{year}{2012}
-\endentry
-
-\entry{Nanayakkara2013a}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Nanayakkara}{N.}%
-     {Suranga}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Shilkrot}{S.}%
-     {Roy}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yeo}{Y.}%
-     {Kian~Peen}{K.~P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Maes}{M.}%
-     {Pattie}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{NS+1}
-  \strng{fullhash}{NSSRYKPMP1}
-  \field{sortinit}{N}
-  \field{abstract}{%
-  Finger-worn interfaces remain a vastly unexplored space for user interfaces,
-  despite the fact that our fingers and hands are naturally used for
-  referencing and interacting with the environment. In this paper we present
-  design guidelines and implementation of a finger-worn I/O device, the
-  EyeRing, which leverages the universal and natural gesture of pointing. We
-  present use cases of EyeRing for both visually impaired and sighted people.
-  We discuss initial reactions from visually impaired users which suggest that
-  EyeRing may indeed offer a more seamless solution for dealing with their
-  immediate surroundings than the solutions they currently use. We also report
-  on a user study that demonstrates how EyeRing reduces effort and disruption
-  to a sighted user. We conclude that this highly promising form factor offers
-  both audiences enhanced, seamless interaction with information related to
-  objects in the environment.%
-  }
-  \verb{doi}
-  \verb 10.1145/2459236.2459240
-  \endverb
-  \field{isbn}{9781450319041}
-  \field{pages}{13\bibrangedash 20}
-  \field{title}{{EyeRing}}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?doid=2459236.2459240
-  \endverb
-  \verb{file}
-  \verb :E$\backslash$:/papers/Nanayakkara et al/Proceedings of the 4th Augment
-  \verb ed Human International Conference on - AH '13/Nanayakkara et al. - 2013
-  \verb  - EyeRing.pdf:pdf
-  \endverb
-  \field{journaltitle}{Proc. 4th Augment. Hum. Int. Conf. - AH '13}
-  \field{year}{2013}
-\endentry
-
-\entry{OHara2014a}{article}{}
-  \name{author}{11}{}{%
-    {{}%
-     {O'Hara}{O.}%
-     {Kenton}{K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dastur}{D.}%
-     {Neville}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Carrell}{C.}%
-     {Tom}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Gonzalez}{G.}%
-     {Gerardo}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sellen}{S.}%
-     {Abigail}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Penney}{P.}%
-     {Graeme}{G.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Varnavas}{V.}%
+     {Hannig}{H.}%
      {Andreas}{A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Mentis}{M.}%
-     {Helena}{H.}%
+     {Kuth}{K.}%
+     {Nicole}{N.}%
      {}{}%
      {}{}}%
     {{}%
-     {Criminisi}{C.}%
-     {Antonio}{A.}%
+     {{\"{O}}zman}{{\"{O}}.}%
+     {Monika}{M.}%
      {}{}%
      {}{}}%
     {{}%
-     {Corish}{C.}%
-     {Robert}{R.}%
+     {Jonas}{J.}%
+     {Stephan}{S.}%
      {}{}%
      {}{}}%
     {{}%
-     {Rouncefield}{R.}%
-     {Mark}{M.}%
+     {Spreckelsen}{S.}%
+     {Cord}{C.}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {ACM}%
-  }
-  \strng{namehash}{OK+1}
-  \strng{fullhash}{OKDNCTGGSAPGVAMHCACRRM1}
-  \field{sortinit}{O}
+  \keyw{computer-assisted
+  instruction,education,experimental,games,medical,methods,teaching,undergraduate,user-computer
+  interface}
+  \strng{namehash}{HA+1}
+  \strng{fullhash}{HAKNOMJSSC1}
+  \field{labelalpha}{Han+12}
+  \field{sortinit}{H}
   \field{abstract}{%
-  除证明非接触式交互系统的技术可行
-  性外，还应将外科手术中的这类系统进
-  行合理设计，让其能在手术室操作环境 内工作。
-  手势设计不仅应考虑与医学影像的个
-  体交互，还应考虑如何在协作讨论环境 下使用这些影像。
-  与单手和双手相关的手势设计应能满
-  足表达丰富度的要求，以及手术医生双
-  手操作的要求，同时还要受到了手术小
-  组成员靠近程度及无菌操作所产生的动 作限制的限制。%
+  BACKGROUND: Preparing medical students for the takeover or the start-up of a
+  medical practice is an important challenge in Germany today. Therefore, this
+  paper presents a computer-aided serious game (eMedOffice) developed and
+  currently in use at the RWTH Aachen University Medical School. The game is
+  part of the attempt to teach medical students the organizational and
+  conceptual basics of the medical practice of a general practitioner in a
+  problem-based learning environment. This paper introduces methods and
+  concepts used to develop the serious game and describes the results of an
+  evaluation of the game's application in curricular courses at the Medical
+  School.$\backslash$n$\backslash$nRESULTS: Results of the conducted evaluation
+  gave evidence of a positive learning effect of the serious game. Educational
+  supervisors observed strong collaboration among the players inspired by the
+  competitive gaming aspects. In addition, an increase in willingness to learn
+  and the exploration of new self-invented ideas were observed and valuable
+  proposals for further prospective enhancements were elicited. A statistical
+  analysis of the results of an evaluation provided a clear indication of the
+  positive learning effect of the game. A usability questionnaire survey
+  revealed a very good overall score of 4.07 (5=best,
+  1=worst).$\backslash$n$\backslash$nCONCLUSIONS: We consider web-based,
+  collaborative serious games to be a promising means of improving medical
+  education. The insights gained by the implementation of eMedOffice will
+  promote the future development of more effective serious games for
+  integration into curricular courses of the RWTH Aachen University Medical
+  School.%
   }
+  \field{booktitle}{BMC Med. Educ.}
   \verb{doi}
-  \verb 10.1145/2541883.2541899
+  \verb 10.1186/1472-6920-12-104
   \endverb
-  \field{isbn}{0001-0782}
-  \field{issn}{00010782}
+  \field{isbn}{1472692012}
+  \field{issn}{1472-6920}
   \field{number}{1}
-  \field{pages}{70\bibrangedash 77}
-  \field{title}{{Touchless interaction in surgery}}
-  \verb{url}
-  \verb http://dl.acm.org/citation.cfm?doid=2541883.2541899
-  \endverb
-  \field{volume}{57}
+  \field{pages}{104}
+  \field{title}{{eMedOffice: A web-based collaborative serious game for
+  teaching optimal design of a medical practice}}
+  \field{volume}{12}
   \verb{file}
-  \verb :E$\backslash$:/papers/O'Hara et al/Communications of the ACM/O'Hara et
-  \verb  al. - 2014 - Touchless interaction in surgery(2).pdf:pdf
+  \verb :E$\backslash$:/papers/Hannig et al/BMC Medical Education/Hannig et al.
+  \verb  - 2012 - eMedOffice A web-based collaborative serious game for teachin
+  \verb g optimal design of a medical practice.pdf:pdf
   \endverb
-  \field{journaltitle}{Commun. ACM}
-  \field{year}{2014}
-  \warn{\item Invalid format of field 'month'}
+  \field{year}{2012}
 \endentry
 
-\entry{Pederson2010}{inproceedings}{}
-  \name{author}{3}{}{%
+\entry{Klontz2013}{inproceedings}{}
+  \name{author}{5}{}{%
     {{}%
-     {Pederson}{P.}%
-     {Thomas}{T.}%
+     {Klontz}{K.}%
+     {Joshua~C.}{J.~C.}%
      {}{}%
      {}{}}%
     {{}%
-     {Janlert}{J.}%
-     {Lars-Erik}{L.-E.}%
+     {Klare}{K.}%
+     {Brendan~F.}{B.~F.}%
      {}{}%
      {}{}}%
     {{}%
-     {Surie}{S.}%
-     {Dipak}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {ACM Press}%
-  }
-  \keyw{interaction paradigm,user interface design}
-  \strng{namehash}{PT+1}
-  \strng{fullhash}{PTJLESD1}
-  \field{sortinit}{P}
-  \field{booktitle}{Proc. 6th Nord. Conf. Human-Computer Interact. Extending
-  Boundaries - Nord. '10}
-  \verb{doi}
-  \verb 10.1145/1868914.1869022
-  \endverb
-  \field{isbn}{9781605589343}
-  \field{pages}{755}
-  \field{title}{{Towards a model for egocentric interaction with physical and
-  virtual objects}}
-  \verb{url}
-  \verb http://portal.acm.org/citation.cfm?doid=1868914.1869022
-  \endverb
-  \list{location}{1}{%
-    {New York, New York, USA}%
-  }
-  \field{year}{2010}
-  \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Suzuki1985}{misc}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Suzuki}{S.}%
-     {Satoshi}{S.}%
+     {Klum}{K.}%
+     {Scott}{S.}%
      {}{}%
      {}{}}%
     {{}%
-     {Abe}{A.}%
-     {Keiichi}{K.}%
+     {Jain}{J.}%
+     {Anil~K.}{A.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Burge}{B.}%
+     {Mark~J.}{M.~J.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{SSAK1}
-  \strng{fullhash}{SSAK1}
-  \field{sortinit}{S}
+  \keyw{Algorithm design and analysis,Face,Face recognition,Libraries,OpenBR
+  software architecture,Software,Software algorithms,Vectors,collaborative
+  software development,community-driven open source software,face
+  recognition,groupware,open source biometric recognition,public domain
+  software,software architecture,still-image frontal face recognition}
+  \strng{namehash}{KJC+1}
+  \strng{fullhash}{KJCKBFKSJAKBMJ1}
+  \field{labelalpha}{Klo+13}
+  \field{sortinit}{K}
   \field{abstract}{%
-  Two border following algorithms are proposed for the topological analysis of
-  digitized binary images. The first one determines the surroundness relations
-  among the borders of a binary image. Since the outer borders and the hole
-  borders have a one-to-one correspondence to the connected components of
-  l-pixels and to the holes, respectively, the proposed algorithm yields a
-  representation of a binary image, from which one can extract some sort of
-  features without reconstructing the image. The second algorithm, which is a
-  modified version of the first, follows only the outermost borders (i.e., the
-  outer borders which are not surrounded by holes). These algorithms can be
-  effectively used in component counting, shrinking, and topological structural
-  analysis of binary images, when a sequential digital computer is used%
+  The biometrics community enjoys an active research field that has produced
+  algorithms for several modalities suitable for real-world applications.
+  Despite these developments, there exist few open source implementations of
+  complete algorithms that are maintained by the community or deployed outside
+  a laboratory environment. In this paper we motivate the need for more
+  community-driven open source software in the field of biometrics and present
+  OpenBR as a candidate to address this deficiency. We overview the OpenBR
+  software architecture and consider still-image frontal face recognition as a
+  case study to illustrate its strengths and capabilities. All of our work is
+  available at www.openbiometrics.org.%
   }
-  \field{booktitle}{Comput. Vision, Graph. Image Process.}
+  \field{booktitle}{2013 IEEE Sixth Int. Conf. Biometrics Theory, Appl. Syst.}
   \verb{doi}
-  \verb 10.1016/0734-189X(85)90136-7
+  \verb 10.1109/BTAS.2013.6712754
   \endverb
-  \field{isbn}{0734-189X}
-  \field{issn}{0734189X}
-  \field{number}{3}
-  \field{pages}{396}
-  \field{title}{{Topological structural analysis of digitized binary images by
-  border following}}
-  \field{volume}{29}
-  \field{year}{1985}
+  \field{isbn}{978-1-4799-0527-0}
+  \field{pages}{1\bibrangedash 8}
+  \field{title}{{Open source biometric recognition}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/xpls/abs{\_}all.jsp?arnumber=6712754$\backsl
+  \verb ash$nhttp://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6712
+  \verb 754
+  \endverb
+  \field{year}{2013}
 \endentry
 
-\entry{Swindells2002}{thesis}{}
-  \name{author}{1}{}{%
+\entry{Navab2012a}{article}{}
+  \name{author}{5}{}{%
     {{}%
-     {Swindells}{S.}%
-     {Colin~Edward}{C.~E.}%
+     {Navab}{N.}%
+     {N}{N}%
      {}{}%
      {}{}}%
-  }
-  \strng{namehash}{SCE1}
-  \strng{fullhash}{SCE1}
-  \field{sortinit}{S}
-  \field{abstract}{%
-  Computing devices within current work and play environments are relatively
-  static. As the number of 'networked' devices grows, and as people and their
-  devices become more dynamic, situations will commonly arise where users will
-  wish to use 'that device there' instead of navigating through traditional
-  user interface widgets such as lists. This paper describes a process for
-  identifying devices through a pointing gesture using custom tags and a custom
-  stylus called the gesturePen. Implementation details for this system are
-  provided along with qualitative and quantitative results from a formal user
-  study. As ubiquitous computing environments become more pervasive, people
-  will rapidly switch their focus between many computing devices. The results
-  of our work demonstrate that our gesturePen method can improve the user
-  experience in ubiquitous environments by facilitating significantly faster
-  interactions between computing devices.%
-  }
-  \field{booktitle}{Thes}
-  \verb{doi}
-  \verb 10.1145/571985.572007
-  \endverb
-  \field{isbn}{1581134886}
-  \field{number}{2}
-  \field{pages}{151}
-  \field{title}{{That one there! Pointing to establish device identity}}
-  \verb{url}
-  \verb http://portal.acm.org/citation.cfm?doid=571985.572007
-  \endverb
-  \field{volume}{4}
-  \verb{file}
-  \verb :C$\backslash$:/Users/MaMeng/AppData/Local/Mendeley Ltd./Mendeley Deskt
-  \verb op/Downloaded/Swindells - 2002 - That one there! Pointing to establish
-  \verb device identity.pdf:pdf
-  \endverb
-  \field{type}{phdthesis}
-  \field{year}{2002}
-\endentry
-
-\entry{Tangcharoen2011}{misc}{}
-  \name{author}{9}{}{%
     {{}%
-     {Tangcharoen}{T.}%
+     {Blum}{B.}%
      {T}{T}%
      {}{}%
      {}{}}%
     {{}%
-     {Bell}{B.}%
+     {Lejing}{L.}%
+     {Wang}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Okur}{O.}%
      {A}{A}%
      {}{}%
      {}{}}%
     {{}%
-     {Hegde}{H.}%
-     {S}{S}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hussain}{H.}%
+     {Wendler}{W.}%
      {T}{T}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Beerbaum}{B.}%
-     {P}{P}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Schaeffter}{S.}%
-     {T}{T}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Razavi}{R.}%
-     {R}{R}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Botnar}{B.}%
-     {R~M}{R.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Greil}{G.}%
-     {G~F}{G.~F.}%
      {}{}%
      {}{}}%
   }
-  \keyw{Child,Congenital/pathology,Coronary Vessel
-  Anomalies/*pathology,Coronary Vessels/*pathology,Female,Heart
-  Defects,Humans,Infant,Magnetic Resonance
-  Angiography/*methods,Male,Preschool,Reproducibility of Results,Sensitivity
-  and Specificity}
-  \strng{namehash}{TT+1}
-  \strng{fullhash}{TTBAHSHTBPSTRRBRMGGF1}
-  \field{sortinit}{T}
+  \keyw{augmented reality,augmented reality visualization systems,first
+  deployments,medical computing,medical intervention,operating rooms,patient
+  information systems,user interfaces,user-friendly interfaces}
+  \strng{namehash}{NN+1}
+  \strng{fullhash}{NNBTLWOAWT1}
+  \field{labelalpha}{Nav+12}
+  \field{sortinit}{N}
   \field{abstract}{%
-  PURPOSE: To evaluate the feasibility and accuracy of magnetic resonance (MR)
-  coronary angiography for the detection of coronary artery anomalies in
-  infants and children by using surgical findings as a reference. MATERIALS AND
-  METHODS: The data analysis was approved by the institutional review board.
-  One hundred children with congenital heart disease underwent MR coronary
-  angiography while under general anesthesia (mean age +/- standard deviation,
-  3.9 years +/- 3; age range, 0.2-11 years). A navigator-gated, T2-prepared,
-  three-dimensional steady-state free precession whole-heart protocol
-  (isotropic voxel size, 1.0-1.3 mm(3); mean imaging time, 4.6 minutes +/- 1.2;
-  mean navigator efficiency, 70{\%}; 3-mm gating window) was used after
-  injection of gadopentetate dimeglumine. The cardiac rest period (end systole
-  or middiastole) and acquisition window were prospectively assessed for each
-  patient. Coronary artery image quality (score of 0 [nondiagnostic] to 4
-  [excellent]), vessel sharpness, and coronary artery anomalies were assessed
-  by two observers. Surgery was performed in 58 patients, and those findings
-  were used to define accuracy. Variables were assessed between age groups by
-  using either analysis of variance or Kruskal-Wallis tests. RESULTS:
-  Diagnostic image quality (score, >/=1 for all coronary artery segments) was
-  obtained in 46 of the 58 patients (79{\%}) who underwent surgery. The origin
-  and course of the coronary artery anatomy depicted with MR imaging was
-  confirmed at surgery in all 46 patients-including the four (9{\%}) with
-  substantial coronary artery anomalies. Diagnostic-quality images were
-  obtained in 84 of the 100 patients. The rate of success improved
-  significantly when patients were older than 4 months (88{\%} for patients >4
-  months vs 17{\%} for patients </=4 months, P < .001). CONCLUSION: Improved
-  whole-heart MR coronary angiography enables accurate detection of abnormal
-  origin and course of the coronary artery system even in very young patients
-  with congenital heart disease.%
+  Researchers are developing augmented reality visualization systems to provide
+  accessible and user-friendly interfaces for medical intervention and patient
+  information systems. A related video can be seen here:
+  http://youtu.be/kifj0ZP4Mos. It shows how augmented reality visualization
+  systems can provide accessible and user-friendly interfaces for medical
+  intervention and patient information systems.%
   }
-  \field{booktitle}{Radiology}
   \verb{doi}
-  \verb radiol.10100828 [pii] 10.1148/radiol.10100828
+  \verb 10.1109/mc.2012.75
   \endverb
-  \field{isbn}{1527-1315 (Electronic) 0033-8419 (Linking)}
-  \field{issn}{1527-1315}
-  \field{number}{1}
-  \field{pages}{240\bibrangedash 247}
-  \field{title}{{Detection of coronary artery anomalies in infants and young
-  children with congenital heart disease by using MR imaging}}
+  \field{isbn}{0018-9162}
+  \field{issn}{0018-9162}
+  \field{number}{7}
+  \field{pages}{48\bibrangedash 55}
+  \field{title}{{First Deployments of Augmented Reality in Operating Rooms}}
   \verb{url}
-  \verb http://www.ncbi.nlm.nih.gov/pubmed/21325034
+  \verb http://ieeexplore.ieee.org/ielx5/2/6228562/06165241.pdf?tp={\&}arnumber
+  \verb =6165241{\&}isnumber=6228562
   \endverb
-  \field{volume}{259}
-  \field{year}{2011}
+  \field{volume}{45}
+  \field{journaltitle}{Computer (Long. Beach. Calif).}
+  \field{year}{2012}
 \endentry
 
-\entry{export:244725}{article}{}
+\entry{Sun2013}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Valentin}{V.}%
-     {Julien}{J.}%
+     {Sun}{S.}%
+     {Jing}{J.}%
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {ACM – Association for Computing Machinery}%
+  \strng{namehash}{SJ1}
+  \strng{fullhash}{SJ1}
+  \field{labelalpha}{Sun13}
+  \field{sortinit}{S}
+  \field{title}{{Motion Learning with Biomechanics Principles}}
+  \verb{url}
+  \verb http://scholarworks.sjsu.edu/etd{\_}projects/313/
+  \endverb
+  \verb{file}
+  \verb :E$\backslash$:/papers/Sun/Unknown/Sun - 2013 - Motion Learning with Bi
+  \verb omechanics Principles.pdf:pdf
+  \endverb
+  \field{year}{2013}
+\endentry
+
+\entry{DiSerio2013}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {{Di Serio}}{D.}%
+     {{\'{A}}ngela}{{\'{A}}.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ib{\'{a}}{\~{n}}ez}{I.}%
+     {Mar{\'{\i}}a~Blanca}{M.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kloos}{K.}%
+     {Carlos~Delgado}{C.~D.}%
+     {}{}%
+     {}{}}%
   }
-  \strng{namehash}{VJ1}
-  \strng{fullhash}{VJ1}
-  \field{sortinit}{V}
+  \keyw{Augmented reality,Middle-school education,Motivation}
+  \strng{namehash}{DA+1}
+  \strng{fullhash}{DAIMBKCD1}
+  \field{labelalpha}{{Di }+13}
+  \field{sortinit}{{D}}
   \field{abstract}{%
-  Muscles provide physiological functions to drive body movement and
-  anatomically characterize body shape, making them a crucial component of
-  modeling animated human figures. Substantial efforts have been ex- pended on
-  developing computational models of muscles for the purpose of increasing
-  realism and accuracy in a broad range of applications, includ- ing computer
-  graphics and biomechanics. We survey various approaches that have been
-  employed to model and simulate muscles both morpholog- ically and
-  functionally. Modeling the realistic morphology of muscle re- quires that
-  muscle deformations be accurately depicted. To this end, sev- eral
-  methodologies have been presented, including geometrically-based,
-  physically-based, and data-driven approaches. On the other hand, the simu-
-  lation of physiological muscle functions aims to identify the biomechanical
-  controls responsible for realistic human motion. Estimating these muscle
-  controls has been pursued through static and dynamic simulations. We re- view
-  and discuss all these approaches, and conclude with suggestions for future
-  research.%
+  In this paper, the authors show that augmented reality technology has a
+  positive impact on the motivation of middle-school students. The
+  Instructional Materials Motivation Survey (IMMS) (Keller, 2010) based on the
+  ARCS motivation model (Keller, 1987a) was used to gather information; it
+  considers four motivational factors: attention, relevance, confidence, and
+  satisfaction. Motivational factors of attention and satisfaction in an
+  augmented-reality-based learning environment were better rated than those
+  obtained in a slides-based learning environment. When the impact of the
+  augmented reality system was analyzed in isolation, the attention and
+  confidence factors were the best rated. The usability study showed that
+  although this technology is not mature enough to be used massively in
+  education, enthusiasm of middle-school students diminished most of the
+  barriers found. © 2012 Published by Elsevier Ltd.%
   }
   \verb{doi}
-  \verb 10.1145/1559755.1559763
+  \verb 10.1016/j.compedu.2012.03.002
   \endverb
-  \field{issn}{07300301}
-  \field{number}{4}
-  \field{pages}{1\bibrangedash 12}
-  \field{title}{{SemanticPaint: Interactive 3D Labelling and Learning at your
-  Fingertips}}
+  \field{isbn}{0360-1315}
+  \field{issn}{03601315}
+  \field{pages}{586\bibrangedash 596}
+  \field{title}{{Impact of an augmented reality system on students' motivation
+  for a visual art course}}
   \verb{url}
-  \verb http://research.microsoft.com/apps/pubs/default.aspx?id=244725
+  \verb http://linkinghub.elsevier.com/retrieve/pii/S0360131512000590
   \endverb
-  \field{volume}{28}
-  \field{journaltitle}{ACM Trans. Graph.}
-  \field{year}{2015}
+  \field{volume}{68}
+  \field{journaltitle}{Comput. Educ.}
+  \field{year}{2013}
+\endentry
+
+\entry{ma2013ismar}{inproceedings}{}
+  \name{author}{8}{}{%
+    {{}%
+     {{Ma Meng}}{M.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fallavollita}{F.}%
+     {Pascal}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Blum}{B.}%
+     {Tobias}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eck}{E.}%
+     {Ulrich}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sandor}{S.}%
+     {Christian}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weidert}{W.}%
+     {Simon}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Waschke}{W.}%
+     {Jens}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Navab}{N.}%
+     {Nassir}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Anatomy Learning,Augmented Reality,Kinect}
+  \strng{namehash}{M+1}
+  \strng{fullhash}{MFPBTEUSCWSWJNN1}
+  \field{labelalpha}{{Ma }+13}
+  \field{sortinit}{{M}}
+  \field{abstract}{%
+  Education of anatomy is a challenging but crucial element in educating
+  medical professionals, but also for general education of pupils. Our research
+  group has previously developed a prototype of an Augmented Reality (AR) magic
+  mirror which allows intuitive visualization of realistic anatomical
+  information on the user. However, the current overlay is imprecise as the
+  magic mirror depends on the skeleton output from Kinect. These imprecisions
+  affect the quality of education and learning. Hence, together with clinicians
+  we have defined bone landmarks which users can touch easily on their body
+  while standing in front of the sensor. We demonstrate that these landmarks
+  allow the proper deformation of medical data within the magic mirror and onto
+  the human body, resulting in a more precise augmentation.%
+  }
+  \field{booktitle}{2013 IEEE Int. Symp. Mix. Augment. Real.}
+  \verb{doi}
+  \verb 10.1109/ISMAR.2013.6671803
+  \endverb
+  \field{isbn}{978-1-4799-2869-9}
+  \field{pages}{277\bibrangedash 278}
+  \field{title}{{Kinect for interactive AR anatomy learning}}
+  \verb{url}
+  \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6671803
+  \endverb
+  \list{location}{1}{%
+    {Adelaide, Australia}%
+  }
+  \field{year}{2013}
   \warn{\item Invalid format of field 'month'}
-\endentry
-
-\entry{Wagner2007a}{inproceedings}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Wagner}{W.}%
-     {Daniel}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Schmalstieg}{S.}%
-     {Dieter}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{WDSD1}
-  \strng{fullhash}{WDSD1}
-  \field{sortinit}{W}
-  \field{abstract}{%
-  In this paper we present ARToolKitPlus, a successor to the popular ARToolKit
-  pose tracking library. ARToolKitPlus has been optimized and extended for the
-  usage on mobile devices such as smartphones, PDAs and Ultra Mobile PCs
-  (UMPCs). We explain the need and specific requirements of pose tracking on
-  mobile devices and how we met those requirements. To prove the applicability
-  we performed an extensive benchmark series on a braod range of off-the-shelf
-  handhelds.%
-  }
-  \field{booktitle}{Proc. 12th Comput. Vis. Winter Work. CVWW07}
-  \verb{doi}
-  \verb 10.1.1.157.1879
-  \endverb
-  \field{pages}{139\bibrangedash 146}
-  \field{title}{{ARToolKitPlus for Pose Tracking on Mobile Devices}}
-  \verb{url}
-  \verb http://www.icg.tu-graz.ac.at/Members/daniel/ARToolKitPlusMobilePoseTrac
-  \verb king
-  \endverb
-  \field{year}{2007}
-\endentry
-
-\entry{Zhang2000}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Zhang}{Z.}%
-     {Z.}{Z.}%
-     {}{}%
-     {}{}}%
-  }
-  \keyw{2d pattern,Absolute conic,Calibration from planes,Camera
-  calibration,Closed-form solution,Flexible plane-based calibration,Flexible
-  setup,Lens distortion,Maximum likelihood estimation,Projective mapping}
-  \strng{namehash}{ZZ1}
-  \strng{fullhash}{ZZ1}
-  \field{sortinit}{Z}
-  \field{abstract}{%
-  We propose a flexible technique to easily calibrate a camera. It only
-  requires the camera to observe a planar pattern shown at a few (at least two)
-  different orientations. Either the camera or the planar pattern can be freely
-  moved. The motion need not be known. Radial lens distortion is modeled. The
-  proposed procedure consists of a closed-form solution, followed by a
-  nonlinear refinement based on the maximum likelihood criterion. Both computer
-  simulation and real data have been used to test the proposed technique and
-  very good results have been obtained. Compared with classical techniques
-  which use expensive equipment such as two or three orthogonal planes, the
-  proposed technique is easy to use and flexible. It advances 3D computer
-  vision one more step from laboratory environments to real world use.%
-  }
-  \verb{doi}
-  \verb 10.1109/34.888718
-  \endverb
-  \field{isbn}{0162-8828}
-  \field{issn}{01628828}
-  \field{number}{11}
-  \field{pages}{1330\bibrangedash 1334}
-  \field{title}{{A flexible new technique for camera calibration}}
-  \verb{url}
-  \verb http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=888718
-  \endverb
-  \field{volume}{22}
-  \field{journaltitle}{IEEE Trans. Pattern Anal. Mach. Intell.}
-  \field{year}{2000}
 \endentry
 
 \lossort
