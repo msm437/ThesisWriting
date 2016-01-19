@@ -3,22 +3,28 @@
 
 \chapter{Introduction}  %6 pages
 \label{sec:introduction}
+computer science is help human to processing the information. Human and information is perception and interaction. 
 
-\TODO{Generic blabla about Augmented reality, perception and interaction.}
-Human centering computing 
+Mixed reality (MR) takes place not only in the physical world or the virtual world and is the merging of real and virtual worlds to produce new environments and visualizations where physical and digital objects co-exit and interact in real time\footnote{\url{https://en.wikipedia.org/wiki/Mixed_reality}}.
+As technologies developing, the perception and interaction with the digital information is more and more natural. All these are the user's personal behaviors, so personalization is one trending to improve the user's experience.
+Human centered computing is an emerging field that aims at tightly interacting human sciences and computer sciences for timely cognitive and interactive support.
 
+Generic blabla about Human centering computing, perception (Augmented reality) and interaction (NUI).
+
+AS the computing and display technologies develop, computer science enables digitizing a lot of information from the Physical world, processes and shows all these informations back to real world, permit the user to perceive the virtual world as the real world. The boundary between the physical world and the virtual world is blurred for the perception of the normal people. 
 Information: physical world and real objects => digital information => text info => graphic display 
 2D => 3D, go outside from computer and shown in the real world. natural perception.
 
 Learning => personal knowledge network construction and personal perception is become important.
 
 VR => AR => MR and 
+Real world to digital world and shown in virtual reality, 
 
 The history of MR, focusing on how to improve the perception of the digital information and the corresponding interactive methods. objectives and requirements in different stages and how the technology develops.
 
-interaction with real object by touch and control 
+Interaction with real object by touch and control 
 
-WIMP and cursor and mouse  and keyboard. 
+WIMP and cursor and mouse  and keyboard.
 
 computer vision algorithm and natural interaction based on the depth image and human tracking
 
@@ -27,17 +33,83 @@ smart agent based on machine learning to help computer understand the user
 interaction with digital and physical element more and more like superman 
 
 AR and MR for education.(one section)
-see the ISMAR2013-5pages document section 2
+Many commercially available systems use VR (Virtual Reality) for medical education and psychomotor skills training. These systems have indeed proven to be valid and are of use in clinical training [5-8]. At the moment, there are only few AR-based systems in use for medical education. AR systems have the advantage that information can be embedded and/or superimposed upon reality. This allows for a more close-to-reality presentation of medical knowledge and offers opportunities for new and interactive learning context. The user can spatially relate virtual objects to the reality. The main reason for AR not being used in many systems today is that developing AR systems is more challenging than developing VR systems. The integration of real and virtual objects requires more accurate calibration, more advanced visualization and other user interfaces.
 
+%todo: Because IoT can mean many different things, to make the discussion concrete, we illustrate the architecture of a consumer-facing IoT system shown below.
+Use a similar sentence to focus on medical education and interaction in OR
 
 \section{Motivation}
 Talk about the general motivation of this work.
 
+
 new conception and method to improve the perception with personal information 
 MR or AR registration with help of personal information and personal interaction with the MR view
+\subsection{Magic mirror conception}
+The General Medical Council recently proposed standards for effective teaching and learning of medical students (Council \& General Medical Council, 2009). They stated that: “...medical schools should take advantage of new technologies…. to deliver teaching.” Augmented reality (AR) research has matured to a level that its applications can now be found in both mobile and non-mobile devices (Bacca et al., 2014) and research on AR has also demonstrated its extreme usefulness for increasing student motivation in the learning process (Chang et al., 2014; Di Serio et al., 2013). Providing adequate learning experience to different learners is a challenging issue as the learning system generally does not adapt content to suit individual learner needs. Personalization for promoting a multimodal learning environment is also a growing area of interest, such as the development of user modeling and personalized processes which place the student at the center of the learning development.
 
+In today’s medical schools students are required to understand both function and spatial context of human anatomy. Traditional medical education learning is classified into three categories: cadaver, model, and book-based. The cadaver-based learning has seen decline due to practical and cost issues. As a result, anatomical education has shifted towards physical, diagram and image models. However, some drawbacks exist with these learning paradigms. For example, it is difficult to interpret the spatial and physical characteristics of anatomy by observing two-dimensional images, diagrams, or photographs. Many physical models also lack detail levels to fully understand the specific anatomy. 
+In the advent of the plethora of exciting technological advancements there should be no reason not to include these for the creation of new education paradigms for medical learning. By combining computer models of anatomical structures with custom software we can showcase to students new ways of interacting with anatomy that could not be achieved during cadaveric dissections or in static images and diagrams for increasing their learning satisfaction (Bacca et al., 2014; Ma et al., 2012; Nmc, 2014).
+
+Anatomical education is an important content of every curriculum and starts already very early in school, to form a good understanding of the body and improve the general health awareness. However, real-life demonstrations are limited to the skin-surface, which is why most people learn about anatomy in the form of charts or plastic models of the inner organs. Still, there is a certain fascination about looking into the inside of one’s own body, something that can usually only be achieved to a limited degree by the use of X-Ray imaging or similar imaging modalities. Those methods are usually not applicable for educational methods, mostly because the devices are too expensive to use without medical indication and for certain methods there are risks like irradiation or injection of tracer materials.
+
+AR in formal and informal learning environments with an emphasis on affordances, usually utilizes context-aware technologies, which enable participants to interact with digital information embedded within the physical environment (Dunleavy et al., 2013). The AR system presents digital media to learners after they point the camera at an object (e.g., QR code, 2D target) and creates immersive learning experiences with the physical environment, providing educators with a novel and potentially transformative tool for teaching and learning (Dede, 2009; Johnson et al., 2011). In medical, an AR system for patient-doctor communication has recently been presented (Ni et al., 2011). This system used a hand-held projector to project anatomy onto the skin of the patient. While this system is relatively inexpensive, it could only display anatomy which is close to the skin in correct perspective. Furthermore, it did not automatically track the position of the projector and the patient. The doctor must then figure out manually how to position the projector and the patient in such a way that the anatomy is augmented correctly. 
+An alternative are “magic mirrors”. Here the user stands in front of a screen and via a camera, the image of the user is shown on the screen such that it acts like a mirror. While such a system restricts the motion of the user, it allows for an inexpensive and robust solution that is better suited for medical education. The concept of an AR magic mirror has been shown previously, mainly for advertisement and marketing. Previous systems augmented onto the user virtual shoes (Eisert et al., 2008; Luh et al., 2013), shirts (Ehara et al., 2007) and knight’s armors (Fiala, 2007). For tracking the position of the user, previous systems have used tracking markers (Eisert et al., 2008; Fiala, 2007; Luh et al., 2013) or a tracking shirt with a rectangular highly textured region (Hilsmann et al., 2008). For shoes, a vision-based approach has been presented (Eisert et al., 2008). 
+
+
+\subsection{Pointing Gesture in an Egocentric setting}
+Human centered computing is an emerging field that aims at tightly interacting human sciences and computer sciences for timely cognitive and interactive support.
+The egocentric approach is an alternative to the conventional surveillance setting is to mount a portable camera on the head of the user and perceive the information from an egocentric perspective \citep{Fathi2011,Li2015}. 
+%There has been significant recent interest in the egocentric approach to recognize the wearer's actions .
+Pointing gesture is fundamental to human behavior \citep{Matthews2012} and used consistently across cultures \citep{McNeill2000}. It begins at an early developmental stage \citep{Carpendale2010} and lets humans reference proximal objects as well as abstract concepts in the world. 
+Pointing gestures, which are part of our gestural language, are inherently used for interaction \citep{Nanayakkara2013a}. 
+
+
+In this paper we focus on how the pointing origin is defined in an Egocentric setup, i.e. how to understand the user specific pointing gesture without extra camera or tracker in an egocentric view.  
+Concerning the ray's origin, pointing techniques can be classified into two groups, \textit(hand-rooted), those where the ray originates at the user's hand, and \textit(eye-rooted), those where the ray starts at the user's eyes or somewhere close to the eyes. Whenever a \textit(hand-rooted) technique is used, the objects that are along the pointing ray might differ from those that are along the ray starting from the eye \citep{Argelaguet2008}. Here, we only focus on the \textit(eye-rooted) approach and discuss how to find a perfect ray origin and direction to understand the pointing gesture in an Egocentric Setting. 
+
+To understand the pointing ray in an egocentric setting would open a door to perform real-time interaction with egocentric vision.
+It enables the wearable camera to perceive the real world with an accurate user intention, and a user to perform direct interaction with objects in their viewpoint without visual feedback.
+\paragraph{Natural interaction in OR}
+As medical technology is continuously developing, more medical systems are integrated inside the operating room (OR) for diagnosis and intraoperative navigation. Today, the conventional display technology in the operating room is still the 2D display and the information from different medical systems is shown on different displays. Surgeons rely on these medical systems to capture, browse, and manipulate patient information, physiological data, and medical images, but the current control input of these systems is still mouse, keyboard, touch screen, and joystick. To interact with these medical systems and their control inputs, the user has to press either a physical/virtual button using their own finger or a visual cursor controlled by another device.
+Yet, one of the most important rules in the OR is to maintain a strict boundary between what is sterile and what is not \cite{OHara2014a}. A sterile processing of the input devices is impossible; hence the surgeons cannot directly touch these input devices after they are scrubbed and gloved. However, research shows that the surgeon \underline{needs} to directly control the medical systems to mentally `get to grips' to what is going on, something which is not achievable by proxy \cite{Johnson2011a}. Giving the surgeon direct control of the interaction of different medical systems while maintaining sterility within the operating room has captured the imagination of many research groups and different solutions have been proposed.
 
 \section{Objectives}
 
+\paragraph{Pointing gesture} We aim at developing a ubiquitous solution to calculate a ray origin allowing the egocentric device to understand the user's specific pointing gesture for interaction with the ambient information within a mixed reality world.
+This paper presents a Pointing At Several Targets solution that offers a method to find an origin for the pointing ray and recover the user specific pointing in an egocentric setting without extra camera and tracker, and enable direct interaction with real and virtual elements.
+This work is different from the current methods for hand gesture recognition and gesture based interaction.  Its main difference lies within a method for calculating a perfect ray origin with a user's specific habit, recovering the pointing geometry accurately and enabling direct interaction with real and virtual digital elements of interest within the user's environment without any visual feedback.
 
+Mathematical analysis and experimental results demonstrate that the PAST method could find the origin point stably and recover the user specific pointing ray accurately. The calibration method is contextually independent and in most cases the pointing line is recovered with accuracy less than $1\degree$ and less than $0.5\degree$ with accurate contextual information. The overall pointing accuracy at 1.5, 2, 3, and 4 meters is $0.67\pm0.71\degree$.
+
+\paragraph{Natural interaction in OR}
+Contrary to the state of art, we propose a novel user interface that allows the surgeon to \underline{personally} perform touchless interaction with the \underline{various} medical systems, and switch effortlessly among them, all of this \underline{without modifying} the systems' software and hardware. The advantages are: 
+\begin{description} [font=$\bullet$\scshape\bfseries]
+	\item needs no modification of the software/hardware of the existing medical systems and does not need the medical software to be re-certified
+	\item combines pointing with personal gesture command
+	\item switches smoothly among different medical systems and operands
+	\item offers multi-user, multi-system framework
+	\end{description}
+	
 \section{Contributions}
+
+\paragraph{Pointing Gesture}
+we propose a method to calculate a virtual eye center as the origin for the pointing ray without extra tacking in an egocentric setting, modeling and recovering the user specific pointing geometry. 
+The pointing ray starts from a virtual eye center and goes through the fingertip to the desired target information. During the calibration process, the user is asked to perform pointing gestures towards several targets shown to them. A user specific virtual eye center is then estimated based on the detected fingertip in the coordinate system of the wearable device, enabling to accurately recover the user's pointing ray in a mixed reality environment. 
+
+\begin{description} [font=$\bullet$\scshape\bfseries]
+	\item It can calculate an origin for pointing ray and recover the user specific pointing without extra camera and tracker in an egocentric setting.
+	\item The proposed method is mathematically analyzed to demonstrate that the calibration is feasible and the measured accuracy of the recovered pointing ray is below $0.9\degree$.
+	\item A user study consisting of 10 participants shows that the PAST calibration is independent of the scenario and the pointing ray was recovered with an accuracy of $0.67\degree\pm0.71\degree$.
+	\item It enables direct interaction with real and virtual digital elements and a tight integration between computer and human without any visual feedback.
+\end{description}
+
+\paragraph{Natural interaction in OR}
+In our proposed user interface setup, a wearable RGB-D sensor is mounted on the surgeon's head for inside-out tracking of their finger with any of the medical systems' displays. Android devices with a special application are connected to the computers on which the medical systems are running, simulating a normal USB mouse and keyboard. 
+After calibration, the surgeon's pointing gesture can be recovered by a computing device. The target position in the real world, the desired cursor position in the display, and the surgeon's personal gestures, are detected and analyzed. The result is sent to the Android devices via WiFi. The application running on the Android system generates the corresponding mouse or keyboard events according to the targeted medical system allowing completion of the interaction. In essence, one personal user interface is conceived to control all displays in an operating room.
+
+\section{Organization}
+In this thesis, issues that are related to improve the personal perception and interaction are discussed. In Chapter \ref{sec:background}, the history and the state of perception and interaction in mixed reality will be presented and current and future method will be discussed. Furthermore, related topics such as biometric recognition, pointing gesture will also be discussed. 
+In Chapter \ref{sec:MMPP} is presented and several methods are developed to improve the user's perception in the magic mirror setting. Personal biomatric information is detected to select the best medical data for registration and personal registration is performed to improve the AR view of the user's body and virtual medical image. Interactive framework is also presented to easy the knowledge linking building. Several applications are developed for medical learning and rehabilitation.
+In chapter \ref{sec:pointingGesture}, the PAST method is proposed to calculate an origin for the pointing gesture and recover the pointing ray in an egocentric setting without extra camera and tracker. The proposed method is mathematically analyzed and evaluated in a 10 participants user study. A natural pointing framework for medical systems in the operating room is also presented based on the recovered pointing gesture. The gesture method is also extended to perform interaction in a normal scenario without any depth information. 
+Then a collaborated Mixed Reality framework encompassing the magic mirror conception and the pointing gesture is proposed in Chapter \ref{sec:CMR}. A scenario with multi-user performing magic mirror rehabilitation and one nurse to monitor and supervise all the user at the same time and perform interaction with each MR application seamlessly with the pointing technology. 
+At last conclusion will be drawn and possible future research direction will be discussed in chapter \ref{sec:conclution}.

@@ -1,0 +1,1255 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+% **************************************************
+% Clean Thesis
+% -- A LaTeX Style for Thesis Documents --
+%
+% Copyright (C) 2011-2015 Ricardo Langner
+% **************************************************
+%
+% Readme:
+% ----------------------------------------
+% Please check out the README.md file in the root of this package.
+%
+%
+% License Information:
+% ----------------------------------------
+% "Clean Thesis" is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% "Clean Thesis" is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% **************************************************
+
+%\newcommand{\LeDraft}{true}
+\newcommand{\LeDraft}{false}
+
+% **************************************************
+% Document Class Definition
+% **************************************************
+% **************************************************
+% Debug LaTeX Information
+% **************************************************
+%\listfiles
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+
+
+% **************************************************
+% Information and Commands for Reuse
+% **************************************************
+\newcommand{\thesisTitle}{Personal Perception and Interaction in Mixed Reality}
+\newcommand{\thesisName}{Meng Ma}
+\newcommand{\thesisSubject}{Dissertation}
+\newcommand{\thesisDate}{\today}
+\newcommand{\thesisVersion}{0.0}
+
+\newcommand{\thesisVorsitzender}{...}
+\newcommand{\thesisVorsitzenderAffiliation}{...}
+
+\newcommand{\thesisFirstReviewer}{Prof. Nassir Navab, Ph.D.}
+\newcommand{\thesisFirstReviewerAffiliation}{
+	Technische Universität München\\[-1mm]
+	Computer Aided Medical Procedures
+}
+
+\newcommand{\thesisSecondReviewer}{\TODO{Prof. Dr.-Ing. Bernhard Preim}}
+\newcommand{\thesisSecondReviewerAffiliation}{
+	 Otto-von-Guericke-Universität\\[-1mm]
+	 Institut für Simulation und Graphik
+}
+
+\newcommand{\thesisFirstSupervisor}{Prof. Nassir Navab}
+\newcommand{\thesisSecondSupervisor}{Dr. Maximilian Baust}
+
+\newcommand{\thesisUniversity}{\protect{Technische Universität München}}
+\newcommand{\thesisUniversityDepartment}{Fakultät für Informatik}
+\newcommand{\thesisUniversityInstitute}{Lehrstuhl für Informatikanwendungen in der Medizin \& Augmented Reality}
+\newcommand{\thesisUniversityGroup}{}
+\newcommand{\thesisUniversityCity}{Garching bei München}
+\newcommand{\thesisUniversityStreetAddress}{Boltzmannstraße 3}
+\newcommand{\thesisUniversityPostalCode}{85748}
+
+
+% **************************************************
+% Load and Configure Packages
+% **************************************************
+\usepackage[english]{babel}
+% babel system, adjust the language of the content
+\usepackage[						figuresep=colon,	sansserif=false,	hangfigurecaption=true,	hangsection=true,	hangsubsection=true,	colorize=full,	colortheme=bluemagenta,
+	draft=\LeDraft				]{cleanthesis}
+
+
+
+
+\usepackage[					    	backend=bibtex,		      			bibencoding=utf8,					style=alphabetic,					natbib=true,						hyperref=true,						backref=true,						isbn=false,							url=false,							doi=false,							urldate=long,						maxnames=3,	minnames=1,	maxbibnames=5,	minbibnames=3,	maxcitenames=2,	mincitenames=1,	defernumbers=true]{biblatex}
+\bibliography{E:/TUM_Narvis/documents/BibTex/library}
+\newcommand{\citeName}[1]{ \citeauthor{#1}\cite{#1}}
+%\makeatletter
+%
+%\newrobustcmd*{\parentexttrack}[1]{%
+%	\begingroup
+%	\blx@blxinit
+%	\blx@setsfcodes
+%	\blx@bibopenparen#1\blx@bibcloseparen
+%	\endgroup}
+%
+%\AtEveryCite{%
+%	\let\parentext=\parentexttrack%
+%	\let\bibopenparen=\bibopenbracket%
+%	\let\bibcloseparen=\bibclosebracket}
+%
+%\makeatother
+
+\usepackage{multirow}
+
+
+\usepackage{tabu}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{gensymb}
+\renewcommand{\arraystretch}{1.5}		% set vertical line padding to factor 1.5
+\setlength{\tabcolsep}{8pt}				% set the column separation (6pt is default)
+\setlength{\heavyrulewidth}{0.10em}		% set the thickness of the top and bottom rules
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\usepackage{tikz}
+%\input{content/tikzsetup.tex}
+
+\usepackage{rotating}
+\usepackage{ifthen}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\captionsetup[subfigure]{format=plain,labelsep=space,singlelinecheck=true}
+
+% **************************************************
+% More custom commands
+% **************************************************
+\newcommand{\add}[1]{{\color{cyan}{#1}}} 
+\newcommand{\addd}[1]{{\color{blue}{#1}}} 
+%\newcommand{\add}[1]{#1} 
+%\newcommand{\addd}[1]{#1} 
+\newcommand{\TODO}[1]{{\bfseries\textsl{\textcolor{red}{[#1]}}}}
+\newcommand{\CN}{\TODO{citation needed}}
+\newcommand{\II}{{\bfseries\textsl{\textcolor{RubineRed}{[insert image]}}}}
+\newcommand{\III}[1]{{\bfseries\textsl{\textcolor{RubineRed}{[insert image: #1]}}}}
+\newcommand{\SYN}[1]{{\bfseries\textsl{\textcolor{OliveGreen}{[#1?]}}}}
+
+
+% **************************************************
+% Document CONTENT
+% **************************************************
+
+\end_preamble
+\options paper=A4,twoside=true,openright,parskip=full,chapterprefix=true,headings=normal,bibliography=totoc,listof=totoc,titlepage=on,captions=tableabove,draft=\LeDraft
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman lmodern
+\font_sans default
+\font_typewriter lmodern
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 10
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "% setup the hyperref-package options
+pdftitle={\thesisTitle},% 	- title (PDF meta)
+pdfsubject={\thesisSubject},% 	- subject (PDF meta)
+pdfauthor={\thesisName},% 	- author (PDF meta)
+plainpages=false,% 	-
+colorlinks=false,% 	- colorize links?
+pdfborder={0 0 0},% 	-
+breaklinks=true,% 	- allow line break inside links
+bookmarksnumbered=true,%
+bookmarksopen=true%"
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% rename document parts
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+renewcaptionname{ngerman}{
+\backslash
+figurename}{Abb.}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+renewcaptionname{ngerman}{
+\backslash
+tablename}{Tab.}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcaptionname
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+english
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+figurename
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Fig.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+renewcaptionname
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+english
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+tablename
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Tab.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Front matter
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%recover the following comment after you finish the main contents
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+pagenumbering{roman}			% roman page numbing (invisible for empty page style)
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+pagestyle{empty}				% no header or footers
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/titlepages}		% INCLUDE: all titlepages
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+pagestyle{plain}				% display just page numbers
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/acknowledgement} % INCLUDE: acknowledgement
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setcounter{tocdepth}{3}		% define depth of toc
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+tableofcontents				% display table of contents
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Body matter
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% arabic page numbering
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% set page counter
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+pagestyle
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+maincontentstyle
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% fancy header and footer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/0-methods} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+part{Review on Mixed Reality}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/1-introduction} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/2-background}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+part{Personal Perception with Magic Mirror}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+preview false
+filename "content/3-PPMM.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+part{Personal Pointing Interaction}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/4-PAST}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/4-PointingOR}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/4-AccessRW}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/5-CMR}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Back matter
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% --------------------------
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%Reference uncomment at last
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%{%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setstretch{1.1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+renewcommand{
+\backslash
+bibfont}{
+\backslash
+normalfont
+\backslash
+small}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setlength{
+\backslash
+biblabelsep}{4pt}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+setlength{
+\backslash
+bibitemsep}{0.5
+\backslash
+baselineskip plus 0.5
+\backslash
+baselineskip}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+printbibliography[nottype=online]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+printbibliography[heading=subbibliography,title={Online Resources},type=online,prefixnumbers={@}]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%uncomment the follow comment scope after you finish the writing.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+listoffigures
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+listoftables
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+cleardoublepage
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\backslash
+input{content/declaration}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 1
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% **************************************************
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% End of Document CONTENT
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% **************************************************
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

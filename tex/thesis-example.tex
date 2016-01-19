@@ -59,10 +59,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 
+
 % **************************************************
 % Information and Commands for Reuse
 % **************************************************
-\newcommand{\thesisTitle}{Personal Perception and Interaction in Mixed Reality}
+\newcommand{\thesisTitle}{Personal Perception and Interaction with Medical information in Mixed Reality}
 \newcommand{\thesisName}{Meng Ma}
 \newcommand{\thesisSubject}{Dissertation}
 \newcommand{\thesisDate}{\today}
@@ -142,7 +143,7 @@
 	defernumbers=true%
 ]{biblatex}
 \bibliography{E:/TUM_Narvis/documents/BibTex/library}
-
+\newcommand{\citeName}[1]{ \citeauthor{#1}\cite{#1}}
 %\makeatletter
 %
 %\newrobustcmd*{\parentexttrack}[1]{%
@@ -161,6 +162,7 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{multirow}
 
 \usepackage{tabu}
 \usepackage{array}
@@ -174,6 +176,8 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{geometry}
+\usepackage{pdflscape}
 
 \usepackage{tikz}
 %\input{content/tikzsetup.tex}
@@ -183,6 +187,11 @@
 \usepackage{subfig}
 \usepackage{wrapfig}
 \usepackage{enumitem}
+\usepackage{threeparttable}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \captionsetup[subfigure]{format=plain,labelsep=space,singlelinecheck=true}
 
 % **************************************************
@@ -242,18 +251,18 @@
 \input{content/0-methods} 
 
 %\part{Review on Mixed Reality}
-\input{content/1-introduction} 
+%\input{content/1-introduction} 
 %\input{content/2-background}
-
-%\part{Personal Perception with Magic Mirror}
-\input{content/3-PPMM}
-
-%\cleardoublepage
-
-%\part{Personal Pointing Interaction}
+%
+%%%\part{Personal Perception with Magic Mirror}
+%\input{content/3-PPMM}
+%%
+%%%\cleardoublepage
+%%
+%%%\part{Personal Pointing Interaction}
 %\input{content/4-PAST}
 %\input{content/4-PointingOR}
-%\input{content/4-AccessRW}
+%%\input{content/4-AccessRW}
 
 %\input{content/5-CMR}
 
