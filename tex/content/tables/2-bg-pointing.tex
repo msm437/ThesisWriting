@@ -1,42 +1,45 @@
 % !TEX root = ../thesis-example.tex
 %\newgeometry{margin=1cm} % modify this if you need even more space
 %\begin{landscape}
-\begin{sidewaystable}
+%\begin{table} %sidewaystable
+\begin{table*}
 	\caption{The objects to track and the properties of the interaction in different works}
-	\label{tb:2-bg:pointing}
+	\label{tb:relatedWork}
 	\scriptsize
 	\centering
 	\begin{threeparttable}
-		\begin{tabular}{P{5cm}|P{1cm}|P{1cm}|P{1cm}|P{1cm}|P{1cm}|P{1cm}|P{2cm}|P{2cm}|P{2cm}|P{2cm}}
+		\centering
+		\begin{tabular}{P{1.1cm}|P{0.35cm}|P{0.25cm}|P{0.35cm}|P{0.45cm}|P{1.0cm}|P{1.2cm}|P{0.8cm}|P{1.2cm}|P{0.5cm}|P{0.5cm}}
 			\hline
-			\space & \multicolumn{4}{c}{Objects to Track} & \multicolumn{6}{|c}{Interaction} \\
+			\space & \multicolumn{4}{c}{Objects to Track} & \multicolumn{6}{|c}{Properties of the Interaction} \\
 			\hline
-			Work & Head & Eye & Hand & Finger & Visual Feedback & Direct & Dynamic Scene & Unlimited Distance & Real World & Virtual World\\
+			Work & Head & Eye & Hand & Finger & Visual Feedback & Direct Positioning & Dynamic Scene & Unreachable Objects & Real World & Virtual World\\
 			%\hline
-			\citet{Pierce1997} & \xmark & \xmark \tnote{a}  & \cmark \tnote{b} & \cmark \tnote{b} & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark \\
-			\citet{Argelaguet2008} & \xmark & \xmark \tnote{a}  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark \\
-			\citet{Liang1994} & \xmark & \xmark \tnote{a}  & \cmark\tnote{b} & \cmark\tnote{b} & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark \tnote{c} \\
-			\citet{Nickel2003} & \cmark & \cmark  & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \xmark\\
-			\citet{Banerjee2012} & \xmark & \cmark  & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \xmark\\
-			\citet{Huang2014} & \xmark & \cmark  & \xmark & \cmark & \xmark & \cmark & \xmark & \cmark & \cmark & \xmark\\
-			\citet{DeCampos2006} & \xmark & \xmark  & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark \tnote{d} & \cmark \tnote{d}\\
-			\citet{Colaco2013a} & \xmark & \xmark  & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark & \cmark\\
-			\citet{Mistry2009} & \xmark & \xmark  & \xmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark & \xmark\\
-			\citet{Harrison2011} & \xmark & \xmark  & \cmark & \cmark & \xmark & \cmark & \cmark & \xmark & \cmark & \xmark\\
-			\citet{Ha2014} & \xmark & \xmark \tnote{a}  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark \tnote{e} & \cmark\\
-			\citet{Jang2015} & \xmark & \xmark \tnote{a}  & \cmark & \cmark & \cmark & \cmark & \cmark & \xmark & \xmark & \cmark\\
-			\citet{Kassner2014} & \xmark & \cmark  & \xmark & \xmark & \cmark & \cmark & \cmark & \cmark & \cmark \tnote{d} & \cmark \tnote{d}\\
-			Our method &  \xmark & \xmark \tnote{f} & \xmark & \cmark & \xmark & \cmark & \cmark & \cmark & \cmark \tnote{d} & \cmark \tnote{d}\\
-			\end{tabular}
-			\begin{tablenotes}
-				\item[a] The eye position is defined during rendering procedure.
-				\item[b] Special tool is tracked instead of hand and finger.
-				\item[c] 3D virtual world is shown in 2D display.
-				\item[d] The method could be used in this scenario with proper hardware.
-				\item[e] The Real world is shown via video see through HMD.
-				\item[f] The eye position is calculated via the tracking of the finger and scenario.
-				\end{tablenotes}
-				\end{threeparttable}
-				\end{sidewaystable}
+			\citep{Pierce1997} & \xmark & \xmark \tnote{a}  & \cmark \tnote{b} & \cmark \tnote{b} & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark \\
+			\citep{Argelaguet2008} & \xmark & \xmark \tnote{a}  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark \\
+			\citep{Liang1994} & \xmark & \xmark \tnote{a}  & \cmark\tnote{b} & \cmark\tnote{b} & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark \tnote{c} \\
+			\citep{Nickel2003} & \cmark & \cmark  & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \xmark\\
+			\citep{Banerjee2012} & \xmark & \cmark  & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \xmark\\
+			\citep{Huang2014} & \xmark & \cmark  & \xmark & \cmark & \xmark & \cmark & \xmark & \cmark & \cmark & \xmark\\
+			\citep{DeCampos2006} & \xmark & \xmark  & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark \tnote{d} & \cmark \tnote{d}\\
+			\citep{Colaco2013a} & \xmark & \xmark  & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark & \cmark\\
+			\citep{Mistry2009} & \xmark & \xmark  & \xmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark & \xmark\\
+			\citep{Harrison2011} & \xmark & \xmark  & \cmark & \cmark & \xmark & \cmark & \cmark & \xmark & \cmark & \xmark\\
+			\citep{Ha2014} & \xmark & \xmark \tnote{a}  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark \tnote{e} & \cmark\\
+			\citep{Jang2015} & \xmark & \xmark \tnote{a}  & \cmark & \cmark & \cmark & \cmark & \cmark & \xmark & \xmark & \cmark\\
+			\citep{Kassner2014} & \xmark & \cmark  & \xmark & \xmark & \cmark & \cmark & \cmark & \cmark & \cmark \tnote{d} & \cmark \tnote{d}\\
+			\\
+			%Our method &  \xmark & \xmark \tnote{f} & \xmark & \cmark & \xmark & \cmark & \cmark & \cmark & \cmark \tnote{d} & \cmark \tnote{d}\\
+		\end{tabular}
+		\begin{tablenotes}
+			\item[a] The eye position is defined during the rendering procedure.
+			\item[b] Special tool is tracked instead of hand and finger.
+			\item[c] 3D virtual world is shown in 2D display.
+			\item[d] The method could be used in this scenario with proper hardware.
+			\item[e] The real world is shown via video-see-through HMD.
+			\item[f] The eye position is calculated via the tracking of the finger and scenario.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table*}
 %\end{landscape}
 %\restoregeometry

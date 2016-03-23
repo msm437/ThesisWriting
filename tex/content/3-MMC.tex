@@ -1,14 +1,12 @@
 % !TEX root = ../thesis-example.tex
-
 %todo: to describe the basic magic mirror idea, hardware and framework
 %Magic Mirror framework: conception, software and hardware
 \section{Magic Mirror Framework} \label{sec:3-PPMM:MMC}
 %the reason to choose anatomy learning for magic mirror conception
-Knowledge about human anatomy is an important issue for everyone working in the field of medicine. But it is also an important part of the general education and it is relevant for many other professions related e.g. to health-care or sports. The human anatomy is very complex and it does not only involve knowledge about the single organ, but also about issues such as chemical processes, human motion and spatial relations inside the body. Therefore, teaching human anatomy is very difficult and often big effort is spent on teaching it e.g. by letting students perform dissection courses, creating illustrations and plastic models of anatomy or by utilizing 3D computer graphics. All this knowledge is about ourselves, but we cannot look through our cloth and skin to directly observe what is inside of the human body.  At the same time, mirror is the most popular way to learn about ourselves. We all spend a lot of time looking in the mirror. It is first thing in the morning to see what we need to, our razor, our make-up, tooth brushing. We also use it to check if we should go on a diet and figure out what to wear. 
+Knowledge about human anatomy is an important issue for everyone working in the field of medicine. But it is also an important part of the general education and relevant for many other professions related e.g. to health-care or sports. The human anatomy is very complex and it does not only involve knowledge about the single organ, but also about issues such as chemical processes, human motion and spatial relations inside the body. Therefore, teaching human anatomy is very difficult and often big effort is spent on teaching it e.g. by letting students perform dissection courses, creating illustrations and plastic models of anatomy or by utilizing 3D computer graphics. 
 
-The magic mirror\cite{Grosjean1999} is a user interface technique that mimics a normal mirror and presents non-physical visual feedback in addition to the normally optical effect. Here the user stands in front of a screen and via a camera, the image of the user is shown on the screen such that it acts like a mirror. While such a system restricts the motion of the user, it allows for an inexpensive and robust solution that is better suited for medical education. The concept of an AR magic mirror has been shown previously, mainly for advertisement and marketing. Previous systems augmented onto the user virtual shoes \cite{Eisert2008,Luh2013}, shirts \cite{Ehara2006} and knight's armors \cite{Fiala2007}. For tracking the position of the user, previous systems have used tracking markers \cite{Eisert2008,Fiala2007,Luh2013} or a tracking shirt with a rectangular highly textured region \cite{Hilsmann2008}. For shoes, a vision-based approach has been presented \cite{Eisert2008}.
-
-While previous systems have augmented objects onto the user, this system extends the magic mirror concept for education of anatomy. It creates the illusion that the user can look inside his own body. An image of this can be seen in \figurename{\ref{fig:3-MMC:Prototype}}. To achieve this visualization, the magic mirror augments a volume visualization of a CT dataset onto the user. To allow a correct augmentation of the CT, the pose of the user is tracked. Hence, an augmented reality magic mirror conception came out as a framework for anatomy learning and it generates a personal perception of the medical information for every user. This conception displays anatomical structures overlaid onto the body of the user as a novel way to intuitively teach human anatomy. The prototype system also takes the user's gesture as input to create an interactive AR environment. 
+The magic mirror\cite{Grosjean1999} is a user interface technique that mimics a normal mirror and presents non-physical visual feedback in addition to the normally optical effect. Here the user stands in front of a screen and via a camera, the image of the user is shown on the screen such that it acts like a mirror. 
+While previous systems have augmented objects onto the user, this system extends the magic mirror concept for medical education and rehabilitation. It creates the illusion that the user can look inside his/her own body. An image of this can be seen in \figurename{\ref{fig:3-MMC:Prototype}}. To achieve this visualization, the magic mirror augments the volume visualization of a CT dataset onto the user. To allow a correct augmentation of the medical data, the pose of the user is tracked. Hence, an MR magic mirror conception came out as a framework and it generates a personalized perception of the medical information for every user. This conception can also display anatomical structures overlaid onto the body of the user to intuitively teach human anatomy. In addition, the framework takes the user's natural gesture as input to create an interactive MR environment. 
 
 \subsection{Magic Mirror Prototype}
 The augmented reality magic mirror prototype in this section is firstly presented as an interactive anatomy learning system and has primarily been developed for medical anatomy education, museum, and exhibition. It focuses on a few important organs of the abdomen, such as liver, lungs, pancreas, stomach, and bones.  
@@ -54,6 +52,7 @@ The applications based on the \textit{Matic Mirror AR View} has two important fe
 	\label{fig:3-MMC:systemFramework}
 	\includegraphics[width = 0.7\linewidth]{figures/3-MMC/SystemFramework}
 \end{figure}
+
 \subsubsection{Medical Information}
 To create a magic mirror AR view for anatomy leaning, special medical data should be selected from the database and transformed based on current user's personal and skeleton information (see \figurename{\ref{fig:3-MMC:MedicalInfoFlow}}). Then the data is rendered to generate the non-physical visual effect, merging with the mirror-like image. The user learns anatomy knowledge via perception of the AR view of his/her own body. Interaction can also be performed by the user intentionally or unintentionally to control the  selection and transformation of the medical information, enabling an interactive AR view.
 \begin{figure}
@@ -69,6 +68,7 @@ Visualizing structures other than bones from the CT is more challenging. In a fi
 One drawback of the current system is that the 3D dataset is not deformed. So if the user bends, this is not reflected in the visualization of the medical data and also movements of the limbs are not visualized correctly. While later, possible solutions to address this issue are discussed, for the current system, which focuses on the abdominal area, this is a minor problem.	
 While the system could use a CT scan of the user, for medical education it is not possible to acquire a CT scan of the user if it is not required for medical reasons. Therefore, we augment the CT of another person onto the user. Therefore we use the Visible Korean Human dataset (VKH) \cite{Park2006}. This dataset consists of a CT scan, a MR volume and a photographic volume which has been acquired by stacking up cryosections. 
 Most CT and MRI medical images are saved in the DICOM standard, which is the format that is used in all hospitals. Unfortunately, most software for research does not support DICOM. The magic mirror system takes a the `\textit{\*.MHD}' file as the medical data.
+
 \subsection{Personal perception and interaction}
 \subsubsection{Calibration of the user}
 The skeleton tracking algorithm has to calibrate the user. For this, the user has to take a certain pose and hold it for several seconds. This calibration estimates the individual distances between joints for each user. This allows estimating the size of the user. The 3D volume and models are scaled to the size of the user and augmented onto the user.  
@@ -77,10 +77,10 @@ The NITE skeleton tracking algorithm, which is used in the magic mirror system, 
 \subsubsection{AR in-situ visualization of human anatomy}
 For a personalized visualization of organs we employ the concept of a magic mirror. The camera image is flipped horizontally and shown on the screen such that the user has the impression of standing in front of a mirror. The system tracks all user movements using a depth camera and an algorithm to detect the pose of the user from the depth image. Then, virtual objects can be added to the image of the real scene. By using the magic mirror metaphor, the user is led to believe that he or she is able to look inside their own body. At the same time, radiological information (CT data and a fully segmented dataset of cross-sectional photographs of the human body) are displayed in real-time \cite{Blum2012}.
 \begin{figure}
-\centering
-\includegraphics[width=0.7\linewidth]{figures/3-MMC/Mirracle}
-\caption[Magic Mirror Demo]{The AR \textit{in-situ} visualization of human anatomy in the prototype magic mirror demo.}
-\label{fig:3-MMC:Mirracle}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/3-MMC/Mirracle}
+	\caption[Magic Mirror Demo]{The AR \textit{in-situ} visualization of human anatomy in the prototype magic mirror demo.}
+	\label{fig:3-MMC:Mirracle}
 \end{figure}
 For the augmentation the same focus and context visualization \cite{Bichlmeier2007} is used, such that the virtual objects are only shown through a circular focus window (see \figurename{\ref{fig:3-MMC:Mirracle}). This leads to a better perception of depth, compared to a simple augmentation of the whole CT. 
 For visualization of the bones a transfer function is used as bone can be distinguished easily in the CT volume based on the voxel intensities. A visualization of the bones from the CT using direct volume rendering (DVR) is shown in \figurename{\ref{fig:3-MMC:Mirracle}. For other applications, such as patient-doctor communication it would also be possible to augment a CT dataset of the user's own body.
@@ -107,9 +107,8 @@ The color image of the user is used to create the mirror-like effect, and the no
 The \textit{see-through} window plays an important role in creating the personal \textit{in-situ} visualization of the anatomy.
 As shown in \figurename{\ref{fig:3-MMC:NUI:b}}, the window position is controlled by the hand position. The user specific offset vector is added to the left hand joint to decide the window position. This interactive function motivates the user to learn where the interesting organ is. For the public demo for children, we limited the window position in one dimension (see \figurename{\ref{fig:3-MMC:Mirracle}) and the user moves up or down to change the window position to show different organ in the corresponding height.
 	
-\subsection{Education of Anatomy}
-
-\subsection{Evaluation of the magic mirror system}
+\subsection{Evaluation of the framework}
+%todo develop a system for anatomy education
 The current system allows visualization of static anatomy on the user and offers a simple user interface to select CT, MR or photographic slices. Demos of the prototype have been given on various public occasions. This exposure to the public resulted in a several contacts with medical doctors (MD) from physiotherapy, anatomy, radiology, sports medicine, children's medicine, and with medical teacher and science centers who are interested in using such a system in education of medical students and pupils. While discussions with these contacts were encouraging, most MDs asked for precision.
 
 As an augmented reality anatomy learning application, system usability are very important prior to its translation in classroom. We undertook one user study involving first year medical students took place to verify the learning potential and acceptability of our technology as a compliment to atlas textbooks in classroom.
