@@ -9,23 +9,15 @@
 
 %Personal Perception and Interaction with Medical information in magic mirror framework
 
-At first, techniques for improved 2D B-mode ultrasound visualization are presented, where the observer is provided with real-time feedback on the uncertainty present in the image.
-Therefore, in a first step, the necessary information is generated through the computation of ultrasound Confidence Maps estimating per-pixel uncertainty information with respect to the ultrasound signal attenuation.
-While their original formulation has been proven to improve tasks such as image registration and segmentation, their valuable information has never been directly exposed to the clinician.
-Therefore, a real-time capable extension in form of an incremental solver scheme is presented and shown to yield precise results for visualization applications.
-The uncertainty information is eventually fused with the original B-mode images using three carefully chosen visualization schemes.
+At first, a magic mirror framework is presented creating a MR environment with an \textit{in-situ} augmented reality view. The system can track the current user and finish the registration between the medical datasets and the user based on the personal information. It inherently allows the user to perform interactive registration and directly map the medical information onto his/her body. This opens interesting possibilities for personalized mixed reality for medical education and rehabilitation. Through the participation of 7 clinicians and 72 anatomy students, two user studies were designed to respectively assess the precision and acceptability of the magic mirror system for anatomy education in the classrooms of tomorrow. We also take the advantage of the interactive mixed reality to generate a personalized learning procedure. In addition, ``Organ Explosion'' and ``self-control virtual view'' systems are designed and implemented for anatomy leaning. Serious games are also developed in the framework for health-care education and rehabilitation exercise.
 Their benefit has been shown for both educational and clinical applications.
 
-%pointing gesture recovery in egocentric setting
-
-%natural interaction and switching between multi-system in Operating room
-The second part of this thesis' contributions targets improved 3D ultrasound visualization.
-In order to generate high-quality 3D volumes from tracked ultrasound sweeps, first an incremental compounding scheme is presented, which combines orientation-driven correlation terms and the aforementioned Confidence Maps in an information fusion approach.
-The subsequent visualization of such ultrasound volumes is a particularly challenging task due to the special nature of B-mode intensities.
-Therefore, a novel classification concept in the form of point predicates is presented, which seamlessly integrates into the standard direct volume rendering pipeline.
+Then, a method is proposed to calculate a virtual eye center as the origin for the \textit{eye-rooted} pointing ray technique without tracking the eye gaze in an egocentric setting. The user specific pointing geometry can then be recovered for interaction with ambient media and objects without visual feedback. The pointing ray starts from the virtual eye center and goes through the fingertip to the desired target information. During the initial calibration, the user is asked to perform pointing gestures towards several targets displayed within the field of view. A user specific virtual eye center is then estimated based on the detected fingertip in the coordinate system of the wearable device. Then the \textit{eye-rooted} pointing ray is recovered when a user is performing a pointing gesture. 
+The proposed method is mathematically analyzed and determined that the calibration is feasible with a measured accuracy of the recovered pointing ray below $0.9\degree$.
+The method is also evaluated in a user study consisting of 10 participants performing pointing interaction with objects shown on the display while wearing a RGB-D sensor. The study shows that the calibration is independent of the environment and the pointing ray is recovered with an accuracy of $0.67 \pm 0.71\degree$ without any visual feedback. Based on the recovered pointing gesture, a novel user interface is introduced, allowing the surgeon to {personally} perform touchless interaction with the {various} medical systems, and switch effortlessly among them, all of this {without modifying} the systems' software and hardware.
 
 %natrual perception and one-multi user supervision and teaching, training 
-In conjunction with the proposed predicate histogram as intuitive user interface, this technique allows for much more meaningful visualization and facilitates the understanding of the data for the observer.
+In conjunction with the proposed magic mirror framework and recovered pointing gesture, a multi-user collaborative MR framework is introduced. The human-human communication is partly implemented via pointing gesture and MR framework. The framework is examined in two scenarios, anatomy teaching with a student and rehabilitation exercise with a nurse.
 
 %\vspace*{20mm}
 %

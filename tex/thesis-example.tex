@@ -63,7 +63,7 @@
 % **************************************************
 % Information and Commands for Reuse
 % **************************************************
-\newcommand{\thesisTitle}{Personalized Perception and Interaction with Medical information in Mixed Reality}
+\newcommand{\thesisTitle}{Personalized Perception and Interaction with Medical Information in Mixed Reality}
 \newcommand{\thesisName}{Meng Ma}
 \newcommand{\thesisSubject}{Dissertation}
 \newcommand{\thesisDate}{\today}
@@ -78,14 +78,14 @@
 	Computer Aided Medical Procedures
 }
 
-\newcommand{\thesisSecondReviewer}{\TODO{Prof. Dr.-Ing. Bernhard Preim}}
+\newcommand{\thesisSecondReviewer}{\TODO{Prof. }}
 \newcommand{\thesisSecondReviewerAffiliation}{
-	 Otto-von-Guericke-Universität\\[-1mm]
-	 Institut für Simulation und Graphik
+	\TODO{ oooo}\\[-1mm]
+	 \TODO{-----}
 }
 
 \newcommand{\thesisFirstSupervisor}{Prof. Nassir Navab}
-\newcommand{\thesisSecondSupervisor}{Dr. Maximilian Baust}
+\newcommand{\thesisSecondSupervisor}{Dr. Pascal Fallavollita}
 
 \newcommand{\thesisUniversity}{\protect{Technische Universität München}}
 \newcommand{\thesisUniversityDepartment}{Fakultät für Informatik}
@@ -144,21 +144,21 @@
 ]{biblatex}
 \bibliography{E:/TUM_Narvis/documents/BibTex/library}
 \newcommand{\citeName}[1]{ \citeauthor{#1}\cite{#1}}
-%\makeatletter
-%
-%\newrobustcmd*{\parentexttrack}[1]{%
-%	\begingroup
-%	\blx@blxinit
-%	\blx@setsfcodes
-%	\blx@bibopenparen#1\blx@bibcloseparen
-%	\endgroup}
-%
-%\AtEveryCite{%
-%	\let\parentext=\parentexttrack%
-%	\let\bibopenparen=\bibopenbracket%
-%	\let\bibcloseparen=\bibclosebracket}
-%
-%\makeatother
+\makeatletter
+
+\newrobustcmd*{\parentexttrack}[1]{%
+	\begingroup
+	\blx@blxinit
+	\blx@setsfcodes
+	\blx@bibopenparen#1\blx@bibcloseparen
+	\endgroup}
+
+\AtEveryCite{%
+	\let\parentext=\parentexttrack%
+	\let\bibopenparen=\bibopenbracket%
+	\let\bibcloseparen=\bibclosebracket}
+
+\makeatother
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -189,6 +189,8 @@
 \usepackage{enumitem}
 \usepackage{threeparttable}
 \usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{soul}
+\usepackage{xspace}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
@@ -207,7 +209,16 @@
 \newcommand{\II}{{\bfseries\textsl{\textcolor{RubineRed}{[insert image]}}}}
 \newcommand{\III}[1]{{\bfseries\textsl{\textcolor{RubineRed}{[insert image: #1]}}}}
 \newcommand{\SYN}[1]{{\bfseries\textsl{\textcolor{OliveGreen}{[#1?]}}}}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
 
+\makeatletter
+\newcommand*{\etc}{%
+	\@ifnextchar{.}%
+	{etc}%
+	{etc.\@\xspace}%
+}
+\makeatother
 
 % **************************************************
 % Document CONTENT
@@ -226,21 +237,21 @@
 % Front matter
 % --------------------------
 %recover the following comment after you finish the main contents
-%\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
-%\pagestyle{empty}				% no header or footers
-%\input{content/titlepages}		% INCLUDE: all titlepages
-%\cleardoublepage
+\pagenumbering{roman}			% roman page numbing (invisible for empty page style)
+\pagestyle{empty}				% no header or footers
+\input{content/titlepages}		% INCLUDE: all titlepages
+\cleardoublepage
+
+\pagestyle{plain}				% display just page numbers
+\input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\cleardoublepage
 %
-%\pagestyle{plain}				% display just page numbers
-%\input{content/abstract}		% INCLUDE: the abstracts (english and german)
-%\cleardoublepage
-%%
-%\input{content/acknowledgement} % INCLUDE: acknowledgement
-%\cleardoublepage
-%
-%\setcounter{tocdepth}{3}		% define depth of toc
-%\tableofcontents				% display table of contents
-%\cleardoublepage
+\input{content/acknowledgement} % INCLUDE: acknowledgement
+\cleardoublepage
+
+\setcounter{tocdepth}{3}		% define depth of toc
+\tableofcontents				% display table of contents
+\cleardoublepage
 
 % --------------------------
 % Body matter
@@ -251,44 +262,48 @@
 
 %\input{content/0-methods} 
 
-%\part{Review on Mixed Reality}
-%\input{content/1-introduction} 
-%\input{content/2-background}
-%
-%%%\part{Personal Perception with Magic Mirror}
+%%\part{Review on Mixed Reality}
+\input{content/1-introduction} 
+\input{content/2-background}
+
+%\part{Personal Perception with Magic Mirror}
 \input{content/3-PPMM}
-%%
-%%%\cleardoublepage
-%%
-%%%\part{Personal Pointing Interaction}
-%\input{content/4-PAST}
-%\input{content/4-PointingOR}
+\input{content/3-MMC}
+\input{content/3-PRMM}
+\input{content/3-IMR}
+
+%\cleardoublepage
+
+%\part{Personal Pointing Interaction}
+\input{content/4-PAST}
+\input{content/4-PointingOR}
 %%\input{content/4-AccessRW}
 %
-%\input{content/5-CMR}
+\input{content/5-CMR}
+\input{contect/6-conclusionDis}
 
 % --------------------------
 % Back matter
 % --------------------------
 %Reference uncomment at last
-%{%
-%\setstretch{1.1}
-%\renewcommand{\bibfont}{\normalfont\small}
-%\setlength{\biblabelsep}{4pt}
-%\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
-%\printbibliography[nottype=online]
-%\printbibliography[heading=subbibliography,title={Online Resources},type=online,prefixnumbers={@}]
-%}
-%\cleardoublepage
+{%
+\setstretch{1.1}
+\renewcommand{\bibfont}{\normalfont\small}
+\setlength{\biblabelsep}{4pt}
+\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
+\printbibliography[nottype=online]
+\printbibliography[heading=subbibliography,title={Online Resources},type=online,prefixnumbers={@}]
+}
+\cleardoublepage
 
 %%uncomment the follow comment scope after you finish the writing.
-%\listoffigures
-%\cleardoublepage
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
 %
-%\listoftables
-%\cleardoublepage
-%
-%\input{content/declaration}
+\input{content/declaration}
 \clearpage
 \newpage
 \mbox{}
