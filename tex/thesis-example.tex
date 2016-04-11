@@ -63,11 +63,13 @@
 % **************************************************
 % Information and Commands for Reuse
 % **************************************************
-\newcommand{\thesisTitle}{Personalized Perception and Interaction with Medical Information in Mixed Reality}
+\newcommand{\thesisTitle}{Personalized Perception and Interaction with Medical Information in Mixed Reality Environments}
+%Personalized Interaction with Medical Information in Mixed Reality Environments
+%Personalisierte Interaktion mit Medizinischen Informationen in Mixed Reality Umgebungen
 \newcommand{\thesisName}{Meng Ma}
 \newcommand{\thesisSubject}{Dissertation}
 \newcommand{\thesisDate}{\today}
-\newcommand{\thesisVersion}{0.0}
+\newcommand{\thesisVersion}{1.0}
 
 \newcommand{\thesisVorsitzender}{...}
 \newcommand{\thesisVorsitzenderAffiliation}{...}
@@ -126,7 +128,7 @@
 \usepackage[					    % use biblatex for bibliography
 	backend=bibtex,		      		% 	- use biber backend (bibtex replacement) or bibtex
 	bibencoding=utf8,				% 	- use auto file encode
-	style=alphabetic,				% 	- use alphabetic (or numeric) bib style
+	style=numeric,				% 	- use alphabetic (or numeric) bib style
 	natbib=true,					% 	- allow natbib commands
 	hyperref=true,					% 	- activate hyperref support
 	backref=true,					% 	- activate backrefs
@@ -199,7 +201,7 @@
 % **************************************************
 % More custom commands
 % **************************************************
-\newcommand{\add}[1]{{\color{cyan}{#1}}} 
+\newcommand{\add}[1]{{\color{black}{#1}}} 
 \newcommand{\addd}[1]{{\color{blue}{#1}}} 
 %\newcommand{\add}[1]{#1} 
 %\newcommand{\addd}[1]{#1} 
@@ -230,8 +232,8 @@
 % --------------------------
 %\renewcaptionname{ngerman}{\figurename}{Abb.}
 %\renewcaptionname{ngerman}{\tablename}{Tab.}
-\renewcaptionname{english}{\figurename}{Fig.}
-\renewcaptionname{english}{\tablename}{Tab.}
+\renewcaptionname{english}{\figurename}{Figure }
+\renewcaptionname{english}{\tablename}{Table }
 
 % --------------------------
 % Front matter
@@ -244,6 +246,9 @@
 
 \pagestyle{plain}				% display just page numbers
 \input{content/abstract}		% INCLUDE: the abstracts (english and german)
+\cleardoublepage
+\pagestyle{plain}				% display just page numbers
+\input{content/Gabstract}		% INCLUDE: the abstracts (english and german)
 \cleardoublepage
 %
 \input{content/acknowledgement} % INCLUDE: acknowledgement
@@ -280,7 +285,7 @@
 %%\input{content/4-AccessRW}
 %
 \input{content/5-CMR}
-\input{contect/6-conclusionDis}
+\input{content/6-conclusionDis}
 
 % --------------------------
 % Back matter
@@ -301,6 +306,12 @@
 \cleardoublepage
 
 \listoftables
+\cleardoublepage
+
+\begingroup
+\renewcommand\bibname{List of my Publications}
+\input{../myPublications/myPublication.bbl}
+\endgroup
 \cleardoublepage
 %
 \input{content/declaration}

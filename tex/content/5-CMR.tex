@@ -1,55 +1,89 @@
 \chapter{Framework for Collaborative Mixed Reality} \label{chaptor:5}
 %todo a better title for this chapter.
 %introduction and objective 
-The magic mirror is introduces as a MR environment to improve the user's perception during medical education and rehabilitation exercise in Chapter \ref{chaptor:3}. In these procedures, there are some scenarios where more than one user are involved at the same time, such as a teacher teaching students, a doctor talking with a patient, a nurse monitoring a rehabilitation exerciser, and so on. The communication between these users is done in the MR environments. Both users get visual feedback from the AR view and act in the MR environment.  From the real world to a MR environment, there are functional seams and cognitive seams for the user during the cooperation. How to remove the functional and cognitive seams in the mentioned scenarios is the objectives of this Chapter.
+The magic mirror is introduced to create a MR environment, improving the user's perception during medical education and rehabilitation exercise in Chapter \ref{chaptor:3}. During these procedures, there are some scenarios where more than one user are involved at the same time, such as a teacher with a student, a doctor with a patient, a nurse with a rehabilitation exerciser, and so on. 
+There are communication issues when multiple users get visual feedback from the AR view and when performing actions in the same MR environment. From the real world to a MR environment, there are functional seams and cognitive seams for the user during the collaboration.
+The objectives of this chapter is to propose a framework for collaborative mixed reality and try to remove the functional and cognitive seams in the mentioned scenarios.
 
 %todo define the challenge and requirements
-The pointing gesture in egocentric setting discussed in Section \ref{section:4-PAST} is a natural interaction methodology and flexible for multi-user scenarios. A multi-user collaborative MR framework is introduced by integrating the MR magic mirror and the pointing gesture in egocentric setting.
-The communication is implemented via both normal interaction methods and pointing gesture.
-The framework is examined in two scenarios, anatomy learning with teacher and rehabilitation exercise with nurse. The teacher directly points to the MR view and controls it to leading the learning procedure, and the nurse in charge of the rehabilitation exercise at the same way. In both scenarios, a teacher or a nurse can work with several students or patients as he/she can switch from one MR environment to another seamlessly. More than one nurses also can be involved in one MR environment is needed. 
+The pointing gesture in egocentric setting discussed in Chapter \ref{chapter:4} is a natural interaction methodology and flexible for multi-user scenarios. It allows the user to perform interaction with ambient media and objects in the MR environment. 
+Hence, a collaborative MR framework is introduced by integrating the MR magic mirror and the pointing gesture in egocentric setting.
+All the functions in the magic mirror framework are kept to guarantee the user's personalized perception of the medical information. The pointing gesture is introduced to allow a teacher or a doctor to communicate with the student or patient via the AR view.
+The normal communication is kept and new communication patterns are created in the MR environment.
+Finally, the framework is discussed in two scenarios, anatomy learning with teacher and rehabilitation exercise with nurse. 
 
 \section{Framework design} %Keep MR environment  :remove functional seams and cognitive seams
-The framework contains a shared mixed reality environment between the users and perception and interaction between the users and AR view, while keeping the normal interaction between the users (see \figurename{\ref{fig:5:MRE}}). Mouse and keyboard cannot be used to implement the functions of a MR application naturally and the communication between the users cannot be extended smoothly. Hence, we introduce a framework to take the pointing gesture in an egocentric setting as the interaction input.
-Based on the magic mirror framework and the pointing gesture in last two chapters, the new framework inherits the following features. 
+Based on the magic mirror framework and the pointing gesture in Chapter \ref{chaptor:3} and Chaper \ref{chapter:4}, a new framework is introduced. 
+We first discuss the system components of this framework and then the specific interactions with the shared AR view are presented.
+
+\subsection{System components}
+As shown in \figurename{\ref{fig:5:MRE}}, there is a shared AR view, two users, perception and interaction between the user and AR view, and communication between the users in the mixed reality environment. 
+In the following we discuss the function of each component and how to create them.
 \begin{figure} [htb]
 \centering
 \includegraphics[width=0.7\linewidth]{figures/5-CMR/MRE}
-\caption{The MR Environment with multi-user. There is a shared MR environment and perception and interaction between the users and AR view.}
+\caption{System components. There is a shared AR view, two users, perception and interaction between the user and AR view, and communication between the users in the mixed reality environment.}
 \label{fig:5:MRE}
 \end{figure}
-\paragraph{A shared MR environment.} The MR environment is created via the magic mirror framework. All the users can perceive the real world and virtual elements from the AR view. There are two solutions to present the AR view, normal display or projector. In the MR environment, all the normal interactions between the users can be kept, such as talking, body language, directly physical interaction and so on. At the same time, the AR view can behave as a bridge between two users. 
+\paragraph{Shared AR View} The AR view is the most important part of the MR environment, combining the real world with the virtual world. 
+The shared AR view is created via the magic mirror framework, and all the users can perceive the real world and virtual elements from the magic mirror effect. 
+%There are two solutions to present the AR view, normal display or projector. 
+At the same time, the AR view also behaves as a bridge between two users. 
 
-\paragraph{Natural perception.}  The virtual elements is still augmented onto the user's body to improve the knowledge understanding. The personalized perception from magic mirror is employed. A user can perceive the movement of another user from both the reality world and the mirror view. 
+\paragraph{Perception and Interaction}  
+In the AR view, the virtual elements is still augmented onto the user's body based on the personal information to improve the knowledge understanding. The personalized perception from magic mirror is kept and the tracked user still can directly perform interaction with the AR view via the natural body gestures, as described in Chapter \ref{chaptor:3}. 
+For the user who is not tracked, mouse and keyboard is not an ideal solution to perform interaction with of the application naturally and the communication between the users cannot be extended smoothly. 
+The method in section\ref{section:4-PAST} recovers the pointing gesture of the user with wearable device, enabling directly interaction with all the objects and medias in the MR environment.
+Hence, we introduce the pointing gesture in an egocentric setting to this framework as another interaction input.
 
-\paragraph{Pointing gestures.} The method in section\ref{section:4-PAST} recovers the pointing gesture of the user with wearable device, enabling directly interaction with all the objects and medias in the MR environment.
+\paragraph{Communication}
+In the MR environment, all the normal communication methodologies between the users should be kept, such as talking, body language, direct physical interaction and so on.
+In addition, there are new communication patterns created based on the natural interaction with the AR view.
 
-\subsection{Interaction via the AR view.} As the users share the same AR view in a MR environment, the interaction between the users also can be performed via the AR view. One user can directly interact with the AR view of another user while communicating in the real world. The interaction can be classified into three categories.
+\subsection{Natural interactions with the AR view} 
+As the users share the same AR view in a MR environment, the communication between the users also can be performed via the AR view. One user can directly interact with the AR view while communicating with the other in the real world. The communication in the real world can be enhanced by the interaction with the AR view.
+The interactions with the AR view can be classified into four categories.
 \begin{enumerate}
+	\item \emph{Interaction with magic mirror} The tracked user can directly interact with the magic mirror and generate a desired AR view for their communication with the other user in the real world.
 	\item \emph{Interaction with static objects} GUI (graphic user interface) elements, such as button, menu, and so on, can be clicked via the pointing gesture. This kind of interaction can be used to adjust the parameters of the AR view. 
-	\item \emph {Interaction with virtual elements} The user also can directly control the virtual elements and modify the AR view.  An element can be re-scaled and moved to another place if needed.
-	\item \emph{Interaction with human body} When one user naturally points to a human body in the mirror view, the system can calculate where is pointed at in the real world. The interaction in the real world can be implemented by the interaction with the AR view. For example, a teacher can point to the body of a student in the mirror view to tell him/her where is the heart by generating a AR view of the heart.
+	\item \emph {Interaction with virtual elements} The user with the wearable device also can directly control the virtual elements and modify the AR view via our recovered pointing gesture. E.g. a medical model can be re-scaled and moved to another place if needed.
+	\item \emph{Interaction with human body} The user with the wearable device can naturally point to the other user in the mirror view. The system can calculate what is pointed at in the real world according to the mapping between color and depth image. Then, a specific AR view is generated in the desired location. For example, a teacher can point to the body of a student in the mirror view to tell them where is the heart by generating a AR view of the heart.
 \end{enumerate}
 
-The users can improve their communication based these interactions, taking advantage of the AR view. The AR view is presented in a mirror concept to remove the cognitive seams as the mirror effect is very natural. The normal interactions between the users without AR view can be kept to remove functional seams. The interaction with the AR view is also implemented via the personalized pointing gesture. The functional and cognitive seams are removed as much as possible to perform the task in the MR environment.
+In this MR environment we try to remove the functional and cognitive seams as much as possible.
+The AR view is presented in a magic mirror concept to remove the cognitive seams as the mirror effect is very natural. The normal communication between the users without AR view is kept, and the interaction with the AR view is implemented via the personalized body or pointing gesture to remove functional seams.
 
 \section{Implementation}
-The general hardware is firstly presented and two example scenarios, medical teaching and rehabilitation exercise, are simply examined.
+In this section, the general hardware is presented and then two example scenarios, medical teaching and rehabilitation exercise, are simply examined.
 
 \subsection{General hardware}
-As the framework integrates the magic mirror and the pointing gesture in an egocentric setting, the general hardware contains the hard from both systems. The general hardware is presented in \figurename{\ref{fig:5:hardware}}. There are one Kinect, one wearable RGB-D sensor, one display, a wearable computing device and computing device. 
+As the framework integrates the magic mirror and the pointing gesture in an egocentric setting, the general hardware contains the hardware from both systems and is presented in \figurename{\ref{fig:5:hardware}}. 
+There is one Kinect, one wearable RGB-D sensor, one display, a wearable computing device and computing device. 
 \begin{figure}
 \centering
-\includegraphics[width=0.85\linewidth]{figures/5-CMR/hardware}
-\caption{General hardware. Left side is the pointing gesture recovery in an egocentric setting and the right side is magic mirror system. And pointing gesture is detected and understood by the wearble device and then transferred to magic mirror system to control the AR view.}
+\includegraphics[width=\linewidth]{figures/5-CMR/hardware}
+\caption{General hardware. Left side is the pointing gesture recovery in an egocentric setting and the right side is the magic mirror system. A pointing gesture is detected and understood by the wearable device and then transferred to the magic mirror system to control the AR view.}
 \label{fig:5:hardware}
 \end{figure}
-A display, a Microsoft Kinect and a computing device are used to create the magic mirror MR environment. At least one wearable RGB-D device and one computer are employed to recover the personal pointing gestures. All the pointing gestures are transferred via Wifi router. The framework is also feasible in a scenario with more than one pointing systems and more than one magic mirror systems. 
+\figurename{\ref{fig:5:hardware}-right} shows a display, a Microsoft Kinect and a computing device are used to create the magic mirror MR environment. Each user with one wearable RGB-D device and one wearable computer to perform the pointing gesture is shown in \figurename{\ref{fig:5:hardware}-left}. The pointing gestures are detected and recovered and commands are transferred to the magic mirror system via a Wifi router. The framework is also feasible in a scenario with more than one pointing systems and more than one magic mirror systems. 
  
 \subsection{Example scenarios}
-In normal anatomy teaching or rehabilitation scenario, there is a teacher or doctor to teach and monitor the student/patient for the learning/exercise procedure. The implementation of these two scenarios are examined in this section.
+In normal anatomy teaching or rehabilitation scenario, there is a teacher or doctor to teach and monitor the student/patient for the learning/exercise procedure. The implementation of these two scenarios are examined below. 
+
+In this framework, the teacher directly points to the MR view and controls it to initiate the learning procedure, and the nurse in charge of the rehabilitation exercise in the same way. In both scenarios, a teacher or a nurse can work with several students or patients as they can switch from one MR environment to another seamlessly. Similarly, several teachers or nurses also can be involved in one MR environment if needed. 
+
+\paragraph{Medical teaching} The demo scenario of medical teaching is presented in \figurename{\ref{fig:5:implementation}}. A teacher can teach a student about the anatomy knowledge in a collaborative MR environment. Based on the proposed framework, the following functions can be implemented. 
+\begin{enumerate}
+	\item The teacher can choose the best medical dataset for the current student and knowledge topic by clicking the predefined button or menu. 
+	\item The student can generate a AR view of a special organ according to the teacher's question.
+	\item A specific anatomy model can be manually augmented to a special location the teacher prefers. 
+	\item The teacher can control the AR view according to their teaching. The teacher can directly say: ``Here is your stomach.'' and point to the student's stomach in the mirror view, and simultaneously the magic mirror system generates a AR view of the stomach. 
+	\item One teacher can take charge of several magic mirror systems and switch between them smoothly.
+		
+\end{enumerate}
 \begin{figure}
 	\centering
-	\subfloat[One teaher with one student.]{
+	\subfloat[One teacher with one student.]{
 		\includegraphics[height=0.35\linewidth]{figures/5-CMR/DEMO}
 		\label{fig:5:teachingDemo}}
 	\quad
@@ -59,19 +93,9 @@ In normal anatomy teaching or rehabilitation scenario, there is a teacher or doc
 	\caption{The demo scenario of medical teaching. The teacher interacts with the learning procedure using pointing gestures.}
 	\label{fig:5:implementation}
 \end{figure}
+\paragraph{Rehabilitation exercise} The tracking accuracy for patients might not be accurate as there is an increased possibility of not keeping a steady pose in front of the sensor due to their disability. As the medical teaching scenario, the nurse can take advantage of the framework for the rehabilitation exercise, such as adjusting the system parameters, creating specific AR view to perform the patient education, taking care of several patients and switching between them smoothly.
+The nurse can use one hand to touch or hold the patient's body and create a specific AR view for the current rehabilitator.
 
-\subsubsection{Medical teaching}
-\figurename{\ref{fig:5:implementation}} presents the demo scenario of medical teaching. A teacher can teach a student about the anatomy knowledge via the \textit{in-situ} AR view of the student. Based on the proposed framework, the following function can be implemented. 
-\begin{enumerate}
-	\item The teacher can choose the best medical dataset for current student and knowledge topic by click the predefined button or menu. 
-	\item A specific anatomy model, \eg hear, can be manually augmented to where the teacher prefer. 
-	\item The teacher can control AR view according to his/her teaching. The teacher can directly say: ``Here is your stomach.'' and point to the student's stomach in the mirror view, and the magic mirror system generate a AR view of the stomach. 
-	\item One teacher can take in charge of several magic mirror system and switch between them smoothly.
-\end{enumerate}
-
-\subsubsection{Rehabilitation exercise}
-As the medical teaching scenario, the nurse can take advantage of the framework for the rehabilitation exercise, such as adjusting the system parameters, creating specific AR view to perform the patient education, taking care of several patient and switching between them smoothly.
-During the exercise, the nurse can use one hand to touch or hold the patient's body and the other control the AR view.
-
-\section{Conclusion and Discussion}
-A framework which combines the personalized MR magic mirror and pointing gesture interaction in egocentric setting is introduced. We investigate it as an example of the collaborative MR for medical education and rehabilitation exercise. 
+\section{Conclusion}
+A framework which combines the personalized MR magic mirror and pointing gesture interaction in an egocentric setting is introduced. The communication in the real world can be enhanced by the interaction with the AR view.
+We investigated the framework with two scenarios, medical education and rehabilitation exercise. 

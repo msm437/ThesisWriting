@@ -2,17 +2,17 @@
 %
 %\chapter{Personalized Interaction via pointing gesture} \label{chapter:4}
 \chapter{Personalized User Interface} \label{chapter:4}
-Human centered computing aims at adapting computers to human minds and habits, and an important research direction in this area is the design of natural and ergonomic human-computer interaction techniques.
+Human centered computing aims at adapting computers to human minds and habits, and an important research direction in this area is the design of natural user interfaces and ergonomic human-computer interaction techniques.
 Pointing gestures are fundamental to human behavior and are used consistently across cultures.
-In section \ref{section:4-PAST}, we firstly propose a method to accurately recover the \textit{eye-rooted} pointing ray without tracking the eye gaze in an egocentric setting, enabling the user directly performing pointing gesture to interact with ambient media and objects without visual feedback. 
-Then, section \ref{sec:4-IPCAI} introduces a novel user interface, allowing the surgeon to personally perform touchless interaction with the various medical systems, and switch effortlessly among them, all of this without modifying the systems' software and hardware.
+In section \ref{section:4-PAST}, we first propose a method to accurately recover the \textit{eye-rooted} pointing ray without tracking the eye gaze in an egocentric setting, enabling the user directly performing pointing gesture to interact with ambient media and objects without visual feedback. 
+Then, section \ref{sec:4-IPCAI} introduces a novel personalized user interface, allowing the surgeon to personally perform touchless interaction with the various medical systems, and switch effortlessly among them, all of this without modifying the systems' software and hardware.
 
 \section{Pointing gesture recovery in an egocentric setting}
 \label{section:4-PAST}
 Pointing gestures are fundamental to human behavior \citep{Matthews2012} and are used consistently across cultures  \citep{McNeill2000}. The gestures begin at an early developmental stage \citep{Carpendale2010} and let humans reference proximal objects as well as abstract concepts in the world. Today, pointing gestures are not only part of our gestural language but are inherently used for interaction \citep{Nanayakkara2013a}.
 As shown in \figurename{\ref{fig:1-intro:problem}(a)}, there is a limited working zone when positioning a camera next to the monitor or on the ceiling to observe the user.
 %Human centered computing aims at adapting computers to human minds and habits rather than the design of natural and ergonomic human-computer interaction techniques. 
-As an alternative to the traditional setting of external sensors observing the user, the egocentric setting mounts a portable camera on the head or clothing of the user and perceives the interaction from an egocentric perspective \citep{Fathi2011,Li2015}. 
+As an alternative to the traditional setting of external sensors observing the user, an egocentric setting mounts a portable camera on the head or clothing of the user and perceives the interaction from an egocentric perspective \citep{Fathi2011,Li2015}. However, there is a significant angle between the ray starting from the camera and that from the eye when the user tries to point towards objects which are not reachable (see \figurename{\ref{fig:1-intro:problem}(c)} ).
 %There has been significant recent interest in the egocentric approach to recognize the wearer's actions .
  
 %Increasingly powerful wearable computers also advocate a tight integration between human and computer. 
@@ -31,23 +31,23 @@ We propose a method to calculate a virtual eye center as the origin for the \tex
 \subsection{Methodology} \label{Methodology}
 %\textbf{Symbol Description:}  $Tran_{d2c}$ transformation matrix of the color camera relative to the depth camera. 
 \subsubsection{General Design} \label{sec:4:generalDesign}
-In a general hardware design, the egocentric setup should include a wearable sensor, which is put on the user's head and contains two sensors, $S_{f}$ and $S_{c}$. $S_f$ is used to detect the fingertip and calculate its 3D position. $S_c$ acquires the contextual information of the objects in front of the user. In general, $S_f$ should provide a near-range depth map as the 3D position of the fingertip has to be accurately calculated. 
+In a general hardware design, the egocentric setup should include a wearable sensor, which is put on the user's head and that contains two sensors, $S_{f}$ and $S_{c}$. $S_f$ is used to detect the fingertip and calculate its 3D position. $S_c$ acquires the contextual information of the objects in front of the user. In general, $S_f$ should provide a near-range depth map as the 3D position of the fingertip has to be accurately calculated. 
 {The contextual information is defined as the geometry and 3D position of the objects and medias perceived by the user.} $S_c$ can be a color camera, a depth sensor or a RGB-D sensor acquiring 3D position of given objects with known geometry or a valid depth map of the real world. 
 As $S_{c}$ and $S_{f}$ are just different types of camera, the self-calibration of the wearable device can be performed using \citeauthor{Zhang2000}{\rq}s method \cite{Zhang2000}.
 
 \subsubsection{Pointing At Several Targets (PAST) calibration} \label{sec:4:PAST}
-Both human eyes perceive the visual information as a stereo camera and the images are processed by the brain to generate a 3D scene of the objects in the field of view. One always perceives a unified 3D scene no matter how we move our eyes. In other words, there could be a self-centered fixed origin point of the 3D scene in our brain, which we try to approximate as the virtual eye center. When performing pointing gestures, users always can directly position their fingertips somewhere between their eyes and the target generating a line of sight, which goes through the fingertip and the target. Using perspective-based pointing  \citep{Pierce1997},  the pointing geometry is modeled as a ray, which starts from the virtual eye center and goes through the fingertip towards the target, as shown in \figurename{ \ref{fig:calibration}}. It is important to emphasize that the virtual eye center is user specific and its location is affected by the fact that users may be left or right eye dominant (see \figurename{ \ref{fig:virtualEye}}).
+Both human eyes perceive the visual information as a stereo camera and the images are processed by the brain to generate a 3D scene of the objects in the field of view. One always perceives a unified 3D scene no matter how we move our eyes. In other words, there could be a self-centered fixed origin point of the 3D scene in our brain, which we try to approximate as the virtual eye center. When performing pointing gestures, users always can directly position their fingertips somewhere between their eyes and the target generating a line of sight, which goes through the fingertip and the target. Using perspective-based pointing  \citep{Pierce1997},  the pointing geometry is modeled as a ray, which starts from the virtual eye center and goes through the fingertip towards the target, as shown in \figurename{ \ref{fig:past:calibration}}. It is important to emphasize that the virtual eye center is user specific and its location is affected by the fact that users may be left or right eye dominant (see \figurename{ \ref{fig:virtualEye}}).
 %the user's specific pointing habit also impress the location (see \figurename{ \ref{fig:anotherHand}}). 
 The PAST method accounts for this as its objective is to find the origin of the user specific pointing geometry. 
 %Inspired by the Single-Point Active Alignment Method (SPAAM) for Optical See-Through head mounted display calibration for augmented reality \citep{Tuceryan2000},
 A calibration is required to calculate the origin and the result is the position of the virtual eye center $E$. 
 %Based on the pointing model, a set of pointing lines are collected to estimate the intersection to terminate the calibration. 
-As shown in \figurename{ \ref{fig:calibration}}, the target $T_i$ is presented in front of the user, who is then asked to perform a pointing gesture towards it. The 3D positions of the fingertips $F_i$ and $T_i$ are collected through $S_f$ and $S_c$, respectively. The pointing ray $L_i$ ,which passes through $F_i$ and $T_i$, would also go through $E$. After enough pointing rays are collected, $E$ is defined as the best approximation of their intersection. After calibration, the user specific virtual eye center $E$ is estimated and the pointing rays can be recovered as $L_{i}$, going through $E$ and  $F_i$, when a pointing gesture is performed.
+As shown in \figurename{ \ref{fig:past:calibration}}, the target $T_i$ is presented in front of the user, who is then asked to perform a pointing gesture towards it. The 3D positions of the fingertips $F_i$ and $T_i$ are collected through $S_f$ and $S_c$, respectively. The pointing ray $L_i$ ,which passes through $F_i$ and $T_i$, would also go through $E$. After enough pointing rays are collected, $E$ is defined as the best approximation of their intersection. After calibration, the user specific virtual eye center $E$ is estimated and the pointing rays can be recovered as $L_{i}$, going through $E$ and  $F_i$, when a pointing gesture is performed.
 \begin{figure} 
 	\centering
 	\includegraphics[width= \linewidth]{figures/4-PAST/Figures/FIG2.pdf}
 	\caption{The PAST Calibration. The user is asked to point at several targets $T_i$ using one finger. The pointing rays which pass through the fingertip $F_i$ and $T_i$ are collected. The intersection of these lines is $E$, the user specific virtual eye center.}
-	\label{fig:calibration}
+	\label{fig:past:calibration}
 \end{figure}
 \subsubsection{Target the user points at} \label{sec:4:findTarget}
 %\subsubsection{Scenario with a wearable RGB-D sensor and a display} \label{sec:4:findTarget}
@@ -71,8 +71,8 @@ Thus, the fingertip used for pointing in the user's view is not always the same 
 In this section, we first certify that there is a valid point $E$ for the collected pointing rays, even when the fingertip cannot be detected consistently. Then the accuracy of the recovered pointing ray is evaluated.
 
 {As shown in \figurename{ \ref{fig:fingertipOffset}}, $F_i$  and $T_i$  are the fingertip and the target, which are detected by the wearable device. $E$ is the virtual eye center calculated through the PAST calibration procedure and $L_i$ is the pointing line estimated by the wearable device. If $\bar F_i$ and $\bar T_i$ are the fingertip and target in the user's own view, then a vector $V_{fi}$ can be defined to present the offset between $\bar F_i$ and $F_i$, $F_i = {\bar F_i} + V_{fi}$, when the pointing is performed.
-	During the calibration procedure, the user is asked to point towards a predefined target $T_i$, so ${\bar T_i} = T_i$ .
-	$\bar E$ is defined the ideal virtual eye center and $\bar L_i$ is the ideal pointing line in the user's view. }
+During the calibration procedure, the user is asked to point towards a predefined target $T_i$, so ${\bar T_i} = T_i$ .
+$\bar E$ is defined as the ideal virtual eye center and $\bar L_i$ is the ideal pointing line in the user's view. }
 \begin{figure} 
 	\centering
 	\includegraphics[width= \linewidth]{figures/4-PAST/Figures/FIG4.pdf}
@@ -198,7 +198,7 @@ A real-time depth image of the hand or finger was generated via the near range d
 %	\label{fig:tips}
 %\end{figure}
 \subsubsection{Contextual information} {\label{sec:4:markerDetection}}
-To simplify the task of acquiring the contextual information, the ARTooKitPlus \citep{Wagner2007a} markers were employed to track the TV display and monitor. There were two implementations: (i) some markers were directly displayed on the screen without interfering information (see \figurename{ \ref{fig:MarkerTracking}-left}). The markers were detected to calculate the planar function of the screen, and (ii) one physical printed marker was placed next to the display (see \figurename{ \ref{fig:MarkerTracking}-right}). A calibration was then performed to calculate the transformation matrix from the printed marker to the screen. The printed marker was then detected to calculate the information of the screen. 
+To simplify the task of acquiring the contextual information, the \textit{ARTooKitPlus} \citep{Wagner2007a} markers were employed to track the TV display and monitor. There were two implementations: (i) some markers were directly displayed on the screen without interfering information (see \figurename{ \ref{fig:MarkerTracking}-left}). The markers were detected to calculate the planar function of the screen, and (ii) one physical printed marker was placed next to the display (see \figurename{ \ref{fig:MarkerTracking}-right}). A calibration was then performed to calculate the transformation matrix from the printed marker to the screen. The printed marker was then detected to calculate the information of the screen. 
 As shown in \figurename{ \ref{fig:MarkerTracking}}, the screen was detected using the first implementation for the PAST calibration and evaluation, whereas the second implementation was employed during the \textit{DuckHunt} demo (see Section \ref{sec:4:PointingDemo}) and the medical application.
 \begin{figure}
 	\centering
@@ -210,8 +210,9 @@ As shown in \figurename{ \ref{fig:MarkerTracking}}, the screen was detected usin
 %	 how to describe the algorithm to simulate the mouse click 
 %	 simple drawing demo using two hands at the same time
 \subsubsection{\textit{DuckHunt} Demo} \label{sec:4:PointingDemo}
-Inspired by the Nintendo game, a \textit{DuckHunt} demo was developed using the pointing gesture to perform a dunk hunting task. Several flying ducks were shown on the screen and the user was asked to point to a duck to shoot it. 
-After the completion of the PAST calibration, the user could directly perform a pointing gesture towards the screen to choose which duck to hunt without any visual feedback. The fire command was triggered when the user pushed the fingertip along the pointing line (See the supplementary video).
+Inspired by the Nintendo game, a \textit{DuckHunt} demo\footnote{\url{https://youtu.be/Y4zO52oFDDg}} was developed using the pointing gesture to perform a dunk hunting task. Several flying ducks were shown on the screen and the user was asked to point to a duck to shoot it. 
+After the completion of the PAST calibration, the user could directly perform a pointing gesture towards the screen to choose which duck to hunt without any visual feedback. The fire command was triggered when the user pushed the fingertip along the pointing line.
+
 %\subsubsection{PictureView Demo} \label{sec:4:pictureviewDemo}
 %In this section, a ``PictureView" demo was developed using the pointing gesture to perform interaction with screen. Several pictures were shown on the screen and the user was asked to select the picture and move it to a defined location, as shown in \figurename{ \ref{fig:MarkerTracking}}. After PAST calibration, the user could directly perform pointing gesture towards the screen to manipulate the picture as the wearable device could recover the pointing geometry and understand the spatial relationship between the pointing gesture and the pictures shown on the display. The selection command was recognized when the user pushed the fingertip along the pointing line. After selection, the picture was moved along the user's pointing gesture. When the picture was moved to the right area, the picture was dissociated with the pointing gesture and disappeared. Or the picture was also dissociated and reset to original position when moved to wrong area. See the supplementary video accompanying this paper.
 \subsection{User study and results}
@@ -238,9 +239,9 @@ The TV display and the monitor were placed around the participant. There were th
 	%\item \label{task:drawing} To draw simple shape on the TV display: the user was ask to select one shape and then use one hand to decide the start position and another hand to change the scaling factor. 
 \end{enumerate}
 \subsubsection{Study description}
-\underline{Participants} Ten people (6 Male and 4 Female, Age Range: 22-34) from different cultures were enrolled in the user study. Three of them grew up in Germany, three in China, two in Chile, one in France and one in India. Seven of them had a computer science degree. Nine were reported to be right-handed, while one was ambidextrous.
+\paragraph{Participants} Ten people (6 Male and 4 Female, Age Range: 22-34) from different cultures were enrolled in the user study. Three of them grew up in Germany, three in China, two in Chile, one in France and one in India. Seven of them had a computer science degree. Nine were reported to be right-handed, while one was ambidextrous.
 
-\underline{Study procedure} First, the participants put the wearable RGB-D device on their head and adjust the height and angle to make sure that the color camera has a full view of the TV display in front of them, while ensuring that the depth sensor had a valid depth map of their fingertip when performing the pointing gesture. Prior to beginning the user study, the participants were allowed to perform pointing gestures around the working environment and understood the volume in which their fingertip could be detected stably (this was limited by the field of view and pose of the depth camera). The user was asked to focus on the target of interest and not on their fingertip when performing a pointing gesture. After a simple training session, participants were asked to complete the following 10 steps for the evaluation. 
+\paragraph{Study procedure} First, the participants put the wearable RGB-D device on their head and adjust the height and angle to make sure that the color camera has a full view of the TV display in front of them, while ensuring that the depth sensor had a valid depth map of their fingertip when performing the pointing gesture. Prior to beginning the user study, the participants were allowed to perform pointing gestures around the working environment and understood the volume in which their fingertip could be detected stably (this was limited by the field of view and pose of the depth camera). The user was asked to focus on the target of interest and not on their fingertip when performing a pointing gesture. After a simple training session, participants were asked to complete the following 10 steps for the evaluation. 
 \begin{enumerate}[label=(\arabic*)]
 	\item \label{step:stereoCalib} Perform task \ref{task:calib} three times from 2 meters away to complete the PAST calibration and evaluate if the calibration is stable. The first calibration result of the three is employed for all the remaining steps. 
 	\item \label{step:pointWithFeedback} Perform task \ref{task:PointWithFeedback} on the TV display from 2 meters away, verify the calibration result, and calculate the accuracy the user can achieve with the visual feedback. 
@@ -258,7 +259,7 @@ The TV display and the monitor were placed around the participant. There were th
 %the detail step of the user study and the data to be collected
 \subsubsection{Results} \label{sec:4:results}
 %\aim{The calibration works well: we can get stable and reasonable result}
-\underline{PAST Calibration} The real interpupillary distances of the ten participants were measured in step \ref{step:questionnaire}. They varied from 6.0 to 6.8cm (see \figurename{ \ref{fig:InterpupillaryDist}}). In step \ref{step:calibOneEye}, the calibration resulted in the positions of the left and right eye in the coordinate frame of the head-worn sensor system since the participants only used one eye. The interpupillary distances were also subsequently calculated from the distance of the two eyes. As shown in \figurename{ \ref{fig:InterpupillaryDist}}, the calculated distances were very close to the measured one using the ruler with an average difference of $0.10\pm0.05$cm. From this value, we conclude that the PAST method could accurately calculate the pointing ray origin based on the collected data. 
+\paragraph{PAST Calibration} The real interpupillary distances of the ten participants were measured in step \ref{step:questionnaire}. They varied from 6.0 to 6.8cm (see \figurename{ \ref{fig:InterpupillaryDist}}). In step \ref{step:calibOneEye}, the calibration resulted in the positions of the left and right eye in the coordinate frame of the head-worn sensor system since the participants only used one eye. The interpupillary distances were also subsequently calculated from the distance of the two eyes. As shown in \figurename{ \ref{fig:InterpupillaryDist}}, the calculated distances were very close to the measured one using the ruler with an average difference of $0.10\pm0.05$cm. From this value, we conclude that the PAST method could accurately calculate the pointing ray origin based on the collected data. 
 \begin{figure} 
 	\centering
 	\includegraphics[width=\linewidth]{figures/4-PAST/Figures/FIG9.pdf}
@@ -271,16 +272,16 @@ The offset in the XY plane was less than 0.5 cm and that along the Z-axis was le
 The 3D distances from the virtual eye centers calculated at 1.5, 2, 3, and 4 meters away relative to the ground-truth were $0.60\pm0.35cm$, $0.56\pm0.41cm$,$0.90\pm0.73cm$, and $1.02\pm0.73cm$, respectively. 
 %However the offset was still less than 1 cm in most cases.
 The 3D distance calculated from 1.5 meters was greater than the one from 2 meters away, since $\bar\lambda_i$ increases as the $ D_{\bar E2 \bar F_i}$ decreases ( see section \ref{sec:4:PASTCalibration}).  
-{The offsets when 3 meters and 4 meters away were larger since the marker tracking accuracy decreased with increasing distance.} The four plots in \figurename{ \ref{fig:PAST}} show that the PAST method could provide a stable calibration result for different users and the calibration is independent of the contextual environment. 
+The offsets at 3 meters and 4 meters away were larger since the marker tracking accuracy decreased with increasing distance. The four plots in \figurename{ \ref{fig:PAST}} show that the PAST method could provide a stable calibration result for different users and the calibration is independent of the contextual environment. 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.75\linewidth]{figures/4-PAST/Figures/FIG10.pdf}
+	\includegraphics[width=\linewidth]{figures/4-PAST/Figures/FIG10.pdf}
 	\caption{The calibration results in different scenarios. The results were compared to the reference one showing distribution of the offset along X,Y and Z-axis in the coordinate system of the wearable sensor. The XY plane was the one approximately parallel to the user's face. These four charts show the offset of the calibrations from different distances (a) 1.5 meters away (b) 2 meters away (c) 3 meters away (d) 4 meters away.}
 	\label{fig:PAST}
 \end{figure}
 %\aim{The calibration result as origin point is good and the pointing ray is accurate in different case}
 
-\underline{Accuracy of the pointing ray starting from $E$} 
+\paragraph{Accuracy of the pointing ray starting from $E$} 
 The angle error of the recovered pointing ray, ${\angle}_{E}$, is calculated according to {Eq.\ref{equ:ViewAngleError}}. The precision is the difference of ${\angle}_{E}$ in 10 consecutive frames while the participant performs pointing gestures to the same target. ${\angle}_{E}$ turns out to be independent of the rotation of the participant, the size of the target and the spatial relationship with the target and the fingertip. To get a clear distribution of ${\angle}_{E}$, the vector from the $\bar T_i$ to $T_i$ is also calculated. As shown in \figurename{ \ref{fig:Accuracy2m}} and \figurename{ \ref{fig:Accuracy}}, for every point in the plots, the distance to the origin is defined as the angle value in degrees($\degree$), and the points are distributed according to the vector from $\bar T_i$ to $T_i$.
 The first PAST calibration result in step \ref{step:stereoCalib} is employed to evaluate the pointing ray in different scenarios, with and without visual feedback, from different distances, and towards a different display.
 The accuracy of the pointing ray with and without visual feedback is shown in \figurename{ \ref{fig:Accuracy2m}}. The accuracy with visual feedback is  $0.22\pm0.13\degree$ (see \figurename{ \ref{fig:Accuracy2m}(a)}).
@@ -294,7 +295,7 @@ Comparing \figurename{ \ref{fig:Accuracy2m}(a)} and \figurename{ \ref{fig:Accura
 \end{figure}
 
 The pointing accuracies shown in \figurename{ \ref{fig:Accuracy}(a-d)} are $0.69\pm0.52\degree$ from 1.5 meters away, $0.63\pm0.44\degree$ from 3 meters away, $0.85\pm0.94\degree$ from 4 meters away, and $0.70\pm0.57\degree$ using a $24''$ monitor, respectively. 
-As expected in \figurename{ \ref{fig:evaluatinOfPointing}},  ${\angle}_{E}$ increased at 1.5 meters away in \figurename{ \ref{fig:Accuracy}(a)}, compared to \figurename{ \ref{fig:Accuracy2m}(b)}. However, \figurename{ \ref{fig:Accuracy}(b) and \ref{fig:Accuracy}(c)} show that ${\angle}_{E}$ did not decrease when the pointing was performed from 3 and 4 meters away as the accuracy of the marker tracking declines. \figurename{ \ref{fig:Accuracy}(d)} demonstrates that the calibration was contextually independent and the pointing ray was still recovered when using the 24$''$ monitor. 
+As expected in \figurename{ \ref{fig:evaluatinOfPointing}},  ${\angle}_{E}$ increased at 1.5 meters away in \figurename{ \ref{fig:Accuracy}(a)}, compared to \figurename{ \ref{fig:Accuracy2m}(b)}. However, \figurename{ \ref{fig:Accuracy}(b) and \ref{fig:Accuracy}(c)} show that ${\angle}_{E}$ did not decrease when the pointing was performed from 3 and 4 meters away since the accuracy of the marker tracking declined. \figurename{ \ref{fig:Accuracy}(d)} demonstrates that the calibration was contextually independent and the pointing ray was still recovered when using the 24$''$ monitor. 
 \begin{figure} 
 	\centering
 	\includegraphics[width=\linewidth]{figures/4-PAST/Figures/FIG12.pdf}
@@ -306,7 +307,7 @@ As expected in \figurename{ \ref{fig:evaluatinOfPointing}},  ${\angle}_{E}$ incr
 
 %compare with uncalibration: not compare the system usability with relateive raycasting
 %a good origin is very important to get an accurent pointing ray, camera view? 1 and 2 far away  eye as the origin 
-\underline{Position of the virtual eye center} From step \ref{step:stereoCalib} and \ref{step:calibOneEye}, we obtained the positions of the virtual eye center and the two eyes in the coordinate system of the wearable device. When all interpupillary distances were upscaled to 7 cm, the spatial relationship of the left eye, right eye, and the virtual eye center could be drawn in a 2D plane (see \figurename{ \ref{fig:virtualEye}}). For four participants, the virtual eye center was very close to the left eye and these participants were determined as left-eye dominant using the method from  WikiHow\footnote{WikiHow:\url{http://www.wikihow.com/Determine-Your-Dominant-Eye}}.
+\paragraph{Position of the virtual eye center} From step \ref{step:stereoCalib} and \ref{step:calibOneEye}, we obtained the positions of the virtual eye center and the two eyes in the coordinate system of the wearable device. When all interpupillary distances were upscaled to 7 cm, the spatial relationship of the left eye, right eye, and the virtual eye center could be drawn in a 2D plane (see \figurename{ \ref{fig:virtualEye}}). For four participants, the virtual eye center was very close to the left eye and these participants were determined as left-eye dominant using the method from  WikiHow\footnote{WikiHow:\url{http://www.wikihow.com/Determine-Your-Dominant-Eye}}.
 \begin{figure} 
 	\centering
 	\includegraphics[width=\linewidth]{figures/4-PAST/Figures/FIG13.pdf}
@@ -332,13 +333,13 @@ Finally, the PAST calibration was dependent on the fingertip detected from the d
 %However, we couldn't directly determine one participant was left-eye or right-eye dominant if the virtual eye-center calculated by PAST was very close to left or right eye respectively, since the PAST calibration was based on the user specific habit pointing gesture.
 %questionnaire
 
-\underline{System usability} To evaluate the proposed perspective-based pointing technique in an egocentric setting, a questionnaire was designed to obtain a qualitative evaluation. A Likert scale was used which is a type of psychometric response scale widely used in survey research. When responding to a Likert questionnaire item, participants specified their level of agreement with a statement. The format of our 5-pt Likert was: (1) strongly disagree, (2) disagree, (3) neither agree nor disagree, (4) agree, (5) strongly agree. 
+\paragraph{System usability} To evaluate the proposed perspective-based pointing technique in an egocentric setting, a questionnaire was designed to obtain a qualitative evaluation. A Likert scale was used. The format of our 5-pt Likert was: (1) strongly disagree, (2) disagree, (3) neither agree nor disagree, (4) agree, (5) strongly agree. 
 \begin{table}
 	\caption{The Likert scale results of the questionnaire}
 	\label{tb:4-pAST:questionnaire}
 	\scriptsize
 	\begin{center}
-		\begin{tabular}{p{5.5cm}|p{1.2cm}}
+		\begin{tabular}{p{7.5cm}|p{1.2cm}}
 			Questions & Scale \\
 			\hline
 			\textit{Q1:} I think that I would like to use this system &  $4.0\pm0.8$ \\
@@ -352,52 +353,10 @@ Finally, the PAST calibration was dependent on the fingertip detected from the d
 		\end{tabular}
 	\end{center}
 \end{table}
-As shown in \tablename{ \ref{tb:4-pAST:questionnaire}}, all questions attained positive scores above 4.0. Q1 had the lowest score as some participants felt a little tired while continuously lifting their arm to perform pointing gestures. In the ``DunkHunt'' demo, the fire command was recognized when the user moved their fingers along the pointing line, which was a little different from a natural click hand gesture. Therefore, the participant required some time to get used to it. In general the participants liked the pointing interaction with an egocentric setup and could learn it easily and quickly.
-
-\subsection{Discussion}
-%put the bared-hand calibration method here
-%This work is different than the hand gesture recognition and gesture based interaction in the state of art. Its main difference lies within
-In this section, we investigated whether our proposed method could recover a stable and precise pointing origin and corresponding pointing rays accurately, using the collected data via the wearable device. 
-The interpupillary distances were calculated very accurately as the participants had a clear view of the finger when performing pointing with only one eye open  (see \figurename{ \ref{fig:InterpupillaryDist}}). 
-From \figurename{ \ref{fig:PAST}}, we find the proposed method is contextually independent and can be used to calculate the eye position in the wearable device coordinate system. 
-As seen in \figurename{ \ref{fig:virtualEye}}, the virtual eye center calculated by the PAST calibration is user specific. When the eye positions are known, this method can be used to determine the position of each eye, or the average of both eyes, as the best origin for the pointing ray.
-
-%\aim{Why eye distance is so accureate but the calibration result of two eye is bigger, no clear view when open two eye}
-%The most important part of PAST is to collect a set of pointing lines and calculate the intersection. 
-%There is no full evaluation about the proposed method.
-%Without calibration, the angle error of pointing line is about $5.5\degree$ when the distances from ideal virtual eye-center to assumed eye center and the fingertip are 3 cm and 30 cm respectively. 
-%The platform in \cite{Kassner2014} achieved an average gaze estimation accuracy of 0.6\degree. 
-{As demonstrated by our user study, the calibration of the virtual eye center is completed stably by the participants. The pointing ray is recovered in different scenarios with an accuracy of less than $1\degree$ in most cases. }
-The participants easily learned how to use this new interaction method as well.
-
-Eye gaze tracking is an important technique in an egocentric setting, %such as \textit{ Microsoft HoloLens}, 
-which allows users to navigate and explore holograms by looking at them. %\footnote{https://www.microsoft.com/microsoft-hololens/en-us/developers{\#}faq}
-%\add{\\nassir's question: ``is this true? how do they recover the pointing reference?"\\}
-In this case, the eye gaze geometry is employed to calculate where the user is looking at and the pointing gesture is used as a confirmation command. 
-Compared to pointing techniques, there is only one available controlling point since the eyes can only focus on object. In addition, it is very difficult to perform gestures using the eye-gaze, such as drawing a circle or line, and the visual feedback is necessary to combine the hand/finger movement for interaction, e.g. selecting a special area.
-
-%\begin{figure}
-%	\centering
-%	% Use the relevant command to insert your figure file.
-%	% For example, with the graphicx package use
-%	\includegraphics[width= \linewidth]{figures/4-PAST/Figures/Displays}
-%	% figure caption is below the figure
-%	\caption{There are three displays in the simulated scenario, where the C-arm fluoroscopy , CT, and MRI images are shown in display A, B, and C, respectively.}
-%	\label{fig:ORSEnvironment}       % Give a unique label
-%\end{figure}
-%A novel user interface was developed based on our proposed solution, allowing the surgeon to personally perform touchless interaction with various medical systems, switch effortlessly among them, all of this without modifying the systems' software and hardware \citep{ma2016IPCAI}.
-%\figurename{ \ref{fig:ORSEnvironment}} shows an exemplary application in which a user is interacting with three medical imaging and visualization systems. This impacts positively intra-operative applications in which users cannot use mouses and keyboards (See the supplementary video).
-
-The PAST method can also be employed in other interesting scenarios such as: (a) a wearable RGB-D sensor and an optical see through HMD. A 3D virtual world can be presented using a HMD and contextual information of the virtual world in the HMD is known after calibration with the RGB-D sensor. The targets can be shown in the HMD during calibration and then the user can start interacting within a mixed reality world using pointing gestures. 
-(b) a wearable RGB-D sensor in a known environment. The real world environment can be tracked through the color camera, thus contextual information of the entire real world is known. After calibration, the user can start interacting with elements in the real world using a pointing gesture without any visual feedback.
-(c) a near range and far range depth sensors. The user and the computer can directly work together to collect information from the real world, such as 3D scene understanding.
-
-A special RGB-D camera, in which the depth sensor looks at a different direction compared to the color camera, should be developed to acquire the depth image of the full hand to improve the fingertip tracking. 
-Positioning $S_f$ and $S_c$ at different directions also enables users to perform pointing gesture more naturally. 
-The PAST calibration can be separately performed for each finger to improve the accuracy, allowing the user to use multi-fingers to perform a multi-control interaction in a mixed reality setting. Given the recent increased interest in using speech to interact with mobile devices, it is also a logical next step to support a user pointing at an object while stating a command or asking a question about it.
+As shown in \tablename{ \ref{tb:4-pAST:questionnaire}}, all questions attained positive scores above 4.0. Q1 had the lowest score as some participants felt a little tired while continuously lifting their arm to perform pointing gestures. In the ``DunkHunt'' demo, the fire command was recognized when the user moved their fingers along the pointing line, which was a little different from a natural click hand gesture. Therefore, the participants required some time to get used to it. In general the participants liked the pointing interaction with an egocentric setup and could learn it easily and quickly.
 
 \subsection{Conclusion}
-This section presents the Pointing At Several Targets (PAST) method to calculate an origin for the \textit{eye-rooted} pointing ray and recover the user specific pointing geometry in an egocentric setting without external cameras and trackers. 
+This section presented the Pointing At Several Targets (PAST) method to calculate an origin for the \textit{eye-rooted} pointing ray and recover the user specific pointing geometry in an egocentric setting without external cameras and trackers. 
 
 This work is different from the state-of-art techniques for hand gesture recognition and gesture based interaction. Its main difference lies in calculating the ray origin for the user's specific habit, recovering the pointing geometry accurately, and enabling direct interaction with real and virtual digital elements of interest within the user's environment without any visual feedback.
 %One problem that arises from allowing any wearable device always to understand the spatial relationship between the user's specific pointing gesture and the ambient information within the mixed reality world, is to how to model and calibrate the user specific pointing gesture. 

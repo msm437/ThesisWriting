@@ -3,70 +3,70 @@
 %todo: Make the user believe the virtual element is a part of his or her own body. (Organ game and the Muscle learning)
 \section{Interactive mixed reality and serious gaming} \label{sec:3-PPMM:IMR}
 %Personalized natural interaction \& gaming
-Knowledge is a process of understanding by connecting. Although we can lean by reading and watching and real depth of understanding, the learner always needs to encode the knowledge by themselves, rather than simply receive what is shown. This is one of the reasons that interacting with the mixed reality system can be a powerful learning tool - we are not only get the benefit of the AR view, but also receiving immediate feedback. These interactions are often useful in creating the aha moment -- the joining of medical knowledge with a learner's own body and movement.
+Knowledge is a process of understanding by connecting. Although we can learn by reading and watching, the learner always needs to encode the knowledge by themselves, rather than simply receive what is shown. This is one of the reasons that interacting with the mixed reality system can be a powerful learning tool - we do not only get the benefit of the AR view, but also receive immediate feedback. These interactions are often useful in creating the `WoW' moment -- the joining of medical knowledge with a learner's own body and movement.
 In Section \ref{sec:3-PPMM:Registration}, user's personal information is collected to improve the perception of the medical information.
-Here, we try to implement several applications in integrating exciting user-interaction and gaming concepts within the proposed magic mirror framework.
+Here, we implement several applications by integrating exciting user-interaction and gaming concepts within the proposed Magic Mirror framework.
  
 %Two kinds: user motivate interaction (user's movement trigger the changing) and scenario interaction (AR view change according to the presetting), combine two kinds together. 
-In this section, a new interaction with anatomy is firstly developed for learning in the MR magic mirror framework. It is demonstrated by the two modules for the organ atlas and an education game.
+In this section, a new interaction with anatomy is firstly developed for learning in the MR Magic Mirror framework. It is demonstrated by two new modules using the organ atlas and an education game.
 Then, we focus on the muscles of one human arm to find out a solution for muscle learning. 
 %Thirdly, the system is extended to visualize the basic function of the human skeleton and muscle system, and it highlights the active muscles and implement a labeling system based on the interaction, creating a personalized MR muscle learning environment. 
-Finally, serious gaming for education and rehabilitation is discussed. A knee rehabilitation demo is developed. 
+Finally, serious gaming for education and rehabilitation is discussed and a knee rehabilitation demo is developed. 
 
 \subsection{Interaction for anatomy learning} \label{sec:3-IMR:anatomyLearning}
-Basic Knowledge of human anatomy is also considered common knowledge that is taught at various levels of school education. To improve the conventional book-based methods for anatomical education, we have investigated the suitability of an MR system using a magic mirror metaphor for this task.
+Basic knowledge of human anatomy is also considered common knowledge that is taught at various levels of school education. To improve the conventional book-based methods for anatomical education, we have investigated the suitability of an MR system using a Magic Mirror metaphor for this task.
 With the existing platform, we develop an interactive educational application consisting of an organ atlas and a complementary organ learning game, leveraging the benefits of self-referential learning and motivation through game challenges.
 The organ atlas is a good way of imparting anatomical knowledge on the users, allowing them to explore their body without any instructor or supervisor.  The education game is developed taking advantage of the new interaction method with the anatomy. 
 
 %To achieve intuitive usability, we investigate different user interaction methods for organ selection in a self-referential system using augmented reality, providing methods for unique selection as well as coarse, non-unique selection.
 \subsubsection{Motivation and objective}
-In the original magic mirror MR learning environment, the users can see themselves on the screen like in a mirror with medical information augmented onto his body and a feeling ``looking inside'' the human body. The user can also relocate the see-through window and interact with slices as describe in Section \ref{sec:3:MMCInteraction}, but the user cannot directly interact with the organ anatomy. Here, we try to expand this existing framework to be used as an alternative and entertaining way to learn human anatomy. An educational application is developed to allow the user to explore his/her body and learn about spatial relations, visual appearance and function of the organs.
+In the original Magic Mirror MR learning environment, the users can see themselves on the screen like in a mirror with medical information augmented onto their body and a feeling of ``looking inside'' the human body. The user can also relocate the see-through window and interact with slices as described in Section \ref{sec:3:MMCInteraction}, but the user cannot directly interact with the organ anatomy. Here, we try to expand this existing framework to be used as an alternative and entertaining way to learn human anatomy. An educational application is developed to allow the user to explore their body and learn about spatial relations, visual appearance and function of the organs.
 As atlas and text are still the main learning methodologies, we also want to merge these traditional information into the MR learning environment. 
 %An organ learning game to provide an entertaining way to learn anatomy is also presented in section \ref{sec:3-IMR:gaming}. This game is based on the knowledge presented in the atlas and leverages augmented reality and motivation through game challenges to improve the learning performance of the user. 
 %To achieve this goal, we examine different interaction metaphors and their suitability for the tasks presented.
 
-The objective is to implement an interactive anatomy atlas that also focuses on the inner organs of the torso. The user can explore these organs and read additional information on each of the visualized organs. The work is separated into two different parts: general interaction methods performing all kinds of basic operations not specific to any application and the actual application logic implementation and realizing the organ atlas application.
-The general interaction methods are designed to be one part of the Magic mirror AR view, as shown in \figurename{\ref{fig:3-MMC:systemFramework}}, and provides easy access to implement custom application logic, making it easier to experiment with new ideas based on the magic mirror framework.
+The objective is to implement an interactive anatomy atlas that also focuses on the inner organs of the torso. The user can explore these organs and read additional information on each of the visualized organs. The work is separated into two different parts: general interaction methods performing all kinds of basic operations not specific to any application and the actual application logic implementation, and realizing the organ atlas application.
+The general interaction methods are designed to be one part of the Magic mirror AR view, as shown in \figurename{\ref{fig:3-MMC:systemFramework}}, and provides easy access to implement custom application logic, making it easier to experiment with new ideas based on the Magic Mirror framework.
 
 \paragraph{Challenges of interaction}
-The main challenging issue is the interaction method with the organ model. We need a method to reliably detect which organ the user has selected while leveraging the mirror analogy as far as possible. The most intuitive and direct way would be to use a virtual hand technique to directly select the organs \cite{Ha2010a}. However, this is bound to fail for two reasons:
-First and most obviously, it is not possible for the user to put a hand into his/her body and directly touch the organ. Only the approximate region in front of the organ is reachable, but it is not accurate in many cases as it is not really possible to detect reliably which organ the user points to. 
+The main challenging issue is the interaction method with the organ model. We need a method to reliably detect which organ the user has selected while leveraging the mirror analogy as far as possible. The most intuitive and direct way would be to use a virtual hand technique to directly select the organs \cite{Ha2010a}. However, this is bound to fail for two reasons.
+First and most obviously, it is not possible for the user to put a hand into their body and directly touch the organ. Only the approximate region in front of the organ is reachable, but it is not accurate in many cases as it is not really possible to detect reliably which organ the user points to. 
 Especially in the abdominal area many organs are fit very tightly together in one place, making it very hard to distinguish between two organs.
-Secondly, the tracking capabilities of the current version of Kinect sensor. The only thing suitable for selection is the position of the hands. 
+Secondly, the tracking capabilities of the current version of Kinect sensor is not robust. The only thing suitable for selection is the position of the hands. 
 Untrained users usually use their fingers when asked to indicate a point.
-Neither orientation of the hand nor information about the fingers is available when the hand is put on a body. 
+Neither orientation of the hand nor information about the fingers is available when the hand is put on their body. 
 This makes it even harder to develop a suitable, intuitive interface. 
 
 \subsubsection{General interaction methods}
 %The investigation of possible interaction methods forms an important part of this work. 
-Since conventional point-and-click selection methods are only of limited use for self-referential selection in MR environments, we have developed new methods better suited for our use case: (i) One is driven by a two-handed interaction method to allow the user to select the region of interest with one hand and using the other hand to select a specific organ; (ii) the other uses a single-handed approach where the user indicates the organ directly by touching the specific region of his anterior torso \cite{weiss2013}. 
+Since conventional point-and-click selection methods are only of limited use for self-referential selection in MR environments, we have developed new methods better suited for our scenario: (i) One is driven by a two-handed interaction method to allow the user to select the region of interest with one hand and using the other hand to select a specific organ; (ii) the other uses a single-handed approach where the user indicates the organ directly by touching the specific region of their torso \cite{weiss2013}. 
 
 \paragraph{Organ Explosion}
 %In the AR learning environment, organ selection is a challenging task as some organs hide behind others. The user cannot directly position their hand into their bodies and to select the organ of choice. 
-Our approach to overcome the selection challenge is a technique that we, have called ``Organ Explosion'' effect (see \figurename{\ref{fig:3-IMR:organExplosion}}).
-This technique is inspired by exploded view drawings known from engineering, where the goal is to depict how mechanical parts to be assembled. Usually they are drawn with the innermost part at the center while the other parts are moved some fixed distance outwards to display all parts of the assembly that would otherwise be hidden.
-We use the same basic idea in our interaction technique by implementing a two-handed interaction method: Using the left hand, the user is able to set the focus height for the region he is interested in. Organs at approximately the same height are then projected outwards. Because we use a spherical projection with the center at the height of the hand, but at a point behind the body, the organs are moved outwards, creating the illusion of seeing them ``fly out'' in front of the body. Lines are drawn to indicate the original position of the organs. After separating the organs from each other, it is easy for the user to select the organ of interest using the other hand.
-This way we are able to separate the organs close together since organs at different angles to the projection point are projected into different regions. We scale the magnitude of the displacement down with the distance between hand and body to allow the user to see the organs in their original arrangement but still enable him to ``zoom in'' for detail and selection. \figurename{\ref{fig:3-IMR:organExplosion:b}} depicts how this technique looks in practice.
+Our approach to overcome the selection challenge is a technique that we have called ``Organ Explosion'' effect (see \figurename{\ref{fig:3-IMR:organExplosion}}).
+This technique is inspired by exploded view drawings known from engineering, where the goal is to depict how mechanical parts need to be assembled. Usually they are drawn with the innermost part at the center while the other parts are moved some fixed distance outwards to display all parts of the assembly that would otherwise be hidden.
+We use the same basic idea in our interaction technique by implementing a two-handed interaction method. Using the left hand, the user is able to set the focus height for the region they are interested in. Organs at approximately the same height are then projected outwards. Because we use a spherical projection with the center position at the height of the hand, but at a point behind the body, the organs are moved outwards creating the illusion of seeing them ``fly out'' in front of the body. Lines are drawn to indicate the original position of the organs. After separating the organs from each other, it is easy for the user to select the organ of interest using the other hand.
+This way we are able to separate the organs close together since organs at different angles to the projection point are projected into different regions. We scale the magnitude of the displacement down with the distance between hand and body to allow the user to see the organs in their original arrangement but still enable the user to ``zoom in'' for detail and selection. \figurename{\ref{fig:3-IMR:organExplosion:b}} depicts how this technique looks in practice.
 Once we are able to separate the organs from each other, it is easy to perform selection by checking the intersection between the hand and the organ. Another functionality of the organ explosion effect is allowing the user to rotate and observe the 3D organ models and perceive the spatial relationship between them.
 \begin{figure}
 	\subfloat[Front View] {\label{fig:3-IMR:organExplosion:a} 
 		\includegraphics[height= 7cm]{figures/3-IMR/organExplosion2}}
 	\subfloat[Side View] {\label{fig:3-IMR:organExplosion:b} 
 		\includegraphics[height= 7cm]{figures/3-IMR/organExplosion1}}
-	\caption[Organ Explosion]{Left: Quantities involved in the calculation of the position offsets for the technique (organs not displayed). In this image, four organs are displaced. Purple dots are original organ positions, blue dots displaced organ positions. The Yellow dot signifies the projection center. Right: Screenshot of the explosion technique.}
+	\caption[Organ Explosion]{Left: Quantities involved in the calculation of the position offsets for the technique (organs not displayed). In this image, four organs are displaced. Purple dots are original organ positions, blue dots displaced organ positions and the Yellow dots signify the spherical projection. Right: Screenshot of the explosion technique.}
 	\label{fig:3-IMR:organExplosion}
 \end{figure}
-The interaction methods we developed are not necessarily limited to self-referenced selection and manipulation. In general cases, they are suitable for scenarios where many possible items are densely packed and a user wants to select a single or multiple items in an augmented or mixed reality environment. The large number of possible modifications to the methods make them difficult to configure, but the general ideas should be applicable to many cases.
+The interaction methods we developed are not necessarily limited to self-referenced selection and manipulation. In general cases, they are suitable for scenarios where many possible items are densely packed and a user wants to select a single or multiple items in an augmented or mixed reality environment. The large number of possible modifications to the methods make them difficult to configure, but the general idea should be applicable to many other cases.
 
 \paragraph{Interaction test for selection}
-Intersection detection between different 3D objects is a built-in functionality in many rendering libraries. A virtual predefined sphere or box can be attached to control hand of the current user as hand object, and the selection function is triggered when the intersection test between the hand object and the organ models. 
-For performance reasons, we only use bounding-box intersection tests and skip the narrow phase, treating intersecting bounding-boxes as intersections between geometry. This obviously reduces the accuracy of bounding box tests, this coarse intersection check is better not only in performance, but also from a usability perspective. Intersection tests in our applications are used for checking intersections of the hands with organs. Due to the inaccurate tracking of the hands by Kinect, this actually works quite good when just checking for ``roughly" intersecting pairs.
+Intersection detection between different 3D objects is a built-in functionality in many rendering libraries. A virtual predefined sphere or box can be attached to the control hand of the current user and defined as the hand object, and the selection function is triggered when the intersection between the hand object and the organ models occurs. 
+For performance reasons, we only use bounding-box intersection tests and skip the narrow phase, treating intersecting bounding-boxes as intersections between geometry. This obviously reduces the accuracy of bounding box tests, this coarse intersection check is better not only in performance, but also from a usability perspective. Intersection tests in our applications are used for checking intersections of the hands with organs. Due to the inaccurate tracking of the hands by Kinect, this actually works quite well when just verifying for ``roughly" intersecting pairs.
 %To further improve performance, we introduce an explicit vector that describes objects that are actually interested in intersections with other objects. The assumption is that general intersections, for example between two organs, are not of interest, while intersections with special objects like a sphere attached to the user's hand are interesting and important. Once an ``interesting" intersection has been determined between a pair of objects, the first object gets added to the intersecting objects list of the second and vice-versa. This list can then be used and analyzed in the behavior implementation to perform reactions to the collisions. For convenience reasons, there are two vectors configured to be attached to the left and right hand. They can be added to the framework if required and reconfigured by the application implementation.
 
 \subsubsection{Organ atlas application}
-An organ atlas is usually a collection of visual representations of organs or specific organ systems, annotated with names and further information.
-We tried to reproduce a version of this concept using the magic mirror framework with personalized interaction. The main educational goal of this application is to allow the user to explore the organs of his body and learn about the shape, position, function and 3D spatial relations to the other organs.
-We approach this goal by augmenting all available organs onto a user's body and letting the user select the one he/she is interested in via ``Organ Explosion'' effect. Once the user has selected an organ, the application displays textual information about the organ. This information includes the common, latin and/or greek names as well as a description of the basic purpose of the organ. During the selection procedure, the spatial knowledge of this organ is also learned. An example of what the application looks like in action and finished is shown in \figurename{\ref{fig:3-IMR:OrganAtlas}}. The organ atlas offers an interesting new way to explore the human anatomy. However, the described methods offer much room for experiments and improvement. The organ learning application in its current prototype version already provides a fun experience, but it lacks the content to be distributed as a full game. This could easily be changed by adding more game modes for other organ systems, multi-player modes or other elements commonly found in games.
+An organ atlas is usually a collection of visual representations of organs or specific organ systems, annotated with names and physiological information.
+We reproduced a version of this concept using the Magic Mirror framework with personalized interaction. The main educational goal of this application is to allow the user to explore the organs of their body and learn about the shape, position, function and 3D spatial relations to the other organs.
+We approach this goal by augmenting all available organs onto a user's body and letting the user select the one they are interested in via ``Organ Explosion'' effect. Once the user has selected an organ, the application displays textual information about the organ. This information includes the latin and/or greek names as well as a description of the basic function of the organ. During the selection process, the spatial knowledge of this organ is also learned. An example of what the application looks like in action and when finished is shown in \figurename{\ref{fig:3-IMR:OrganAtlas}}. The organ atlas offers an interesting new way to explore the human anatomy. However, the described methods offer much room for experiments and improvement. The organ learning application in its current prototype version already provides a fun experience, but it lacks the content to be distributed as a full game. This could easily be changed by adding more game modes for other organ systems, multi-player modes or other elements commonly found in computer games.
 \begin{figure}
 \centering
 \subfloat [In action] {\label{fig:3-IMR:OrganAtlas:a} 
@@ -81,16 +81,16 @@ We approach this goal by augmenting all available organs onto a user's body and 
 \subsubsection{Organ game}
 A serious game is developed for general users to learn basic anatomy called ``Whack an Organ''. The game is based on the idea of the classic arcade games at carnivals, ``Whack-a-Mole''. We implement a similar game idea using the proposed interaction methods. It is a combination of Whack-a-Mole and classical quiz games. Questions regarding human anatomy is shown to the user, and the answers are always one organ or organ system. 
 This knowledge will serve as a basis for the game. This game works in a quiz-show like manner where the user has to answer questions by indicating the right positions of the organs.
-To answer the question, the user has to point to the location of the organ directly on his/her body. 
+To answer the question, the user has to point to the location of the organ directly on their body. 
 The game then decides if the location is correct and awards points if so. Questions can come from different question sets with varying difficulty, ranging from simple location questions: \textit{where is the liver?}, to more complex knowledge questions: \textit{which organ is infected if you have Hepatitis?}.
-Still, the questions have to have a concrete organ as an answer, limiting the possible range of anatomy-related questions. At the end of a question round, the achieved points are shown to provide some feedback on the performance on the player.
+Still, the questions have to have a concrete organ as an answer, limiting the possible range of anatomy-related questions. At the end of a question round, the achieved points are shown to provide some feedback on the performance of the player.
 We hope to provide an experience that is both entertaining and fun to persons of all ages.
 %but due to the simplicity of the questions and detail of information displayed, for our first version, the target group can be considered children and teenagers where the common knowledge about human anatomy is not as present as with more adult persons.
 
 \paragraph{Organ bounding box selection}
-A direct approach is to do the bounding box interaction test between all the organ and a virtual box, which is attached to the hand. 
+A direct approach is to do the bounding box interaction test between all the organs and a virtual box, which is attached to the hand. 
 Once an intersection has been detected, we use a timeout to allow the user to position the hand correctly. Once the timeout has run out, we collect all organs that are currently intersected as our selection set (see \figurename{\ref{fig:3-IMR:organGamingBoundingBoxSelection:a}}).
-We increase the length of the virtual box in negative Z direction (towards the back of the body) to be as long as the torso is ``deep". This is because some organs like the kidneys are located in the dorsal area of the torso and they still have to intersect with the box when the player touches the front.
+We increase the length of the virtual box in negative Z direction (towards the back of the body) to be as long as the user torso width. This is because some organs like the kidneys are located in the dorsal area of the torso and they still have to intersect with the box when the player touches the front.
 
 \begin{figure}[htb]
 	\centering
@@ -100,7 +100,7 @@ We increase the length of the virtual box in negative Z direction (towards the b
 	\subfloat[Sphere interaction]{ \label{fig:3-IMR:organGamingBoundingBoxSelection:b}
 		\includegraphics[height=0.45\linewidth]{figures/3-IMR/organGamingSphereSelection}
 	}
-	\caption{Debug visualization output of the two selection techniques. (a) Organ Bounding Box Selection: Blue box is intersector box of the left hand. (b) Sphere Selection: Blue spheres are the selection regions, red sphere is the intersector of the right hand}
+	\caption{Debug visualization output of the two selection techniques. (a) Organ Bounding Box Selection: Blue box is intersector box of the left hand. (b) Sphere Selection: Blue spheres are the selection regions, red sphere is the intersector of the right hand.}
 	\label{fig:3-IMR:organGamingBoundingBoxSelection}
 \end{figure}
 \paragraph{Sphere intersection}
@@ -113,8 +113,8 @@ Once we have detected the selection, we check if the correct organ(s) are associ
 %Finally, a radical modification is that one virtual box of the approximate size of the torso is added as a dummy to detect when the player has touched the body. Once this touch has been detected, we can determine the selection by including all organs at a certain radius from the hand in the selection set. 
 
 \paragraph{Implementation}
-The implementation of the game is rather straightforward based on the application framework. We first load an appropriate question set from the hard drive. Question sets consist of a list of questions together with a set of correct answers for each question. The answers are given as a list of organ names, and calculate the closest sphere if needed.
-After setting up the basic game state variables like the current question and counters for correct/wrong answers, we proceed to set up a default behavior for all organs. This behavior keeps an organ invisible for most of the time. Only when the user has selected an answer and the organ is in the set of correct answers for the current question, it is made visible for a short time (see \figurename{\ref{fig:3-IMR:organGaming}}). At the time, it flashes either red or green, depending on whether the answer as right or wrong.
+The implementation of the game is rather straightforward based on the application framework. We first load an appropriate question set from the hard drive. Question sets consist of a list of questions together with a set of correct answers for each question. The answers are given as a list of organ names and then we calculate the closest sphere if needed.
+After setting up the basic game state variables like the current question and counters for correct/wrong answers, we proceed to set up a default behavior for all organs. This behavior keeps an organ invisible for most of the time. Only when the user has selected an answer and the organ is in the set of correct answers for the current question, it is made visible for a short time (see \figurename{\ref{fig:3-IMR:organGaming}}). At the time, it flashes either red or green, depending on whether the answer is right or wrong.
 %For the first selection method, we now set up the intersection spheres on a regular grid in body space. After we have determined the positions of the sphere centers, we perform the calculation for the nearest spheres for each organ. The spheres and the results of this calculation are stored as static variables to allow the hand behavior access to this data.
 \begin{figure}
 	\centering
@@ -125,19 +125,19 @@ After setting up the basic game state variables like the current question and co
 %The behavior functions for left and right hand are identical in this game to allow the user to select answers with both hands.
 %For the sphere-based method we test the intersection between the hand object and spheres. In the behavior, we then determine whether the hand is currently intersecting a sphere and if so, decrease our timeout. If the timeout has run out, we determine the selection set by using all the associated organs of the selected sphere.
 %If we use the bounding box method, we just check if an intersection between hand object and organs has been detected to decrease our timeout. When it has timed out, we use all intersecting organs as the selection set.
-Once a selection set is determined, the application checks whether it contains a correct answer. According to this, a short feedback is displayed and the counter for correct or wrong answers is modified accordingly. Afterwards the next question is presented if there are any question left. One important thing for usability is to prevent the system from accepting the current position as an answer for the next question as well, because the hand is still intersecting and the timer has run out. We chose to solve this by setting a flag that prevents accepting new answers. This flag is only cleared when the user has moved the hand completely away from the body.
+Once a selection set is determined, the application checks whether it contains a correct answer. According to this, a short feedback is displayed and the counter for correct or wrong answers is modified accordingly. Afterwards the next question is presented if there are any questions left. One important thing for usability is to prevent the system from accepting the current position as an answer for the next question as well, because the hand is still intersecting and the timer has run out. We chose to solve this by setting a flag that prevents accepting new answers. This flag is only cleared when the user has moved the hand completely away from the body.
 
 The organ learning game implemented as a proof of concept offers an engaging and fun way to learn about the human anatomy. The intuitive concept of indicating the organs on the players' own body should offer an increased learning intention. 
 We hope to extend the system by providing different difficulty levels to make it more interesting for a larger target group.
  
 \subsection{Interactive muscle learning}
-Muscle is one very important and difficult topic for all the medical students as it is a complex system and several muscles are active to perform one motion.
-Functions of the muscle is not easy to learned as it is very difficult to observe certain motion in the living organism.
-Bones of the skeleton system are rigid objects and are controlled by muscles via attachment points. From the outside tracking system, the poses of the bone can be calculated.
+Muscle learning is an very important and difficult topic for all the medical students as it is a complex system and several muscles are active to perform one motion.
+Functions of the muscle is not easy to learn as it is very difficult to observe certain motions in humans.
+Bones of the skeleton system are rigid objects and are controlled by muscles via attachment points. From any outside tracking systems, the poses of the bone can be calculated.
 The main objective of the application is to enable the user to acquire knowledge about the muscles of the arm %(see \figurename{\ref{fig:3-IMR:armAnatomy}}) 
-by directly connecting all the virtual information with his/her own arm movement. 
-Based on the magic mirror framework, the non-physical visual effect is the activities of the muscles and the bones. A virtual model of an arm is rendered according to the real arm movement and the AR view is generated.
-After discussion with the medical partner, the main muscles of one arm related to four basic movements \textit{flexion}, \textit{extension}, \textit{pronation}, and \textit{supination} are selected. The learning targets are the main muscles, which expand and contract during the above movements (see \tablename{\ref{tb:3-IMR:motionMuscles}}). 
+by directly connecting all the virtual information with their own arm movement. 
+Based on the Magic Mirror framework, the non-physical visual effect is the activities of the muscles and the bones. A virtual model of an arm is rendered according to the real arm movement and the AR view is generated.
+After discussion with our medical partners, the main muscles of one arm related to four basic movements \textit{flexion}, \textit{extension}, \textit{pronation}, and \textit{supination} are defined. The learning targets are the main muscles, which expand and contract during the completion of the above movements (see \tablename{\ref{tb:3-IMR:motionMuscles}}). 
 %\begin{figure}
 %	\centering
 %	\subfloat{
@@ -175,11 +175,11 @@ After discussion with the medical partner, the main muscles of one arm related t
 \end{table}
 
 \subsubsection{Application design}
-The application contains an AR view, which shows the color image from the Kinect with the augmented virtual arm. This view acts as the magic mirror effect and helps the user to map all the activities of the bones and muscles onto his/her own arm. There is another VR view which is also synchronized with the real arm motion. The virtual view concentrates on the upper or lower arm, showing the details of the muscle model. To preserve the connection between the user and the virtual arm, the AR-view is shown on the left side of the screen after the user is calibrated (see \figurename{\ref{fig:3-IMR:MuscleLearningSelfControlCamera}}). 
-The learning patterns contain muscle-oriented, the muscle is displayed one by one, and motion-oriented, the user performs the target motions and only the muscles related the current motion is shown. 
-The system also allows the user to observe the muscle model from different view point to learn the spatial information and the learning flow is flexibly scripted \cite{Jutzi2015}. 
+The application contains an AR view, which shows the color image from the Kinect with the augmented virtual arm. This view acts as the Magic Mirror effect and helps the user to map all the activities of the bones and muscles onto their own arm. There is another VR view which is also synchronized with the real arm motion. The virtual view concentrates on the upper or lower arm, showing the details of the muscle model. To preserve the connection between the user and the virtual arm, the AR-view is shown on the left side of the screen after the user is calibrated (see \figurename{\ref{fig:3-IMR:MuscleLearningSelfControlCamera}}). 
+The learning patterns include `muscle-oriented', the muscle is displayed one by one, and `motion-oriented', the user performs the target motions and only the muscles related the current motion is shown. 
+The system also allows the user to observe the muscle model from different viewpoints to learn the spatial information and the learning flow is flexibly scripted \cite{Jutzi2015}. 
 
-\paragraph{Dynamical muscle model}
+\paragraph{Dynamic muscle model}
 %\paragraph{Skeleton information}
 %The position and rotation of the skeleton model are defined in a strict hierarchical order, starting with the spine. The position data from Kinect skeleton stream is in the world coordinate system. To animate the arm model, the relative orientations have to be calculated based on the position of the joints. Only the spine position is directly set as the root's position in the AR view. 
 %The lower arm is treated separately to the other bone chains. Each hand's orientation is defined using the vectors from the wrist to the tip of the hand, and from the wrist to the thumb. Additionally, to be able to follow the shoulder's full range of movement, the upper arm uses the direction of the lower arm to define its orientation along its length axis.
@@ -207,7 +207,9 @@ An anatomical model of a human male body from ANATOMIUM 3D\footnote{\url{http://
 %\end{figure}
 Since the application only covers just one arm and quite a few simple motions, this muscle and skeleton model was simplified under the supervision of a senior medical student. Only the bones of the arm and the shoulder, and the muscles responsible for the motions, flexion, extension, pronation, and supination, are chosen, i.e. the \textit{musculus biceps brachii, musculus triceps brachii, musculus brachialis, musculus anconeus, musculus pronator teres, musculus pronator quadratus and musculus supinator}. The \textit{musculus coracobrachialis} is added to this collection according to the medical partner's suggestion, although it does not contribute to the motions mentioned above.
 
-The bone models are used as they were, but after consulting with medical professionals, we decided to recreate the muscle models, since the existing ones did not resemble their real counterparts closely enough. The biceps and triceps are presented as two and three separate parts, respectively, and the position of the anchor points of most muscles do not correspond to their real-world position. To achieve a more realistic visual effect, the muscle model should be deformed during the selected motions.
+The bone models are used as they were, but after consulting with medical professionals, we decided to recreate the muscle models, since the existing ones did not resemble their real counterparts closely enough. 
+%The biceps and triceps are presented as two and three separate parts, respectively, and the position of the anchor points of most muscles do not correspond to their real-world position. 
+To achieve a more realistic visual effect, the muscle model should be deformed during the selected motions.
 The texture of the 3D muscle model is realistic, especially in a close up view. But it is quite difficult to apply vertex weights to the mesh topology of the original muscle model. 
 In this application , most muscles are modeled with a cylindrical base mesh and created using polygonal modeling techniques and subdivision algorithms according to images from the Sobotta Atlas of Human Anatomy (see \figurename{\ref{fig:3-IMR:modifiedArmModel}}). Only the \textit{supinator} and the \textit{pronator quadratus} are modeled from a flat box, due to their shape. The biceps and triceps are both created as one contiguous model instead of separate parts for each head and detailed attention is given to the anchor points for all muscles to make sure they are at the correct positions.
 \begin{figure}[htb]
@@ -242,16 +244,16 @@ The vertices follow the transformation of each related object to a special perce
 	\caption{Dynamic Muscle Models. The bones are weighted to different armatures and the vertices of each model are weighted to several control objects in the armetures.}
 	\label{fig:3-IMR:modelArmature}
 \end{figure}
-The muscles' animation for contraction and expansion was achieved in 3ds max via stretchy bones, which automatically contract or expand, if their length is changed. 
+The muscles' animation for contraction and expansion was achieved in 3DS MAX\footnote{\url{http://www.autodesk.com/products/3ds-max/overview}} via stretchy bones, which automatically contract or expand, if their length is changed. 
 Whenever a new user is detected, the neutral length of each muscle is recalculated after the skeleton is scaled.
 This was accomplished by a configuring class attached to each muscle's control object. It contains references to the control object's two anchor points and uses them to define its position and rotation. The position is set directly to that of the first anchor, while the rotation is calculated via a relative rotation.
 The application measures the distance between the control object's anchor points and scales it along its local x-axis according to the ratio between that distance and its neutral length. Along the y- and z-axis the inverse of that ratio is used for scaling, multiplied by a factor to control the magnitude of expansion. 
 
 \subsubsection{Learning functions}
 \paragraph{Virtual view}
-The details of the muscle are very important, so virtual view is introduced to present a close up view of the arm model to show the attachment points and the spatial relationship. There are several solutions to place the virtual camera. One is that the camera rotates around a special object and generate the virtual view from different angles. The cameras are attached to a rotating helper object to create an orbiting movement around the arms. 
+The details of the muscle are very important, so a virtual view is introduced to present a close up view of the arm model to show the attachment points and the spatial relationship. There are several solutions to place the virtual camera. One is that the camera rotates around a special object and generates the virtual view from different angles. The cameras are attached to a rotating helper object to create an orbiting movement around the arms. 
 %Additionally, it can be influenced by the user in order to have an even closer look at areas of interest. In all views, the active muscles are highlighted.
-The close views are implemented with additional cameras and copies of the arm model. By putting these copies into separate layers it is ensured that these cameras only render their respective objects. The first copy takes part in just the flexion and extension, while the second one participates in the pronation and supination. The muscles, which is not responsible for the selected movement, are removed, to keep them from obscuring the relevant muscles or distract from them.
+The close views are implemented with additional cameras and copies of the arm model. By putting these copies into separate layers it is ensured that these cameras only render their respective objects. The first copy takes part in just the flexion and extension, while the second one participates in the pronation and supination. The muscles, which are not responsible for the selected movement, are removed, to keep them from obscuring the relevant muscles or occlude them.
 \begin{figure}
 	\centering
 	\subfloat[View 1]{ \label{fig:3-IMR:MuscleLearningVirtualCamera:a}
@@ -259,7 +261,7 @@ The close views are implemented with additional cameras and copies of the arm mo
 	\subfloat[View 2]{ \label{fig:3-IMR:MuscleLearningVirtualCamera:b}
 		\includegraphics[height=0.4\linewidth]{figures/3-IMR/MuscleVirtualCamera}}
 	
-	\caption{Virtual Camera concentrating on Flexion and Extension}
+	\caption{Virtual Camera concentrating on Flexion and Extension.}
 	\label{fig:3-IMR:MuscleLearningVirtualCamera}
 \end{figure}
 
@@ -268,7 +270,7 @@ A self-control virtual camera is introduced and its position and rotation can be
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{figures/3-IMR/selfControlCamera}
-\caption{The camera moves to the position of the hand and tries to focus on the desired area by calculating the closest point on the arm and rotating towards it}
+\caption{The camera moves to the position of the hand and tries to focus on the desired area by calculating the closest point on the arm and rotating towards it.}
 \label{fig:3-IMR:selfControlCamera}
 \end{figure}
 
@@ -282,34 +284,35 @@ A self-control virtual camera is introduced and its position and rotation can be
 A configuring class is defined, including methods to control the muscles' visibility, the highlighting of working muscles and of anchor points, and the labels that display the muscles' names and function. For highlighting it determines the angle between the upper and lower arm, as well as the rotation of the hand, relative to the frame before. This information is used to determine which motion is being performed, and in turn which muscles are active according to \tablename{\ref{tb:3-IMR:motionMuscles}}. 
 %In an earlier prototype, each muscle controlled the highlighting itself by measuring the change in length, but this data proved to be too inaccurate and produced noticeable flickering. 
 %The abstraction using only the angles between the joints of the arm yielded smoother results. 
-Additional functions are created to toggle the visibility of all muscle-labels to the User Interface and control the visibility of muscles by type.
-Similar to the muscles, the bones are controlled by a configuring class. These determine the color-coding of the bones and expose this functionality to the UI.
-In muscle oriented model, one or one group muscle is shown successively and AR view and virtual view of the Muscle is generated. The user can perceive the detail of the muscle, the start and end point and the spatial relationship with the bone (see \figurename{\ref{fig:3-IMR:muscleModelLearning}}). In motion oriented model, user are asked to perform special arm movement and only the muscle involved is highlight (see \figurename{\ref{fig:3-IMR:MuscleLearningVirtualCamera:b}}). Then the functions of the muscle are learned. 
+Additional functions are created to toggle the visibility of all muscle-labels to the user interface and control the visibility of muscles by type.
+Similar to the muscles, the bones are controlled by a configuring class. These determine the color-coding of the bones and exposes this functionality to the UI.
+In the muscle oriented model, one or more muscles are shown successively and the AR view and virtual view of the muscle is generated. The user can perceive the detail of the muscle, the start and end point and the spatial relationship with the bone (see \figurename{\ref{fig:3-IMR:muscleModelLearning}}). 
+In the motion oriented model, users are asked to perform special arm movements and only the muscle involved is highlighted (see \figurename{\ref{fig:3-IMR:MuscleLearningVirtualCamera:b}}). Then the functions of the muscle are learned. 
 During the learning procedure, the user can always move the arm and see the muscle state and shape deformation.
 When a motion is performed, active muscles would be visually highlighted in order to make them more prominent.
 \begin{figure}
 \centering
 \includegraphics[width=0.8\linewidth]{figures/3-IMR/muscleModel}
-\caption{muscle oriented model: one muscle is shown and the user can perceive the detail of the muscle, the start and end point and the spatial relationship with the bone.}
+\caption{Muscle oriented model: one muscle is shown and the user can perceive the detail of the muscle, the start and end points, and the spatial relationship with the bone.}
 \label{fig:3-IMR:muscleModelLearning}
 \end{figure}
 
 \paragraph{Learning Sequence}
-Based on the AR and Virtual view, the system can generate a lot of learning material. We prefer a simple user interface and let the user focus on the learning not  how to control this system. 
+Based on the AR and Virtual view, the system can generate a lot of learning material. We prefer a simple user interface and let the user focus on the learning instead of how to control this system. 
 %However, natural interaction would not introduce any barrier. 
 Hence, we introduce another function, ``Learning Sequence''.
-The sequence of events for the learning session is predefined via a configuring file. This an easily editable text format with values separated by semicolons. Each line in this file contains the data for one event. The data for one event consists of an integer for the duration and the camera mode, boolean values to enable or disable the color-coding for the bones, the muscles' labels and highlighting of their anchor points and a bitmask that determines the muscles visibility. Each bit in this eight-digit binary number controls visibility for one muscle. An optional seventh value can be used to display text at the bottom on the screen. 
+The sequence of events for the learning session is predefined via a configuring file. This is an easily editable text format with values separated by semicolons. Each line in this file contains the data for one event. The data for one event consists of an integer for the duration and the camera mode, boolean values to enable or disable the color-coding for the bones, the muscles' labels and highlighting of their anchor points, and a bitmask that determines the muscles visibility. Each bit in this eight-digit binary number controls visibility for one muscle. An optional seventh value can be used to display text at the bottom of the screen. 
 This file is opened and read line after line by a simple parser at the start of the program, and the data is stored in an array of event structure. 
 The sequence is played using a coroutine that takes one entry from the event-array and uses its values to set the relevant parameters and waits for the specified time before triggering the next event, until it reaches the end of the array. Simple functions can control the running sequence by stopping and restarting the coroutine or by modifying the array-index to skip or replay events.
 
-To facilitate the learning session, the users run through a predefined sequence of events. The learning sequence can be generated according to the user's needs. Here is one example: 
-It starts with the AR-view, showing the bones of the arm, identified by color, with the muscles hidden. It then switches to the first close view to introduce the muscles for flexion and extension individually. Next to each muscle with a label displaying its name and additional information about its function. After the muscles contributing to each motion have been introduced, they are shown together to give the user the opportunity to recap. This process is then repeated for pronation and supination. 
+To facilitate the learning session, the users run through a predefined sequence of events. The learning sequence can be generated according to the user's needs. Here is one example. 
+It starts with the AR-view, showing the bones of the arm, identified by color, with the muscles hidden. It then switches to the first close view to introduce the muscles for flexion and extension individually. Next to each muscle is a label displaying its name and additional information about its function. After the muscles contributing to each motion have been introduced, they are shown together to give the user the opportunity to recap. This process is then repeated for pronation and supination. 
 The whole sequence runs for approximately ten minutes and can be stopped, paused or resumed at any time. Additionally, it is possible to skip events or return to passed ones. Both the color-coding and the labels showing the muscle-information can also be displayed independently from the learning sequence.
 
 %\subsubsection{Evaluation}
 %todo data from Ina's thesis
 %\subsubsection{Discussion}
-Based on our discussion with the medical students we found that they really liked the AR visualization on their own bodies, however they were not used to the natural user interface and gestures required for interaction. A learning curve was necessary for them to appease initial frustrations they had when first using our system.
+Based on our discussion with medical students we found that they really liked the AR visualization on their own bodies, however they were not used to the natural user interface and gestures required for interaction. A learning curve was necessary for them to appease initial frustrations they had when first using our system.
 %The users were divided into two groups, the first of which used the application, while users from the second group were handed conventional materials, i.e. a section from an atlas of human anatomy, to learn the same information. Both groups got twenty minutes to acquire as much information about the arm as possible, which meant for those using the application to run through the sequence twice. 
 %After this time was up, each user was to fill out a questionnaire.
 %By the time of writing the results of the study was not yet analyzed, but from the witnessed sessions it became apparent that 
@@ -323,7 +326,7 @@ Most students who tried the application viewed it as an interesting and engaging
 %\begin{figure}
 %	\centering
 %	\includegraphics[width=0.7\linewidth]{figures/3-IMR/skeleton_Muscle2.png}
-%	\caption{Musculoskeletal Animation in magic mirror: an application to show a simple non-physical visual effect of the musculoskeletal system based on models from OpenSim}
+%	\caption{Musculoskeletal Animation in Magic Mirror: an application to show a simple non-physical visual effect of the musculoskeletal system based on models from OpenSim}
 %	\label{fig:3-IMR:skeletonMuscleDemo}
 %\end{figure}
 %
@@ -331,7 +334,7 @@ Most students who tried the application viewed it as an interesting and engaging
 %OpenSim is an open source software platform for biomechanical modeling, simulation, and analysis. The GUI includes many tools for loading data, creating and editing models, visualization of the simulation results, and much more. The API allows programmers to access the core components of OpenSim to create new plug-ins for the GUI or take advantage from it in theirs own applications. It also includes some validated musculoskeletal models and more can be downloaded from the platform website\footnote{\url{www.simtk.org}} where researchers can provide their work \cite{Delp2007}.
 %
 %OpenSim Musculoskeletal Models consist of bodies, joints, forces, constraints, controllers, markers, and contact geometry (see \figurename{\ref{fig:3-IMR:openSimModel}}). The skeleton is build up with rigid bodies and joints connecting two bodies. A body has attributes for its mass, center of mass, and inertia. It can include display geometry for bones. Joints have an attribute for their position in the parent body and hold a joint type dependent transformation to define the motion of a body relative to its parent body. Movements can be further restricted by constraints. Muscles are modeled as forces that are exerted on attachment points to the rigid bodies. The force of the muscle is dependent on its path (through all the attachment points) and muscle properties like maximum force, optimal fiber length, tendon slack length, pennation angle, and maximum contraction velocity. 
-%From the OpenSim models, we can definitely use the skeleton model and the paths of the muscles, by a conversion of the geometry data and reorganization of the scene graph. But, the muscle states simulation functions are difficult to integrate into magic mirror system, since it can not calculate the muscle activity in real time.
+%From the OpenSim models, we can definitely use the skeleton model and the paths of the muscles, by a conversion of the geometry data and reorganization of the scene graph. But, the muscle states simulation functions are difficult to integrate into Magic Mirror system, since it can not calculate the muscle activity in real time.
 %\begin{figure}
 %	\centering
 %	\includegraphics[width=0.8\linewidth]{figures/3-IMR/openSimModel.png}
@@ -340,7 +343,7 @@ Most students who tried the application viewed it as an interesting and engaging
 %\end{figure}
 %
 %\subsubsection{Application Design}
-%Based on the magic mirror framework, the application is designed according to the following rules. The objective is a simple interactive MR application for education.
+%Based on the Magic Mirror framework, the application is designed according to the following rules. The objective is a simple interactive MR application for education.
 %\begin{itemize}
 %	\item Accurate AR view of the skeleton.
 %	\item Clear relationship between the bones and muscles.
@@ -381,26 +384,27 @@ Most students who tried the application viewed it as an interesting and engaging
 %%\label{fig:3-IMP:mulcleActiveColor}
 %%\end{figure}
 
-\subsection{Serious AR gaming for rehabilitation} \label{sec:3-IMR:gaming}
+\subsection{Serious gaming for rehabilitation} \label{sec:3-IMR:gaming}
 Leg injuries are common injuries in both sports and everyday life. After some complicated injuries many patients can not use their leg for a long period. Following this lengthy healing progress, a period of rehabilitation is required to restore functionality and resilience of the injured leg. Various rehabilitation exercises are used by physiotherapists to increase the patient's ability to keep balance. 
-These exercises include balancing on one leg and moving the other leg or arms, or even simple weight shifting exercises. Other exercises require the patient to stand on one leg, bend his knee slightly and balance with a straight back. Balance boards can also be used to increase the difficulty of the balancing exercises. These rehabilitation exercises are tailored towards every patient individually and are often supervised by a physiotherapist. The conventional exercises are typically repeated many times which makes them tedious and feel like a chore.
+These exercises include balancing on one leg and moving the other leg or arms, or even simple weight shifting exercises. Other exercises require the patient to stand on one leg, bend their knee slightly and balance with a straight back. Balance boards can also be used to increase the difficulty of the balancing exercises. These rehabilitation exercises are tailored towards every patient individually and are often supervised by a physiotherapist. The conventional exercises are typically repeated many times which makes them tedious and feel like a chore.
 
 Motor rehabilitation consists in iterative repeating exercises to strengthen the affected body area. Since the rehabilitation must be performed over quite a long period it is common for patients to get disinterested, and consequently, they perform the exercises in a casual and incorrect manner. 
-Usually, Motor rehabilitation occurs by regular meetings between patient and physiotherapist with frequency depending on the availability of both. We believe that it becomes crucial for the patient to perform exercises at home to speed up the rehabilitation process. However, at home both therapeutic instructions and corrections by the therapist are not verbally provided to the patient, which potentially leads the patient to perform the exercises incorrectly.
+Usually, motor rehabilitation occurs by regular meetings between patient and physiotherapist with frequency depending on the availability of both. We believe that it becomes crucial for the patient to perform exercises at home to speed up the rehabilitation process. However, at home both therapeutic instructions and corrections by the therapist are not verbally provided to the patient, which potentially leads the patient to perform the exercises incorrectly.
 %Health education and rehabilitation is a particular area where serious gaming is suited \cite{Aubin2012,Jonas2012}.
 
-A serious game for balance rehabilitation is developed for leg stability and balance training. It is designed to entertain the user while doing the exercise as well as monitor and correct the patient. To deliver motivation, the exercise has to entertain the patient via the magic mirror effect. It will encourage the user continue the exercise and accelerate the healing process. The game also takes over monitoring work from physiotherapists, so the patient can do exercises on his own. It offers self-monitoring of stances, such as ``standing on one leg" or ``standing straight" and displays messages to warn the patient if he fails to keep his balance or stance.
+A serious game for balance rehabilitation is developed for leg stability and balance training. It is designed to entertain the user while doing the exercise as well as monitor and correct the patient. To deliver motivation, the exercise has to entertain the patient via the Magic Mirror effect. It will encourage the user to continue the exercise and accelerate the healing process. The game also takes over monitoring work from physiotherapists, so the patient can do exercises on their own. It offers self-monitoring of stances, such as ``standing on one leg'' or ``standing straight'' and displays messages to warn the patient if they fail to keep their balance or stance.
 The resulting game is tested by patients and reviewed by doctors and physiotherapists to assess its usefulness with regard to motivating the patient and its usefulness from the medical perspective \cite{Reichhold2014}.
 
 \subsubsection{Desired functions of the game}
-The first requirement for the game is to monitor the patient and to ensure that the right poses and movements are performed for the rehabilitation exercise. The poses contain standing with one leg while the corresponding knee slightly bends hovering over the foot and standing with two legs on a balance board while keeping upper body straight.
+The first requirement for the game is to monitor the patient and to ensure that the right poses and movements are performed for the rehabilitation exercise. The poses contain standing with one leg while the corresponding knee slightly bends hovering over the foot and standing with two legs on a balance board while keeping the upper body straight.
 Another requirement is to motivate the patient to continue doing rehabilitation exercises. This is achieved by adding gaming components to the tedious exercise via the non-physical mirror visual effect. Varied mixed reality sense and different challenges are implemented to attract the user. A score is calculated based on the participant's movement. The user is awarded higher score if the pose is kept correctly, but the punishment by losing score is triggered after failing to keep a required pose.
 
-To meet these requirements, the game is designed as a catch game based the magic mirror framework. A mixed reality mirror view is generated and the corresponding targets are flying around the user, then he/she is asked to catch all the targets using the hands or the lift leg. During the game, the system also monitors the stance poses and displays sound and visual feedback when any wrong pose is detected. To monitor and correct the stance pose, \textit{Stance Detection}, \textit{Detection of unstable stances}, and \textit{Stance Correction} are implemented. The game conceptions, such as \textit{MR scenario}, \textit{Difficulty Level}, and \textit{Rewarding Score}, are designed to motivate the patient continue the exercise. 
+To meet these requirements, the game is designed as a catch game based on the Magic Mirror framework. A mixed reality mirror view is generated and the corresponding targets are flying around the user, then they are asked to catch all the targets using the hands or lifting leg. During the game, the system also monitors the stance poses and displays sound and visual feedback when any wrong pose is detected. To monitor and correct the stance pose, \textit{Stance Detection}, \textit{Detection of unstable stances}, and \textit{Stance Correction} are implemented. The game conceptions, such as \textit{MR scenario}, \textit{Difficulty Level}, and \textit{Rewarding Score}, are designed to motivate the patient to continue the exercise. 
 
 \paragraph{Stance detection}
-To Lift one legs and move around the arms while still remaining in balance is one of the common exercises for the balance rehabilitation. The system needs to distinguish between the two legs and detect which one is lifted. The lifted leg can also be used as input for playing the game. During the exercise, the patient is required to standing with a slightly bent leg. And the knee of the bent leg has to be above the toe of the corresponding foot. Hence, the system has to detect which leg the patient is standing on and the particular standing pose. 
-The skeleton stream from Kinect sensor includes the positions of all important joints of the user body in three dimensional space. As seen in \figurename{\ref{fig:3-IMR:rehabilitationstance}}, the joints that are relevant to detect lifted legs are marked by green dots. There are two approaches are combined to decide whether a leg is lifted up or not. The first one is to compare the position changing of the leg joints. The leg which is left up would have larger movement than the other. The median position of last 10 frames is compared with the current position. If the offset exceeds a distance threshold, the leg is chosen as the left one (see \figurename{\ref{fig:3-IMR:rehabilitationstance:a}}).
+To lift one leg and move around the arms while still remaining in balance is one of the common exercises for balance rehabilitation. The system needs to distinguish between the two legs and detect which one is lifted. The lifted leg can also be used as input for playing the game. During the exercise, the patient is required to stand with a slightly bent leg. 
+The knee of the bent leg has to be above the toe of the corresponding foot. Hence, the system has to detect which leg the patient is standing on and the particular standing pose. 
+The skeleton stream from the Kinect sensor includes the positions of all important joints of the user body in three dimensional space. As seen in \figurename{\ref{fig:3-IMR:rehabilitationstance}}, the joints that are relevant to detect lifted legs are marked by green dots. There are two approaches combined to decide whether a leg is lifted up or not. The first one is to compare the position change of the leg joints. The leg which is left up would have larger movement than the other. The median position of the last 10 frames is compared with the current position. If the offset exceeds a distance threshold, the leg is chosen as the lifted one (see \figurename{\ref{fig:3-IMR:rehabilitationstance:a}}).
 \begin{figure}
 	\centering
 	\subfloat[The position of the lifted leg is changing bigger then the other. ]{\label{fig:3-IMR:rehabilitationstance:a} \includegraphics[height=0.4\linewidth]{figures/3-IMR/rehabilitationstance}}
@@ -408,10 +412,10 @@ The skeleton stream from Kinect sensor includes the positions of all important j
 	\caption{Stance detection. The system has to detect which leg the patient is standing on and the particular standing pose.}
 	\label{fig:3-IMR:rehabilitationstance}
 \end{figure}
-The first approach cannot detect the left leg if the foot is held very still in the air. To supplement this case, a second approach is proposed. The program calculates a limited area for each leg according to the ground plane and the hip positions. If it detects that any leg joint is exceeding the limited area more than a threshold, it is considered lifted as well (see \figurename{\ref{fig:3-IMR:rehabilitationstance:b}}). The limited area and threshold are adjusted to the size of the person. 
+The first approach cannot detect the lifted leg if the foot is held very still in the air. To supplement this case, a second approach is proposed. The program calculates a limited area for each leg according to the ground plane and the hip positions. If it detects that any leg joint is exceeding the limited area more than a threshold, it is considered lifted as well (see \figurename{\ref{fig:3-IMR:rehabilitationstance:b}}). The limited area and threshold are adjusted to the size of the person. 
 The limited area is marked by black lines. 
 A stable solution is to combine both approaches to detect the lifted leg.
-To ensure that the knee is bent properly, the angle between the three dimensional ``Knee-Ankle'' and the ``Knee-Hip'' vectors is calculated (see \figurename{fig:3-IMR:rehabilitationKneeAngle}). If this angle gets over $175\degree$, the leg can no longer be considered bent. Bending the leg too much also can be detected with this method.
+To ensure that the knee is bent properly, the angle between the three dimensional ``Knee-Ankle'' and the ``Knee-Hip'' vectors is calculated (see \figurename{\ref{fig:3-IMR:rehabilitationKneeAngle}}). If this angle gets over $175\degree$, the leg can no longer be considered bent. Bending the leg too much also can be detected with this method.
 \begin{figure}
 	\centering
 	\subfloat[Angle of the bent Knee.]{
@@ -427,36 +431,42 @@ To ensure that the knee is bent properly, the angle between the three dimensiona
 \end{figure}
 
 \paragraph{Detection of unstable stances}
-The objective of the balance rehabilitation is that the patient can keep the upper body stable while standing with one leg or on a balance board. So the system has to detect if the upper body is kept straight all the time.  A large change of the shoulder position can be also used to check if the user has lost his/her balance. The spine direction also be calculated to check if it still remains as straight.
-It calculates the vector from the shoulder center (neck) to the center of the hips. For a person standing straight, the vector should be perpendicular to the ground plane. The angle of between the vector and plane is calculated to estimate the state of the upper body (see \figurename{\ref{fig:3-IMR:rehabilitationSraight}}). 
+The objective of the balance rehabilitation is that the patient can keep the upper body stable while standing with one leg or on a balance board. The system has to detect if the upper body is kept straight all the time.  A large change of the shoulder position can be also used to check if the user has lost their balance. The spine direction also has to be calculated to check if it still remains as straight.
+It calculates the vector from the shoulder center (neck) to the center of the hips. For a person standing straight, the vector should be perpendicular to the ground plane. The angle  between the vector and plane is calculated to estimate the state of the upper body (see \figurename{\ref{fig:3-IMR:rehabilitationSraight}}). 
 Normal movement should not instantly be detected as loss of balance, such as small movements to keep balance. Large, fast movements or twisting of the body however need to be detected. The person in \figurename{\ref{fig:3-IMR:rehabilitationSraight}} is not standing straight and has lost his balance. The user then has to be notified and prompted to correct his stance and regain balance.
 The length of the vector between the center of the shoulders and the center between the hips is calculated and used to calculate appropriate thresholds. 
-The game should be able to be played by patients in different states of their rehabilitation. For this, it has to offer a certain threshold of customization. The customization mainly includes restrictions to stances and make an easier start for the patient. For patients who are further advanced in the rehabilitation process, it can offer a challenge setting.
+The game should be able to be played by patients in different states of their rehabilitation. For this, it has to offer a certain threshold of customization. The customization mainly includes restrictions to stances allowing an easier start for the patient. For patients who are further advanced in the rehabilitation process, it can offer a challenge setting.
 %This is done by dividing the length of the vector with a heuristically determined variable. 
 
-\paragraph{Stace correction}
+\paragraph{Stance correction}
 This function provides feedback to the patient after detection of incorrect pose and unstable stance. The feedback can be printed on the screen as a normal message and special sound to attract the attention of the user.
-Instead of an error message, which discourages the user, the system tell the patient what to do to recover the correct pose.
-What balance violation occurs is first detected and one hint message is generated to recover the balance. Then the message is shown on the screen and special sound effect is play to attract the attention of the user. These messages are displayed for a configurable amount of time. While one message is displayed, no other message can overwrite it. We think displaying multiple correction messages would confuse the patient. 
+Instead of an error message, which discourages the user, the system tells the patient what to do to recover the correct pose.
+When a balance violation is first detected, one hint message is generated to recover the balance. Then the message is shown on the screen and a special sound effect is played to attract the attention of the user. These messages are displayed for a configurable amount of time. While one message is displayed, no other message can overwrite it. We think displaying multiple correction messages would confuse the patient. 
 The new message is allowed to overwrite the existing message before the predefined time or when the correct pose is recovered.
-The system also has to detect the case both legs remain on the ground and then the patient has to receive a message that asks him to lift one of his legs. 
-If this rule of bent leg is violated, another message is displayed to tell patient how to recover it.
+The system also has to detect the case when both legs remain on the ground and then the patient has to receive a message that asks them to lift one of their legs. 
+If this rule for bent legs is violated, another message is displayed to tell the patient how to recover it.
 
 \paragraph{MR scenarios}
 A MR scenario is designed to motivate the patient following the general rules for games. 
-Based on information from the Kinect sensor, a segmentation of the patient's body in color image is generated. A virtual background image is displayed in the magic mirror to generate a MR environment.  
+Based on information from the Kinect sensor, a segmentation of the patient's body in color image is generated. A virtual background image is displayed in the Magic Mirror to generate a MR environment (see \figurename{\ref{fig:3-IMR:rehabilitationGame}}).  
 %Combining the color image with the background image is done by alpha blending. Every pixel of the texture is tested with the alpha mask provided by the user segmentation. This alpha mask has a high value for pixels belonging to the segmentation. Every single pixel is tested with these values and the resulting blend value is stored in a new bitmap. This bitmap then is rendered to the screen and generate a virtual background.
-To motivate the patient to continue playing the game, a wide variety of themes are offered. The background image, target object and its movement patterns are thematically design to create a new experience for a different theme. Sound effect is also employed to enhance the experience of the players. 
-The scenarios can either be unlocked after achieving a certain proficiency at the game, e.g. achieving a certain amount of score, or be available from the beginning to offer a wide variety of choices to the user right from the beginning. 
+To motivate the patient to continue playing the game, a wide variety of themes are offered. The background image, target object and its movement patterns are thematically designed to create a new experience for a different theme. Sound effect is also employed to enhance the experience of the players. 
+The scenarios can either be unlocked after achieving a certain proficiency at the game, e.g. achieving a certain amount of score, or be available from the beginning to offer a wide variety of choices to the user. 
 
+\begin{figure}
+	\centering
+	\includegraphics[width = \linewidth]{figures/3-IMR/rehabilitationGame}
+	\caption{Rehabilitation gaming. \add{ A virtual background image is displayed in the Magic Mirror to generate a MR environment and a user tries to catch the moving objects around him.}}
+	\label{fig:3-IMR:rehabilitationGame}
+\end{figure}
 \paragraph{Difficulty level}
-Games usually offer variety, challenges, and difficulty levels, and reward the player if the player overcomes the difficulties and challenges.
-This game offers difficulty settings that are configurable independently for every limb. The difficulty influences the speed as well as the patterns that the target objects move. Higher difficulty means higher speed and more complex movement patterns.
-The player starts with an easy basic mode and continue with more difficult level after achieve a special objective or a certain amount of score. 
+Games usually offer variety, challenges, and difficulty levels, and rewards the player if the player overcomes the difficulties and challenges.
+Our game offers difficulty settings that are configurable independently for every limb. The difficulty influences the speed as well as the patterns of the moving targets. Higher difficulty means higher speed and more complex movement patterns.
+The player starts with an easy basic mode and continues with more difficult levels after achieving a special objective or a certain amount of score. 
 %The Beach scenario is easy with only one easy movementpattern for the objects, while the Football scenario has balls flying with relatively high speeds from different directions towards the player. The spaceship scenario is intended as the final mode with objects that do not disappear after they reach a certain point. It offers the highest score and an unique experience without time pressure which makes it easier to follow the complicated movement patterns.
 
-\paragraph{Rewarding score} During the game, the player get rewarding score when the balance is kept continuously for a period. The system also decreases the score when the incorrect pose is detected. 
-The score for each target is set according to the difficulty and the scenario. The easier the mode, the less score gets awarded. The final score gives the player a sense of accomplishment while also gaining a way to compare his performance in the game with older performances. 
+\paragraph{Rewarding score} During the game, the player gets rewarded when the balance is kept continuously for a period of time. The system also decreases the score when the incorrect pose is detected. 
+The score for each target is set according to the difficulty and the scenario. The easier the mode, the less score gets awarded. The final score gives the player a sense of accomplishment while also gaining a way to compare their performance in the game with previous gaming performances. 
 
 \subsubsection{Conclusion}
-The mixed reality game is more immersed and interactive than normal exercises and thus offers enjoyment while doing rehabilitation exercises, motivating the patient. Playing a MR game help the user generate a sense of enjoyment not doing rehabilitation exercises. Having fun through exercises can motivate the patient to do his exercises more frequently. The magic mirror concept also provide the users to observe themselves as looking into a mirror to perceive the wrong stances. The visual and sound feedback provides them instant hint to recover the correct pose. With the help of this system, the patient would be able to do exercises at home without being constantly monitored by a physiotherapist. All the data about the exercise can be collected and analyzed by the doctor later.
+The mixed reality game is more immersed and interactive than normal exercises and thus offers enjoyment while doing rehabilitation exercises, motivating the patient. Playing a MR game helps the user generate a sense of enjoyment when doing rehabilitation exercises. Having fun through exercises can motivate the patient to perform their exercises more frequently. The Magic Mirror concept also offers the users to observe themselves as looking into a mirror to perceive the wrong stances. The visual and sound feedback provides them instant hints to recover the correct pose. With the help of this system, the patient would be able to do exercises at home without being constantly monitored by a physiotherapist. All the data about the exercise can be collected and analyzed by the physiotherapist later via WiFi transmission for example.
