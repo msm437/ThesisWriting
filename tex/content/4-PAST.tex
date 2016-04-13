@@ -42,7 +42,11 @@ The PAST method accounts for this as its objective is to find the origin of the 
 %Inspired by the Single-Point Active Alignment Method (SPAAM) for Optical See-Through head mounted display calibration for augmented reality \citep{Tuceryan2000},
 A calibration is required to calculate the origin and the result is the position of the virtual eye center $E$. 
 %Based on the pointing model, a set of pointing lines are collected to estimate the intersection to terminate the calibration. 
-As shown in \figurename{ \ref{fig:past:calibration}}, the target $T_i$ is presented in front of the user, who is then asked to perform a pointing gesture towards it. The 3D positions of the fingertips $F_i$ and $T_i$ are collected through $S_f$ and $S_c$, respectively. The pointing ray $L_i$ ,which passes through $F_i$ and $T_i$, would also go through $E$. After enough pointing rays are collected, $E$ is defined as the best approximation of their intersection. After calibration, the user specific virtual eye center $E$ is estimated and the pointing rays can be recovered as $L_{i}$, going through $E$ and  $F_i$, when a pointing gesture is performed.
+As shown in \figurename{ \ref{fig:past:calibration}}, the target $T_i$ is presented in front of the user, who is then asked to perform a pointing gesture towards it. The 3D positions of the fingertips $F_i$ and $T_i$ are collected through $S_f$ and $S_c$, respectively. The pointing ray $L_i$ ,which passes through $F_i$ and $T_i$, would also go through $E$. After enough pointing rays are collected, $E$ is defined as the best approximation of their intersection. 
+\addd{(The PAST calibration procedure is similar to Single Point Active Alignment Method (SPAAM) \cite{Tuceryan2000b}, which was designed to calibrate optical see-through HMDs. Our method, however, does not require any display and our main objective is to estimate a virtual eye center for \textit{eye-rooted} pointing gesture.)}
+After calibration, the user specific virtual eye center $E$ is estimated and the pointing rays can be recovered as $L_{i}$, going through $E$ and  $F_i$, when a pointing gesture is performed.
+
+
 \begin{figure} 
 	\centering
 	\includegraphics[width= \linewidth]{figures/4-PAST/Figures/FIG2.pdf}
@@ -177,10 +181,11 @@ An Intel \textit{RealSense} 3D sensor  was selected as the wearable RGB-D device
 The \textit{RealSense} 3D sensor was strapped on the user{\rq}s head using a bandana with an adjusted height and angle (see \figurename{ \ref{fig:hardWare}}). 
 A 46$''$ TV display and a 24$''$ monitor presenting various information were positioned about the user as the contextual environment. 
 The users could walk around and rotate their body or head freely while performing interactions with the display and monitor. 
+
 %new finger with a raised finger TODO: retake a pircure of the hardware setup
 \begin{figure}
 	\centering
-	\includegraphics[width = \linewidth]{figures/4-PAST/Figures/FIG7.pdf}
+	\includegraphics[width = \linewidth]{figures/4-PAST/Figures/hardWare}
 	\caption{The hardware setup. The side and front view of the wearable device. The \textit{RealSense} 3D sensor was strapped on the user{\rq}s head using a bandana.}
 	\label{fig:hardWare}
 \end{figure}

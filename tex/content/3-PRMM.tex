@@ -35,7 +35,7 @@ The design of personal information collection is to develop a middleware, which 
 
 Once the middleware detects a user within the valid range of the system, it starts to collect the personal information of the user and the whole procedure of the iteration is described as \figurename{\ref{fig:3-PRMM:InteractionWithMiddleware}}.
 The first step of using the middleware software is the same as the Magic Mirror system. The first task is user detection, to check if there is a new user in the view of the system. Then, the user is asked to stand straight in front of the system. When the user stands upright, the system detects the gender, age, height and limbs length. 
-In the second step, the user need to turn a circle in front of the sensor in order to scan the user's body totally. When the user finishes this movement, the system would complete the collection of the personal user information. If the reconstruction fails, the system depicts a hint to repeat the whole process.
+In the second step, the user needs to turn in a circle in front of the sensor in order to scan the user's body completely. When the user finishes this movement, the system would complete the collection of the personal user information. If the reconstruction fails, the system depicts a hint to repeat the whole process.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.75\linewidth]{figures/3-PRMM/InteractionWithMiddleware.png}
@@ -44,7 +44,7 @@ In the second step, the user need to turn a circle in front of the sensor in ord
 \end{figure}
 
 \subsubsection{Implementation}
-The color and depth cameras of Kinect are the current sensors to observe the user and all the parameters of the user are detected via the color/depth images and the skeleton stream (see \figurename{\ref{fig:3-PRMM:BiomatricInformation}}). OpenBR framework is chosen to detect the gender and age from the captured color images. Meanwhile, the OpenNI and NITE libraries are adopted in this system for the height and limb length calculation. Besides the above parameters, weight, volume, circumference and body shape are all based on the 3D reconstruction of the user's upper body, which is done by the 3D reconstruction SDK and OpenCV\footnote{\url{http://opencv.org/}} libraries.
+The color and depth cameras of the Kinect are the current sensors to observe the user and all the parameters of the user are detected via the color/depth images and the skeleton stream (see \figurename{\ref{fig:3-PRMM:BiomatricInformation}}). OpenBR framework is chosen to detect the gender and age from the captured color images. Meanwhile, the OpenNI and NITE libraries are adopted in this system for the height and limb length calculation. Besides the above parameters, weight, volume, circumference and body shape are all based on the 3D reconstruction of the user's upper body, which is done by the 3D reconstruction SDK and OpenCV\footnote{\url{http://opencv.org/}} libraries.
 Combining all the following functions, the personal user information would be collected. The Magic Mirror framework can refer to the user's information as personalized parameters to generate more useful and interesting AR applications.
 \begin{figure}
 	\centering
@@ -75,8 +75,8 @@ One important task of the body reconstruction is to estimate the rotation angle 
 %\end{figure}
 
 \paragraph{Weight}
-In the proposed middleware, we provide the simple method to estimate the weight information of the user. It is a simple idea that the weight comes from the volume of the 3D reconstruction. After the 3D reconstruction, a watertight 3D mesh is created and the volume is calculated \cite{Qiao2015}.
-Due to the limitation of the Kinect sensor in the field of views, the 3D volume reconstructed cannot cover the whole body. However, we could just use the upper body of the user to estimate the full weight. As the result presented by \cite{Tozeren2000}, the upper body is about 68.2\% of the entire body weight. 
+In the proposed middleware, we provide a simple method to estimate the weight information of the user. It is a simple idea that the weight is related to the volume of the 3D reconstruction. After the 3D reconstruction, a watertight 3D mesh is created and the volume is calculated \cite{Qiao2015}.
+Due to the limitation of the Kinect sensor in the field of view, the 3D volume reconstructed cannot cover the whole body. However, we could just use the upper body of the user to estimate the full weight. As the result presented by \cite{Tozeren2000}, the upper body is about 68.2\% of the entire body weight. 
 No matter how the reconstructed result is, the upper body is the volume without the part below the hip. As the hip joint information is known, we just make a cut from the hip position and generate a new volume without the hips.
 As the density of human body is very near to the density of water ($1.0 g/cm^3$), the estimated weight of the user in the system would be as same as the volume.
 \begin{equation}
@@ -118,7 +118,7 @@ Prior to correctly using the Magic Mirror system, the users stand in front of th
 
 %tranditional way to do the registration
 \subsubsection{Improvement of Kinect skeleton}
-We present a general method to interactively improve and correct the Kinect skeleton for anatomy education purposes. The method can also be applied to projectors or other sensors as well for general augmented reality applications. A thorough validation of our method demonstrated improved precision of anatomical landmarks and opens the avenue to future improvements in medical education. 
+We present a general method to interactively improve and correct the Kinect skeleton for anatomy education purposes. The method can also be applied to projectors or other sensors as well as for general augmented reality applications. A thorough validation of our method demonstrated improved precision of anatomical landmarks and opens the avenue to future improvements in medical education. 
 \figurename{\ref{fig:3-PRMM:5Joints}} shows a comparison between the traditional Kinect skeleton and its proposed improvement. The first row depicts visually the exactness of the new skeleton. The second row depicts the skeleton landmarks directly on CT data. We observe that the shoulder and anterior superior spine are inaccurate in the images. The last row depicts the selected bone landmark positions within CT as well. Transverse and sagittal CT slices of the visible human Korean are seen respectively in rows 2 and 3.
 
 \paragraph{Normal solution} To improve the perception of the AR view, the medical data has to be registered to the current user. A simple method used by the Magic Mirror framework is that an orthopedic clinician helps to find the corresponding Kinect skeleton joints in the CT volume (see \figurename{\ref{fig:3-PRMM:5Joints:a}} and \figurename{\ref{fig:3-PRMM:5Joints:c}}). The points 1-5 are raw Kinect skeleton joints and slices 1-5 are estimated by the clinician according to the yellow line drawn on user's body using the raw Kinect skeleton joints information. So the scaling factor from CT volume to the current user is:
@@ -152,7 +152,7 @@ $T_{K\_CT}$ is the transformation from Kinect coordinate system to CT volume. $T
 	\caption{The inaccurate Kinect skeleton (a) The points 1-5 are raw Kinect skeleton joints. (b) The inaccurate Kinect skeleton, in yellow, compared to the improved Kinect skeleton positions in red. The points 1'-5' are the position of the five selected bones, which are suggested by orthopedic clinicians. (c) Slices 1-5 are estimates by  orthopedic clinicians according to the yellow line drawn on the user's body using the Kinect skeleton joints information. (d) Slices 1'-5' are the selected five bones suggested by orthopedic clinicians and the slice 6', which is computed from slice1'-5', is the corresponding slice for joint 6'.}
 	\label{fig:3-PRMM:5Joints}
 \end{figure} 
-\paragraph{Proposed method} The goal of the proposed method is to create a more precise user-specific AR overlay environment. The positions of the anatomical bone landmarks can improve the deformation and interpolation of the medical data, resulting in a more precise Kinect skeleton and augmentation. The following scale factors were calculated for the improved system via the selection bone landmarks. 
+\paragraph{Proposed method} The goal of the proposed method is to create a more precise user-specific AR overlay environment. The positions of the anatomical bone landmarks can improve the deformation and interpolation of the medical data, resulting in a more precise Kinect skeleton and augmentation. The following scale factors were calculated for the improved system via the selection of bone landmarks. 
 \begin{equation}
 WidthScale = Avg(\frac{{{W_{1'3'}}}}{{W_{1'3'}^{CT}}},\frac{{{W_{4'5'}}}}{{W_{4'5'}^{CT}}})
 \end{equation}
@@ -168,7 +168,7 @@ T_{K\_CT'} = T_{K\_6'} * T_{CT\_6'}.inv()
 \end{equation}
 
 \subsubsection{Evaluation}
-As an augmented reality anatomy learning application, both accuracy and system usability are very important prior to its translation in classroom. We undertook one user study with particular users having expert anatomy knowledge to evaluate if this system is precise enough for anatomy learning.% and the proposed method improves the accuracy of the AR view.
+As an augmented reality anatomy learning application, both accuracy and system usability are very important prior to its translation into the classroom. We undertook one user study with particular users having expert anatomy knowledge to evaluate if this system is precise enough for anatomy learning.% and the proposed method improves the accuracy of the AR view.
 
 \paragraph{Assessing the Magic Mirror system precision and usability}
 Participants: Seven participants were included in this study (two surgeons and five final year undergraduate medical students). 
